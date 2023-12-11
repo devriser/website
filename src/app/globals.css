@@ -2,9 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-size: 16px;
+  }
+}
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(249, 249, 249, 1);
+    --secondary-color-reverse: rgba(23, 23, 23, 1) ;
+    --tertiary-color: rgba(42, 42, 42, 1);
+    --solid-gray:rgba(237, 237, 237, 1);    
+    --solid-blue: rgba(0, 112, 243, 1);
+    --hero-text: linear-gradient(106deg, #00CBBF 14.95%, #0064F9 85.77%);
+    --blue-gradient : linear-gradient(90deg, #4576F6 0.06%, #0C49E7 99.93%);
+    --sub-text: rgba(97, 97, 97, 1);
+    --section-gradient: linear-gradient(283deg, #0073F9 16.37%, #5F36FF 91.66%);
+    --solid-green: rgba(117, 221, 121, 1);
+  }
 
-body {
-  color: #EDEDED;
-  background:#05020D;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgba(0, 0, 0, 1);
+    --secondary-color: rgba(23, 23, 23, 1) ;
+    --secondary-color-reverse: rgba(237, 237, 237, 1);
+    --tertiary-color: var(--primary-color); 
+    --solid-gray:rgba(237, 237, 237, 1);
+    --solid-blue: rgba(0, 112, 243, 1); 
+    --hero-text: linear-gradient(106deg, #00CBBF 14.95%, #0064F9 85.77%);
+    --blue-gradient : linear-gradient(90deg, #4576F6 0.06%, #0C49E7 99.93%);
+    --sub-text: rgba(161, 161, 161, 1);
+    --section-gradient: linear-gradient(283deg, #0073F9 16.37%, #5F36FF 91.66%);
+    --solid-green: rgba(117, 221, 121, 1);
+    --solid-purple: rgba(212, 157, 255, 1); 
+
+ 
+  }
 }
