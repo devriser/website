@@ -14,7 +14,7 @@ import {
   techStackArr,
   webDesc,
   webServicesArr,
-} from "./data";
+} from "./ServiceData";
 import Card from "@/components/shared/Cards/Card";
 
 const WebDevPage = () => {
