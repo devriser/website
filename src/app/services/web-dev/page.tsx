@@ -21,7 +21,7 @@ const WebDevPage = () => {
   return (
     <section className='xl:w-7/12 mx-auto mt-14 px-4 xl:px-0 grid gap-16'>
       {/* top header */}
-      <TitleHeader title='Wev Development Services' description={webDesc} />
+      <TitleHeader title='Web Development Services' description={webDesc} />
       {/* buttons */}
       {/* <div className=''></div> */}
       {/* banner Image */}
