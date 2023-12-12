@@ -8,11 +8,36 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      //   'gradient-conic':
-      //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      // },
+     colors: {
+      'primary': 'var(--primary-color)',
+      'secondary': 'var(--secondary-color)',
+      'secondary-reverse': 'var(--secondary-color-reverse)',
+      'tertiary': 'var(--tertiary-color)', 
+      'solid-gray': 'var(--solid-gray)',
+      'solid-blue': 'var(--solid-blue)',
+      'sub-text': 'var(--sub-text)',
+      'solid-green': 'var(--solid-green)',
+     },
+     backgroundImage: {
+      'hero-text': 'var(--hero-text)',
+      'blue-gradient': 'var(--blue-gradient)',
+      'section-gradient': 'var(--section-gradient)',
+     } ,
+     fontSize: {
+       'text-hero': 'var(--text-hero)',
+       'text-heading': 'var(--text-heading)',
+       'text-title': 'var(--text-title)',
+     },
+     borderColor: {
+       'primary-border': 'var(--primary-border)',
+       'blue-border': 'var(--solid-blue)',
+     },
+     borderRadius: {
+       'hero-rounded': 'var(--hero-rounded)',
+       'banner-rounded': 'var(--banner-rounded)',
+       'large': 'var(--large)',
+       'medium': 'var(--medium)',
+     }
     },
   },
   plugins: [],

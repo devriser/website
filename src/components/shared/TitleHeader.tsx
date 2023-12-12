@@ -8,8 +8,8 @@ interface HeaderProps {
 const TitleHeader = ({ title, description }: HeaderProps) => {
   return (
     <div className='flex flex-col gap-4 justify-start'>
-      <h2 className='text-3xl font-semibold'>{title}</h2>
-      <p className='text-xl'>{description}</p>
+      <h2 className='text-3xl font-semibold text-secondary-reverse'>{title}</h2>
+      <p className='text-xl text-secondary-reverse'>{description}</p>
     </div>
   );
 };
