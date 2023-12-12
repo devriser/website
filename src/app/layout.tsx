@@ -49,15 +49,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
-        className={`${cn(monaSans.variable, "font-mono-sans")} flex h-screen`}
+        className={`${cn(
+          monaSans.variable,
+          "font-mono-sans"
+        )} flex bg-primary h-screen`}
       >
         <Providers>
-          <div className="sticky top-0">
+          <div className='sticky top-0'>
             <Navbar />
           </div>
-          {children}
+          <div className='flex justify-center w-full'>{children}</div>
         </Providers>
       </body>
     </html>
