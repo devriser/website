@@ -21,7 +21,7 @@ const ServiceCard = ({
         >
           {icon}
         </div>
-        <h2 className='text-xl font-semibold'>{title}</h2>
+        <h2 className='text-xl font-semibold text-white'>{title}</h2>
       </div>
       <p className='text-[#A1A1A1]'>{description}</p>
     </div>

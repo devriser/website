@@ -14,7 +14,7 @@ const Card = ({ title, description, isBG, isBorder }: CardProps) => {
         isBorder ? "border border-[#EDEDED1A]" : ""
       }`}
     >
-      <h2 className='text-lg font-semibold'>{title}</h2>
+      <h2 className='text-lg font-semibold text-white'>{title}</h2>
       <p className='text-[#A1A1A1]'>{description}</p>
     </div>
   );
