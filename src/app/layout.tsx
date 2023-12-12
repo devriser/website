@@ -2,6 +2,8 @@ import cn from "@/utils/functions/cn";
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Navbar from "@/components/shared/Navbar/Navbar";
+import Providers from "@/providers/Providers";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -48,8 +50,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${cn(monaSans.variable, "font-mono-sans")} `}>
-        {children}
+      <body
+        className={`${cn(
+          monaSans.variable,
+          "font-mono-sans"
+        )} flex bg-primary h-screen`}
+      >
+        <Providers>
+          <div className='sticky top-0'>
+            <Navbar />
+          </div>
+          <div className='flex justify-center w-full'>{children}</div>
+        </Providers>
       </body>
     </html>
   );
