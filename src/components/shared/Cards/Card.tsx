@@ -10,12 +10,12 @@ interface CardProps {
 const Card = ({ title, description, isBG, isBorder }: CardProps) => {
   return (
     <div
-      className={`flex flex-col gap-3 p-7 ${isBG ? "bg-[#171717]" : ""} ${
-        isBorder ? "border border-[#EDEDED1A]" : ""
+      className={`flex flex-col gap-3 p-7 ${isBG ? "bg-secondary" : ""} ${
+        isBorder ? "border border-primary-border" : ""
       }`}
     >
-      <h2 className='text-lg font-semibold text-white'>{title}</h2>
-      <p className='text-[#A1A1A1]'>{description}</p>
+      <h2 className='text-lg font-semibold text-secondary-reverse'>{title}</h2>
+      <p className='text-sub-text'>{description}</p>
     </div>
   );
 };

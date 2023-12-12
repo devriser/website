@@ -11,19 +11,21 @@ const ServiceCard = ({
   title,
   description,
   icon,
-  iconBG = "bg-green-500",
+  iconBG = "bg-solid-green",
 }: serviceCardProps) => {
   return (
-    <div className='flex flex-col gap-5 p-7' style={{ background: "#171717" }}>
+    <div className='flex flex-col gap-5 p-7 bg-secondary'>
       <div className='flex items-center gap-3'>
         <div
           className={`${iconBG} rounded-xl w-12 h-12  p-2 flex items-center justify-center`}
         >
           {icon}
         </div>
-        <h2 className='text-xl font-semibold text-white'>{title}</h2>
+        <h2 className='text-xl font-semibold text-secondary-reverse'>
+          {title}
+        </h2>
       </div>
-      <p className='text-[#A1A1A1]'>{description}</p>
+      <p className='text-sub-text'>{description}</p>
     </div>
   );
 };
