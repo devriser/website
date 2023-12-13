@@ -14,73 +14,69 @@
 @media (prefers-color-scheme: light) {
   :root {
     --primary-color: rgba(255, 255, 255, 1);
-    --secondary-color: rgba(249, 249, 249, 1);
-    --secondary-color-reverse: rgba(23, 23, 23, 1) ;
+    --secondary-color: rgba(245, 245, 255, 1);
+    --secondary-color-reverse: rgba(23, 23, 23, 1);
     --tertiary-color: rgba(42, 42, 42, 1);
-    --solid-gray:rgba(237, 237, 237, 1);    
+    --solid-gray: rgba(237, 237, 237, 1);
     --solid-blue: rgba(0, 112, 243, 1);
-    --hero-text: linear-gradient(106deg, #00CBBF 14.95%, #0064F9 85.77%);
-    --blue-gradient : linear-gradient(90deg, #4576F6 0.06%, #0C49E7 99.93%);
+    --hero-text: linear-gradient(106deg, #00cbbf 14.95%, #0064f9 85.77%);
+    --blue-gradient: linear-gradient(90deg, #4576f6 0.06%, #0c49e7 99.93%);
     --sub-text: rgba(97, 97, 97, 1);
-    --section-gradient: linear-gradient(283deg, #0073F9 16.37%, #5F36FF 91.66%);
+    --section-gradient: linear-gradient(283deg, #0073f9 16.37%, #5f36ff 91.66%);
     --solid-green: rgba(117, 221, 121, 1);
     /* font sizes */
     --text-hero: 62px;
     --text-heading: 38px;
     --text-title: 24px;
     /* border color */
-    --primary-border: rgba(0, 0, 0, 0.10);
+    --primary-border: rgba(0, 0, 0, 0.1);
     /* border radius */
     --hero-rounded: 24px;
     --banner-rounded: 16px;
     --large: 8px;
-    --medium: 4px
-
-    
+    --medium: 4px;
   }
-
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: rgba(0, 0, 0, 1);
-    --secondary-color: rgba(23, 23, 23, 1) ;
+    --secondary-color: rgba(23, 23, 23, 1);
     --secondary-color-reverse: rgba(237, 237, 237, 1);
-    --tertiary-color: var(--primary-color); 
-    --solid-gray:rgba(237, 237, 237, 1);
-    --solid-blue: rgba(0, 112, 243, 1); 
-    --hero-text: linear-gradient(106deg, #00CBBF 14.95%, #0064F9 85.77%);
-    --blue-gradient : linear-gradient(90deg, #4576F6 0.06%, #0C49E7 99.93%);
+    --tertiary-color: var(--primary-color);
+    --solid-gray: rgba(237, 237, 237, 1);
+    --solid-blue: rgba(0, 112, 243, 1);
+    --hero-text: linear-gradient(106deg, #00cbbf 14.95%, #0064f9 85.77%);
+    --blue-gradient: linear-gradient(90deg, #4576f6 0.06%, #0c49e7 99.93%);
     --sub-text: rgba(161, 161, 161, 1);
-    --section-gradient: linear-gradient(283deg, #0073F9 16.37%, #5F36FF 91.66%);
+    --section-gradient: linear-gradient(283deg, #0073f9 16.37%, #5f36ff 91.66%);
     --solid-green: rgba(117, 221, 121, 1);
-    --solid-purple: rgba(212, 157, 255, 1); 
+    --solid-purple: rgba(212, 157, 255, 1);
     /* font sizes */
     --text-hero: 62px;
     --text-heading: 38px;
     --text-title: 24px;
     /* border color */
-    --primary-border: rgba(237, 237, 237, 0.10);
+    --primary-border: rgba(237, 237, 237, 0.1);
     /* border radius */
     --hero-rounded: 24px;
     --banner-rounded: 16px;
     --large: 8px;
-    --medium: 4px
+    --medium: 4px;
   }
 }
 
 @media (max-width: 1024px) {
   :root {
-   --text-hero: 58px;
-   --text-heading: 34px;
-   --text-title: 22px;
+    --text-hero: 58px;
+    --text-heading: 34px;
+    --text-title: 22px;
   }
 }
 @media (max-width: 768px) {
   :root {
-   --text-hero: 56px;
-   --text-heading: 32px;
-   --text-title: 20px;
-    
+    --text-hero: 56px;
+    --text-heading: 32px;
+    --text-title: 20px;
   }
 }
 @media (max-width: 560px) {
@@ -89,5 +85,4 @@
     --text-heading: 30px;
     --text-title: 20px;
   }
- 
 }
