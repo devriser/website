@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "../../Button";
+
 import { getLoacales } from "../../../../../getLocales";
+import Button from "../../Button";
 
 export default async function LandingPage({ params }: any) {
   const lang = await getLoacales(params.lang);
