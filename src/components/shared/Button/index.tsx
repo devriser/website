@@ -25,8 +25,8 @@ const Button = ({
     },
     primary: {
       solid: "bg-gradient-primary",
-      outlined: "bg-primary text-blue border blue-border",
-      transparent: "bg-transparent text-blue border blue-border",
+      outlined: "text-solid-blue  border border-blue-border",
+      transparent: "bg-transparent text-blue border border-blue-border",
     },
     success: {
       solid: "bg-blue-gradient",
@@ -85,8 +85,8 @@ const Button = ({
 
         {loading && (
           <>
-            <span className="mr-1">{props.children}</span>
-            <span className="flex items-center justify-center h-5 w-5 will-change-transform rounded-[50%] border-2 border-r-transparent border-b-transparent border-l-blue-900 border-t-blue-900 animate-spin"></span>
+            <span className='mr-1'>{props.children}</span>
+            <span className='flex items-center justify-center h-5 w-5 will-change-transform rounded-[50%] border-2 border-r-transparent border-b-transparent border-l-blue-900 border-t-blue-900 animate-spin'></span>
           </>
         )}
 

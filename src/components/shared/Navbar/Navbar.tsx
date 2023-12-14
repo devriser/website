@@ -28,13 +28,13 @@ const Sidebar = ({ subItems }: any) => {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -10, opacity: 0 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className=" flex flex-col absolute left-24 bg-[#f5f5fff0] h-full top-0 gap-7 whitespace-nowrap px-2 py-5"
+      className=' flex flex-col absolute left-24 bg-[#f5f5fff0] h-full top-0 gap-7 whitespace-nowrap px-2 py-5'
     >
       {subItems?.map((subItem: any) => (
         <Link
           key={subItem.name}
           href={subItem.path}
-          className="flex text-black hover:bg-white transition-colors duration-200 px-3 py-1 rounded-md "
+          className='flex text-black hover:bg-white transition-colors duration-200 px-3 py-1 rounded-md '
         >
           {subItem.name}
         </Link>
@@ -119,39 +119,42 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0  bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between ">
-      <div className="cursor-pointer">
-        {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
-        <DarkLogo />
-      </div>
-      <div className="flex flex-col items-center gap-6 ">
-        {navBarData.map((ele) => (
-          <div
-            key={ele.name}
-            className={`flex flex-col items-center cursor-pointer ${
-              activeLink === ele.name && toggle
-                ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
-                : " py-2"
-            }`}
-            onClick={() => handleItemClick(ele.name)}
-          >
-            <span>{ele.icon}</span>
-            <p className="text-secondary-reverse">{ele.name}</p>
-            {activeLink === ele.name && toggle && (
-              <Sidebar subItems={ele.subItems} />
-            )}
+    <header className='  bg-secondary p-3 pt-6 h-full'>
+      <div className='sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]'>
+        <div className='flex flex-col items-center gap-8'>
+          <div className='cursor-pointer'>
+            {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
+            <DarkLogo />
           </div>
-        ))}
-      </div>
-
-      <div className="flex flex-col items-center gap-5">
-        <div>
-          <LightMode />
+          <div className='flex flex-col items-center gap-6 '>
+            {navBarData.map((ele) => (
+              <div
+                key={ele.name}
+                className={`flex flex-col gap-2 items-center cursor-pointer ${
+                  activeLink === ele.name && toggle
+                    ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
+                    : " py-2"
+                }`}
+                onClick={() => handleItemClick(ele.name)}
+              >
+                <span>{ele.icon}</span>
+                <p className='text-secondary-reverse'>{ele.name}</p>
+                {activeLink === ele.name && toggle && (
+                  <Sidebar subItems={ele.subItems} />
+                )}
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="border px-4 border-black flex items-center justify-center gap-1 rounded-sm cursor-pointer">
-          <p>En</p>
-          <LanguageArrow />
+        <div className='flex flex-col items-center  gap-5'>
+          <div>
+            <LightMode />
+          </div>
+          <div className='border px-4 border-black flex items-center justify-center gap-1 rounded-sm cursor-pointer'>
+            <p>En</p>
+            <LanguageArrow />
+          </div>
         </div>
       </div>
     </header>
