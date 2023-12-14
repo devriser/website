@@ -12,7 +12,10 @@
         "heroTitle": "Enterprise Solutions Development Services",
         "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
         "heroButtonOne": "Our Portfolio",
-        "heroButtonTwo": "Contact Sales"
+        "heroButtonTwo": "Contact Sales",
+        "servicesTitle": "Our Services for Software Development & Testing",
+        "servicesSubtitle":"As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality. ",
+      " f ":"f"
     },
     "webdev": {}
 }
