@@ -18,31 +18,26 @@ import Card from "@/components/shared/Cards/Card";
 import ServiceCard from "@/components/shared/Cards/ServiceCard";
 import { getLoacales } from "../../../../../getLocales";
 
-export default async function WebDevContent({ params }: any) {
+export default async function ESDContent({ params }: any) {
   const lang = await getLoacales(params.lang);
   console.log(lang)
   return (
-    <section className='bg-primary'>
-      <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
-        {/* top header */}
-        <div className='bg-primary container mx-auto'>
-          <TitleHeader title='Web Development Services' description={webDesc} />
-          {/* buttons */}
-          {/* <div className=''></div> */}
+    <section className="bg-primary">
+      <div className=" mx-auto pt-14 px-4 xl:px-0 grid gap-16">
+        <div className="bg-primary container mx-auto">
+          <TitleHeader title={lang.heroTitle} description={webDesc} />
         </div>
 
-        <div className='container mx-auto'>
-          {/* banner Image */}
-          <Image src={webTech} alt='Picture of the author' className='w-full' />
+        <div className="container mx-auto">
+          <Image src={webTech} alt="Picture of the author" className="w-full" />
         </div>
-        <div className='grid gap-16 bg-primary container mx-auto'>
-          {/* service Header */}
+        <div className="grid gap-16 bg-primary container mx-auto">
           <ServiceHeader
-            title='Our Services for Developing Web Apps'
+            title="Our Services for Developing Web Apps"
             description={serviceDesc}
           />
-          {/* service cards */}
-          <div className=' grid 2xl:grid-cols-3 md:grid-cols-2 gap-8'>
+
+          <div className=" grid 2xl:grid-cols-3 md:grid-cols-2 gap-8">
             {webServicesArr.map((item, index) => (
               <ServiceCard
                 key={index}
@@ -53,17 +48,17 @@ export default async function WebDevContent({ params }: any) {
             ))}
           </div>
         </div>
-        {/* service Tech */}
-        <div className='grid gap-16 py-16 bg-secondary'>
+
+        <div className="grid gap-16 py-16 bg-secondary">
           <ServiceHeader
-            title='Technologies We Use For Web Development'
+            title="Technologies We Use For Web Development"
             description={techDesc}
           />
-          <div className='grid gap-6 container mx-auto'>
+          <div className="grid gap-6 container mx-auto">
             {techStackArr.map((item, index) => (
               <div
                 key={index}
-                className='flex flex-col justify-start gap-6 items-start px-20'
+                className="flex flex-col justify-start gap-6 items-start px-20"
               >
                 <TechRow parent={item.parent} child={item.child} />
                 <div
@@ -77,13 +72,13 @@ export default async function WebDevContent({ params }: any) {
             ))}
           </div>
         </div>
-        {/* importance */}
-        <div className='grid gap-12 container mx-auto'>
+
+        <div className="grid gap-12 container mx-auto">
           <ServiceHeader
-            title='What is Importance of a custom development solution?'
+            title="What is Importance of a custom development solution?"
             description={impDesc}
           />
-          <div className='grid  md:grid-cols-2 gap-8'>
+          <div className="grid  md:grid-cols-2 gap-8">
             {customDevArr.map((item, index) => (
               <Card
                 key={index}
@@ -94,13 +89,10 @@ export default async function WebDevContent({ params }: any) {
             ))}
           </div>
         </div>
-        {/* future tech */}
-        <div
-          className='grid gap-12 py-12 mb-16 bg-secondary'
-          // style={{ background: "#171717" }}
-        >
-          <ServiceHeader title='Technologies of the Future for Web Development' />
-          <div className='grid gap-6 md:grid-cols-2 container mx-auto'>
+
+        <div className="grid gap-12 py-12 mb-16 bg-secondary">
+          <ServiceHeader title="Technologies of the Future for Web Development" />
+          <div className="grid gap-6 md:grid-cols-2 container mx-auto">
             {futureWebTech.map((item, index) => (
               <Card
                 key={index}
@@ -114,5 +106,4 @@ export default async function WebDevContent({ params }: any) {
       </div>
     </section>
   );
-};
-
+}

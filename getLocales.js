@@ -10,14 +10,9 @@
 // };
 
 const locales = {
-  en: () =>
-    import("./locales/English/HomePageContent/en.json").then(
-      (res) => res.default
-    ),
-  fr: () =>
-    import("./locales/French/HomePageContent/fr.json").then(
-      (res) => res.default
-    ),
+  en: () => import("./locales/English/en.json").then((res) => res.default),
+
+  fr: () => import("./locales/French/fr.json").then((res) => res.default),
 };
 
 export const getLoacales = (lang) => {
