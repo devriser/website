@@ -195,13 +195,13 @@ export function LanguageArrow() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="8"
-      height="4"
-      viewBox="0 0 8 4"
+      width="4"
+      height="9"
+      viewBox="0 0 4 9"
       fill="none"
     >
       <path
-        d="M3.89711 3.27734L0 0.0898438L7.79423 0.0898442L3.89711 3.27734Z"
+        d="M3.49023 4.68248L0.302734 8.57959L0.302735 0.78536L3.49023 4.68248Z"
         fill="black"
       />
     </svg>
