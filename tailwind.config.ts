@@ -31,6 +31,7 @@ const config: Config = {
         "text-hero": "var(--text-hero)",
         "text-heading": "var(--text-heading)",
         "text-title": "var(--text-title)",
+        "text-subtitle": "var(--text-subtitle)",
       },
       borderColor: {
         "primary-border": "var(--primary-border)",
