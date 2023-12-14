@@ -54,11 +54,11 @@ export default function RootLayout({ children, params }: Props) {
     <html lang={params.lang}>
       <body className={`${cn(monaSans.variable, "font-mono-sans")} `}>
         <Providers>
-          <div className="flex bg-primary h-screen mx-auto">
-            <div className="sticky top-0">
+          <div className='flex bg-primary mx-auto'>
+            <div className='sticky top-0'>
               <Navbar />
             </div>
-            <div className="flex ">{children}</div>
+            <div className='flex  mx-auto'>{children}</div>
           </div>
         </Providers>
       </body>

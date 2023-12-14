@@ -23,24 +23,34 @@ export default async function ESDContent({ params }: any) {
   const lang = await getLoacales(params.lang);
   console.log(lang);
   return (
-    <section className="bg-primary">
-      <div className=" mx-auto pt-14 px-4 xl:px-0 grid gap-16">
-        <div className="bg-primary container mx-auto">
+    <section className='bg-primary'>
+      <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
+        <div className='bg-primary container mx-auto'>
           <TitleHeader
             title={lang.esd.heroTitle}
             description={lang.esd.heroHeading}
-            btnText1={lang.esd.heroButtonOne}
-            btnText2={lang.esd.heroButtonTwo}
-            btnHref1="/"
-            btnHref2="/"
+            buttonArr={[
+              {
+                href: "/",
+                variant: "primary",
+                style: "outlined",
+                text: "Our Portfolio",
+              },
+              {
+                href: "/",
+                variant: "success",
+                style: "solid",
+                text: "Contact Sales",
+              },
+            ]}
           />
         </div>
 
-        <div className="container mx-auto">
+        <div className='container mx-auto'>
           <Image
             src={esd}
-            alt="enterprise-solutions-development banner"
-            className="w-full"
+            alt='enterprise-solutions-development banner'
+            className='w-full'
           />
         </div>
 
@@ -49,7 +59,7 @@ export default async function ESDContent({ params }: any) {
           description={lang.esd.servicesSubtitle}
         />
 
-        <div className="grid  md:grid-cols-2 gap-8">
+        <div className='grid  md:grid-cols-2 gap-8'>
           {customDevArr.map((item, index) => (
             <Card
               key={index}
@@ -60,7 +70,7 @@ export default async function ESDContent({ params }: any) {
           ))}
         </div>
 
-        <div className=" grid 2xl:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className=' grid 2xl:grid-cols-3 md:grid-cols-2 gap-8'>
           {webServicesArr.map((item, index) => (
             <ServiceCard
               key={index}
