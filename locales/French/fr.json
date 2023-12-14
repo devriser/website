@@ -5,6 +5,25 @@
     "heroButtonOne": "Nos solutions",
     "heroButtonTwo": "Contactez-nous"
   },
+  "ourAchievement": {
+    "heading": "Notre Réalisation",
+    "subHeadingOne": "Clients satisfaits",
+    "subHeadingTwo": "Expérience industrielle",
+    "subHeadingThree": "Experts professionnels",
+    "subHeadingFour": "Bureaux mondiaux"
+  },
+  "ourCoreServices": {
+    "heading": "Nos services de base",
+    "pointOne": "Développement de solutions d'entreprise",
+    "pointTwo": "Développement web",
+    "pointThree": "Développement d'applications",
+    "pointFour": "Cloud Computing",
+    "pointFive": "Développement AI/ML",
+    "pointSix": "Développement de la blockchain",
+    "pointSeven": "Conception UI/UX",
+    "pointEight": "Internet des objets",
+    "pointNine": "Développement de jeu"
+  },
   "esd": {
     "heroTitle": "Enterprise Solutions Development Services",
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",

@@ -1,21 +1,34 @@
 {
-    "homepage": {
-        "heroTitle": "The Way to Next Generation Software Development",
-        "heroHeading": "Your gateway to next-gen software solutions: AI, blockchain, web, mobile, and more. Innovation starts by your vision and our expertise.",
-        "heroButtonOne": "Our Solutions",
-        "heroButtonTwo": "Contact Sales",
-        "secondsection": {
-            "heading": "sbdhdsb"
-        }
-    },
-    "esd": {
-        "heroTitle": "Enterprise Solutions Development Services",
-        "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
-        "heroButtonOne": "Our Portfolio",
-        "heroButtonTwo": "Contact Sales",
-        "servicesTitle": "Our Services for Software Development & Testing",
-        "servicesSubtitle":"As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality. ",
-      " f ":"f"
-    },
-    "webdev": {}
+  "homepage": {
+    "heroTitle": "The Way to Next Generation Software Development",
+    "heroHeading": "Your gateway to next-gen software solutions: AI, blockchain, web, mobile, and more. Innovation starts by your vision and our expertise.",
+    "heroButtonOne": "Our Solutions",
+    "heroButtonTwo": "Contact Sales"
+  },
+  "ourAchievement": {
+    "heading": "Our Achievement",
+    "subHeadingOne": "Happy Clients",
+    "subHeadingTwo": "Industry Experience",
+    "subHeadingThree": "Professional Experts",
+    "subHeadingFour": "Global Offices"
+  },
+  "ourCoreServices": {
+    "heading": "Our Core Services",
+    "pointOne": "Enterprise Solutions Development Services",
+    "pointTwo": "Web Development Services",
+    "pointThree": "Mobile Development Services",
+    "pointFour": "Cloud Computing",
+    "pointFive": "AI/ML Development",
+    "pointSix": "Blockchain Development Services",
+    "pointSeven": "Data Science",
+    "pointEight": "DevOps",
+    "pointNine": "Quality Assurance"
+  },
+  "esd": {
+    "heroTitle": "Enterprise Solutions Development Services",
+    "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
+    "heroButtonOne": "Our Portfolio",
+    "heroButtonTwo": "Contact Sales"
+  },
+  "webdev": {}
 }

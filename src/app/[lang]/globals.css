@@ -28,6 +28,7 @@
     --text-hero: 62px;
     --text-heading: 38px;
     --text-title: 24px;
+    --text-subtitle: 18px;
     /* border color */
     --primary-border: rgba(0, 0, 0, 0.1);
     /* border radius */
@@ -55,6 +56,8 @@
     --text-hero: 62px;
     --text-heading: 38px;
     --text-title: 24px;
+    --text-subtitle: 18px;
+
     /* border color */
     --primary-border: rgba(237, 237, 237, 0.1);
     /* border radius */
