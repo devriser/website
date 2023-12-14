@@ -20,13 +20,30 @@ import { getLoacales } from "../../../../../getLocales";
 
 export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
-  console.log(lang)
+  console.log(lang);
   return (
-    <section className='bg-primary'>
+    <section className='bg-primary h-fit'>
       <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
         {/* top header */}
         <div className='bg-primary container mx-auto'>
-          <TitleHeader title='Web Development Services' description={webDesc} btnHref1="/" btnHref2="/" btnText1="Rahat" btnText2="Sikder" />
+          <TitleHeader
+            title='Web Development Services'
+            description={webDesc}
+            buttonArr={[
+              {
+                href: "/",
+                variant: "primary",
+                style: "outlined",
+                text: "Our Portfolio",
+              },
+              {
+                href: "/",
+                variant: "success",
+                style: "solid",
+                text: "Contact Sales",
+              },
+            ]}
+          />
           {/* buttons */}
           {/* <div className=''></div> */}
         </div>
@@ -100,7 +117,7 @@ export default async function WebDevContent({ params }: any) {
           // style={{ background: "#171717" }}
         >
           <ServiceHeader title='Technologies of the Future for Web Development' />
-          <div className='grid gap-6 md:grid-cols-2 container mx-auto'>
+          <div className='grid gap-6 md:grid-cols-2 xl:px-36 px-4'>
             {futureWebTech.map((item, index) => (
               <Card
                 key={index}
@@ -114,5 +131,4 @@ export default async function WebDevContent({ params }: any) {
       </div>
     </section>
   );
-};
-
+}
