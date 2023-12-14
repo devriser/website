@@ -25,21 +25,21 @@ const monaSans: any = localFont({
       weight: "400",
       style: "normal",
     },
-    // {
-    //   path: "./../assets/fonts/Mona-Sans-Medium.woff2",
-    //   weight: "500",
-    //   style: "normal",
-    // },
-    // {
-    //   path: "./../assets/fonts/Mona-Sans-SemiBold.woff2",
-    //   weight: "600",
-    //   style: "normal",
-    // },
-    // {
-    //   path: "./../assets/fonts/Mona-Sans-Bold.woff2",
-    //   weight: "bold",
-    //   style: "normal",
-    // },
+    {
+      path: "./../../assets/fonts/Mona-Sans-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./../../assets/fonts/Mona-Sans-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./../../assets/fonts/Mona-Sans-Bold.woff2",
+      weight: "bold",
+      style: "normal",
+    },
   ],
   variable: "--font-mona-sans",
 });
@@ -51,14 +51,16 @@ type Props = {
 
 export default function RootLayout({ children, params }: Props) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} dir={params.lang === "ar" ? "rtl" : "ltr"}>
       <body className={`${cn(monaSans.variable, "font-mono-sans")} `}>
         <Providers>
-          <div className="flex bg-primary h-screen mx-auto">
-            <div className="sticky top-0">
+          <div className='flex bg-primary mx-auto'>
+            <div className='sticky top-0'>
               <Navbar />
             </div>
-            <div className="flex ">{children}</div>
+
+            <div className='flex  mx-auto'>{children}</div>
+
           </div>
         </Providers>
       </body>
