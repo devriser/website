@@ -26,7 +26,7 @@ export default async function WebDevContent({ params }: any) {
       <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
         {/* top header */}
         <div className='bg-primary container mx-auto'>
-          <TitleHeader title='Web Development Services' description={webDesc} />
+          <TitleHeader title='Web Development Services' description={webDesc} btnHref1="/" btnHref2="/" btnText1="Rahat" btnText2="Sikder" />
           {/* buttons */}
           {/* <div className=''></div> */}
         </div>
