@@ -6,7 +6,9 @@ import ServiceHeader from "@/components/shared/ServiceHeader";
 import TechRow from "@/components/shared/TechRow";
 import {
   DevWebAppAccordionData,
+  FAQData,
   customDevArr,
+  futureTechServicesArr,
   futureWebTech,
   impDesc,
   serviceDesc,
@@ -144,9 +146,31 @@ export default async function WebDevContent({ params }: any) {
               stack.
             </p>
           </div>
-          <div className=''>
-            <Accordion content={DevWebAppAccordionData} />
+          <Accordion content={DevWebAppAccordionData} />
+        </div>
+
+        {/* dark card */}
+        <div className='grid gap-16 bg-secondary py-16'>
+          {/* service Header */}
+          <ServiceHeader title='Technologies of the Future for Web Development' />
+          {/* service cards */}
+          <div className='grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8'>
+            {futureTechServicesArr.map((item, index) => (
+              <ServiceCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                icon={item.icon}
+                bgColor='bg-primary'
+              />
+            ))}
           </div>
+        </div>
+
+        {/* FAQ */}
+        <div className='py-16 grid gap-10 container mx-auto'>
+          <ServiceHeader title='Frequently Asked Questions' />
+          <Accordion content={FAQData} />
         </div>
       </div>
     </section>
