@@ -56,7 +56,7 @@ export default async function OurCoreServices({ params }: any) {
   ];
 
   return (
-    <div className="bg-secondary flex flex-col gap-8 pt-6 px-6 pb-6">
+    <div className="bg-secondary flex flex-col gap-8 p-6">
       <p className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.ourCoreServices.heading}
       </p>
