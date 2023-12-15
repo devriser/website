@@ -84,7 +84,7 @@
 }
 @media (max-width: 560px) {
   :root {
-    --text-hero: 52px;
+    --text-hero: 42px;
     --text-heading: 30px;
     --text-title: 20px;
   }

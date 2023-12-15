@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Providers from "@/providers/Providers";
 import { ReactNode } from "react";
+import Footer from "@/components/shared/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -59,7 +60,10 @@ export default function RootLayout({ children, params }: Props) {
               <Navbar />
             </div>
 
-            <div className="flex w-full flex-1">{children}</div>
+            <div className="flex flex-col w-full flex-1">
+              {children}
+              <Footer params={params} />
+            </div>
           </div>
         </Providers>
       </body>
