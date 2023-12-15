@@ -1,11 +1,14 @@
 import {
+  BasicShape,
   CmsIcon,
   DBArchitectureIcon,
+  HalfGearIcon,
   ImproveIcon,
   MaintenanceIcon,
   MigrateIcon,
   MobileAppIcon,
   ResponsiveIcon,
+  SettingIcon,
   TestQaIcon,
   UxIcon,
 } from "@/assets/svg/AllIconComponent";
@@ -259,24 +262,24 @@ export const futureTechServicesArr = [
     title: "Solutions Specific to a Domaint",
     description:
       "Since we are a top custom website development company, we can offer complete website solutions that are tailored to the demands of our clients and the trends in the relevant industries",
-    icon: <UxIcon />,
+    icon: <BasicShape />,
   },
   {
     title: "Modern design and features",
     description:
       "We have enlisted the services of devoted web designers and programmers with in-depth expertise in building websites that strike a balance between attractive looks and efficient capabilities.",
-    icon: <MigrateIcon />,
+    icon: <BasicShape />,
   },
   {
     title: "Process used by the industry",
     description:
       "To provide each of our clients with unwavering excellence and our commitment to providing websites with real business results and client pleasure, we adhere to the industry standard development procedure.",
-    icon: <TestQaIcon />,
+    icon: <SettingIcon />,
   },
   {
     title: "Technically Advanced",
     description:
       "Modern design tools, technology, and methodologies are used by our highly qualified and experienced team of developers to create cutting-edge website solutions.",
-    icon: <ResponsiveIcon />,
+    icon: <HalfGearIcon />,
   },
 ];

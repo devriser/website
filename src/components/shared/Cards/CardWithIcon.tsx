@@ -6,17 +6,23 @@ interface serviceCardProps {
   icon: any;
   iconBG?: any;
   bgColor?: string;
+  isBorder?: boolean;
 }
 
-const ServiceCard = ({
+const CardWithIcon = ({
   title,
   description,
   icon,
   iconBG = "bg-solid-green",
   bgColor = "bg-secondary",
+  isBorder = false,
 }: serviceCardProps) => {
   return (
-    <div className={`flex flex-col gap-5 p-7 ${bgColor} `}>
+    <div
+      className={`flex flex-col gap-5 p-7 ${bgColor} ${
+        isBorder ? "border border-primary-border" : ""
+      } `}
+    >
       <div className='flex items-center gap-3'>
         <div
           className={`${iconBG} rounded-xl w-12 h-12  p-2 flex items-center justify-center`}
@@ -32,4 +38,4 @@ const ServiceCard = ({
   );
 };
 
-export default ServiceCard;
+export default CardWithIcon;
