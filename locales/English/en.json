@@ -24,6 +24,87 @@
     "pointEight": "DevOps",
     "pointNine": "Quality Assurance"
   },
+  "softwareDevelopmentProcess": {
+    "mainHeading": "We Simplify Software Development Process",
+    "headingOne": "Discover",
+    "headingTwo": "Design",
+    "headingThree": "Develop",
+    "headingFour": "Launch",
+    "subTextOne": "We develop brands through discovery, using in-depth research to constantly test presumptions.",
+    "subTextTwo": "We design brands through design, using in-depth research to constantly test assumptions.",
+    "subTextThree": "We develop brands through development, using in-depth research to constantly test assumptions.",
+    "subTextFour": "We launch brands through launch, using in-depth research to constantly test assumptions."
+  },
+  "shelfSolutions": {
+    "mainHeading": "Our Off-The-Shelf Solutions",
+    "headingOne": "Enterprise recourse management",
+    "headingTwo": "Customer Relationship Management",
+    "headingThree": "Human Resources Management",
+    "headingFour": "Inventory Management System",
+    "subTextOne": "Effortlessly streamline your financial and project operations with our Enterprise Resource Management (ERM) solution. Discover enhanced scalability, real-time insights, and optimized efficiency to drive your business towards success.",
+    "subTextTwo": "Elevate your business with our Customer Relationship Management (CRM) system, offering comprehensive insights, automated processes, and the flexibility of mobile accessibility. Boost engagement and foster lasting customer relationships.",
+    "subTextThree": "Simplify and enhance your HR processes with our Human Resource Management (HRM) solution. From self-service options to efficient payroll management and attendance tracking, we've got your HR needs covered.",
+    "subTextFour": "Optimize your inventory management with our Inventory Management System. Maximize control and efficiency to ensure seamless order fulfillment and inventory tracking, providing a strong foundation for your business's success."
+  },
+  "ourWork": {
+    "mainHeading": "Our Work",
+    "headingOne": "Cotravel",
+    "headingTwo": "DevRiser",
+    "headingThree": "DevRiser",
+    "subTextOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextThree": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in"
+  },
+  "letDiscussYourProject": {
+    "mainHeading": "Let's Discuss Your Project",
+    "heading": "Turn your vision into reality with a free project consultation. Share your ideas, and let us help you transform them into outstanding digital solutions.",
+    "buttonText": "Talk to our Expert"
+  },
+  "footer": {
+    "mainHeading": "DevRiser: Elevating Your Project",
+    "follow": "Follow us on",
+    "companyDetail": {
+      "company": "Company",
+      "headingOne": "About Us",
+      "headingTwo": "Blog",
+      "headingThree": "FAQs",
+      "headingFour": "Customer Reviews",
+      "headingFive": "Jobs",
+      "headingSix": "Contact Us"
+    },
+    "servicesDetails": {
+      "services": "Services",
+      "headingOne": "Mobile Development",
+      "headingTwo": "Web Development",
+      "headingThree": "Game Development",
+      "headingFour": "Cloud Computing",
+      "headingFive": "AI/ML Development",
+      "headingSix": "Blockchain Development",
+      "headingSeven": "UI/UX Design",
+      "headingEight": "Internet of Things"
+    },
+    "industries": {
+      "industries": "Industries",
+      "headingOne": "Market place",
+      "headingTwo": "Financial",
+      "headingThree": "Healthcare",
+      "headingFour": "Media & communication",
+      "headingFive": "Real estate",
+      "headingSix": "Events",
+      "headingSeven": "Restaurant",
+      "headingEight": "Agriculture",
+      "headingNine": "Media entertainment"
+    },
+    "conversation": {
+      "conversation": "Start a Conversation",
+      "email": "hello@devriser.com",
+      "phone": "+91 123-456-0123",
+      "whatsApp": "+91 123-456-0124"
+    },
+    "copyright": {
+      "heading": "Copyright © 2023. All Rights Reserved."
+    }
+  },
   "esd": {
     "heroTitle": "Enterprise Solutions Development Services",
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",

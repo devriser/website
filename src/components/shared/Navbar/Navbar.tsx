@@ -19,6 +19,7 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { getLoacales } from "../../../../getLocales";
+import { GradientRightArrow } from "@/assets/svg/AllIconComponent";
 
 const Sidebar = ({ subItems }: any) => {
   return (
@@ -27,15 +28,26 @@ const Sidebar = ({ subItems }: any) => {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -10, opacity: 0 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className=" flex flex-col absolute left-24 bg-[#f5f5ff] h-full top-0 gap-7 whitespace-nowrap px-2 py-5"
+      className=" flex flex-col absolute left-[86px] bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5"
     >
       {subItems?.map((subItem: any) => (
         <Link
           key={subItem.name}
           href={subItem.path}
-          className="flex text-black hover:bg-primary transition-colors duration-200 px-3 py-1 rounded-md "
+          className={`flex text-secondary-reverse hover:bg-primary transition-colors duration-200 px-3 py-1 rounded-md ${
+            subItem.name === "All Services" &&
+            " text-transparent bg-blue-gradient bg-clip-text font-medium"
+          } `}
         >
-          {subItem.name}
+          {subItem.name === "All Services" ? (
+            <div className="flex items-center gap-3">
+              <p>All Services</p>
+              <GradientRightArrow />
+            </div>
+          ) : (
+            subItem.name
+          )}
+          {/* {subItem.name} */}
         </Link>
       ))}
     </motion.div>
@@ -143,7 +155,7 @@ export default function Navbar({ params }: any) {
     setSelectedLanguage(language);
   };
   return (
-    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between ">
+    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
         <div className="cursor-pointer">
           {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
@@ -176,9 +188,9 @@ export default function Navbar({ params }: any) {
 
           <div
             onClick={handleLanguageClick}
-            className=" relative border px-4 border-black flex items-center justify-center gap-1 rounded-sm cursor-pointer "
+            className=" relative border px-4 border-primary-border flex items-center justify-center gap-1 rounded-sm cursor-pointer "
           >
-            <span>{selectedLanguage}</span>
+            <span className="text-secondary-reverse">{selectedLanguage}</span>
             <p className="pt-1">
               <LanguageArrow />
             </p>
@@ -189,7 +201,7 @@ export default function Navbar({ params }: any) {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -10, opacity: 0 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className="absolute left-24 bg-[#f5f5ff] bottom-2 py-1 px-1 rounded-md"
+              className="absolute left-[88px] bg-secondary -bottom-[6px] py-1 px-1 rounded-md"
             >
               <div className="flex flex-col gap-2">
                 {language.map((item) => (
@@ -198,7 +210,7 @@ export default function Navbar({ params }: any) {
                       handleLanguageChange(item.value);
                       setIsLanguageDropdownOpen(false);
                     }}
-                    className="cursor-pointer hover:bg-primary transition-colors duration-200 px-5 py-1 rounded-md"
+                    className="cursor-pointer hover:bg-primary text-secondary-reverse transition-colors duration-200 px-5 py-1 rounded-md"
                     key={item.name}
                   >
                     {item.name}

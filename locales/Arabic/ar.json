@@ -24,6 +24,87 @@
     "pointEight": "انترنت الأشياء",
     "pointNine": "تطوير الألعاب"
   },
+  "softwareDevelopmentProcess": {
+    "mainHeading": "نحن نبسط عملية تطوير البرمجيات",
+    "headingOne": "اكتشاف",
+    "headingTwo": "تصميم",
+    "headingThree": "تطوير",
+    "headingFour": "تسليم",
+    "subTextOne": "نقوم بتطوير العلامات التجارية من خلال الاكتشاف، وذلك باستخدام البحث المتعمق لاختبار الافتراضات باستمرار.",
+    "subTextTwo": "نهجنا في التصميم هو إبقاء الأمور بسيطة. نحن نستمتع بتصميم شيء فريد وبسيط للمستهلكين النهائيين.",
+    "subTextThree": "باستخدام التقنيات الحديثة، نقوم بالبناء بكفاءة ومهارة، ونبتكر حلولاً مرنة وقابلة للتطوير تعتمد على الأعمال.",
+    "subTextFour": "نحن نتبع نهجًا تكراريًا في عملنا وممارستنا، ونبحث دائمًا عن طرق لتحسين ما نقوم به."
+  },
+  "shelfSolutions": {
+    "mainHeading": "حلولنا الجاهزة",
+    "headingOne": "إدارة موارد المؤسسة",
+    "headingTwo": "إدارة علاقات العملاء",
+    "headingThree": "ادارة الموارد البشرية",
+    "headingFour": "نظام إدارة المخزون",
+    "subTextOne": "يمكنك تبسيط عملياتك المالية وعمليات مشروعك بسهولة من خلال حل إدارة موارد المؤسسات (ERP) الخاص بنا. اكتشف قابلية التوسع المحسنة والرؤى في الوقت الفعلي والكفاءة المحسنة لدفع أعمالك نحو النجاح.",
+    "subTextTwo": "ارفع مستوى أعمالك من خلال نظام إدارة علاقات العملاء (CRM) الخاص بنا، والذي يقدم رؤى شاملة وعمليات آلية ومرونة في إمكانية الوصول عبر الهاتف المحمول. تعزيز المشاركة وتعزيز العلاقات الدائمة مع العملاء.",
+    "subTextThree": "قم بتبسيط وتعزيز عمليات الموارد البشرية لديك من خلال حل إدارة الموارد البشرية (HRM) الخاص بنا. بدءًا من خيارات الخدمة الذاتية ووصولاً إلى إدارة كشوف المرتبات وتتبع الحضور بكفاءة، قمنا بتغطية احتياجاتك من الموارد البشرية.",
+    "subTextFour": "قم بتحسين إدارة مخزونك من خلال نظام إدارة المخزون الخاص بنا. يمكنك زيادة التحكم والكفاءة إلى أقصى حد لضمان التنفيذ السلس للطلبات وتتبع المخزون، مما يوفر أساسًا قويًا لنجاح عملك."
+  },
+  "ourWork": {
+    "mainHeading": "Our Work",
+    "headingOne": "Cotravel",
+    "headingTwo": "DevRiser",
+    "headingThree": "DevRiser",
+    "subTextOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextThree": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in"
+  },
+  "letDiscussYourProject": {
+    "mainHeading": "دعونا نناقش مشروعك",
+    "heading": "حول رؤيتك إلى واقع من خلال استشارة مجانية للمشروع. شاركنا أفكارك، ودعنا نساعدك في تحويلها إلى حلول رقمية متميزة.",
+    "buttonText": "تحدث إلى خبرائنا"
+  },
+  "footer": {
+    "mainHeading": "DevRiser: Elevating Your Project",
+    "follow": "Follow us on",
+    "companyDetail": {
+      "company": "Company",
+      "headingOne": "About Us",
+      "headingTwo": "Blog",
+      "headingThree": "FAQs",
+      "headingFour": "Customer Reviews",
+      "headingFive": "Jobs",
+      "headingSix": "Contact Us"
+    },
+    "servicesDetails": {
+      "services": "Services",
+      "headingOne": "Mobile Development",
+      "headingTwo": "Web Development",
+      "headingThree": "Game Development",
+      "headingFour": "Cloud Computing",
+      "headingFive": "AI/ML Development",
+      "headingSix": "Blockchain Development",
+      "headingSeven": "UI/UX Design",
+      "headingEight": "Internet of Things"
+    },
+    "industries": {
+      "industries": "Industries",
+      "headingOne": "Market place",
+      "headingTwo": "Financial",
+      "headingThree": "Healthcare",
+      "headingFour": "Media & communication",
+      "headingFive": "Real estate",
+      "headingSix": "Events",
+      "headingSeven": "Restaurant",
+      "headingEight": "Agriculture",
+      "headingNine": "Media entertainment"
+    },
+    "conversation": {
+      "conversation": "Start a Conversation",
+      "email": "hello@devriser.com",
+      "phone": "+91 123-456-0123",
+      "whatsApp": "+91 123-456-0124"
+    },
+    "copyright": {
+      "heading": "Copyright © 2023. All Rights Reserved."
+    }
+  },
   "esd": {
     "heroTitle": "Enterprise Solutions Development Services",
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
