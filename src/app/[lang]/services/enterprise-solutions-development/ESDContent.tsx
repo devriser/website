@@ -22,6 +22,7 @@ import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
+import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 interface IconComponents {
   AutomationTesting: ReactElement;
   FunctionalEvaluation: ReactElement;
@@ -132,7 +133,7 @@ export default async function ESDContent({ params }: any) {
             )}
           </div>
         </div>
-
+        <LetDiscussYourProject params={params} />
         <div className="py-16 grid gap-10 container mx-auto">
           <ServiceHeader title={lang.esd.faq.faqTitle} />
           <Accordion content={lang.esd.faq.faqList} />

@@ -22,6 +22,7 @@ import Card from "@/components/shared/Cards/Card";
 import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
+import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 
 export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
@@ -166,6 +167,11 @@ export default async function WebDevContent({ params }: any) {
               />
             ))}
           </div>
+        </div>
+
+        {/* Discuss part */}
+        <div className='container mx-auto'>
+          <LetDiscussYourProject params={params} />
         </div>
 
         {/* FAQ */}
