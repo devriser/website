@@ -110,41 +110,107 @@
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
     "heroButtonOne": "Our Portfolio",
     "heroButtonTwo": "Contact Sales",
-    "serviceHeaderTitle1": "Our Services for Software Development & Testing",
-    "serviceHeaderDesc1": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
-    "webServicesArr": [
-      {
-        "title": "Automation Testing Services",
-        "description": "We offer specialized attention to automated software testing services by assembling teams of people who always stay up to date on the latest testing tools and offer their insights to our esteemed clients. As part of our test plans and test cases",
-        "icon": "AutomationTesting"
-      },
-      {
-        "title": "Functional Evaluation",
-        "description": "The software system is validated to make sure that all of the functional requirements of the application are satisfied and that the desired results are obtained. Our skilled QA testing team does functional testing, concentrating.",
-        "icon": "FunctionalEvaluation"
-      },
-      {
-        "title": "Performance Evaluation",
-        "description": "Our skilled team of QA Testers performs quality tests and analyzes software behavior under load and stress to ensure error-free, dependable, and intelligent applications. You can overcome slow load times, poor responsiveness.",
-        "icon": "PerformanceEvaluation"
-      },
-      {
-        "title": "Usability Evaluation",
-        "description": "Keep an eye on the behavior of an application's multiple concurrently running functions. As part of our services, we carefully examine user behavior patterns to spot any usability problems early on and create a seamless product.",
-        "icon": "UsabilityEvaluation"
-      },
-      {
-        "title": "Testing for Compatibility",
-        "description": "Explore the benefits of compatibility testing, which thoroughly evaluates an application across several browsers, databases, hardware, operating systems, server infrastructures, resolution displays, and devices.",
-        "icon": "TestingForCompatibility"
-      },
-      {
-        "title": "Functional Evaluation",
-        "description": "Functional testing makes sure that an application's user requirements and functionality adhere to the specifications; quality functional testing services make sure that your program achieves all of its goals.",
-        "icon": "FunctionalEvaluation2"
-      }
-      
-    ]
+    "section1": {
+      "serviceHeaderTitle": "Our Services for Software Development & Testing",
+      "serviceHeaderDesc": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
+      "webServicesArr": [
+        {
+          "title": "Automation Testing Services",
+          "description": "We offer specialized attention to automated software testing services by assembling teams of people who always stay up to date on the latest testing tools and offer their insights to our esteemed clients. As part of our test plans and test cases",
+          "icon": "AutomationTesting"
+        },
+        {
+          "title": "Functional Evaluation",
+          "description": "The software system is validated to make sure that all of the functional requirements of the application are satisfied and that the desired results are obtained. Our skilled QA testing team does functional testing, concentrating.",
+          "icon": "FunctionalEvaluation"
+        },
+        {
+          "title": "Performance Evaluation",
+          "description": "Our skilled team of QA Testers performs quality tests and analyzes software behavior under load and stress to ensure error-free, dependable, and intelligent applications. You can overcome slow load times, poor responsiveness.",
+          "icon": "PerformanceEvaluation"
+        },
+        {
+          "title": "Usability Evaluation",
+          "description": "Keep an eye on the behavior of an application's multiple concurrently running functions. As part of our services, we carefully examine user behavior patterns to spot any usability problems early on and create a seamless product.",
+          "icon": "UsabilityEvaluation"
+        },
+        {
+          "title": "Testing for Compatibility",
+          "description": "Explore the benefits of compatibility testing, which thoroughly evaluates an application across several browsers, databases, hardware, operating systems, server infrastructures, resolution displays, and devices.",
+          "icon": "TestingForCompatibility"
+        },
+        {
+          "title": "Functional Evaluation",
+          "description": "Functional testing makes sure that an application's user requirements and functionality adhere to the specifications; quality functional testing services make sure that your program achieves all of its goals.",
+          "icon": "FunctionalEvaluation2"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Wide-Ranging Software Testing Services",
+      "serviceHeaderDesc": "We produce a thoroughly optimized solution that leads to greater effectiveness and increased productivity thanks to our years of experience in software quality assurance and testing.",
+      "webServicesArr": [
+        {
+          "title": "API Testing",
+          "description": "We have been undertaking manual API testing for SOAP, REST, JASON, XML, and other similar protocols in order to meet expectations.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "App Testing",
+          "description": "Optimize and test mobile apps using the correct mix of automation tools to improve overall productivity.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Web Security Testing",
+          "description": "Get a full website security assessment from specialists, regardless of the type of website.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "Load Testing",
+          "description": "how well your program works under high demand and stress circumstances.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "Performance Testing",
+          "description": "Utilize services for performance testing that are affordable to boost the performance of your application.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "Manual Testing",
+          "description": "Utilize our manual testing expertise to achieve quantifiable, quality-driven results.",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
   },
   "webdev": {}
 }
