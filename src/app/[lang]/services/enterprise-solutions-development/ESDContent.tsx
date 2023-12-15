@@ -126,6 +126,7 @@ export default async function ESDContent({ params }: any) {
                   title={item.title}
                   description={item.description}
                   icon={iconComponents[item.icon]}
+                  isBorder
                 />
               )
             )}
