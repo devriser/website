@@ -35,7 +35,7 @@ export default async function OurAchievments({ params }: any) {
   ];
 
   return (
-    <div className="bg-primary flex flex-col gap-8">
+    <div className="bg-primary flex flex-col gap-8 px-6">
       <p className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.ourAchievement.heading}
       </p>
