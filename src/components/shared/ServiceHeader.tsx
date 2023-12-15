@@ -20,7 +20,7 @@ const ServiceHeader = ({ title, description }: serviceHeaderProps) => {
       <h2 className='text-text-heading font-semibold text-secondary-reverse'>
         {title}
       </h2>
-      {description && <p className='max-w-7xl text-sub-text'>{description}</p>}
+      {description && <p className='max-w-6xl text-sub-text'>{description}</p>}
     </div>
   );
 };
