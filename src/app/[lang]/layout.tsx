@@ -59,7 +59,7 @@ export default function RootLayout({ children, params }: Props) {
               <Navbar />
             </div>
 
-            <div className="flex w-full flex-1">{children}</div>
+            <div className="flex w-full justify-center">{children}</div>
           </div>
         </Providers>
       </body>

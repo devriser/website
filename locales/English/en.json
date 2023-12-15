@@ -28,7 +28,42 @@
     "heroTitle": "Enterprise Solutions Development Services",
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
     "heroButtonOne": "Our Portfolio",
-    "heroButtonTwo": "Contact Sales"
+    "heroButtonTwo": "Contact Sales",
+    "serviceHeaderTitle1": "Our Services for Software Development & Testing",
+    "serviceHeaderDesc1": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
+    "webServicesArr": [
+      {
+        "title": "Automation Testing Services",
+        "description": "We offer specialized attention to automated software testing services by assembling teams of people who always stay up to date on the latest testing tools and offer their insights to our esteemed clients. As part of our test plans and test cases",
+        "icon": "AutomationTesting"
+      },
+      {
+        "title": "Functional Evaluation",
+        "description": "The software system is validated to make sure that all of the functional requirements of the application are satisfied and that the desired results are obtained. Our skilled QA testing team does functional testing, concentrating.",
+        "icon": "FunctionalEvaluation"
+      },
+      {
+        "title": "Performance Evaluation",
+        "description": "Our skilled team of QA Testers performs quality tests and analyzes software behavior under load and stress to ensure error-free, dependable, and intelligent applications. You can overcome slow load times, poor responsiveness.",
+        "icon": "PerformanceEvaluation"
+      },
+      {
+        "title": "Usability Evaluation",
+        "description": "Keep an eye on the behavior of an application's multiple concurrently running functions. As part of our services, we carefully examine user behavior patterns to spot any usability problems early on and create a seamless product.",
+        "icon": "UsabilityEvaluation"
+      },
+      {
+        "title": "Testing for Compatibility",
+        "description": "Explore the benefits of compatibility testing, which thoroughly evaluates an application across several browsers, databases, hardware, operating systems, server infrastructures, resolution displays, and devices.",
+        "icon": "TestingForCompatibility"
+      },
+      {
+        "title": "Functional Evaluation",
+        "description": "Functional testing makes sure that an application's user requirements and functionality adhere to the specifications; quality functional testing services make sure that your program achieves all of its goals.",
+        "icon": "FunctionalEvaluation2"
+      }
+      
+    ]
   },
   "webdev": {}
 }
