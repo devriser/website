@@ -18,6 +18,7 @@ const config: Config = {
         "solid-blue": "var(--solid-blue)",
         "sub-text": "var(--sub-text)",
         "solid-green": "var(--solid-green)",
+        "solid-purple": "var(--solid-purple)",
         "hero-text": "var(--hero-text)",
       },
 
