@@ -5,6 +5,7 @@ import webTech from "@/assets/images/web-tech.png";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import TechRow from "@/components/shared/TechRow";
 import {
+  DevWebAppAccordionData,
   customDevArr,
   futureWebTech,
   impDesc,
@@ -17,6 +18,7 @@ import {
 import Card from "@/components/shared/Cards/Card";
 import ServiceCard from "@/components/shared/Cards/ServiceCard";
 import { getLoacales } from "../../../../../getLocales";
+import Accordion from "@/components/shared/Accordion/Accordion";
 
 export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
@@ -59,7 +61,7 @@ export default async function WebDevContent({ params }: any) {
             description={serviceDesc}
           />
           {/* service cards */}
-          <div className=' grid 2xl:grid-cols-3 md:grid-cols-2 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {webServicesArr.map((item, index) => (
               <ServiceCard
                 key={index}
@@ -126,6 +128,24 @@ export default async function WebDevContent({ params }: any) {
                 isBorder
               />
             ))}
+          </div>
+        </div>
+
+        {/* Method we use */}
+        <div className='grid xl:grid-cols-2 gap-8 container mx-auto py-16'>
+          <div>
+            <h3 className='text-text-heading font-medium text-secondary-reverse'>
+              The Method We Use to Develop Web Apps
+            </h3>
+            <p className='text-sub-text mt-5'>
+              We have been a dependable partner in web development for a wide
+              range of companies, from start-ups and SMEs to enterprise-grade
+              companies utilizing the most recent development tools and tech
+              stack.
+            </p>
+          </div>
+          <div className=''>
+            <Accordion content={DevWebAppAccordionData} />
           </div>
         </div>
       </div>

@@ -191,3 +191,26 @@ export const futureWebTech = [
       "We provide full support in creating scalable, personalized apps with serverless architecture, giving clients access to automatic scalability, built-in fault tolerance, and lower operational expenses.",
   },
 ];
+
+export const DevWebAppAccordionData = [
+  {
+    headerText: "Research",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Prototyping and wireframing",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Development",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Quality Evaluation",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+];
