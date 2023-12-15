@@ -100,9 +100,9 @@ export default async function Footer({ params }: any) {
 
   return (
     <>
-      <div className="bg-secondary px-6 py-10 flex justify-between">
-        <div className="flex flex-col gap-16">
-          <div className="flex flex-col gap-2">
+      <div className="bg-secondary px-6 py-10 flex justify-between max-sm:flex-col max-sm:gap-4">
+        <div className="flex flex-col gap-16 max-sm:gap-4">
+          <div className="flex flex-col gap-2 max-sm:items-center">
             <DarkLogo />
             <p className="text-secondary-reverse">{lang.footer.mainHeading}</p>
           </div>
@@ -112,7 +112,7 @@ export default async function Footer({ params }: any) {
             </p>
           </div>
         </div>
-        <div className="flex gap-10">
+        <div className="flex gap-10 max-sm:flex-wrap max-sm:gap-2 max-sm:justify-between">
           <div>
             {companyData.map((item) => (
               <div key={item.heading} className="flex flex-col gap-3">

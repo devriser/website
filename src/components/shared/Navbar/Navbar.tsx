@@ -155,7 +155,7 @@ export default function Navbar({ params }: any) {
     setSelectedLanguage(language);
   };
   return (
-    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-md:hidden">
+    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
         <div className="cursor-pointer">
           {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
