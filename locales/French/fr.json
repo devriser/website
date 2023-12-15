@@ -24,6 +24,87 @@
     "pointEight": "Internet des objets",
     "pointNine": "Développement de jeu"
   },
+  "softwareDevelopmentProcess": {
+    "mainHeading": "Nous simplifions le processus de développement de logiciels",
+    "headingOne": "Découvrir",
+    "headingTwo": "Conception",
+    "headingThree": "Développement",
+    "headingFour": "Livrer",
+    "subTextOne": "Nous développons des marques par la découverte, en utilisant des recherches approfondies pour tester constamment les présomptions.",
+    "subTextTwo": "Notre approche du design est de garder les choses simples. Nous aimons concevoir quelque chose d’unique et simple pour les consommateurs finaux.",
+    "subTextThree": "En utilisant des technologies modernes, nous construisons avec efficacité et compétence, créant des solutions commerciales flexibles et évolutives.",
+    "subTextFour": "Nous adoptons une approche itérative de notre travail et de notre pratique, en cherchant toujours des moyens d'améliorer ce que nous faisons."
+  },
+  "shelfSolutions": {
+    "mainHeading": "Nos solutions prêtes à l'emploi",
+    "headingOne": "Gestion des ressources d'entreprise",
+    "headingTwo": "Gestion de la relation client (CRM)",
+    "headingThree": "Gestion des ressources humaines",
+    "headingFour": "Système de gestion des stocks",
+    "subTextOne": "Rationalisez sans effort vos opérations financières et de projet grâce à notre solution de gestion des ressources d'entreprise (ERM). Découvrez une évolutivité améliorée, des informations en temps réel et une efficacité optimisée pour conduire votre entreprise vers le succès.",
+    "subTextTwo": "Améliorez votre entreprise grâce à notre système de gestion de la relation client (CRM), offrant des informations complètes, des processus automatisés et la flexibilité de l'accessibilité mobile. Stimulez l’engagement et favorisez des relations clients durables.",
+    "subTextThree": "Simplifiez et améliorez vos processus RH avec notre solution de gestion des ressources humaines (GRH). Des options de libre-service à la gestion efficace de la paie et au suivi des présences, nous couvrons vos besoins en ressources humaines.",
+    "subTextFour": "Optimisez votre gestion des stocks avec notre système de gestion des stocks. Maximisez le contrôle et l'efficacité pour garantir une exécution transparente des commandes et un suivi des stocks, fournissant ainsi une base solide pour le succès de votre entreprise."
+  },
+  "ourWork": {
+    "mainHeading": "Our Work",
+    "headingOne": "Cotravel",
+    "headingTwo": "DevRiser",
+    "headingThree": "DevRiser",
+    "subTextOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextThree": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in"
+  },
+  "letDiscussYourProject": {
+    "mainHeading": "Discutons de votre projet",
+    "heading": "Transformez votre vision en réalité avec une consultation de projet gratuite. Partagez vos idées et laissez-nous vous aider à les transformer en solutions numériques exceptionnelles.",
+    "buttonText": "Parlez à notre expert"
+  },
+  "footer": {
+    "mainHeading": "DevRiser: Elevating Your Project",
+    "follow": "Follow us on",
+    "companyDetail": {
+      "company": "Company",
+      "headingOne": "About Us",
+      "headingTwo": "Blog",
+      "headingThree": "FAQs",
+      "headingFour": "Customer Reviews",
+      "headingFive": "Jobs",
+      "headingSix": "Contact Us"
+    },
+    "servicesDetails": {
+      "services": "Services",
+      "headingOne": "Mobile Development",
+      "headingTwo": "Web Development",
+      "headingThree": "Game Development",
+      "headingFour": "Cloud Computing",
+      "headingFive": "AI/ML Development",
+      "headingSix": "Blockchain Development",
+      "headingSeven": "UI/UX Design",
+      "headingEight": "Internet of Things"
+    },
+    "industries": {
+      "industries": "Industries",
+      "headingOne": "Market place",
+      "headingTwo": "Financial",
+      "headingThree": "Healthcare",
+      "headingFour": "Media & communication",
+      "headingFive": "Real estate",
+      "headingSix": "Events",
+      "headingSeven": "Restaurant",
+      "headingEight": "Agriculture",
+      "headingNine": "Media entertainment"
+    },
+    "conversation": {
+      "conversation": "Start a Conversation",
+      "email": "hello@devriser.com",
+      "phone": "+91 123-456-0123",
+      "whatsApp": "+91 123-456-0124"
+    },
+    "copyright": {
+      "heading": "Copyright © 2023. All Rights Reserved."
+    }
+  },
   "esd": {
     "heroTitle": "Enterprise Solutions Development Services",
     "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
