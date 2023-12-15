@@ -5,7 +5,10 @@ import webTech from "@/assets/images/web-tech.png";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import TechRow from "@/components/shared/TechRow";
 import {
+  DevWebAppAccordionData,
+  FAQData,
   customDevArr,
+  futureTechServicesArr,
   futureWebTech,
   impDesc,
   serviceDesc,
@@ -17,6 +20,7 @@ import {
 import Card from "@/components/shared/Cards/Card";
 import ServiceCard from "@/components/shared/Cards/ServiceCard";
 import { getLoacales } from "../../../../../getLocales";
+import Accordion from "@/components/shared/Accordion/Accordion";
 
 export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
@@ -59,7 +63,7 @@ export default async function WebDevContent({ params }: any) {
             description={serviceDesc}
           />
           {/* service cards */}
-          <div className=' grid 2xl:grid-cols-3 md:grid-cols-2 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {webServicesArr.map((item, index) => (
               <ServiceCard
                 key={index}
@@ -127,6 +131,46 @@ export default async function WebDevContent({ params }: any) {
               />
             ))}
           </div>
+        </div>
+
+        {/* Method we use */}
+        <div className='grid xl:grid-cols-2 gap-8 container mx-auto py-16'>
+          <div>
+            <h3 className='text-text-heading font-medium text-secondary-reverse'>
+              The Method We Use to Develop Web Apps
+            </h3>
+            <p className='text-sub-text mt-5'>
+              We have been a dependable partner in web development for a wide
+              range of companies, from start-ups and SMEs to enterprise-grade
+              companies utilizing the most recent development tools and tech
+              stack.
+            </p>
+          </div>
+          <Accordion content={DevWebAppAccordionData} />
+        </div>
+
+        {/* dark card */}
+        <div className='grid gap-16 bg-secondary py-16'>
+          {/* service Header */}
+          <ServiceHeader title='Technologies of the Future for Web Development' />
+          {/* service cards */}
+          <div className='grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8'>
+            {futureTechServicesArr.map((item, index) => (
+              <ServiceCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                icon={item.icon}
+                bgColor='bg-primary'
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <div className='py-16 grid gap-10 container mx-auto'>
+          <ServiceHeader title='Frequently Asked Questions' />
+          <Accordion content={FAQData} />
         </div>
       </div>
     </section>

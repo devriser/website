@@ -5,6 +5,7 @@ interface serviceCardProps {
   description: string;
   icon: any;
   iconBG?: any;
+  bgColor?: string;
 }
 
 const ServiceCard = ({
@@ -12,9 +13,10 @@ const ServiceCard = ({
   description,
   icon,
   iconBG = "bg-solid-green",
+  bgColor = "bg-secondary",
 }: serviceCardProps) => {
   return (
-    <div className='flex flex-col gap-5 p-7 bg-secondary'>
+    <div className={`flex flex-col gap-5 p-7 ${bgColor} `}>
       <div className='flex items-center gap-3'>
         <div
           className={`${iconBG} rounded-xl w-12 h-12  p-2 flex items-center justify-center`}

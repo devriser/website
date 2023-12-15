@@ -191,3 +191,92 @@ export const futureWebTech = [
       "We provide full support in creating scalable, personalized apps with serverless architecture, giving clients access to automatic scalability, built-in fault tolerance, and lower operational expenses.",
   },
 ];
+
+export const DevWebAppAccordionData = [
+  {
+    headerText: "Research",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Prototyping and wireframing",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Development",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+  {
+    headerText: "Quality Evaluation",
+    description:
+      "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
+  },
+];
+
+export const FAQData = [
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+  {
+    headerText:
+      "Will your developers be available to have a meeting in my time zone?",
+    description:
+      "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours.",
+  },
+];
+
+export const futureTechServicesArr = [
+  {
+    title: "Solutions Specific to a Domaint",
+    description:
+      "Since we are a top custom website development company, we can offer complete website solutions that are tailored to the demands of our clients and the trends in the relevant industries",
+    icon: <UxIcon />,
+  },
+  {
+    title: "Modern design and features",
+    description:
+      "We have enlisted the services of devoted web designers and programmers with in-depth expertise in building websites that strike a balance between attractive looks and efficient capabilities.",
+    icon: <MigrateIcon />,
+  },
+  {
+    title: "Process used by the industry",
+    description:
+      "To provide each of our clients with unwavering excellence and our commitment to providing websites with real business results and client pleasure, we adhere to the industry standard development procedure.",
+    icon: <TestQaIcon />,
+  },
+  {
+    title: "Technically Advanced",
+    description:
+      "Modern design tools, technology, and methodologies are used by our highly qualified and experienced team of developers to create cutting-edge website solutions.",
+    icon: <ResponsiveIcon />,
+  },
+];
