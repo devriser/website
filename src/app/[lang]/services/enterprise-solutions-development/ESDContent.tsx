@@ -20,8 +20,9 @@ import {
   techStackArr,
 } from "./ServiceData";
 import Card from "@/components/shared/Cards/Card";
-import ServiceCard from "@/components/shared/Cards/ServiceCard";
+
 import { getLoacales } from "../../../../../getLocales";
+import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 interface IconComponents {
   AutomationTesting: ReactElement;
   FunctionalEvaluation: ReactElement;
@@ -50,9 +51,9 @@ export default async function ESDContent({ params }: any) {
   const lang = await getLoacales(params.lang);
   console.log(lang.esd.webServicesArr);
   return (
-    <section className="bg-primary h-fit">
-      <div className=" mx-auto pt-14 px-4 xl:px-0 grid gap-16">
-        <div className="bg-primary container mx-auto">
+    <section className='bg-primary h-fit'>
+      <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
+        <div className='bg-primary container mx-auto'>
           <TitleHeader
             title={lang.esd.heroTitle}
             description={lang.esd.heroHeading}
@@ -73,19 +74,19 @@ export default async function ESDContent({ params }: any) {
           />
         </div>
 
-        <div className="container mx-auto">
-          <Image src={esd} alt="Picture of the author" className="w-full" />
+        <div className='container mx-auto'>
+          <Image src={esd} alt='Picture of the author' className='w-full' />
         </div>
-        <div className="grid gap-16 bg-primary container mx-auto">
+        <div className='grid gap-16 bg-primary container mx-auto'>
           <ServiceHeader
             title={lang.esd.serviceHeaderTitle1}
             description={lang.esd.serviceHeaderDesc1}
           />
 
-          <div className=" grid grid-cols-1 md:grid-cols-2  gap-8">
+          <div className=' grid grid-cols-1 md:grid-cols-2  gap-8'>
             {lang.esd.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
-                <ServiceCard
+                <CardWithIcon
                   iconBG={"bg-solid-purple"}
                   key={index}
                   title={item.title}
@@ -97,22 +98,21 @@ export default async function ESDContent({ params }: any) {
           </div>
         </div>
 
-        <div className="grid gap-16 bg-primary container mx-auto">
+        <div className='grid gap-16 bg-primary container mx-auto'>
           <ServiceHeader
             title={lang.esd.serviceHeaderTitle1}
             description={lang.esd.serviceHeaderDesc1}
           />
 
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {lang.esd.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
-                <ServiceCard
+                <CardWithIcon
                   iconBG={"bg-solid-purple"}
                   key={index}
                   title={item.title}
                   description={item.description}
                   icon={iconComponents[item.icon]}
-                  
                 />
               )
             )}

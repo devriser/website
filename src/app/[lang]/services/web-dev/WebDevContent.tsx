@@ -18,9 +18,10 @@ import {
   webServicesArr,
 } from "./ServiceData";
 import Card from "@/components/shared/Cards/Card";
-import ServiceCard from "@/components/shared/Cards/ServiceCard";
+
 import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
+import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 
 export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
@@ -65,7 +66,7 @@ export default async function WebDevContent({ params }: any) {
           {/* service cards */}
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {webServicesArr.map((item, index) => (
-              <ServiceCard
+              <CardWithIcon
                 key={index}
                 title={item.title}
                 description={item.description}
@@ -156,7 +157,7 @@ export default async function WebDevContent({ params }: any) {
           {/* service cards */}
           <div className='grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8'>
             {futureTechServicesArr.map((item, index) => (
-              <ServiceCard
+              <CardWithIcon
                 key={index}
                 title={item.title}
                 description={item.description}
