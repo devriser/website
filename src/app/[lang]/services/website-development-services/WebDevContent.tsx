@@ -28,12 +28,12 @@ export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
   console.log(lang);
   return (
-    <section className="bg-primary h-fit">
-      <div className=" mx-auto pt-14 px-4 xl:px-0 grid gap-16">
+    <section className='bg-primary h-fit w-full'>
+      <div className='pt-14 px-0 xl:px-6 grid gap-16'>
         {/* top header */}
-        <div className="bg-primary container mx-auto">
+        <div className='bg-primary '>
           <TitleHeader
-            title="Website Development Services"
+            title='Website Development Services'
             description={webDesc}
             buttonArr={[
               {
@@ -54,18 +54,22 @@ export default async function WebDevContent({ params }: any) {
           {/* <div className=''></div> */}
         </div>
 
-        <div className="container mx-auto">
+        <div className=''>
           {/* banner Image */}
-          <Image src={webTech} alt="Picture of the author" className="w-full" />
+          <Image
+            src={webTech}
+            alt='Picture of the author'
+            className='xl:w-full w-fit'
+          />
         </div>
-        <div className="grid gap-16 bg-primary container mx-auto">
+        <div className='grid gap-16 bg-primary '>
           {/* service Header */}
           <ServiceHeader
-            title="Our Services for Developing Web Apps"
+            title='Our Services for Developing Web Apps'
             description={serviceDesc}
           />
           {/* service cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {webServicesArr.map((item, index) => (
               <CardWithIcon
                 key={index}
@@ -77,16 +81,16 @@ export default async function WebDevContent({ params }: any) {
           </div>
         </div>
         {/* service Tech */}
-        <div className="grid gap-16 py-16 bg-secondary">
+        <div className='grid gap-16 py-16 bg-secondary'>
           <ServiceHeader
-            title="Technologies We Use For Web Development"
+            title='Technologies We Use For Web Development'
             description={techDesc}
           />
-          <div className="grid gap-6 container mx-auto">
+          <div className='grid gap-6 '>
             {techStackArr.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-start gap-6 items-start px-20"
+                className='flex flex-col justify-start gap-6 items-start px-20'
               >
                 <TechRow parent={item.parent} child={item.child} />
                 <div
@@ -101,12 +105,12 @@ export default async function WebDevContent({ params }: any) {
           </div>
         </div>
         {/* importance */}
-        <div className="grid gap-12 container mx-auto">
+        <div className='grid gap-12 '>
           <ServiceHeader
-            title="What is Importance of a custom development solution?"
+            title='What is Importance of a custom development solution?'
             description={impDesc}
           />
-          <div className="grid  md:grid-cols-2 gap-8">
+          <div className='grid  md:grid-cols-2 gap-8'>
             {customDevArr.map((item, index) => (
               <Card
                 key={index}
@@ -119,11 +123,11 @@ export default async function WebDevContent({ params }: any) {
         </div>
         {/* future tech */}
         <div
-          className="grid gap-12 py-12 mb-16 bg-secondary"
+          className='grid gap-12 py-12 mb-16 bg-secondary'
           // style={{ background: "#171717" }}
         >
-          <ServiceHeader title="Technologies of the Future for Web Development" />
-          <div className="grid gap-6 md:grid-cols-2 xl:px-36 px-4">
+          <ServiceHeader title='Technologies of the Future for Web Development' />
+          <div className='grid gap-6 md:grid-cols-2 container mx-auto px-4 '>
             {futureWebTech.map((item, index) => (
               <Card
                 key={index}
@@ -136,12 +140,12 @@ export default async function WebDevContent({ params }: any) {
         </div>
 
         {/* Method we use */}
-        <div className="grid xl:grid-cols-2 gap-8 container mx-auto py-16">
+        <div className='grid xl:grid-cols-2 gap-8 xl:px-36 py-16'>
           <div>
-            <h3 className="text-text-heading font-medium text-secondary-reverse">
+            <h3 className='text-text-heading font-medium text-secondary-reverse'>
               The Method We Use to Develop Web Apps
             </h3>
-            <p className="text-sub-text mt-5">
+            <p className='text-sub-text mt-5'>
               We have been a dependable partner in web development for a wide
               range of companies, from start-ups and SMEs to enterprise-grade
               companies utilizing the most recent development tools and tech
@@ -152,31 +156,31 @@ export default async function WebDevContent({ params }: any) {
         </div>
 
         {/* dark card */}
-        <div className="grid gap-16 bg-secondary py-16">
+        <div className='grid gap-16 bg-secondary py-16'>
           {/* service Header */}
-          <ServiceHeader title="Technologies of the Future for Web Development" />
+          <ServiceHeader title='Technologies of the Future for Web Development' />
           {/* service cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8'>
             {futureTechServicesArr.map((item, index) => (
               <CardWithIcon
                 key={index}
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
-                bgColor="bg-primary"
+                bgColor='bg-primary'
               />
             ))}
           </div>
         </div>
 
         {/* Discuss part */}
-        <div className="container mx-auto">
+        <div className=''>
           <LetDiscussYourProject params={params} />
         </div>
 
         {/* FAQ */}
-        <div className="py-16 grid gap-10 container mx-auto">
-          <ServiceHeader title="Frequently Asked Questions" />
+        <div className='py-16 grid gap-10 container mx-auto'>
+          <ServiceHeader title='Frequently Asked Questions' />
           <Accordion content={FAQData} />
         </div>
       </div>
