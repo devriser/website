@@ -46,6 +46,15 @@
     "subTextThree": "Simplifiez et améliorez vos processus RH avec notre solution de gestion des ressources humaines (GRH). Des options de libre-service à la gestion efficace de la paie et au suivi des présences, nous couvrons vos besoins en ressources humaines.",
     "subTextFour": "Optimisez votre gestion des stocks avec notre système de gestion des stocks. Maximisez le contrôle et l'efficacité pour garantir une exécution transparente des commandes et un suivi des stocks, fournissant ainsi une base solide pour le succès de votre entreprise."
   },
+  "technologies": {
+    "mainHeading": "Technologies que nous utilisons",
+    "headingOne": "Application",
+    "headingTwo": "Frontend",
+    "headingThree": "Backend",
+    "headingFour": "Base de données",
+    "headingFive": "CMS",
+    "headingSix": "Infra and DevOps"
+  },
   "ourWork": {
     "mainHeading": "Our Work",
     "headingOne": "Cotravel",

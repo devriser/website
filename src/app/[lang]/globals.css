@@ -25,6 +25,8 @@
     --section-gradient: linear-gradient(283deg, #0073f9 16.37%, #5f36ff 91.66%);
     --solid-green: rgba(117, 221, 121, 1);
     --solid-purple: rgba(212, 157, 255, 1);
+    --solid-skyblue: rgb(61, 197, 206, 1);
+    
     /* font sizes */
     --text-hero: 62px;
     --text-heading: 38px;
@@ -53,6 +55,7 @@
     --section-gradient: linear-gradient(283deg, #0073f9 16.37%, #5f36ff 91.66%);
     --solid-green: rgba(117, 221, 121, 1);
     --solid-purple: rgba(212, 157, 255, 1);
+    --solid-skyblue: rgb(61, 197, 206, 1);
     /* font sizes */
     --text-hero: 62px;
     --text-heading: 38px;

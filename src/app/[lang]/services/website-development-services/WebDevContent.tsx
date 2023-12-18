@@ -28,12 +28,12 @@ export default async function WebDevContent({ params }: any) {
   const lang = await getLoacales(params.lang);
   console.log(lang);
   return (
-    <section className='bg-primary h-fit'>
-      <div className=' mx-auto pt-14 px-4 xl:px-0 grid gap-16'>
+    <section className='bg-primary h-fit w-full'>
+      <div className='pt-14 px-0 xl:px-6 grid gap-16'>
         {/* top header */}
-        <div className='bg-primary container mx-auto'>
+        <div className='bg-primary '>
           <TitleHeader
-            title='Web Development Services'
+            title='Website Development Services'
             description={webDesc}
             buttonArr={[
               {
@@ -54,11 +54,15 @@ export default async function WebDevContent({ params }: any) {
           {/* <div className=''></div> */}
         </div>
 
-        <div className='container mx-auto'>
+        <div className=''>
           {/* banner Image */}
-          <Image src={webTech} alt='Picture of the author' className='w-full' />
+          <Image
+            src={webTech}
+            alt='Picture of the author'
+            className='xl:w-full w-fit'
+          />
         </div>
-        <div className='grid gap-16 bg-primary container mx-auto'>
+        <div className='grid gap-16 bg-primary '>
           {/* service Header */}
           <ServiceHeader
             title='Our Services for Developing Web Apps'
@@ -82,7 +86,7 @@ export default async function WebDevContent({ params }: any) {
             title='Technologies We Use For Web Development'
             description={techDesc}
           />
-          <div className='grid gap-6 container mx-auto'>
+          <div className='grid gap-6 '>
             {techStackArr.map((item, index) => (
               <div
                 key={index}
@@ -101,7 +105,7 @@ export default async function WebDevContent({ params }: any) {
           </div>
         </div>
         {/* importance */}
-        <div className='grid gap-12 container mx-auto'>
+        <div className='grid gap-12 '>
           <ServiceHeader
             title='What is Importance of a custom development solution?'
             description={impDesc}
@@ -123,7 +127,7 @@ export default async function WebDevContent({ params }: any) {
           // style={{ background: "#171717" }}
         >
           <ServiceHeader title='Technologies of the Future for Web Development' />
-          <div className='grid gap-6 md:grid-cols-2 xl:px-36 px-4'>
+          <div className='grid gap-6 md:grid-cols-2 container mx-auto px-4 '>
             {futureWebTech.map((item, index) => (
               <Card
                 key={index}
@@ -136,7 +140,7 @@ export default async function WebDevContent({ params }: any) {
         </div>
 
         {/* Method we use */}
-        <div className='grid xl:grid-cols-2 gap-8 container mx-auto py-16'>
+        <div className='grid xl:grid-cols-2 gap-8 xl:px-36 py-16'>
           <div>
             <h3 className='text-text-heading font-medium text-secondary-reverse'>
               The Method We Use to Develop Web Apps
@@ -170,7 +174,7 @@ export default async function WebDevContent({ params }: any) {
         </div>
 
         {/* Discuss part */}
-        <div className='container mx-auto'>
+        <div className=''>
           <LetDiscussYourProject params={params} />
         </div>
 
