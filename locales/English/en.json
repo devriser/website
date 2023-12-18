@@ -15,7 +15,7 @@
   "ourCoreServices": {
     "heading": "Our Core Services",
     "pointOne": "Enterprise Solutions Development Services",
-    "pointTwo": "Web Development Services",
+    "pointTwo": "Website Development Services",
     "pointThree": "Mobile Development Services",
     "pointFour": "Cloud Computing",
     "pointFive": "AI/ML Development",
@@ -45,6 +45,16 @@
     "subTextTwo": "Elevate your business with our Customer Relationship Management (CRM) system, offering comprehensive insights, automated processes, and the flexibility of mobile accessibility. Boost engagement and foster lasting customer relationships.",
     "subTextThree": "Simplify and enhance your HR processes with our Human Resource Management (HRM) solution. From self-service options to efficient payroll management and attendance tracking, we've got your HR needs covered.",
     "subTextFour": "Optimize your inventory management with our Inventory Management System. Maximize control and efficiency to ensure seamless order fulfillment and inventory tracking, providing a strong foundation for your business's success."
+  },
+
+  "technologies": {
+    "mainHeading": "Technologies We Use",
+    "headingOne": "Mobile",
+    "headingTwo": "Frontend",
+    "headingThree": "Backend",
+    "headingFour": "Database",
+    "headingFive": "CMS",
+    "headingSix": "Infra and DevOps"
   },
   "ourWork": {
     "mainHeading": "Our Work",

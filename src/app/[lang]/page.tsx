@@ -4,6 +4,7 @@ import OurCoreServices from "@/components/shared/HomePage/OurCoreServices/OurCor
 import OurWork from "@/components/shared/HomePage/OurWork/OurWork";
 import ShelfSolutions from "@/components/shared/HomePage/ShelfSolutions/ShelfSolutions";
 import SoftwareDevelopmentProcess from "@/components/shared/HomePage/SoftwareDevelopmentProcess/SoftwareDevelopmentProcess";
+import Technologies from "@/components/shared/HomePage/Technologies/Technologies";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 
 export default function Home({ params }: any) {
@@ -14,6 +15,7 @@ export default function Home({ params }: any) {
       <OurCoreServices params={params} />
       <SoftwareDevelopmentProcess params={params} />
       <ShelfSolutions params={params} />
+      <Technologies params={params} />
       <OurWork params={params} />
       <LetDiscussYourProject params={params} />
     </main>

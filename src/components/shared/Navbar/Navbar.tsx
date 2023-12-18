@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   AboutUs,
   Contact,
@@ -18,17 +18,43 @@ import {
 } from "@/providers/state-providers/ContextProviders";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { getLoacales } from "../../../../getLocales";
 import { GradientRightArrow } from "@/assets/svg/AllIconComponent";
 
-const Sidebar = ({ subItems }: any) => {
+const Sidebar = ({ subItems, params, closeSidebar }: any) => {
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(event.target as Node)
+    ) {
+      closeSidebar();
+    }
+  };
+
+  // useEffect(() => {
+  //   const handleClick = (event: MouseEvent) => {
+  //     handleClickOutside(event);
+  //   };
+
+  //   window.addEventListener("mousedown", handleClick);
+  //   return () => {
+  //     window.removeEventListener("mousedown", handleClick);
+  //   };
+  // }, []);
+
   return (
     <motion.div
-      initial={{ x: -10, opacity: 0 }}
+      ref={sidebarRef}
+      initial={
+        params.lang === "ar" ? { x: 10, opacity: 0 } : { x: -10, opacity: 0 }
+      }
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -10, opacity: 0 }}
       transition={{ type: "spring", duration: 0.5 }}
-      className=" flex flex-col absolute left-[86px] bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5"
+      className={` flex flex-col ${
+        params.lang === "ar" ? "right-[86px]" : "left-[86px]"
+      } absolute bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5`}
     >
       {subItems?.map((subItem: any) => (
         <Link
@@ -59,14 +85,21 @@ export default function Navbar({ params }: any) {
   const { activeLink, toggle } = useAppState();
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const navBarData = [
     {
       name: "Services",
       icon: <Services />,
       subItems: [
-        { name: "Enterprise Solutions", path: "" },
-        { name: "Web Development", path: "" },
+        {
+          name: "Enterprise Solutions",
+          path: `${params.lang}/services/enterprise-solutions-development`,
+        },
+        {
+          name: "Web Development",
+          path: `${params.lang}/services/web-dev`,
+        },
         { name: "App Development", path: "" },
         { name: "UI/UX Design", path: "" },
         { name: "Cloud Computing", path: "" },
@@ -154,13 +187,18 @@ export default function Navbar({ params }: any) {
   const handleLanguageChange = (language: any) => {
     setSelectedLanguage(language);
   };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
-        <div className="cursor-pointer">
+        <Link href="" className="cursor-pointer">
           {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
           <DarkLogo />
-        </div>
+        </Link>
         <div className="flex flex-col items-center gap-6 ">
           {navBarData.map((ele) => (
             <div
@@ -175,7 +213,11 @@ export default function Navbar({ params }: any) {
               <span>{ele.icon}</span>
               <p className="text-secondary-reverse">{ele.name}</p>
               {activeLink === ele.name && toggle && (
-                <Sidebar subItems={ele.subItems} params={params} />
+                <Sidebar
+                  subItems={ele.subItems}
+                  params={params}
+                  closeSidebar={closeSidebar}
+                />
               )}
             </div>
           ))}
@@ -197,11 +239,17 @@ export default function Navbar({ params }: any) {
           </div>
           {isLanguageDropdownOpen && (
             <motion.div
-              initial={{ x: -10, opacity: 0 }}
+              initial={
+                params.lang === "ar"
+                  ? { x: 10, opacity: 0 }
+                  : { x: -10, opacity: 0 }
+              }
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -10, opacity: 0 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className="absolute left-[88px] bg-secondary -bottom-[6px] py-1 px-1 rounded-md"
+              className={`absolute ${
+                params.lang === "ar" ? "right-[86px]" : "left-[86px]"
+              } bg-secondary -bottom-[6px] py-1 px-1 rounded-md`}
             >
               <div className="flex flex-col gap-2">
                 {language.map((item) => (

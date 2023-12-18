@@ -12,7 +12,7 @@ export default async function LetDiscussYourProject({ params }: any) {
           <p className="text-text-heading text-[white] text-center font-semibold">
             {lang.letDiscussYourProject.mainHeading}
           </p>
-          <p className="text-text-subtitle text-white text-center w-[50%] mx-auto max-md:w-full ">
+          <p className="text-text-subtitle text-white text-center w-[55%] mx-auto max-md:w-full max-lg:w-[70%]">
             {lang.letDiscussYourProject.heading}
           </p>
         </div>

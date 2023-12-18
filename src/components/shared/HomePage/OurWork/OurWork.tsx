@@ -28,7 +28,7 @@ export default async function OurWork({ params }: any) {
   ];
 
   return (
-    <div className="px-6 flex flex-col gap-8">
+    <div className="px-6 flex flex-col gap-8 bg-secondary py-6">
       <div className="flex items-center justify-between px-5 max-md:px-0">
         <p className="text-secondary-reverse text-text-heading font-semibold text-center">
           {lang.ourWork.mainHeading}
