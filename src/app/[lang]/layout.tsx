@@ -57,7 +57,7 @@ export default function RootLayout({ children, params }: Props) {
         <Providers>
           <div className="flex bg-primary mx-auto">
             <div className="sticky top-0">
-              <Navbar />
+              <Navbar params={params} />
             </div>
 
             <div className="flex flex-col w-full flex-1">
