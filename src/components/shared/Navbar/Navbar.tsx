@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   AboutUs,
   Contact,
   DarkLogo,
   Industries,
   LanguageArrow,
-  LightMode,
   Portfolio,
   Services,
   Solutions,
@@ -19,6 +18,7 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { GradientRightArrow } from "@/assets/svg/AllIconComponent";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Sidebar = ({ subItems, params, closeSidebar }: any) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -192,6 +192,8 @@ export default function Navbar({ params }: any) {
     setIsSidebarOpen(false);
   };
 
+ 
+
   return (
     <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
@@ -224,9 +226,10 @@ export default function Navbar({ params }: any) {
         </div>
 
         <div className="flex flex-col items-center gap-5">
-          <div>
+          {/* <div onClick={themeChanger}>
             <LightMode />
-          </div>
+          </div> */}
+          <ThemeSwitch/>
 
           <div
             onClick={handleLanguageClick}

@@ -11,9 +11,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: "var(--primary-color)",
+        "dark-primary": "var(--dark-primary-color)",
         secondary: "var(--secondary-color)",
+        "dark-secondary": "var(--dark-secondary-color)",
         "secondary-reverse": "var(--secondary-color-reverse)",
+        "dark-secondary-reverse": "var(--dark-secondary-color-reverse)",
         tertiary: "var(--tertiary-color)",
+        "dark-tertiary": "var(--dark-tertiary-color)",
         "solid-gray": "var(--solid-gray)",
         "solid-blue": "var(--solid-blue)",
         "sub-text": "var(--sub-text)",
@@ -21,6 +25,7 @@ const config: Config = {
         "solid-purple": "var(--solid-purple)",
         "solid-skyblue":"var(--solid-skyblue)",
         "hero-text": "var(--hero-text)",
+        
       },
 
       backgroundImage: {
@@ -37,6 +42,7 @@ const config: Config = {
       },
       borderColor: {
         "primary-border": "var(--primary-border)",
+        "dark-primary-border": "var(--dark-primary-border)",
         "blue-border": "var(--solid-blue)",
       },
       borderRadius: {
@@ -48,5 +54,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode:"class"
 };
 export default config;
