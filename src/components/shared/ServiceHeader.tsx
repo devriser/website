@@ -16,7 +16,7 @@ interface serviceHeaderProps {
 
 const ServiceHeader = ({ title, description }: serviceHeaderProps) => {
   return (
-    <div className='flex flex-col gap-4 items-center text-center'>
+    <div className='flex flex-col gap-4 items-center text-center px-6'>
       <h2 className='text-text-heading font-semibold text-secondary-reverse'>
         {title}
       </h2>

@@ -222,5 +222,111 @@
       ]
     }
   },
+  "cc": {
+    "heroTitle": "Cloud Computing",
+    "heroHeading": "DevRiser delivers enterprise-level cloud IT solutions that span the globe, specializing in tailored cloud computing services. Our expertise empowers organizations to boost productivity, reduce costs, and achieve scalability through our comprehensive cloud solutions.",
+    "heroButtonOne": "Our Portfolio",
+    "heroButtonTwo": "Contact Sales",
+    "section1": {
+      "serviceHeaderTitle": "Our Services for Software Development & Testing",
+      "serviceHeaderDesc": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
+      "webServicesArr": [
+        {
+          "title": "Architecture for Cloud Solutions",
+          "description": "Using the power of cloud computing solutions and removing reliance on network architecture or on-premise server infrastructure is made possible by our cloud solutions architectural services.",
+          "icon": "ArchitectureForCloudSolutions"
+        },
+        {
+          "title": "Services for Cloud Migration",
+          "description": "Our cloud migration services enable businesses to undergo a digital transformation by utilizing the most effective cloud migration strategy, analysis, and execution, which determine the optimum fit for cloud-based service.",
+          "icon": "ServicesForCloudMigration"
+        },
+        {
+          "title": "Development of Cloud-Ready Apps",
+          "description": "We offer comprehensive custom cloud app development services supported by the necessary tools and know-how to successfully install them in either public or private cloud services.",
+          "icon": "DevelopmentOfCloudReadyApps"
+        },
+        {
+          "title": "Cloud Security and Risk Control",
+          "description": "The highest level of security for cloud-deployed applications is guaranteed by DevRiser’s dependable cloud computing architectural audit, data protection, risk assessment, and management services.",
+          "icon": "CloudSecurityAndRiskControl"
+        },
+        {
+          "title": "DevOps",
+          "description": "Our collective group of professionals in cloud computing adheres to DevOps methodologies and resources to integrate cloud applications that are more effective, safe, and standardized. ",
+          "icon": "DevOps"
+        },
+        {
+          "title": "Cloud Support and Monitoring",
+          "description": "We provide comprehensive cloud-based apps and ongoing monitoring to carry out improvement plans for infrastructure optimization and cost reduction. Application data security and remote backup disaster recovery management services.",
+          "icon": "CloudSupportAndMonitoring"
+        },
+        {
+          "title": "Computing without servers",
+          "description": "Allow us to create your mission-critical cloud-native applications that are running on a secure public cloud platform with a pay-as-you-go, flexible automated service subscription model.",
+          "icon": "ComputingWithoutServers"
+        },
+        {
+          "title": "Exclusive Cloud Support",
+          "description": "Maintain your hectic schedules while delegating all concerns about managing your cloud computing solutions to our managed cloud services providers, who will guarantee your cloud computing solutions' continuous availability.",
+          "icon": "ExclusiveCloudSupport"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Technologies We Use For Cloud Computing",
+      "serviceHeaderDesc": "The technology stack for cloud computing that enables us to creatively translate software ideas into actual projects is shown below.",
+      "webServicesArr": []
+    },
+    "section3": {
+      "title": "Are you Looking for other Services?",
+      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
+      "point1": "JavaScript Development",
+      "point2": "Hire UI UX Designer",
+      "point3": "Web Development",
+      "point4": "Hire Dedicated Developers",
+      "btnText": "Explore all Services "
+    },
+    "section4": {
+      "title": "Why Go with DevRiser’s App Development Services?",
+      "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "points": [
+        {"title":"Transparency Work Modal","icon":"TransparencyWorkModal"},
+        {"title":"Direct Contact With Team Member","icon":"DirectContactWithTeamMember"},
+        {"title":"Uplifted  User Experience","icon":"UpliftedUserExperience"},
+        {"title":"Flexible Engagement Model Cycle","icon":"FlexibleEngagementModelCycle"}
+       
+      ]
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
   "webdev": {}
 }
