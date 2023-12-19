@@ -17,15 +17,15 @@ export function MailSvg() {
         d="M23 15.692V17.471C23 19.941 21.5 21 19.25 21H11.75C9.5 21 8 19.941 8 17.471V12.529C8 10.059 9.5 9 11.75 9H19.25C21.5 9 23 10.059 23 12.529"
         stroke="black"
         strokeWidth="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19 12.5195L16.5 15.0195C16.1002 15.4136 15.5614 15.6344 15 15.6344C14.4386 15.6344 13.8998 15.4136 13.5 15.0195L11 12.5195"
         stroke="black"
         strokeWidth="1.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
