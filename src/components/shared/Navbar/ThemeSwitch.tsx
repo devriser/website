@@ -5,18 +5,24 @@ const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // useEffect only runs on the client, so now we can safely show the UI
+
+
+
   useEffect(() => {
+    const savedTheme = localStorage.getItem('selectedTheme');
+    setTheme(savedTheme || 'light');
     setMounted(true);
-  }, []);
+  }, [setTheme]);
+  
 
   if (!mounted) {
     return null;
   }
 
   function handleChange(e: any) {
-    setTheme(e.target.value);
-
+    const selectedTheme = e.target.value;
+    setTheme(selectedTheme);
+    localStorage.setItem('selectedTheme', selectedTheme);
   }
 
   return (

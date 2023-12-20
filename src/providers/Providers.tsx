@@ -19,7 +19,7 @@ export default function Providers({ children }: Props) {
   }
 
   return (
-    <ThemeProvider attribute="class" enableSystem={true}>
+    <ThemeProvider enableSystem={true}>
       <ContextProviders>{children}</ContextProviders>;
     </ThemeProvider>
   );
