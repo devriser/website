@@ -16,6 +16,7 @@ const config: Config = {
         tertiary: "var(--tertiary-color)",
         "solid-gray": "var(--solid-gray)",
         "solid-blue": "var(--solid-blue)",
+        "solid-yellow": "var(--solid-yellow)",
         "sub-text": "var(--sub-text)",
         "solid-green": "var(--solid-green)",
         "solid-purple": "var(--solid-purple)",

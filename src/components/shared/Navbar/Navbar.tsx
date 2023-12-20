@@ -19,6 +19,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { GradientRightArrow } from "@/assets/svg/AllIconComponent";
 import ThemeSwitch from "./ThemeSwitch";
+import { useTheme } from "next-themes";
 
 const Sidebar = ({ subItems, params, closeSidebar }: any) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -31,17 +32,6 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
       closeSidebar();
     }
   };
-
-  // useEffect(() => {
-  //   const handleClick = (event: MouseEvent) => {
-  //     handleClickOutside(event);
-  //   };
-
-  //   window.addEventListener("mousedown", handleClick);
-  //   return () => {
-  //     window.removeEventListener("mousedown", handleClick);
-  //   };
-  // }, []);
 
   return (
     <motion.div
@@ -84,8 +74,10 @@ export default function Navbar({ params }: any) {
   const dispatch = useAppDispatch();
   const { activeLink, toggle } = useAppState();
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const themes = useTheme();
 
   const navBarData = [
     {
@@ -94,13 +86,16 @@ export default function Navbar({ params }: any) {
       subItems: [
         {
           name: "Enterprise Solutions",
-          path: `${params.lang}/services/enterprise-solutions-development`,
+          path: `/${params.lang}/services/enterprise-solutions-development`,
         },
         {
           name: "Web Development",
-          path: `${params.lang}/services/web-dev`,
+          path: `/${params.lang}/services/website-development-services`,
         },
-        { name: "App Development", path: "" },
+        {
+          name: "App Development",
+          path: `/${params.lang}/services/app-development`,
+        },
         { name: "UI/UX Design", path: "" },
         { name: "Cloud Computing", path: "" },
         { name: "Game Development", path: "" },
@@ -186,13 +181,14 @@ export default function Navbar({ params }: any) {
   };
   const handleLanguageChange = (language: any) => {
     setSelectedLanguage(language);
+    const currentPath = window.location.pathname;
+    const newPath = `/${params.lang}${currentPath}`;
+    window.history.replaceState({}, "", newPath);
   };
 
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
-
- 
 
   return (
     <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
@@ -229,7 +225,7 @@ export default function Navbar({ params }: any) {
           {/* <div onClick={themeChanger}>
             <LightMode />
           </div> */}
-          <ThemeSwitch/>
+          <ThemeSwitch />
 
           <div
             onClick={handleLanguageClick}
@@ -268,7 +264,6 @@ export default function Navbar({ params }: any) {
                   </span>
                 ))}
               </div>
-              {/* Add more languages as needed */}
             </motion.div>
           )}
         </div>
