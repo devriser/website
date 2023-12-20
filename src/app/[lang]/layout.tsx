@@ -6,6 +6,7 @@ import Navbar from "@/components/shared/Navbar/Navbar";
 import Providers from "@/providers/Providers";
 import { ReactNode } from "react";
 import Footer from "@/components/shared/Footer/Footer";
+import MobileNavbar from "@/components/shared/Navbar/MobileNavbar";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -55,10 +56,11 @@ export default function RootLayout({ children, params }: Props) {
     <html lang={params.lang} dir={params.lang === "ar" ? "rtl" : "ltr"}>
       <body className={`${cn(monaSans.variable, "font-mono-sans")} `}>
         <Providers>
-          <div className="flex bg-primary mx-auto">
+          <div className="flex max-lg:flex-col bg-primary mx-auto">
             <div className="sticky top-0">
               <Navbar params={params} />
             </div>
+            <MobileNavbar params={params} />
 
             <div className="flex flex-col w-full flex-1">
               {children}
