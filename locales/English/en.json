@@ -328,5 +328,101 @@
       ]
     }
   },
+  "uxui": {
+    "heroTitle": "UI/UX Design",
+    "heroHeading": "DevRiser's UI/UX design services stand out with their intuitive and eye-catching digital designs. We are dedicated to crafting solutions that not only meet your business objectives but also prioritize the unique needs of your users. Our team employs a range of specialized design approaches to ensure a truly tailored and engaging user experience.",
+    "heroButtonOne": "Our Portfolio",
+    "heroButtonTwo": "Contact Sales",
+    "section1": {
+      "serviceHeaderTitle": "Our Services for UI/UX Design",
+      "serviceHeaderDesc": "Our team of professional UX/UX designers uses their expertise in the application of industry-specific information and contemporary design tools to create designs that are both simple and sophisticated. The following is a list of the UI/UX design services offered by Developer:",
+      "webServicesArr": [
+        {
+          "title": "Custom Website Design",
+          "description": "Understanding various business models and operations allows us to create innovative page layouts with information architecture that is tailored to the company theme, resulting in dynamic user experiences and easy navigation.",
+          "icon": "CustomWebsiteDesign"
+        },
+        {
+          "title": "Designing Mobile Apps",
+          "description": "Our highly dynamic and creative mobile app designs services offer a consistent digital experience across platforms by utilizing market-leading techniques and the newest trends.",
+          "icon": "DesigningMobileApps"
+        },
+        {
+          "title": "Design of Wearable Apps",
+          "description": "The diverse user purpose and app process are understood by our talented team of wearable app designers. We are experts in producing immersive designs for wearable apps across all platforms and sizes.",
+          "icon": "DesignOfWearableApps"
+        },
+        {
+          "title": "Integrating the front end",
+          "description": "Our team of front-end development specialists can convert complicated coding into interesting user interfaces that are optimized and responsive across all devices and web browsers.",
+          "icon": "IntegratingTheFrontEnd"
+        },
+        {
+          "title": "Wearable Apps",
+          "description": "In order to conceptualize and outline the online and mobile interface blueprint with information architecture, DevRiser assists clients in creating wireframe designs utilizing our most up-to-date digital design tools and resources.",
+          "icon": "WearableApps"
+        },
+        {
+          "title": "Audit of UI/UX",
+          "description": "To assess the highest level of design and layout quality, our quality analyst does thorough usability testing of screen resolution, responsiveness, platform compatibility, and other related tests.",
+          "icon": "AuditOfUIUX"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "UI/UX Design Services",
+      "serviceHeaderDesc": "According to project use cases and industry verticals at DevRiser, the following list of contemporary blockchain development technologies and platforms is used.",
+      "webServicesArr": []
+    },
+    "section3": {
+      "title": "Are you Looking for other Services?",
+      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
+      "point1": "JavaScript Development",
+      "point2": "Hire UI UX Designer",
+      "point3": "Web Development",
+      "point4": "Hire Dedicated Developers",
+      "btnText": "Explore all Services "
+    },
+    "section4": {
+      "title": "Why Go with DevRiser’s App Development Services?",
+      "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "points": [
+        {"title":"Transparency Work Modal","icon":"TransparencyWorkModal"},
+        {"title":"Direct Contact With Team Member","icon":"DirectContactWithTeamMember"},
+        {"title":"Uplifted  User Experience","icon":"UpliftedUserExperience"},
+        {"title":"Flexible Engagement Model Cycle","icon":"FlexibleEngagementModelCycle"}
+       
+      ]
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
   "webdev": {}
 }
