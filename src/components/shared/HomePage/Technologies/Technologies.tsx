@@ -307,7 +307,7 @@ export default function Technologies({ params }: any) {
         {lang.technologies.mainHeading}
       </p>
       <div className="flex flex-col items-center justify-center gap-12">
-        <div className="flex gap-10">
+        <div className="flex gap-10 flex-wrap max-sm:justify-center">
           {technologiesData.map((data, index) => (
             <div key={index}>
               <p
@@ -324,12 +324,12 @@ export default function Technologies({ params }: any) {
         <div className="flex overflow-hidden ">
           {selectedHeading && (
             <motion.div
-              className="flex gap-10 "
-              initial={{ x: "100%" }} // Start from the right (end)
+              className="flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden"
+              initial={{ x: "100%" }}
               animate={{ x: "-100%" }}
               transition={{
                 ease: "linear",
-                duration: 10,
+                duration: 12,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
@@ -342,7 +342,7 @@ export default function Technologies({ params }: any) {
                     className="flex flex-col items-center gap-2 p-2 whitespace-nowrap"
                     initial={{ opacity: 0, x: "100%" }}
                     animate={{ opacity: 1, x: "0%" }}
-                    exit={{ opacity: 0, x: "100%" }} // Exit to the right
+                    exit={{ opacity: 0, x: "100%" }}
                   >
                     {data.icon}
                     <p className="text-secondary-reverse">{data.name}</p>

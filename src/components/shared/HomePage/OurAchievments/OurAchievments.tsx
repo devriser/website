@@ -9,7 +9,6 @@ import {
 
 export default async function OurAchievments({ params }: any) {
   const lang = await getLoacales(params.lang);
-  console.log(lang);
 
   const ourAchievementData = [
     {
