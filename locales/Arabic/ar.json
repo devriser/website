@@ -122,5 +122,45 @@
     "heroButtonOne": "Our Portfolio",
     "heroButtonTwo": "Contact Sales"
   },
+  "appDevelopment": {
+    "mainHeading": "App Development",
+    "subHeading": "DevRiser delivers a comprehensive array of mobile app development services, encompassing cross-platform, Android, and iOS app development. We're your trusted partner in propelling business growth and forging a unique brand identity. Our specialists craft apps tailored to industry requirements and corporate goals.",
+    "buttonTextOne": "Our Portfolio",
+    "buttonTextTwo": "Contact Sales",
+    "sectionOne": {
+      "appHeading": "Our App Development Services",
+      "appSubHeading": "Transform your app concept into a reality, emphasizing rich user experiences and robust app performance, with our end-to-end mobile app development services. In this mobile-first era, we're your partners in setting new industry standards for your company.",
+      "appServiceArr": [
+        {
+          "title": "Application Development Consultancy",
+          "description": "Our application development consultancy services are designed to help you refine your vision. We offer guidance in defining essential features, choosing the optimal technology stack, and crafting a comprehensive plan to kickstart your app development journey."
+        },
+        {
+          "title": "UI/UX Design for Mobile Apps",
+          "description": "Elevate user interactions through enhanced app design. Our expertise lies in crafting visually captivating, aesthetically pleasing, and seamlessly navigable mobile app interfaces, ensuring a superior user experience that resonates with your audience."
+        },
+        {
+          "title": "Custom Mobile Application Development",
+          "description": "We specialize in turning your unique mobile app development concept into a reality, infusing it with innovative features to create a one-of-a-kind solution. Whether it's a business-driven or community-centric custom mobile app, we're here to make your vision stand out."
+        },
+        {
+          "title": "Enterprise Mobile App Development",
+          "description": "Enhance your business processes with our enterprise mobile app development solutions, integrating industry-leading innovations and third-party connectors to boost operational efficiency and productivity."
+        },
+        {
+          "title": "Mobile Game Development",
+          "description": "Our team of game designers and developers brings a decade of collective experience to craft captivating games across both native and cross-platform platforms, ensuring immersive entertainment for your audience."
+        },
+        {
+          "title": "Support and Maintenance of Apps",
+          "description": "Unlock the potential of our post-development app maintenance and support services, ensuring your app's continued excellence through version upgrades post-launch. We're dedicated to delivering a seamless, crash-free performance."
+        }
+      ]
+    },
+    "sectionTwo": {
+      "mainHeading": "Technologies & Tools Used In App Development",
+      "subHeading": "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
+    }
+  },
   "webdev": {}
 }
