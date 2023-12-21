@@ -62,14 +62,12 @@ const ServiceSummary = ({
         </div>
 
         {progressArr ? (
-          <p className='text-secondary-reverse max-w-xl text-service-text'>
+          <p className='max-w-xl text-service-text'>
             {selectedTab === 0 && description}
             {selectedTab === 1 && switchDescription}
           </p>
         ) : (
-          <p className='text-secondary-reverse max-w-xl text-service-text'>
-            {description}
-          </p>
+          <p className='max-w-xl text-service-text'>{description}</p>
         )}
         <div>
           {buttonColor && (
