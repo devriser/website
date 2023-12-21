@@ -9,27 +9,32 @@ interface Ibutton {
 }
 interface HeaderProps {
   title: string;
-  description: string;
-  buttonArr: Ibutton[];
+  description?: string;
+  buttonArr?: Ibutton[];
 }
 
 const TitleHeader = ({ title, description, buttonArr }: HeaderProps) => {
   return (
     <div className='flex flex-col gap-4 justify-start'>
-      <h2 className='text-3xl font-semibold text-secondary-reverse '>{title}</h2>
-      <p className='text-xl text-secondary-reverse '>{description}</p>
+      <h2 className='text-3xl font-semibold text-secondary-reverse dark:text-dark-secondary-reverse leading-relaxed'>
+        {title}
+      </h2>
+      <p className='text-xl text-secondary-reverse dark:text-dark-secondary-reverse'>
+        {description}
+      </p>
       <div className='flex gap-4 justify-start mt-10'>
-        {buttonArr.map((item, index) => (
-          <Button
-            key={index}
-            as='NextLink'
-            href={item.href}
-            variant={item.variant}
-            style={item.style}
-          >
-            {item.text}
-          </Button>
-        ))}
+        {buttonArr &&
+          buttonArr.map((item, index) => (
+            <Button
+              key={index}
+              as='NextLink'
+              href={item.href}
+              variant={item.variant}
+              style={item.style}
+            >
+              {item.text}
+            </Button>
+          ))}
       </div>
     </div>
   );

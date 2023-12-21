@@ -1,0 +1,87 @@
+"use client";
+import Image from "next/image";
+import React, { useState } from "react";
+import serviceBg from "@/assets/images/Rectangle 4193.png";
+import Button from "../Button";
+
+const ServiceSummary = ({
+  description,
+  image,
+  index,
+  progressArr,
+  techArr,
+  buttonColor,
+  switchDescription,
+  switchTechArr,
+}: any) => {
+  const [selectedTab, setSelectedTab] = useState(0);
+
+  return (
+    <div
+      style={{
+        backgroundImage: `url('${serviceBg.src}')`,
+      }}
+      className={`flex gap-6 xl:gap-0 items-center justify-around border-2 border-dark-border px-8 py-12 rounded-3xl  ${
+        (index + 1) % 2 === 0 ? "flex-row-reverse" : "flex-row"
+      } bg-cover  `}
+    >
+      <div className='flex flex-col gap-8'>
+        <div className={`flex items-center ${!progressArr && "hidden"}`}>
+          {progressArr &&
+            progressArr.map((item: any, index: any) => (
+              <div key={index} className='flex items-center'>
+                <p
+                  className={`border-b-2 w-fit  px-4 pb-1 ${
+                    selectedTab === index
+                      ? "border-light-border"
+                      : "text-light-secondary border-light-secondary"
+                  } cursor-pointer`}
+                  onClick={() => setSelectedTab(index)}
+                >
+                  {item}
+                </p>
+              </div>
+            ))}
+        </div>
+
+        <div className='flex items-center gap-7 '>
+          {techArr &&
+            selectedTab === 0 &&
+            techArr.map((item: any, index: any) => (
+              <div key={index} className=''>
+                {item}
+              </div>
+            ))}
+          {switchTechArr &&
+            selectedTab === 1 &&
+            switchTechArr.map((item: any, index: any) => (
+              <div key={index} className=''>
+                {item}
+              </div>
+            ))}
+        </div>
+
+        {progressArr ? (
+          <p className='text-secondary-reverse max-w-xl text-service-text'>
+            {selectedTab === 0 && description}
+            {selectedTab === 1 && switchDescription}
+          </p>
+        ) : (
+          <p className='text-secondary-reverse max-w-xl text-service-text'>
+            {description}
+          </p>
+        )}
+        <div>
+          {buttonColor && (
+            <Button className={`${buttonColor}`}>Explore More</Button>
+          )}
+        </div>
+      </div>
+      <div>
+        <Image src={image} alt='erp' />
+      </div>
+    </div>
+  );
+};
+
+export default ServiceSummary;
