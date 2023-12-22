@@ -26,20 +26,20 @@ const Accordion = ({ content, defaultOpenIndex = 0 }: AccordionProps) => {
   };
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className='flex flex-col gap-6'>
       {content.map((item, index) => (
         <div key={index}>
-          <details open={index === defaultOpenIndex} className="bg-secondary">
+          <details open={index === defaultOpenIndex} className='bg-secondary'>
             <summary
-              className="flex cursor-pointer list-none items-center justify-between text-secondary-reverse px-6 py-4 "
+              className='flex cursor-pointer list-none items-center justify-between text-secondary-reverse px-6 py-4 '
               onClick={() => handleToggle(index)}
             >
-              <p className="text-xl">{item.headerText}</p>
+              <p className='text-xl'>{item.headerText}</p>
 
               {openIndexes.includes(index) ? <MinusIcon /> : <PlusIcon />}
             </summary>
 
-            <div className="px-6 py-2 text-sub-text pb-4">
+            <div className='px-6 py-2 text-sub-text pb-4'>
               {item.description}
             </div>
           </details>
