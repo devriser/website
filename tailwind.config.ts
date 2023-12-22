@@ -25,6 +25,7 @@ const config: Config = {
         "hero-text": "var(--hero-text)",
         "light-secondary": "var(--light-secondary)",
         "service-text": "var(--service-text)",
+        "light-skyblue": "var(--light-skyblue)",
         
       },
 

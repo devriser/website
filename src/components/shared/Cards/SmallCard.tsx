@@ -4,7 +4,7 @@ interface serviceCardProps {
   title: string;
   icon: any;
   iconColor?: any;
-  iconBG?:any;
+  iconBG?: any;
   bgColor?: string;
   isBorder?: boolean;
 }
@@ -19,13 +19,15 @@ const SmallCard = ({
 }: serviceCardProps) => {
   return (
     <div
-      className={`flex flex-col gap-5 md:w-64 p-10 ${bgColor} ${
+      className={`flex flex-col gap-5 w-full p-10 ${bgColor} ${
         isBorder ? "border border-primary-border" : ""
       } `}
     >
-      <div className="flex flex-col justify-center items-center gap-3">
+      <div className='flex flex-col justify-center items-center gap-3'>
         <div
-          className={` ${iconBG ? iconBG : ""} rounded-xl w-12 h-12  p-2 flex items-center justify-center`}
+          className={` ${
+            iconBG ? iconBG : ""
+          } rounded-xl w-12 h-12  p-2 flex items-center justify-center`}
         >
           {icon}
         </div>
