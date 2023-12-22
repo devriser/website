@@ -54,6 +54,8 @@
   --emerald-gradient: linear-gradient(90deg, #7AE3B2 15.58%, #319869 100%);
   --skyblue-gradient: linear-gradient(90deg, #81AFFF 22.08%, #3474E4 96.75%);
   --purple-gradient: linear-gradient(90deg, #BC82E9 0%, rgba(153, 42, 240, 0.99) 100%);
+  --light-skyblue: rgba(129, 175, 255, 1);
+
   --dark-border: rgb(32, 32, 32);
   --light-border: rgba(255, 255, 255, 1);
   --service-text: rgba(161, 161, 161, 1)
@@ -77,6 +79,8 @@
   --emerald-gradient: linear-gradient(90deg, #7AE3B2 15.58%, #319869 100%);
   --skyblue-gradient: linear-gradient(90deg, #81AFFF 22.08%, #3474E4 96.75%);
   --purple-gradient: linear-gradient(90deg, #BC82E9 0%, rgba(153, 42, 240, 0.99) 100%);
+  --light-skyblue: rgba(129, 175, 255, 1);
+
   
 
 

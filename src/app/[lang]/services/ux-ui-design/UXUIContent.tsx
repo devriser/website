@@ -87,9 +87,9 @@ export default async function UXUIContent({ params }: any) {
   const lang = await getLoacales(params.lang);
 
   return (
-    <section className="bg-primary h-fit">
-      <div className="pt-14 grid gap-16">
-        <div className="bg-primary px-6 ">
+    <section className='bg-primary h-fit'>
+      <div className='pt-14 grid gap-16'>
+        <div className='bg-primary px-6 '>
           <TitleHeader
             title={lang.uxui.heroTitle}
             description={lang.uxui.heroHeading}
@@ -110,17 +110,17 @@ export default async function UXUIContent({ params }: any) {
           />
         </div>
 
-        <div className="px-6 ">
-          <Image src={uxui} alt="Cloud computing services" className="w-full" />
+        <div className='px-6 '>
+          <Image src={uxui} alt='Cloud computing services' className='w-full' />
         </div>
 
-        <div className="grid gap-10 bg-primary px-6 ">
+        <div className='grid gap-10 bg-primary px-6 '>
           <ServiceHeader
             title={lang.uxui.section1.serviceHeaderTitle}
             description={lang.uxui.section1.serviceHeaderDesc}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {lang.uxui.section1.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
@@ -135,13 +135,12 @@ export default async function UXUIContent({ params }: any) {
           </div>
         </div>
 
-
-        <div className="grid gap-10 bg-secondary py-10 ">
+        <div className='grid gap-10 bg-secondary py-10 '>
           <ServiceHeader
             title={lang.uxui.section2.serviceHeaderTitle}
             description={lang.uxui.section2.serviceHeaderDesc}
           />
-          <div className="flex gap-5 justify-center items-center flex-wrap px-6">
+          <div className='flex gap-5 justify-center items-center flex-wrap px-6'>
             {[
               "Sketch",
               "Adobe XD",
@@ -152,11 +151,11 @@ export default async function UXUIContent({ params }: any) {
               "AfterEffects",
               "Adobe Cloud",
               "Adobe Animate",
-              "Zeplin"
+              "Zeplin",
             ].map((item: string) => (
               <p
                 key={item}
-                className="py-2 px-3 text-sm flex items-center justify-center text-center border border-primary-border text-secondary-reverse rounded-full w-fit"
+                className='py-2 px-3 text-sm flex items-center justify-center text-center border border-primary-border text-secondary-reverse rounded-full w-fit'
               >
                 {item}
               </p>
@@ -164,8 +163,7 @@ export default async function UXUIContent({ params }: any) {
           </div>
         </div>
 
-
-        <div className="grid gap-10 bg-primary px-6 py-6 relative">
+        <div className='grid gap-10 bg-primary px-6 py-6 relative'>
           {/* <div className=" rounded-2xl absolute -top-1/2 ">
             <Image
               src={alldevices}
@@ -178,7 +176,7 @@ export default async function UXUIContent({ params }: any) {
             description={lang.uxui.section4.description}
           />
 
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center'>
             {lang.uxui.section4.points.map(
               (item: ServiceCardItem, index: number) => (
                 <SmallCard
@@ -187,14 +185,14 @@ export default async function UXUIContent({ params }: any) {
                   title={item.title}
                   iconBG={"bg-solid-greenish-yellow"}
                   isBorder
-                  bgColor="bg-secondary"
+                  bgColor='bg-secondary'
                 />
               )
             )}
           </div>
         </div>
         <LetDiscussYourProject params={params} />
-        <div className="py-16 grid gap-10 px-6 lg:px-20">
+        <div className='py-16 grid gap-10 px-6 lg:px-20'>
           <ServiceHeader title={lang.uxui.faq.faqTitle} />
           <Accordion content={lang.uxui.faq.faqList} />
         </div>
