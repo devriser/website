@@ -44,7 +44,7 @@ const ServiceSummary = ({
             ))}
         </div>
 
-        <div className='flex items-center gap-7 '>
+        <div className='flex items-center flex-wrap gap-7 '>
           {techArr &&
             selectedTab === 0 &&
             techArr.map((item: any, index: any) => (

@@ -164,7 +164,7 @@ const MainServiceContent = () => {
   ];
 
   return (
-    <section className='bg-primary h-fit w-full'>
+    <section className='bg-primary h-fit w-fit lg:w-full'>
       <div className='pt-14 px-0 md:px-6 grid gap-2'>
         <div className='max-w-xl'>
           <TitleHeader title='Make the Most of Your Online Presence With Our Web & Mobile Solutions' />
