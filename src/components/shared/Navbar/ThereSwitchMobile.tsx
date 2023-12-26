@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { DarkMode, LightMode, SystemMode } from "@/assets/svg/HeaderSvg";
 
-const ThemeSwitch = () => {
+const ThemeSwitchMobile = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
@@ -50,28 +50,26 @@ const ThemeSwitch = () => {
           exit="closed"
           variants={variants}
           transition={{ duration: 0.3 }}
-          className="absolute -top-24 left-[55px] w-30 bg-secondary   rounded overflow-hidden z-10"
+          className="absolute top-[6px] left-6 w-30   rounded overflow-hidden z-10"
         >
-          <div className="flex flex-col p-1 gap-1">
+          <div className="flex p-1 gap-3">
             <motion.div
               onClick={() => handleChange("system")}
-              className="cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium px-3 py-2"
+              className="cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium "
             >
               <SystemMode />
-              System
             </motion.div>
             <motion.div
               onClick={() => handleChange("dark")}
-              className="  cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium px-3 py-2"
+              className="  cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium "
             >
-              <DarkMode /> Dark
+              <DarkMode />
             </motion.div>
             <motion.div
               onClick={() => handleChange("light")}
-              className=" cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium px-3 py-2"
+              className=" cursor-pointer flex items-center gap-1 hover:bg-primary rounded-medium "
             >
               <LightMode />
-              Light
             </motion.div>
           </div>
         </motion.div>
@@ -80,4 +78,4 @@ const ThemeSwitch = () => {
   );
 };
 
-export default ThemeSwitch;
+export default ThemeSwitchMobile;

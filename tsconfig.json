@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "getLocales.js",
-    "src/middlewre.ts"
+    "middlewre.ts",
+    "i18n.js"
   ],
   "exclude": ["node_modules"]
 }
