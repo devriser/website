@@ -158,6 +158,23 @@
     "sectionTwo": {
       "mainHeading": "Technologies & Tools Used In App Development",
       "subHeading": "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
+    },
+    "sectionFour": {
+      "title": "Are you Looking for other Services?",
+      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
+      "point1": "JavaScript Development",
+      "point2": "Hire UI UX Designer",
+      "point3": "Web Development",
+      "point4": "Hire Dedicated Developers",
+      "btnText": "Explore all Services "
+    },
+    "sectionFive": {
+      "mainHeading": "Why Go with DevRiser’s App Development Services?",
+      "subHeading": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "cardHeadingOne": "Transparency Work Modal",
+      "cardHeadingTwo": "Direct Contact With Team Member",
+      "cardHeadingThree": "Uplifted User Experience",
+      "cardHeadingFour": "Flexible Engagement Model Cycle"
     }
   },
   "webdev": {}

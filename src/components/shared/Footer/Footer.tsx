@@ -1,10 +1,82 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { getLoacales } from "../../../../getLocales";
 import { DarkLogo } from "@/assets/svg/HeaderSvg";
 import { CallSvg, MailSvg, WhatsAppSvg } from "@/assets/svg/FooterSvg";
+import darkLogo from "@/assets/images/devriserDarkLogo.png";
+import lightLogo from "@/assets/images/devriserLightLogo.png";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 
-export default async function Footer({ params }: any) {
-  const lang = await getLoacales(params.lang);
+interface LocaleData {
+  footer: {
+    mainHeading: string;
+    follow: string;
+    companyDetail: {
+      company: string;
+      headingOne: string;
+      headingTwo: string;
+      headingThree: string;
+      headingFour: string;
+      headingFive: string;
+      headingSix: string;
+    };
+    servicesDetails: {
+      services: string;
+      headingOne: string;
+      headingTwo: string;
+      headingThree: string;
+      headingFour: string;
+      headingFive: string;
+      headingSix: string;
+      headingSeven: string;
+      headingEight: string;
+    };
+    industries: {
+      industries: string;
+      headingOne: string;
+      headingTwo: string;
+      headingThree: string;
+      headingFour: string;
+      headingFive: string;
+      headingSix: string;
+      headingSeven: string;
+      headingEight: string;
+      headingNine: string;
+    };
+    conversation: {
+      conversation: string;
+      email: string;
+      phone: string;
+      whatsApp: string;
+    };
+    copyright: {
+      heading: string;
+    };
+  };
+}
+
+interface FooterProps {
+  params: { lang: string };
+}
+
+export default function Footer({ params }: FooterProps) {
+  const themes = useTheme();
+  const [lang, setLang] = useState<LocaleData | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const locales = await getLoacales(params.lang);
+      setLang(locales);
+    };
+
+    fetchData();
+  }, [params.lang]);
+
+  if (!lang) {
+    return null;
+  }
 
   const companyData = [
     {
@@ -103,7 +175,11 @@ export default async function Footer({ params }: any) {
       <div className="bg-secondary px-6 py-10 flex justify-between max-sm:flex-col max-sm:gap-4">
         <div className="flex flex-col gap-16 max-sm:gap-4">
           <div className="flex flex-col gap-2 max-sm:items-center">
-            <DarkLogo />
+            {themes.theme === "dark" ? (
+              <Image src={lightLogo} alt="img" height={56} width={56} />
+            ) : (
+              <Image src={darkLogo} alt="img" height={56} width={56} />
+            )}
             <p className="text-secondary-reverse">{lang.footer.mainHeading}</p>
           </div>
           <div>
@@ -208,8 +284,21 @@ export default async function Footer({ params }: any) {
   );
 }
 
-export async function CopyRight({ params }: any) {
-  const lang = await getLoacales(params.lang);
+export function CopyRight({ params }: any) {
+  const [lang, setLang] = useState<LocaleData | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const locales = await getLoacales(params.lang);
+      setLang(locales);
+    };
+
+    fetchData();
+  }, [params.lang]);
+
+  if (!lang) {
+    return null;
+  }
 
   return (
     <p className="bg-primary text-center text-secondary-reverse py-4">
