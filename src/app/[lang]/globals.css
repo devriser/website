@@ -22,7 +22,7 @@
   --solid-skyblue: rgb(61, 197, 206, 1);
   --solid-greenish-yellow: rgb(205, 244, 99, 1);
   --solid-yellow: rgba(255, 235, 157, 1);
-  
+  --sunset-salmon: rgb(255, 146, 146,1) ;
 
   /* font sizes */
   --text-hero: 62px;
@@ -43,24 +43,34 @@
   --secondary-color-reverse: rgba(237, 237, 237, 1);
   --tertiary-color: rgba(255, 255, 255, 1);
   --primary-border: rgba(237, 237, 237, 0.1);
-  --section-bg: linear-gradient(292deg, rgba(5, 7, 16, 0.85) 16.15%, rgba(19, 21, 32, 0.85) 101.8%);
+  --section-bg: linear-gradient(
+    292deg,
+    rgba(5, 7, 16, 0.85) 16.15%,
+    rgba(19, 21, 32, 0.85) 101.8%
+  );
   --light-secondary: rgba(237, 237, 237, 0.5);
-  --green-gradient : linear-gradient(90deg, #75DD79 3.05%, #539456 99.9%);
-  --yellow-gradient: linear-gradient(90deg, #FFEB9D 0%, #D8BF5A 100%);
-  --parakeet-green-gradient: linear-gradient(91deg, #E0FF8B 0.38%, #92B532 99.55%);
-  --teal-gradient: linear-gradient(90deg, #3DC5CE 22.73%, #25A7B0 100%);
-  --orange-gradient: linear-gradient(90deg, #FF9292 13.31%, #E86C6C 100%);
-  --violet-gradient: linear-gradient(90deg, #8D58FF 15.97%, #6435CA 99.94%);
-  --emerald-gradient: linear-gradient(90deg, #7AE3B2 15.58%, #319869 100%);
-  --skyblue-gradient: linear-gradient(90deg, #81AFFF 22.08%, #3474E4 96.75%);
-  --purple-gradient: linear-gradient(90deg, #BC82E9 0%, rgba(153, 42, 240, 0.99) 100%);
+  --green-gradient: linear-gradient(90deg, #75dd79 3.05%, #539456 99.9%);
+  --yellow-gradient: linear-gradient(90deg, #ffeb9d 0%, #d8bf5a 100%);
+  --parakeet-green-gradient: linear-gradient(
+    91deg,
+    #e0ff8b 0.38%,
+    #92b532 99.55%
+  );
+  --teal-gradient: linear-gradient(90deg, #3dc5ce 22.73%, #25a7b0 100%);
+  --orange-gradient: linear-gradient(90deg, #ff9292 13.31%, #e86c6c 100%);
+  --violet-gradient: linear-gradient(90deg, #8d58ff 15.97%, #6435ca 99.94%);
+  --emerald-gradient: linear-gradient(90deg, #7ae3b2 15.58%, #319869 100%);
+  --skyblue-gradient: linear-gradient(90deg, #81afff 22.08%, #3474e4 96.75%);
+  --purple-gradient: linear-gradient(
+    90deg,
+    #bc82e9 0%,
+    rgba(153, 42, 240, 0.99) 100%
+  );
   --light-skyblue: rgba(129, 175, 255, 1);
 
   --dark-border: rgb(32, 32, 32);
   --light-border: rgba(255, 255, 255, 1);
-  --service-text: rgba(161, 161, 161, 1)
-
-
+  --service-text: rgba(161, 161, 161, 1);
 }
 
 [data-theme="light"] {
@@ -70,24 +80,24 @@
   --tertiary-color: rgba(42, 42, 42, 1);
   --primary-border: rgba(0, 0, 0, 0.1);
   --section-bg: rgba(244, 243, 246, 1);
-  --green-gradient : linear-gradient(90deg, #75DD79 3.05%, #539456 99.9%);
-  --yellow-gradient: linear-gradient(90deg, #FFEB9D 0%, #D8BF5A 100%);
-  --parakeet-green-gradient: linear-gradient(91deg, #E0FF8B 0.38%, #92B532 99.55%);
-  --teal-gradient: linear-gradient(90deg, #3DC5CE 22.73%, #25A7B0 100%);
-  --orange-gradient: linear-gradient(90deg, #FF9292 13.31%, #E86C6C 100%);
-  --violet-gradient: linear-gradient(90deg, #8D58FF 15.97%, #6435CA 99.94%);
-  --emerald-gradient: linear-gradient(90deg, #7AE3B2 15.58%, #319869 100%);
-  --skyblue-gradient: linear-gradient(90deg, #81AFFF 22.08%, #3474E4 96.75%);
-  --purple-gradient: linear-gradient(90deg, #BC82E9 0%, rgba(153, 42, 240, 0.99) 100%);
+  --green-gradient: linear-gradient(90deg, #75dd79 3.05%, #539456 99.9%);
+  --yellow-gradient: linear-gradient(90deg, #ffeb9d 0%, #d8bf5a 100%);
+  --parakeet-green-gradient: linear-gradient(
+    91deg,
+    #e0ff8b 0.38%,
+    #92b532 99.55%
+  );
+  --teal-gradient: linear-gradient(90deg, #3dc5ce 22.73%, #25a7b0 100%);
+  --orange-gradient: linear-gradient(90deg, #ff9292 13.31%, #e86c6c 100%);
+  --violet-gradient: linear-gradient(90deg, #8d58ff 15.97%, #6435ca 99.94%);
+  --emerald-gradient: linear-gradient(90deg, #7ae3b2 15.58%, #319869 100%);
+  --skyblue-gradient: linear-gradient(90deg, #81afff 22.08%, #3474e4 96.75%);
+  --purple-gradient: linear-gradient(
+    90deg,
+    #bc82e9 0%,
+    rgba(153, 42, 240, 0.99) 100%
+  );
   --light-skyblue: rgba(129, 175, 255, 1);
-
-  
-
-
-
-
-
-
 }
 
 @media (max-width: 1024px) {
@@ -111,4 +121,3 @@
     --text-title: 20px;
   }
 }
-

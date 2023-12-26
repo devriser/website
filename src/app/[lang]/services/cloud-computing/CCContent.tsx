@@ -128,12 +128,13 @@ export default async function CCContent({ params }: any) {
           />
           <div className='flex gap-5 justify-center items-center flex-wrap px-6'>
             {[
-              "C++",
-              "Java",
-              "Sketch",
-              "Adobe Illustrator",
-              "Adobe XD",
-              "Figma",
+              "Amazon AWS",
+              "Alibaba Cloud ",
+              "Digital Ocean",
+              "Kubernetes",
+              "OVHCloud",
+              "Microsoft Azure",
+              "Google Cloud",
             ].map((item: string) => (
               <p
                 key={item}
