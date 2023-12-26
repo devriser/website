@@ -26,6 +26,8 @@ const config: Config = {
         "light-secondary": "var(--light-secondary)",
         "service-text": "var(--service-text)",
         "light-skyblue": "var(--light-skyblue)",
+        "sunset-salmon":"var(--sunset-salmon)",
+        
       },
 
       backgroundImage: {

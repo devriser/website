@@ -46,7 +46,6 @@
     "subTextThree": "Simplify and enhance your HR processes with our Human Resource Management (HRM) solution. From self-service options to efficient payroll management and attendance tracking, we've got your HR needs covered.",
     "subTextFour": "Optimize your inventory management with our Inventory Management System. Maximize control and efficiency to ensure seamless order fulfillment and inventory tracking, providing a strong foundation for your business's success."
   },
-
   "technologies": {
     "mainHeading": "Technologies We Use",
     "headingOne": "Mobile",
@@ -192,7 +191,6 @@
         }
       ]
     },
-
     "faq": {
       "faqTitle": "Frequently Asked Questions",
       "faqList": [
@@ -229,7 +227,7 @@
     "heroButtonOne": "Our Portfolio",
     "heroButtonTwo": "Contact Sales",
     "section1": {
-      "serviceHeaderTitle": "Our Services for Software Development & Testing",
+      "serviceHeaderTitle": "Our Services for Cloud Computing",
       "serviceHeaderDesc": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
       "webServicesArr": [
         {
@@ -292,7 +290,10 @@
       "title": "Why Go with DevRiser’s App Development Services?",
       "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
       "points": [
-        { "title": "Transparency Work Modal", "icon": "TransparencyWorkModal" },
+        {
+          "title": "Transparency Work Modal",
+          "icon": "TransparencyWorkModal"
+        },
         {
           "title": "Direct Contact With Team Member",
           "icon": "DirectContactWithTeamMember"
@@ -379,9 +380,42 @@
       ]
     },
     "section2": {
-      "serviceHeaderTitle": "UI/UX Design Services",
-      "serviceHeaderDesc": "According to project use cases and industry verticals at DevRiser, the following list of contemporary blockchain development technologies and platforms is used.",
-      "webServicesArr": []
+      "serviceHeaderTitle": "Benefits Of A Design First/Discovery First Approach",
+      "serviceHeaderDesc": "The engineering team is meant to feed the discovery workshop, not the other way around as is customary in many IT businesses.",
+      "webServicesArr": [
+        {
+          "title": "Design for User Experience",
+          "icon": "DesignForUserExperience"
+        },
+        {
+          "title": "Superior Graphics",
+          "icon": "SuperiorGraphics"
+        },
+        {
+          "title": "Testing Usability UI Frictionless UX ",
+          "icon": "TestingUsabilityUIFrictionlessUX"
+        },
+        {
+          "title": "High-Definition Prototyping",
+          "icon": "HighDefinitionPrototyping"
+        },
+        {
+          "title": "Visualization of Concepts",
+          "icon": "VisualizationOfConcepts"
+        },
+        {
+          "title": "Device UI Design",
+          "icon": "DeviceUIDesign"
+        },
+        {
+          "title": "Web & Mobile Design",
+          "icon": "WebAndMobileDesign"
+        },
+        {
+          "title": "Branding Design",
+          "icon": "BrandingDesign"
+        }
+      ]
     },
     "section3": {
       "title": "Are you Looking for other Services?",
@@ -396,7 +430,10 @@
       "title": "Why Go with DevRiser’s App Development Services?",
       "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
       "points": [
-        { "title": "Transparency Work Modal", "icon": "TransparencyWorkModal" },
+        {
+          "title": "Transparency Work Modal",
+          "icon": "TransparencyWorkModal"
+        },
         {
           "title": "Direct Contact With Team Member",
           "icon": "DirectContactWithTeamMember"
@@ -410,6 +447,59 @@
           "icon": "FlexibleEngagementModelCycle"
         }
       ]
+    },
+    "section5": {
+      "title": "UI Design Methodology",
+      "description": "To produce immersive user interface designs built on solid wireframing, our creative minds adapt the most recent design trends, techniques, and client-specific approach:",
+      "methodologies": [
+        {
+          "title": "Interacting with wireframes",
+          "subTitle": "For the purpose of prototype wireframes, our highly qualified and experienced design team collaborates closely with the clients to comprehend business operations, target audiences, and industry domain."
+        },
+        {
+          "title": "Perfect Pixel Designs",
+          "subTitle": "Based on the wireframe, our specialists implement top-notch and appealing user interface (UI) designs that meet business goals and entice target users using the appropriate front-end technologies and resources."
+        }
+      ]
+    },
+    "section6": {
+      "title": "UI/UX Design Services",
+      "services": [
+        {
+          "title": "Market & User Research",
+          "points": [
+            "QUALITATIVE RESEARCH",
+            "QUANTITATIVE RESEARCH",
+            "HEURISTIC RESEARCH",
+            "COMPETITOR ANALYSIS",
+            "USABILITY TESTING"
+          ]
+        },
+        {
+          "title": "Product Vision & Strategy",
+          "points": [
+            "DESIGN THINKING",
+            "GROWTH STRATEGY",
+            "PRODUCT ROADMAP",
+            "DATA VISUALIZATION",
+            "USER ENGAGEMENT"
+          ]
+        },
+        {
+          "title": "UX/UI Design",
+          "points": [
+            "INFORMATION ARCHITECTURE",
+            "USER INTERFACE",
+            "INTERACTION DESIGN",
+            "RAPID PROTOTYPING",
+            "ILLUSTRATIONS & ICONOGRAPHY"
+          ]
+        }
+      ]
+    },
+    "section7": {
+      "title": "UI/UX Design Services",
+      "description": "According to project use cases and industry verticals at DevRiser, the following list of contemporary blockchain development technologies and platforms is used:"
     },
     "faq": {
       "faqTitle": "Frequently Asked Questions",
@@ -441,8 +531,148 @@
       ]
     }
   },
+  "gd": {
+    "heroTitle": "Game Development",
+    "heroHeading": "DevRiser is a premier game development company, known for crafting engaging 2D and 3D game apps across desktop, iOS, and Android platforms. With expertise in Unity and Unreal Engine, we design both original video games and immersive AR/VR experiences.",
+    "heroButtonOne": "Our Portfolio",
+    "heroButtonTwo": "Contact Sales",
+    "section1": {
+      "serviceHeaderTitle": "Our Services for Developing Web Apps",
+      "serviceHeaderDesc": "We have experience developing specialized software, and we employ a wide range of cutting-edge web technologies to create websites and web apps that are specifically tailored to the needs of various business sectors. The following is a list of the web app development services we provide.",
+      "webServicesArr": [
+        {
+          "title": "Mobile Game Development",
+          "description": "Our creative mobile game builders can create Android and iOS games with compelling graphics, integrated APIs, and best-in-class features that are compatible with major smartphone devices.",
+          "icon": "MobileGameDevelopment"
+        },
+        {
+          "title": "Fantasy Game Development",
+          "description": "We have created and deployed fantasy sports games for businesses all around the world. To produce imaginative and lucrative fantasy games with distinctive designs and contemporary features, employ talented game developers.",
+          "icon": "FantasyGameDevelopment"
+        },
+        {
+          "title": "2D and 3D Game Development",
+          "description": "We have created and deployed fantasy sports games for businesses all around the world. To produce imaginative and lucrative fantasy games with distinctive designs and contemporary features, employ talented game developers.",
+          "icon": "TwoDAnd3DGameDevelopment"
+        },
+        {
+          "title": "AR and VR Game Development",
+          "description": "AR/VR game production options that include concept games, asset creation, and character animation, our professionals help you unleash the power of the latest gaming technology.",
+          "icon": "ARAndVRGameDevelopment"
+        },
+        {
+          "title": "HTML5 Games",
+          "description": "We provide end-to-end HTML5 game development services for a variety of genres such as cards, arcade, adventure, and puzzles, which are supported by audio APIs and 2D/3D graphics and run smoothly across numerous web browsers.",
+          "icon": "HTML5Games"
+        },
+        {
+          "title": "NFT Game Development",
+          "description": "We assist clients in developing high-quality NFT-based games with attractive features. NFT game developers have demonstrable competence in developing dependable, secure, and strong NFT gaming platforms to support corporate growth.",
+          "icon": "NFTGameDevelopment"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Wide-Ranging Software Testing Services",
+      "serviceHeaderDesc": "We produce a thoroughly optimized solution that leads to greater effectiveness and increased productivity thanks to our years of experience in software quality assurance and testing.",
+      "webServicesArr": [
+        {
+          "title": "API Testing",
+          "description": "We have been undertaking manual API testing for SOAP, REST, JASON, XML, and other similar protocols in order to meet expectations.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "App Testing",
+          "description": "Optimize and test mobile apps using the correct mix of automation tools to improve overall productivity.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Web Security Testing",
+          "description": "Get a full website security assessment from specialists, regardless of the type of website.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "Load Testing",
+          "description": "how well your program works under high demand and stress circumstances.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "Performance Testing",
+          "description": "Utilize services for performance testing that are affordable to boost the performance of your application.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "Manual Testing",
+          "description": "Utilize our manual testing expertise to achieve quantifiable, quality-driven results.",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "section7": {
+      "title": "Technologies We Use For Web Development",
+      "description": "Technology Used in Game Development The most recent design tools and cutting-edge game development platforms used at Developer are listed below: Adobe Creative Suite"
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    },
+    "faq2": {
+      "faqTitle": "Our Methodology for Game Development",
+      "faqDisc": "As a top game development company, DevRiser uses industry standard development processes and tools to produce bespoke mobile games. We release entertaining games that support most devices and platforms, from single-player to multiplayer games with 2D or 3D graphics.",
+      "faqList": [
+        {
+          "headerText": "Concept Evaluation",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Planning",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Design",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Development",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Testing",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Launch",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
   "webdev": {},
-
   "appDevelopment": {
     "mainHeading": "App Development",
     "subHeading": "DevRiser delivers a comprehensive array of mobile app development services, encompassing cross-platform, Android, and iOS app development. We're your trusted partner in propelling business growth and forging a unique brand identity. Our specialists craft apps tailored to industry requirements and corporate goals.",
