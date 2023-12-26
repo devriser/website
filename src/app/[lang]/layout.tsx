@@ -7,6 +7,7 @@ import Providers from "@/providers/Providers";
 import { ReactNode } from "react";
 import Footer from "@/components/shared/Footer/Footer";
 import MobileNavbar from "@/components/shared/Navbar/MobileNavbar";
+import { i18n } from "../../../i18n";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -46,16 +47,26 @@ const monaSans: any = localFont({
   variable: "--font-mona-sans",
 });
 
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
 type Props = {
   children: ReactNode;
   params: any;
 };
 
-export default function RootLayout({ children, params }: Props) {
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: string };
+}) {
   return (
     <html lang={params.lang} dir={params.lang === "ar" ? "rtl" : "ltr"}>
-      <body className={`${cn(monaSans.variable, "font-mono-sans")} `}>
-        <Providers>
+      <Providers>
+        <body className={`${cn(monaSans.variable, "font-mono-sans")}`}>
           <div className="flex max-lg:flex-col bg-primary mx-auto">
             <div className="sticky top-0">
               <Navbar params={params} />
@@ -67,8 +78,8 @@ export default function RootLayout({ children, params }: Props) {
               <Footer params={params} />
             </div>
           </div>
-        </Providers>
-      </body>
+        </body>
+      </Providers>
     </html>
   );
 }

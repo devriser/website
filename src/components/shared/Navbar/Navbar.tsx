@@ -1,15 +1,21 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   AboutUs,
+  AboutUsDark,
   Contact,
-  DarkLogo,
+  ContactDark,
   Industries,
+  IndustriesDark,
   LanguageArrow,
+  LanguageArrowDark,
   Portfolio,
+  PortfolioDark,
   Services,
+  ServicesDark,
   Solutions,
+  SolutionsDark,
 } from "@/assets/svg/HeaderSvg";
 import {
   useAppDispatch,
@@ -20,6 +26,11 @@ import { motion } from "framer-motion";
 import { GradientRightArrow } from "@/assets/svg/AllIconComponent";
 import ThemeSwitch from "./ThemeSwitch";
 import { useTheme } from "next-themes";
+import darkLogo from "@/assets/images/devriserDarkLogo.png";
+import lightLogo from "@/assets/images/devriserLightLogo.png";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { i18n } from "../../../../i18n";
 
 const Sidebar = ({ subItems, params, closeSidebar }: any) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
@@ -77,12 +88,14 @@ export default function Navbar({ params }: any) {
   const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  console.log(params.lang);
+
   const themes = useTheme();
 
   const navBarData = [
     {
       name: "Services",
-      icon: <Services />,
+      icon: themes.theme === "dark" ? <ServicesDark /> : <Services />,
       subItems: [
         {
           name: "Enterprise Solutions",
@@ -107,7 +120,7 @@ export default function Navbar({ params }: any) {
     },
     {
       name: "Solutions",
-      icon: <Solutions />,
+      icon: themes.theme === "dark" ? <SolutionsDark /> : <Solutions />,
       subItems: [
         { name: "Enterprise Solutions", path: "" },
         { name: "Web Development", path: "" },
@@ -122,7 +135,7 @@ export default function Navbar({ params }: any) {
     },
     {
       name: "AboutUs",
-      icon: <AboutUs />,
+      icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
       subItems: [
         { name: "Enterprise Solutions", path: "" },
         { name: "Web Development", path: "" },
@@ -137,15 +150,15 @@ export default function Navbar({ params }: any) {
     },
     {
       name: "Industries",
-      icon: <Industries />,
+      icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
     },
     {
       name: "Portfolio",
-      icon: <Portfolio />,
+      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
     },
     {
       name: "Contact",
-      icon: <Contact />,
+      icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
     },
   ];
 
@@ -176,26 +189,47 @@ export default function Navbar({ params }: any) {
     }
   };
 
+  useEffect(() => {
+    const currentLanguage = localStorage.getItem("selectedLanguage") || "en";
+
+    setSelectedLanguage(currentLanguage);
+  }, []);
+
   const handleLanguageClick = () => {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
   };
   const handleLanguageChange = (language: any) => {
     setSelectedLanguage(language);
     const currentPath = window.location.pathname;
-    const newPath = `/${params.lang}${currentPath}`;
-    window.history.replaceState({}, "", newPath);
+    const pathSegments = currentPath.split("/");
+    const currentLanguage = pathSegments[1];
+
+    const newPath = currentPath.replace(`/${currentLanguage}`, `/${language}`);
+    window.history.replaceState(language, "", newPath);
+    window.location.reload();
   };
 
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
 
+  const pathName = usePathname();
+  const redirectedPathName = (locale: string) => {
+    if (!pathName) return "/";
+    const segments = pathName.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  };
+
   return (
     <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
-        <Link href="" className="cursor-pointer">
-          {/* <Image src={devRiserLogo} alt="img" height={56} width={56} /> */}
-          <DarkLogo />
+        <Link href={`/${params.lang}`} className="cursor-pointer">
+          {themes.theme === "dark" ? (
+            <Image src={lightLogo} alt="img" height={56} width={56} />
+          ) : (
+            <Image src={darkLogo} alt="img" height={56} width={56} />
+          )}
         </Link>
         <div className="flex flex-col items-center gap-6 ">
           {navBarData.map((ele) => (
@@ -221,11 +255,16 @@ export default function Navbar({ params }: any) {
           ))}
         </div>
 
-        <div className="flex flex-col items-center gap-5">
-          {/* <div onClick={themeChanger}>
-            <LightMode />
-          </div> */}
-          <ThemeSwitch />
+        {/* {i18n.locales.map((locales) => (
+          <li key={locales}>
+            <Link href={redirectedPathName(locales)}>{locales}</Link>
+          </li>
+        ))} */}
+
+        <div className="flex flex-col items-center justify-center gap-5">
+          <div className="flex items-center justify-center">
+            <ThemeSwitch />
+          </div>
 
           <div
             onClick={handleLanguageClick}
@@ -233,7 +272,11 @@ export default function Navbar({ params }: any) {
           >
             <span className="text-secondary-reverse">{selectedLanguage}</span>
             <p className="pt-1">
-              <LanguageArrow />
+              {themes.theme === "dark" ? (
+                <LanguageArrowDark />
+              ) : (
+                <LanguageArrow />
+              )}
             </p>
           </div>
           {isLanguageDropdownOpen && (
