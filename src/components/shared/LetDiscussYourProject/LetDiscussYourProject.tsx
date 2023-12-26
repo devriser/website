@@ -7,7 +7,7 @@ export default async function LetDiscussYourProject({ params }: any) {
 
   return (
     <div className="px-6">
-      <div className="bg-blue-gradient flex flex-col items-center gap-8 rounded-large py-6">
+      <div className="bg-section-gradient flex flex-col items-center gap-8 rounded-large py-6">
         <div className="flex flex-col gap-2 max-md:px-2">
           <p className="text-text-heading text-[white] text-center font-semibold">
             {lang.letDiscussYourProject.mainHeading}
