@@ -26,11 +26,11 @@ const config: Config = {
         "light-secondary": "var(--light-secondary)",
         "service-text": "var(--service-text)",
         "light-skyblue": "var(--light-skyblue)",
-        
       },
 
       backgroundImage: {
         "landing-image": "url('../../assets/images/landingPage.webp')",
+        "services-image": "url('../../assets/images/Rectangle4193.png')",
         "hero-text": "var(--hero-text)",
         "blue-gradient": "var(--blue-gradient)",
         "section-gradient": "var(--section-gradient)",
@@ -44,7 +44,6 @@ const config: Config = {
         "emerald-gradient": "var(--emerald-gradient)",
         "skyblue-gradient": "var(--skyblue-gradient)",
         "purple-gradient": "var(--purple-gradient)",
-
       },
       fontSize: {
         "text-hero": "var(--text-hero)",

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import serviceBg from "@/assets/images/Rectangle 4193.png";
 import Button from "../Button";
+import { useTheme } from "next-themes";
 
 const ServiceSummary = ({
   description,
@@ -16,25 +17,27 @@ const ServiceSummary = ({
 }: any) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
+  const themes = useTheme();
+
+  const bgImage =
+    themes.theme === "dark" ? "bg-services-image" : "bg-[#F4F3F6]";
+
   return (
     <div
-      style={{
-        backgroundImage: `url('${serviceBg.src}')`,
-      }}
-      className={`flex gap-6 xl:gap-0 items-center justify-around border-2 border-dark-border px-8 py-12 rounded-3xl  ${
+      className={`${bgImage} flex gap-6 xl:gap-0 items-center justify-around border-2 border-dark-border px-8 py-12 rounded-3xl  ${
         (index + 1) % 2 === 0 ? "flex-row-reverse" : "flex-row"
       } bg-cover  `}
     >
-      <div className='flex flex-col gap-8'>
+      <div className="flex flex-col gap-8">
         <div className={`flex items-center ${!progressArr && "hidden"}`}>
           {progressArr &&
             progressArr.map((item: any, index: any) => (
-              <div key={index} className='flex items-center'>
+              <div key={index} className="flex items-center">
                 <p
                   className={`border-b-2 w-fit  px-4 pb-1 ${
                     selectedTab === index
-                      ? "border-light-border"
-                      : "text-light-secondary border-light-secondary"
+                      ? "border-secondary-reverse"
+                      : "text-light-secondary border-primary-border"
                   } cursor-pointer`}
                   onClick={() => setSelectedTab(index)}
                 >
@@ -44,30 +47,30 @@ const ServiceSummary = ({
             ))}
         </div>
 
-        <div className='flex items-center flex-wrap gap-7 '>
+        <div className="flex items-center flex-wrap gap-7 ">
           {techArr &&
             selectedTab === 0 &&
             techArr.map((item: any, index: any) => (
-              <div key={index} className=''>
+              <div key={index} className="">
                 {item}
               </div>
             ))}
           {switchTechArr &&
             selectedTab === 1 &&
             switchTechArr.map((item: any, index: any) => (
-              <div key={index} className=''>
+              <div key={index} className="">
                 {item}
               </div>
             ))}
         </div>
 
         {progressArr ? (
-          <p className='max-w-xl text-service-text'>
+          <p className="max-w-xl text-service-text">
             {selectedTab === 0 && description}
             {selectedTab === 1 && switchDescription}
           </p>
         ) : (
-          <p className='max-w-xl text-service-text'>{description}</p>
+          <p className="max-w-xl text-service-text">{description}</p>
         )}
         <div>
           {buttonColor && (
@@ -76,7 +79,7 @@ const ServiceSummary = ({
         </div>
       </div>
       <div>
-        <Image src={image} alt='erp' />
+        <Image src={image} alt="erp" />
       </div>
     </div>
   );

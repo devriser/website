@@ -1,12 +1,45 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { getLoacales } from "../../../../../getLocales";
 import UpArrow from "@/assets/svg/UpArrow";
 import ourCoreServicesImg from "@/assets/images/ourCoreServices.webp";
 import Image from "next/image";
 
-export default async function OurCoreServices({ params }: any) {
-  const lang = await getLoacales(params.lang);
+interface OurCoreServicesProps {
+  params: { lang: string };
+}
 
+interface Locales {
+  ourCoreServices: {
+    heading: string;
+    pointOne: string;
+    pointTwo: string;
+    pointThree: string;
+    pointFour: string;
+    pointFive: string;
+    pointSix: string;
+    pointSeven: string;
+    pointEight: string;
+    pointNine: string;
+  };
+}
+
+export default function OurCoreServices({ params }: OurCoreServicesProps) {
+  const [lang, setLang] = useState<Locales | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const locales = await getLoacales(params.lang);
+      setLang(locales);
+    };
+
+    fetchData();
+  }, [params.lang]);
+
+  if (!lang) {
+    return null;
+  }
   const OurCoreServicesData = [
     {
       name: lang.ourCoreServices.pointOne,
