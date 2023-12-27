@@ -1,6 +1,6 @@
 import TitleHeader from "@/components/shared/TitleHeader";
 import Image from "next/image";
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import uxui from "@/assets/images/ui-ux-development.webp";
 import alldevices from "@/assets/images/all-devices.webp";
@@ -34,6 +34,7 @@ import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 import SmallCard from "@/components/shared/Cards/SmallCard";
 import Tick from "@/assets/svg/Tick";
+import { useTheme } from "next-themes";
 interface IconComponents {
   CustomWebsiteDesign: ReactElement;
   DesigningMobileApps: ReactElement;
@@ -208,6 +209,7 @@ export default async function UXUIContent({ params }: any) {
                 {item.points.map((item: any, index: number) => (
                   <div className="flex gap-4" key={index}>
                     <Tick />
+
                     <div className="text-secondary-reverse">{item}</div>
                   </div>
                 ))}
