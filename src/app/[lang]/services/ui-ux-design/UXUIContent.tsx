@@ -32,7 +32,6 @@ import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
-import Button from "@/components/shared/Button";
 import SmallCard from "@/components/shared/Cards/SmallCard";
 import Tick from "@/assets/svg/Tick";
 interface IconComponents {
@@ -112,8 +111,12 @@ export default async function UXUIContent({ params }: any) {
           />
         </div>
 
-        <div className="px-6 ">
-          <Image src={uxui} alt="Cloud computing services" className="w-full" />
+        <div className="px-6 rounded-3xl ">
+          <Image
+            src={uxui}
+            alt="Picture of ui ux services"
+            className="w-full rounded-3xl"
+          />
         </div>
 
         <div className="grid gap-10 bg-primary px-6 ">
