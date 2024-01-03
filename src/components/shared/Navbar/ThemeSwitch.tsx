@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { DarkMode, LightMode, SystemMode } from "@/assets/svg/HeaderSvg";
 
-const ThemeSwitch = () => {
+const ThemeSwitch = ({ params }: any) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
@@ -45,12 +45,15 @@ const ThemeSwitch = () => {
       </div>
       {toggle && (
         <motion.div
-          initial="closed"
-          animate="open"
-          exit="closed"
-          variants={variants}
-          transition={{ duration: 0.3 }}
-          className="absolute -top-24 left-[55px] w-30 bg-secondary   rounded overflow-hidden z-10"
+          initial={
+            params.lang === "ar"
+              ? { x: 10, opacity: 0 }
+              : { x: -10, opacity: 0 }
+          }
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -10, opacity: 0 }}
+          transition={{ type: "spring", duration: 0.5 }}
+          className="absolute -top-24 left-[65px] w-30 bg-secondary   rounded overflow-hidden z-10"
         >
           <div className="flex flex-col p-1 gap-1">
             <motion.div

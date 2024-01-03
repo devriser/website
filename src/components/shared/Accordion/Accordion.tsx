@@ -18,7 +18,6 @@ const Accordion = ({ content, defaultOpenIndex = 0 }: AccordionProps) => {
   const handleToggle = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-  console.log(openIndex);
 
   return (
     <div className="flex flex-col gap-6">

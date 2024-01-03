@@ -13,6 +13,24 @@ export const metadata: Metadata = {
   title: "DevRiser LLC",
   description:
     "Elevate your customer relationships with our cutting-edge solution, designed to supercharge your business and customer interactions.",
+  generator: "Devriser Team",
+  applicationName: "Devriser Website",
+
+  keywords: [
+    "Devriser",
+    "Website Development",
+    "Mobile App Development",
+    "Web App Development",
+    "Enterprise Solutions",
+    "Ai-ml Development",
+    "Software Development",
+    "SaaS Development",
+    "Ui-ux Development",
+    "Blockchain Development",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Cloud Computing",
+  ],
   // manifest: "manifest.webmanifest",
   // viewport: {
   //   width: "device-width",
