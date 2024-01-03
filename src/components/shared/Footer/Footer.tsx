@@ -3,7 +3,15 @@
 import React, { useEffect, useState } from "react";
 import { getLoacales } from "../../../../getLocales";
 import { DarkLogo } from "@/assets/svg/HeaderSvg";
-import { CallSvg, MailSvg, WhatsAppSvg } from "@/assets/svg/FooterSvg";
+import {
+  CallSvg,
+  FaceBookSvg,
+  InstaGramSvg,
+  MailSvg,
+  TwitterSvg,
+  WhatsAppSvg,
+  YoutubeSvg,
+} from "@/assets/svg/FooterSvg";
 import darkLogo from "@/assets/images/devriserDarkLogo.png";
 import lightLogo from "@/assets/images/devriserLightLogo.png";
 import Image from "next/image";
@@ -182,10 +190,16 @@ export default function Footer({ params }: FooterProps) {
             )}
             <p className="text-secondary-reverse">{lang.footer.mainHeading}</p>
           </div>
-          <div>
+          <div className="flex flex-col gap-2">
             <p className="text-secondary-reverse text-text-subtitle font-medium">
               {lang.footer.follow}
             </p>
+            <span className="flex gap-2">
+              <TwitterSvg />
+              <FaceBookSvg />
+              <InstaGramSvg />
+              <YoutubeSvg />
+            </span>
           </div>
         </div>
         <div className="flex gap-10 max-sm:flex-wrap max-sm:gap-2 max-sm:justify-between">

@@ -145,7 +145,7 @@ export default async function AppDevelopment({ params }: any) {
   ];
 
   return (
-    <div className=" pt-14 flex flex-col gap-6">
+    <div className=" pt-14 flex flex-col gap-6 pb-6 max-md:pt-6">
       <div className="flex flex-col gap-6 px-6">
         <TitleHeader
           title={lang.appDevelopment.mainHeading}
@@ -217,7 +217,7 @@ export default async function AppDevelopment({ params }: any) {
           ))}
         </div>
       </div>
-      <div className="px-6">
+      <div className="flex flex-col container  mx-auto relative overflow-hidden h-full">
         <AppContentCarasoul params={params} />
       </div>
       <div className="flex bg-primary p-6 pt-8 gap-6 max-md:flex-col">
@@ -296,7 +296,10 @@ export default async function AppDevelopment({ params }: any) {
         <div></div>
       </div>
       <LetDiscussYourProject params={params} />
-      <div className="p-6">
+      <div className="px-6 flex flex-col gap-6">
+        <p className="text-text-heading text-secondary-reverse font-medium text-center">
+          Frequently Asked Questions
+        </p>
         <Accordion content={lang.esd.faq.faqList} />
       </div>
     </div>
