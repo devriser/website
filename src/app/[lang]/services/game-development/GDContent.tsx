@@ -68,8 +68,10 @@ export default async function GDContent({ params }: any) {
           />
         </div>
 
-        <div className='px-6'>
-          <Image src={gd} alt='Picture of the author' className='w-full' />
+
+        <div className="px-6">
+          <Image src={gd} alt="Picture of game development" className="w-full" />
+
         </div>
 
         <div className='grid gap-16 bg-primary px-6 mx-auto'>

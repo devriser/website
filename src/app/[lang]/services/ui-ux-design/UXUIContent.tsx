@@ -1,6 +1,6 @@
 import TitleHeader from "@/components/shared/TitleHeader";
 import Image from "next/image";
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import uxui from "@/assets/images/ui-ux-development.webp";
 import alldevices from "@/assets/images/all-devices.webp";
@@ -32,9 +32,9 @@ import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
-import Button from "@/components/shared/Button";
 import SmallCard from "@/components/shared/Cards/SmallCard";
 import Tick from "@/assets/svg/Tick";
+import { useTheme } from "next-themes";
 interface IconComponents {
   CustomWebsiteDesign: ReactElement;
   DesigningMobileApps: ReactElement;
@@ -112,8 +112,14 @@ export default async function UXUIContent({ params }: any) {
           />
         </div>
 
-        <div className='px-6 '>
-          <Image src={uxui} alt='Cloud computing services' className='w-full' />
+
+        <div className="px-6 rounded-3xl ">
+          <Image
+            src={uxui}
+            alt="Picture of ui ux services"
+            className="w-full rounded-3xl"
+          />
+
         </div>
 
         <div className='grid gap-10 bg-primary px-6 '>
@@ -205,7 +211,10 @@ export default async function UXUIContent({ params }: any) {
                 {item.points.map((item: any, index: number) => (
                   <div className='flex gap-4' key={index}>
                     <Tick />
-                    <div className='text-secondary-reverse'>{item}</div>
+
+
+                    <div className="text-secondary-reverse">{item}</div>
+
                   </div>
                 ))}
               </div>
