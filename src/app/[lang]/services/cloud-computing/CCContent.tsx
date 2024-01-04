@@ -110,7 +110,7 @@ export default async function CCContent({ params }: any) {
             {lang.cc.section1.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
-                  iconBG={"bg-solid-skyblue"}
+                  iconBG={"bg-teal-gradient"}
                   key={index}
                   title={item.title}
                   description={item.description}
@@ -135,9 +135,9 @@ export default async function CCContent({ params }: any) {
               "OVHCloud",
               "Microsoft Azure",
               "Google Cloud",
-            ].map((item: string) => (
+            ].map((item: string, index: any) => (
               <p
-                key={item}
+                key={index}
                 className='py-2 px-3 text-sm flex items-center justify-center text-center border border-primary-border text-secondary-reverse rounded-full w-fit'
               >
                 {item}
@@ -156,7 +156,7 @@ export default async function CCContent({ params }: any) {
                 {lang.cc.section3.description}
               </div>
             </div>
-            <Button className='bg-solid-skyblue text-[#171717]'>
+            <Button className='bg-teal-gradient text-[#171717]'>
               {lang.cc.section3.btnText}
             </Button>
           </div>
@@ -171,7 +171,7 @@ export default async function CCContent({ params }: any) {
                 icon={<UIUXDesigner />}
                 title={lang.cc.section3.point2}
                 isBorder
-                bgColor='bg-solid-skyblue'
+                bgColor='bg-teal-gradient'
                 iconColor='black'
               />
             </div>
@@ -203,7 +203,7 @@ export default async function CCContent({ params }: any) {
                   key={index}
                   icon={iconComponents[item.icon]}
                   title={item.title}
-                  iconBG={"bg-solid-skyblue"}
+                  iconBG={"bg-teal-gradient"}
                 />
               )
             )}

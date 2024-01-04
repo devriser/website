@@ -1,27 +1,31 @@
-import React from "react";
+"use client";
+import { useTheme } from "next-themes";
 
 const Tick = () => {
+  const theme = useTheme();
+  const svgColor = theme.theme === "light" ? "#000000" : "#EDEDED";
+
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M12 21C16.9705 21 21 16.9705 21 12C21 7.0295 16.9705 3 12 3C7.0295 3 3 7.0295 3 12C3 16.9705 7.0295 21 12 21ZM12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z"
-        fill="#EDEDED"
-        fill-opacity="0.16"
+        fill={svgColor}
+        fillOpacity="0.16"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17.3343 8.12901C17.4327 8.21788 17.4918 8.34217 17.4985 8.47456C17.5053 8.60695 17.4592 8.7366 17.3703 8.83501L10.6923 16.2155L6.65434 12.361C6.56367 12.2683 6.51254 12.1441 6.51173 12.0144C6.51092 11.8848 6.5605 11.7599 6.65001 11.6661C6.73951 11.5723 6.86195 11.517 6.99149 11.5117C7.12103 11.5065 7.24754 11.5518 7.34434 11.638L10.6393 14.783L16.6288 8.16451C16.6729 8.1158 16.7262 8.07625 16.7855 8.04813C16.8449 8.02001 16.9092 8.00386 16.9748 8.00061C17.0405 7.99736 17.1061 8.00707 17.1679 8.02919C17.2298 8.05131 17.2867 8.0854 17.3353 8.12951L17.3343 8.12901Z"
-        fill="#EDEDED"
-        fill-opacity="0.16"
+        fill={svgColor}
+        fillOpacity="0.16"
       />
     </svg>
   );

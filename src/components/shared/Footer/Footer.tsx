@@ -180,21 +180,21 @@ export default function Footer({ params }: FooterProps) {
 
   return (
     <>
-      <div className="bg-secondary px-6 py-10 flex justify-between max-sm:flex-col max-sm:gap-4">
-        <div className="flex flex-col gap-16 max-sm:gap-4">
-          <div className="flex flex-col gap-2 max-sm:items-center">
+      <div className='bg-secondary px-6 py-10 flex justify-between max-sm:flex-col max-sm:gap-4'>
+        <div className='flex flex-col gap-16 max-sm:gap-4'>
+          <div className='flex flex-col gap-2 max-sm:items-center'>
             {themes.theme === "dark" ? (
-              <Image src={lightLogo} alt="img" height={56} width={56} />
+              <Image src={lightLogo} alt='img' height={56} width={56} />
             ) : (
-              <Image src={darkLogo} alt="img" height={56} width={56} />
+              <Image src={darkLogo} alt='img' height={56} width={56} />
             )}
-            <p className="text-secondary-reverse">{lang.footer.mainHeading}</p>
+            <p className='text-secondary-reverse'>{lang.footer.mainHeading}</p>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-secondary-reverse text-text-subtitle font-medium">
+          <div className='flex flex-col gap-2'>
+            <p className='text-secondary-reverse text-text-subtitle font-medium'>
               {lang.footer.follow}
             </p>
-            <span className="flex gap-2">
+            <span className='flex gap-2'>
               <TwitterSvg />
               <FaceBookSvg />
               <InstaGramSvg />
@@ -202,15 +202,15 @@ export default function Footer({ params }: FooterProps) {
             </span>
           </div>
         </div>
-        <div className="flex gap-10 max-sm:flex-wrap max-sm:gap-2 max-sm:justify-between">
+        <div className='flex gap-10 max-sm:flex-wrap max-sm:gap-2 max-sm:justify-between'>
           <div>
-            {companyData.map((item) => (
-              <div key={item.heading} className="flex flex-col gap-3">
-                <span className="font-medium text-text-subtitle text-secondary-reverse">
+            {companyData.map((item, index) => (
+              <div key={index} className='flex flex-col gap-3'>
+                <span className='font-medium text-text-subtitle text-secondary-reverse'>
                   {item.heading}
                 </span>
                 {item.subHeading.map((subItem, index) => (
-                  <div key={index} className="text-secondary-reverse">
+                  <div key={index} className='text-secondary-reverse'>
                     <p>{subItem.headingOne}</p>
                     <p>{subItem.headingTwo}</p>
                     <p>{subItem.headingThree}</p>
@@ -223,13 +223,13 @@ export default function Footer({ params }: FooterProps) {
             ))}
           </div>
           <div>
-            {serviceData.map((item) => (
-              <div key={item.heading} className="flex flex-col gap-3">
-                <span className="font-medium text-text-subtitle text-secondary-reverse">
+            {serviceData.map((item, index) => (
+              <div key={index} className='flex flex-col gap-3'>
+                <span className='font-medium text-text-subtitle text-secondary-reverse'>
                   {item.heading}
                 </span>
                 {item.subHeading.map((subItem, index) => (
-                  <div key={index} className="text-secondary-reverse">
+                  <div key={index} className='text-secondary-reverse'>
                     <p>{subItem.headingOne}</p>
                     <p>{subItem.headingTwo}</p>
                     <p>{subItem.headingThree}</p>
@@ -244,13 +244,13 @@ export default function Footer({ params }: FooterProps) {
             ))}
           </div>
           <div>
-            {industriesData.map((item) => (
-              <div key={item.heading} className="flex flex-col gap-3">
-                <span className="font-medium text-text-subtitle text-secondary-reverse">
+            {industriesData.map((item, index) => (
+              <div key={index} className='flex flex-col gap-3'>
+                <span className='font-medium text-text-subtitle text-secondary-reverse'>
                   {item.heading}
                 </span>
                 {item.subHeading.map((subItem, index) => (
-                  <div key={index} className="text-secondary-reverse">
+                  <div key={index} className='text-secondary-reverse'>
                     <p>{subItem.headingOne}</p>
                     <p>{subItem.headingTwo}</p>
                     <p>{subItem.headingThree}</p>
@@ -266,27 +266,27 @@ export default function Footer({ params }: FooterProps) {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-4 ">
-          <p className="text-secondary-reverse text-text-subtitle font-medium">
+        <div className='flex flex-col gap-4 '>
+          <p className='text-secondary-reverse text-text-subtitle font-medium'>
             {lang.footer.conversation.conversation}
           </p>
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2">
+          <div className='flex flex-col gap-2'>
+            <div className='flex items-center gap-2'>
               <MailSvg />
-              <span className="text-secondary-reverse">
+              <span className='text-secondary-reverse'>
                 {lang.footer.conversation.email}
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className='flex items-center gap-2'>
               <CallSvg />
-              <span className="text-secondary-reverse">
+              <span className='text-secondary-reverse'>
                 {lang.footer.conversation.phone}
               </span>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className='flex items-center gap-2'>
               <WhatsAppSvg />
-              <span className="text-secondary-reverse">
+              <span className='text-secondary-reverse'>
                 {lang.footer.conversation.whatsApp}
               </span>
             </div>
@@ -315,7 +315,7 @@ export function CopyRight({ params }: any) {
   }
 
   return (
-    <p className="bg-primary text-center text-secondary-reverse py-4">
+    <p className='bg-primary text-center text-secondary-reverse py-4'>
       {lang.footer.copyright.heading}
     </p>
   );

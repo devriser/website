@@ -162,15 +162,15 @@ export default function MobileNavbar({ params }: any) {
 
   return (
     <AnimatePresence>
-      <div className="flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden">
+      <div className='flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden'>
         <div>
           <ThemeSwitchMobile />
         </div>
-        <Link href={`/${params.lang}`} className="cursor-pointer">
+        <Link href={`/${params.lang}`} className='cursor-pointer'>
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt="img" height={56} width={56} />
+            <Image src={lightLogo} alt='img' height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt="img" height={56} width={56} />
+            <Image src={darkLogo} alt='img' height={56} width={56} />
           )}
         </Link>
         <div>
@@ -201,20 +201,20 @@ export default function MobileNavbar({ params }: any) {
           </div>
           {toggle && (
             <>
-              <div className="fixed inset-0 top-20 backdrop-blur-2xl"></div>
+              <div className='fixed inset-0 top-20 backdrop-blur-2xl'></div>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="  h-screen top-20 absolute w-full left-0 px-6  pt-2 "
+                className='  h-screen top-20 absolute w-full left-0 px-6  pt-2 '
               >
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="flex flex-col gap-6 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4"
+                  className='flex flex-col gap-6 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4'
                 >
                   {navBarData.map((item, index) => (
                     <motion.div
@@ -223,14 +223,14 @@ export default function MobileNavbar({ params }: any) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
-                      className="flex flex-col gap-2"
+                      className='flex flex-col gap-2'
                     >
                       <motion.div
-                        className="flex items-center gap-2 cursor-pointer  py-2 ps-2 "
+                        className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
                         onClick={() => handleItemClick(item.name)}
                       >
                         {item.icon}
-                        <span className="text-text-subtitle font-medium flex items-center justify-between w-full pe-6">
+                        <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
                           {item.name}
                           <div
                             className={`${
@@ -249,13 +249,13 @@ export default function MobileNavbar({ params }: any) {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -20 }}
                           transition={{ duration: 0.3 }}
-                          className="flex flex-col gap-3  py-2 ps-2 "
+                          className='flex flex-col gap-3  py-2 ps-2 '
                         >
-                          {item.subItems.map((subItem, subIndex) => (
+                          {item.subItems.map((subItem, index) => (
                             <Link
                               href={subItem.path}
-                              key={subIndex}
-                              className="pb-2 ps-5"
+                              key={index}
+                              className='pb-2 ps-5'
                               onClick={() =>
                                 dispatch({
                                   type: "SET_TOGGLE",
@@ -271,14 +271,14 @@ export default function MobileNavbar({ params }: any) {
                     </motion.div>
                   ))}
 
-                  {navBarData2.map((item) => (
+                  {navBarData2.map((item, index) => (
                     <Link
-                      className="flex items-center gap-2 cursor-pointer  py-2 ps-2 "
-                      key={item.name}
+                      className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
+                      key={index}
                       href={item.href}
                     >
                       {item.icon}
-                      <span className="text-text-subtitle font-medium flex items-center justify-between w-full pe-6">
+                      <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
                         {item.name}
                       </span>
                     </Link>
@@ -323,10 +323,10 @@ export default function MobileNavbar({ params }: any) {
                         transition={{ type: "spring", duration: 0.5 }}
                         className={` flex flex-col gap-4 bg-primary w-full  top-14 py-2 px-1 rounded-medium`}
                       >
-                        {language.map((locale) => (
+                        {language.map((locale, index) => (
                           <Link
                             href={redirectedPathName(locale.value)}
-                            key={locale.value}
+                            key={index}
                           >
                             <div
                               className={`cursor-pointer flex gap-2 px-2 hover:bg-primary py-1 rounded-large text-secondary-reverse transition-colors duration-200 `}

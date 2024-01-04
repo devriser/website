@@ -442,8 +442,8 @@ export function GradientRightArrow() {
           y2='14.0491'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#4576F7' />
-          <stop offset='1' stop-color='#0C49E7' />
+          <stop stopColor='#4576F7' />
+          <stop offset='1' stopColor='#0C49E7' />
         </linearGradient>
       </defs>
     </svg>
