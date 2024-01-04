@@ -19,22 +19,22 @@ const Button = ({
   // TODO: add hover focus and active classes later
   let variantClasses: VariantClasses = {
     default: {
-      solid: "bg-white text-black",
+      solid: "bg-white text-black border border-transparent",
       outlined: "bg-main-background text-primary border primary-border",
       transparent: "bg-transparent text-primary border primary-border",
     },
     primary: {
-      solid: "bg-gradient-primary",
+      solid: "bg-gradient-primary border border-transparent",
       outlined: "text-solid-blue  border border-blue-border",
       transparent: "bg-transparent text-blue border border-blue-border",
     },
     success: {
-      solid: "bg-blue-gradient",
+      solid: "bg-blue-gradient border border-transparent",
       outlined: "bg-main-background text-success border blue-border",
       transparent: "bg-transparent text-success border blue-border",
     },
     danger: {
-      solid: "bg-gradient-danger",
+      solid: "bg-gradient-danger border border-transparent",
       outlined: "bg-main-background text-danger border border-danger",
       transparent: "bg-transparent text-danger border border-danger",
     },

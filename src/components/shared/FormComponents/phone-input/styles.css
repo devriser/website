@@ -63,9 +63,9 @@
   cursor: pointer;
 }
 
-.flag_dropDown div:hover {
+/* .flag_dropDown div:hover {
   background-color: rgb(237, 237, 237);
-}
+} */
 
 .flag_container {
   align-self: stretch;

@@ -49,6 +49,7 @@
     rgba(19, 21, 32, 0.85) 101.8%
   );
   --light-secondary: rgba(237, 237, 237, 0.5);
+  --light-secondary-two: rgba(23, 23, 23, 1);
   --green-gradient: linear-gradient(90deg, #75dd79 3.05%, #539456 99.9%);
   --yellow-gradient: linear-gradient(90deg, #ffeb9d 0%, #d8bf5a 100%);
   --parakeet-green-gradient: linear-gradient(
@@ -77,6 +78,8 @@
   --primary-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(245, 245, 255, 1);
   --secondary-color-reverse: rgba(23, 23, 23, 1);
+  --light-secondary-two: rgba(245, 245, 255, 1);
+
   --tertiary-color: rgba(42, 42, 42, 1);
   --primary-border: rgba(0, 0, 0, 0.1);
   --section-bg: rgba(244, 243, 246, 1);

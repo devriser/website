@@ -286,7 +286,7 @@ export default function Select({
                             : styles.option
                           : styles.option
                         : styles.option
-                    } hover:bg-secondary
+                    } hover:bg-light-secondary-two
                     `}
                   >
                     {displayKey ? ele[displayKey] : ele}

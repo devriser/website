@@ -56,14 +56,6 @@ export default async function AboutUs({ params }: any) {
         <TitleHeader
           title={lang.aboutUs.mainHeading}
           description={lang.aboutUs.subHeading}
-          buttonArr={[
-            {
-              href: "/",
-              variant: "success",
-              style: "solid",
-              text: lang.aboutUs.buttonText,
-            },
-          ]}
         />
         <div>
           <Image

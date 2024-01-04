@@ -24,10 +24,10 @@ const config: Config = {
         "solid-greenish-yellow": "var(--solid-greenish-yellow)",
         "hero-text": "var(--hero-text)",
         "light-secondary": "var(--light-secondary)",
+        "light-secondary-two": "var(--light-secondary-two)",
         "service-text": "var(--service-text)",
         "light-skyblue": "var(--light-skyblue)",
-        "sunset-salmon":"var(--sunset-salmon)",
-        
+        "sunset-salmon": "var(--sunset-salmon)",
       },
 
       backgroundImage: {

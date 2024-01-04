@@ -19,7 +19,13 @@ export default async function LandingPage({ params }: any) {
         </div>
         <div className="flex gap-3 justify-center">
           <Button variant="default">{lang.homepage.heroButtonOne}</Button>
-          <Button variant="success">{lang.homepage.heroButtonTwo}</Button>
+          <Button
+            variant="success"
+            as="NextLink"
+            href={`/${params.lang}/contact-us`}
+          >
+            {lang.homepage.heroButtonTwo}
+          </Button>
         </div>
       </div>
     </div>

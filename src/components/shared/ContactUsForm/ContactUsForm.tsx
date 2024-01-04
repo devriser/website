@@ -19,6 +19,7 @@ export default function ContactUsForm() {
   const [active, setActive] = useState(null);
   const [budgetActive, setBudgetActive] = useState(null);
   const [selectedRadio1, setSelectedRadio1] = useState<number>(1);
+  const [selectedCountry, setSelectedCountry] = useState("");
 
   const projectType = [
     {
@@ -164,8 +165,8 @@ export default function ContactUsForm() {
                 <Select
                   label="Country"
                   options={countriesNameData}
-                  values={() => {}}
-                  onChange={() => {}}
+                  values={selectedCountry}
+                  onChange={(e) => setSelectedCountry(e.target.value)}
                   labelColumn
                   searchable
                 />

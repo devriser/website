@@ -163,7 +163,7 @@ export default function FormInput({
                 min={0}
                 className={` placeholder:text-linkColor flex w-full ${
                   selectOptions ? "rounded-l-none" : ""
-                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none `}
+                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none z-10`}
                 placeholder={placeHolder}
                 accept={accept}
                 type={type === "password" && showPassword ? "text" : type}

@@ -9,6 +9,7 @@ import {
   MobileAppIcon,
   ResponsiveIcon,
   SettingIcon,
+  SolutionDomain,
   TestQaIcon,
   UxIcon,
 } from "@/assets/svg/AllIconComponent";
@@ -262,7 +263,7 @@ export const futureTechServicesArr = [
     title: "Solutions Specific to a Domaint",
     description:
       "Since we are a top custom website development company, we can offer complete website solutions that are tailored to the demands of our clients and the trends in the relevant industries",
-    icon: <BasicShape />,
+    icon: <SolutionDomain />,
   },
   {
     title: "Modern design and features",

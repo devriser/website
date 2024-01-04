@@ -151,7 +151,7 @@ const MainServiceContent = () => {
         <BlockSixSVG />,
       ],
       buttonColor: "bg-violet-gradient",
-      RedirectURL: "/en/services/block-chain-development",
+      RedirectURL: "/en/services/blockchain-development",
     },
     {
       headerText: "Internet of Things",
@@ -174,14 +174,14 @@ const MainServiceContent = () => {
   ];
 
   return (
-    <section className='bg-primary h-fit w-fit lg:w-full'>
-      <div className='pt-14 px-0 md:px-6 grid gap-2'>
-        <div className='max-w-xl'>
-          <TitleHeader title='Make the Most of Your Online Presence With Our Web & Mobile Solutions' />
+    <section className="bg-primary h-fit w-fit lg:w-full">
+      <div className="pt-14 px-0 md:px-6 grid gap-2">
+        <div className="max-w-xl">
+          <TitleHeader title="Make the Most of Your Online Presence With Our Web & Mobile Solutions" />
         </div>
-        <div className=' grid gap-16 mb-12'>
+        <div className=" grid gap-16 mb-12">
           {serviceSummaryArr.map((item, index) => (
-            <div key={index} className='grid gap-6'>
+            <div key={index} className="grid gap-6">
               <Heading text={item.headerText} />
               <ServiceSummary
                 description={item.description}
