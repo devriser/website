@@ -60,9 +60,9 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
         params.lang === "ar" ? "right-[86px]" : "left-[86px]"
       } absolute bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5 z-50`}
     >
-      {subItems?.map((subItem: any) => (
+      {subItems?.map((subItem: any, index: any) => (
         <Link
-          key={subItem.name}
+          key={index}
           href={subItem.path}
           className={`flex text-secondary-reverse hover:bg-primary transition-colors duration-200 px-3 py-1 rounded-md ${
             subItem.name === "All Services" &&
@@ -70,7 +70,7 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
           } `}
         >
           {subItem.name === "All Services" ? (
-            <div className="flex items-center gap-3">
+            <div className='flex items-center gap-3'>
               <p>All Services</p>
               <GradientRightArrow />
             </div>
@@ -233,19 +233,19 @@ export default function Navbar({ params }: any) {
   };
 
   return (
-    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
-      <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
-        <Link href={`/${params.lang}`} className="cursor-pointer">
+    <header className='bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden'>
+      <div className='sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]'>
+        <Link href={`/${params.lang}`} className='cursor-pointer'>
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt="img" height={56} width={56} />
+            <Image src={lightLogo} alt='img' height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt="img" height={56} width={56} />
+            <Image src={darkLogo} alt='img' height={56} width={56} />
           )}
         </Link>
-        <div className="flex flex-col items-center gap-6 ">
-          {navBarData.map((ele) => (
+        <div className='flex flex-col items-center gap-6 '>
+          {navBarData.map((ele, index) => (
             <div
-              key={ele.name}
+              key={index}
               className={`flex flex-col items-center cursor-pointer ${
                 activeLink === ele.name && toggle
                   ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
@@ -254,7 +254,7 @@ export default function Navbar({ params }: any) {
               onClick={() => handleItemClick(ele.name)}
             >
               <span>{ele.icon}</span>
-              <p className="text-secondary-reverse">{ele.name}</p>
+              <p className='text-secondary-reverse'>{ele.name}</p>
               {activeLink === ele.name && toggle && (
                 <Sidebar
                   subItems={ele.subItems}
@@ -265,24 +265,24 @@ export default function Navbar({ params }: any) {
             </div>
           ))}
 
-          {navBarData2.map((item) => (
+          {navBarData2.map((item, index) => (
             <Link
               className={`flex flex-col items-center cursor-pointer ${
                 activeLink === item.name && toggle
                   ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
                   : " py-2"
               }`}
-              key={item.name}
+              key={index}
               href={item.href}
             >
               {item.icon}
-              <span className="text-secondary-reverse">{item.name}</span>
+              <span className='text-secondary-reverse'>{item.name}</span>
             </Link>
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-5">
-          <div className="flex items-center justify-center">
+        <div className='flex flex-col items-center justify-center gap-5'>
+          <div className='flex items-center justify-center'>
             <ThemeSwitch params={params} />
           </div>
           <div
@@ -296,7 +296,7 @@ export default function Navbar({ params }: any) {
               }
               {selectedLanguage}
             </span>
-            <p className="pt-1">
+            <p className='pt-1'>
               {themes.theme === "dark" ? (
                 <LanguageArrowDark />
               ) : (
@@ -318,11 +318,8 @@ export default function Navbar({ params }: any) {
                 params.lang === "ar" ? "right-[86px]" : "left-[86px]"
               } bg-secondary -bottom-[6px] py-2 px-1 rounded-md`}
             >
-              {language.map((locale) => (
-                <Link
-                  href={redirectedPathName(locale.value)}
-                  key={locale.value}
-                >
+              {language.map((locale, index) => (
+                <Link href={redirectedPathName(locale.value)} key={index}>
                   <div
                     className={`cursor-pointer flex gap-2 px-2 hover:bg-primary py-1 rounded-large text-secondary-reverse transition-colors duration-200 `}
                   >

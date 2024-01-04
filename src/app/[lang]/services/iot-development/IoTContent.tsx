@@ -62,7 +62,7 @@ const IoTContent = ({ params }: any) => {
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
-                iconBG={"bg-green-300"}
+                iconBG={"bg-emerald-gradient"}
               />
             ))}
           </div>
@@ -95,7 +95,7 @@ const IoTContent = ({ params }: any) => {
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
-                iconBG={"bg-green-300"}
+                iconBG={"bg-emerald-gradient"}
               />
             ))}
           </div>

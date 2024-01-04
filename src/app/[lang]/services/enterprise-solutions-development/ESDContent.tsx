@@ -64,9 +64,9 @@ export default async function ESDContent({ params }: any) {
   const lang = await getLoacales(params.lang);
 
   return (
-    <section className="bg-primary h-fit">
-      <div className="px-6 pt-14 grid gap-16">
-        <div className="bg-primary">
+    <section className='bg-primary h-fit'>
+      <div className='px-6 pt-14 grid gap-16'>
+        <div className='bg-primary'>
           <TitleHeader
             title={lang.esd.heroTitle}
             description={lang.esd.heroHeading}
@@ -87,21 +87,21 @@ export default async function ESDContent({ params }: any) {
           />
         </div>
 
-        <div className="">
-          <Image src={esd} alt="Picture of the author" className="w-full" />
+        <div className=''>
+          <Image src={esd} alt='Picture of the author' className='w-full' />
         </div>
 
-        <div className="grid gap-16 bg-primary  mx-auto">
+        <div className='grid gap-16 bg-primary  mx-auto'>
           <ServiceHeader
             title={lang.esd.section1.serviceHeaderTitle}
             description={lang.esd.section1.serviceHeaderDesc}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             {lang.esd.section1.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
-                  iconBG={"bg-solid-purple"}
+                  iconBG={"bg-purple-gradient"}
                   key={index}
                   title={item.title}
                   description={item.description}
@@ -112,17 +112,17 @@ export default async function ESDContent({ params }: any) {
           </div>
         </div>
 
-        <div className="grid gap-16 bg-primary  mx-auto">
+        <div className='grid gap-16 bg-primary  mx-auto'>
           <ServiceHeader
             title={lang.esd.section2.serviceHeaderTitle}
             description={lang.esd.section2.serviceHeaderDesc}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {lang.esd.section2.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
-                  iconBG={"bg-solid-purple"}
+                  iconBG={"bg-purple-gradient"}
                   key={index}
                   title={item.title}
                   description={item.description}
@@ -134,7 +134,7 @@ export default async function ESDContent({ params }: any) {
           </div>
         </div>
         <LetDiscussYourProject params={params} />
-        <div className="py-16 grid gap-10">
+        <div className='py-16 grid gap-10'>
           <ServiceHeader title={lang.esd.faq.faqTitle} />
           <Accordion content={lang.esd.faq.faqList} />
         </div>

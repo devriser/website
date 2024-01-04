@@ -76,6 +76,7 @@ export default async function WebDevContent({ params }: any) {
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
+                iconBG={"bg-green-gradient"}
               />
             ))}
           </div>
@@ -168,6 +169,7 @@ export default async function WebDevContent({ params }: any) {
                 description={item.description}
                 icon={item.icon}
                 bgColor='bg-primary'
+                iconBG={"bg-green-gradient"}
               />
             ))}
           </div>
