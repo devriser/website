@@ -116,7 +116,7 @@
 }
 @media (max-width: 560px) {
   :root {
-    --text-hero: 42px;
+    --text-hero: 40px;
     --text-heading: 30px;
     --text-title: 20px;
   }

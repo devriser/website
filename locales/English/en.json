@@ -841,5 +841,42 @@
         }
       ]
     }
+  },
+
+  "aboutUs": {
+    "mainHeading": "About Us",
+    "subHeading": "DevRiser is a distinguished global hub for software innovation and services, Anchored in unwavering human values. We passionately uphold the significance of the six core pillars: Innovation, Quality, Collaboration, Agility, Integrity, and Transparency. Our relentless dedication to these principles not only drives growth but also fosters an equitable and harmonious environment for our valued employees and esteemed clients, ensuring mutual prosperity & fulfillment.",
+    "buttonText": "Get Started",
+    "coreValues": {
+      "heading": "Innovation",
+      "subHeading": "Creative Breakthrough",
+      "headingOne": "Quality",
+      "subHeadingOne": "Exceptional Standard",
+      "headingTwo": "Collaboration",
+      "subHeadingTwo": "Team Harmony",
+      "headingThree": "Agility",
+      "subHeadingThree": "Swift Adaptation",
+      "headingFour": "Integrity",
+      "subHeadingFour": "Honest Character",
+      "headingFive": "Transparency",
+      "subHeadingFive": "Clear Communication"
+    },
+    "ourVision": {
+      "mainHeading": "Our Vision",
+      "subHeading": "DevRiser aspires to shape an innovative future driven by our unwavering commitment to principles like innovation, quality, collaboration, agility, integrity, and transparency. Our mission is to lead transformative advancements, instigating positive change, and leaving an enduring legacy as pioneers of purposeful innovation."
+    },
+    "ourMission": {
+      "mainHeading": "Our Mission",
+      "subHeading": "At DevRiser, our mission is a relentless pursuit of positive change. We achieve this by fostering innovation, upholding unwavering quality, nurturing collaborative partnerships, embracing agility, demonstrating integrity, and fostering transparent relationships. Our goal is to reshape industries, unlock technology's full potential, and create a lasting impact, always staying true to our unwavering core principles."
+    },
+
+    "thirdSection": {
+      "headingOne": "Customer-centered Approach",
+      "subHeadingOne": "Our commitment to a customer-centered approach extends beyond serving immediate clients. As a leading software development company, we prioritize understanding your company's unique needs, listening to your ideas, and considering the perspectives and pain points of your end-users. Your success is our ultimate goal.",
+      "headingTwo": "Effective Collaboration",
+      "subHeadingTwo": "Effective collaboration hinges on clear communication. We believe in proactive and open communication, even if it may seem abundant, as it significantly influences our clients' success. We employ platforms and mediums that ensure efficiency, transparency, and precision when our development team collaborates with clients.",
+      "headingThree": "Quality Delivered in Time",
+      "subHeadingThree": "With extensive experience in IT software development, we've curated a robust collection of internal frameworks and top-notch infrastructure. This ensures our consistent delivery of top-quality solutions. Our years of expertise enable us to replicate success and evade pitfalls. We are dedicated to maintaining the highest standards of quality."
+    }
   }
 }

@@ -70,7 +70,7 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
           } `}
         >
           {subItem.name === "All Services" ? (
-            <div className='flex items-center gap-3'>
+            <div className="flex items-center gap-3">
               <p>All Services</p>
               <GradientRightArrow />
             </div>
@@ -137,54 +137,54 @@ export default function Navbar({ params }: any) {
         },
       ],
     },
-    {
-      name: "Solutions",
-      icon: themes.theme === "dark" ? <SolutionsDark /> : <Solutions />,
-      subItems: [
-        { name: "Enterprise Solutions", path: "" },
-        { name: "Web Development", path: "" },
-        { name: "App Development", path: "" },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
-        { name: "IoT Development", path: "" },
-        { name: "AI/ML Developoment", path: "" },
-      ],
-    },
-    {
-      name: "Industries",
-      icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
-      subItems: [
-        { name: "Enterprise Solutions", path: "" },
-        { name: "Web Development", path: "" },
-        { name: "App Development", path: "" },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
-        { name: "IoT Development", path: "" },
-        { name: "AI/ML Developoment", path: "" },
-      ],
-    },
+    // {
+    //   name: "Solutions",
+    //   icon: themes.theme === "dark" ? <SolutionsDark /> : <Solutions />,
+    //   subItems: [
+    //     { name: "Enterprise Solutions", path: "" },
+    //     { name: "Web Development", path: "" },
+    //     { name: "App Development", path: "" },
+    //     { name: "UI/UX Design", path: "" },
+    //     { name: "Cloud Computing", path: "" },
+    //     { name: "Game Development", path: "" },
+    //     { name: "Blockchain Development", path: "" },
+    //     { name: "IoT Development", path: "" },
+    //     { name: "AI/ML Developoment", path: "" },
+    //   ],
+    // },
+    // {
+    //   name: "Industries",
+    //   icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
+    //   subItems: [
+    //     { name: "Enterprise Solutions", path: "" },
+    //     { name: "Web Development", path: "" },
+    //     { name: "App Development", path: "" },
+    //     { name: "UI/UX Design", path: "" },
+    //     { name: "Cloud Computing", path: "" },
+    //     { name: "Game Development", path: "" },
+    //     { name: "Blockchain Development", path: "" },
+    //     { name: "IoT Development", path: "" },
+    //     { name: "AI/ML Developoment", path: "" },
+    //   ],
+    // },
   ];
 
   const navBarData2 = [
     {
       name: "About Us",
-      href: "",
+      href: `/${params.lang}/about-us`,
       icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
       name: "Contact",
-      href: "",
+      href: `/${params.lang}/contact-us`,
       icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
     },
-    {
-      name: "Portfolio",
-      href: "",
-      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
-    },
+    // {
+    //   name: "Portfolio",
+    //   href: "",
+    //   icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+    // },
   ];
 
   const language = [
@@ -233,16 +233,16 @@ export default function Navbar({ params }: any) {
   };
 
   return (
-    <header className='bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden'>
-      <div className='sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]'>
-        <Link href={`/${params.lang}`} className='cursor-pointer'>
+    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
+      <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
+        <Link href={`/${params.lang}`} className="cursor-pointer">
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt='img' height={56} width={56} />
+            <Image src={lightLogo} alt="img" height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt='img' height={56} width={56} />
+            <Image src={darkLogo} alt="img" height={56} width={56} />
           )}
         </Link>
-        <div className='flex flex-col items-center gap-6 '>
+        <div className="flex flex-col items-center gap-6 ">
           {navBarData.map((ele, index) => (
             <div
               key={index}
@@ -254,7 +254,7 @@ export default function Navbar({ params }: any) {
               onClick={() => handleItemClick(ele.name)}
             >
               <span>{ele.icon}</span>
-              <p className='text-secondary-reverse'>{ele.name}</p>
+              <p className="text-secondary-reverse">{ele.name}</p>
               {activeLink === ele.name && toggle && (
                 <Sidebar
                   subItems={ele.subItems}
@@ -276,16 +276,16 @@ export default function Navbar({ params }: any) {
               href={item.href}
             >
               {item.icon}
-              <span className='text-secondary-reverse'>{item.name}</span>
+              <span className="text-secondary-reverse">{item.name}</span>
             </Link>
           ))}
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-5'>
-          <div className='flex items-center justify-center'>
+        <div className="flex flex-col items-center justify-center gap-5">
+          <div className="flex items-center justify-center">
             <ThemeSwitch params={params} />
           </div>
-          <div
+          {/* <div
             onClick={() => handleLanguageClick(selectedLanguage)}
             className={`cursor-pointer relative border p-1  border-primary-border flex items-center justify-center gap-1 rounded-medium `}
           >
@@ -303,7 +303,7 @@ export default function Navbar({ params }: any) {
                 <LanguageArrow />
               )}
             </p>
-          </div>
+          </div> */}
           {isLanguageDropdownOpen && (
             <motion.div
               initial={

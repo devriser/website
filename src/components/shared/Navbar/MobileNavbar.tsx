@@ -72,56 +72,56 @@ export default function MobileNavbar({ params }: any) {
         { name: "All Services", path: "" },
       ],
     },
-    {
-      name: "Solutions",
-      icon: theme.theme === "dark" ? <SolutionsDark /> : <Solutions />,
+    // {
+    //   name: "Solutions",
+    //   icon: theme.theme === "dark" ? <SolutionsDark /> : <Solutions />,
 
-      subItems: [
-        { name: "Enterprise Solutions", path: "" },
-        { name: "Web Development", path: "" },
-        { name: "App Development", path: "" },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
-        { name: "IoT Development", path: "" },
-        { name: "AI/ML Development", path: "" },
-      ],
-    },
-    {
-      name: "Industries",
-      icon: theme.theme === "dark" ? <IndustriesDark /> : <Industries />,
+    //   subItems: [
+    //     { name: "Enterprise Solutions", path: "" },
+    //     { name: "Web Development", path: "" },
+    //     { name: "App Development", path: "" },
+    //     { name: "UI/UX Design", path: "" },
+    //     { name: "Cloud Computing", path: "" },
+    //     { name: "Game Development", path: "" },
+    //     { name: "Blockchain Development", path: "" },
+    //     { name: "IoT Development", path: "" },
+    //     { name: "AI/ML Development", path: "" },
+    //   ],
+    // },
+    // {
+    //   name: "Industries",
+    //   icon: theme.theme === "dark" ? <IndustriesDark /> : <Industries />,
 
-      subItems: [
-        { name: "Enterprise Solutions", path: "" },
-        { name: "Web Development", path: "" },
-        { name: "App Development", path: "" },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
-        { name: "IoT Development", path: "" },
-        { name: "AI/ML Development", path: "" },
-      ],
-    },
+    //   subItems: [
+    //     { name: "Enterprise Solutions", path: "" },
+    //     { name: "Web Development", path: "" },
+    //     { name: "App Development", path: "" },
+    //     { name: "UI/UX Design", path: "" },
+    //     { name: "Cloud Computing", path: "" },
+    //     { name: "Game Development", path: "" },
+    //     { name: "Blockchain Development", path: "" },
+    //     { name: "IoT Development", path: "" },
+    //     { name: "AI/ML Development", path: "" },
+    //   ],
+    // },
   ];
 
   const navBarData2 = [
     {
       name: "About Us",
-      href: "",
+      href: `/${params.lang}/about-us`,
       icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
       name: "Contact",
-      href: "",
+      href: `/${params.lang}/contact-us`,
       icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
     },
-    {
-      name: "Portfolio",
-      href: "",
-      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
-    },
+    // {
+    //   name: "Portfolio",
+    //   href: "",
+    //   icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+    // },
   ];
   const language = [
     {
@@ -162,15 +162,15 @@ export default function MobileNavbar({ params }: any) {
 
   return (
     <AnimatePresence>
-      <div className='flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden'>
+      <div className="flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden">
         <div>
           <ThemeSwitchMobile />
         </div>
-        <Link href={`/${params.lang}`} className='cursor-pointer'>
+        <Link href={`/${params.lang}`} className="cursor-pointer">
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt='img' height={56} width={56} />
+            <Image src={lightLogo} alt="img" height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt='img' height={56} width={56} />
+            <Image src={darkLogo} alt="img" height={56} width={56} />
           )}
         </Link>
         <div>
@@ -201,20 +201,20 @@ export default function MobileNavbar({ params }: any) {
           </div>
           {toggle && (
             <>
-              <div className='fixed inset-0 top-20 backdrop-blur-2xl'></div>
+              <div className="fixed inset-0 top-20 backdrop-blur-2xl"></div>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className='  h-screen top-20 absolute w-full left-0 px-6  pt-2 '
+                className="  h-screen top-20 absolute w-full left-0 px-6  pt-2 "
               >
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className='flex flex-col gap-6 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4'
+                  className="flex flex-col gap-6 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4"
                 >
                   {navBarData.map((item, index) => (
                     <motion.div
@@ -223,14 +223,14 @@ export default function MobileNavbar({ params }: any) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
-                      className='flex flex-col gap-2'
+                      className="flex flex-col gap-2"
                     >
                       <motion.div
-                        className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
+                        className="flex items-center gap-2 cursor-pointer  py-2 ps-2 "
                         onClick={() => handleItemClick(item.name)}
                       >
                         {item.icon}
-                        <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
+                        <span className="text-text-subtitle font-medium flex items-center justify-between w-full pe-6">
                           {item.name}
                           <div
                             className={`${
@@ -249,13 +249,13 @@ export default function MobileNavbar({ params }: any) {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -20 }}
                           transition={{ duration: 0.3 }}
-                          className='flex flex-col gap-3  py-2 ps-2 '
+                          className="flex flex-col gap-3  py-2 ps-2 "
                         >
                           {item.subItems.map((subItem, index) => (
                             <Link
                               href={subItem.path}
                               key={index}
-                              className='pb-2 ps-5'
+                              className="pb-2 ps-5"
                               onClick={() =>
                                 dispatch({
                                   type: "SET_TOGGLE",
@@ -273,18 +273,21 @@ export default function MobileNavbar({ params }: any) {
 
                   {navBarData2.map((item, index) => (
                     <Link
-                      className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
+                      className="flex items-center gap-2 cursor-pointer  py-2 ps-2 "
                       key={index}
                       href={item.href}
+                      onClick={() =>
+                        dispatch({ type: "SET_TOGGLE", payload: false })
+                      }
                     >
                       {item.icon}
-                      <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
+                      <span className="text-text-subtitle font-medium flex items-center justify-between w-full pe-6">
                         {item.name}
                       </span>
                     </Link>
                   ))}
 
-                  <div
+                  {/* <div
                     onClick={() => handleLanguageClick(selectedLanguage)}
                     className={`cursor-pointer flex-col  border p-1 bg-primary border-primary-border flex items-center justify-center gap-3 py-2 rounded-medium `}
                   >
@@ -338,7 +341,7 @@ export default function MobileNavbar({ params }: any) {
                         ))}
                       </motion.div>
                     )}
-                  </div>
+                  </div> */}
                 </motion.div>
               </motion.div>
             </>
