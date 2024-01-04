@@ -56,6 +56,7 @@ const MainServiceContent = () => {
         "DevRiser provides enterprise cloud IT solutions for all businesses through our company cloud computing services and solutions across the globe. Our area of expertise is in providing specialized cloud services, For organizations, our cloud computing DevRiser provides enterprise cloud IT solutions for all businesses through our company cloud computing services and solutions.",
       image: erp,
       buttonColor: "bg-purple-gradient",
+      RedirectURL: "/en/services/enterprise-solutions-development",
     },
 
     {
@@ -81,6 +82,7 @@ const MainServiceContent = () => {
         <DotNetSVG />,
         <RailsSVG />,
       ],
+      RedirectURL: "/en/services/website-development-services",
     },
     {
       headerText: "Mobile App Development",
@@ -97,6 +99,8 @@ const MainServiceContent = () => {
         <JavaSVG />,
       ],
       buttonColor: "bg-yellow-gradient",
+      RedirectURL: "/en/services/app-development",
+
       switchDescription:
         "DevRiser offers a variety of mobile app development services, such as cross-platform, Android, and iOS app development, to assist businesses in accelerating their growth and creating a distinctive brand identity. Our team specializes in developing mobile apps.",
       switchTechArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
@@ -108,6 +112,7 @@ const MainServiceContent = () => {
       image: uiux,
       techArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
       buttonColor: "bg-parakeet-gradient",
+      RedirectURL: "/en/services/ui-ux-design",
     },
     {
       headerText: "Cloud Computing Services",
@@ -121,6 +126,7 @@ const MainServiceContent = () => {
         <CloudThreeSVG />,
       ],
       buttonColor: "bg-teal-gradient",
+      RedirectURL: "/en/services/cloud-computing",
     },
     {
       headerText: "Game Development",
@@ -129,6 +135,7 @@ const MainServiceContent = () => {
       image: game,
       techArr: [<UnitySVG />, <UnrealSVG />, <EyeGameDevSVG />],
       buttonColor: "bg-orange-gradient",
+      RedirectURL: "/en/services/game-development",
     },
     {
       headerText: "Blockchain Development",
@@ -144,6 +151,7 @@ const MainServiceContent = () => {
         <BlockSixSVG />,
       ],
       buttonColor: "bg-violet-gradient",
+      RedirectURL: "/en/services/block-chain-development",
     },
     {
       headerText: "Internet of Things",
@@ -152,14 +160,16 @@ const MainServiceContent = () => {
       image: internet,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
       buttonColor: "bg-emerald-gradient",
+      RedirectURL: "/en/services/iot-development",
     },
     {
       headerText: "AI/ML Development",
       description:
-        "By creating AI-driven applications and integration services, DevRiser is a top provider of AI application development services that assist companies in bringing intelligence to their ecosystems. Hire skilled AI-ML professionals from DevRiser who have demonstrated proficiency in TensorFlow, Apache SystemML, Caffe, Apache Mahout, OpenNN, Torch, Neuroph, Mycroft AI, and other AI and ML projects, tools, and technologies. To increase productivity and allow AI and ML solutions, we incorporate AI components into already-existing business processes. ",
+        "By creating AI-driven applications and integration services, DevRiser is a top provider of AI application development services that assist companies in bringing intelligence to their ecosystems. Hire skilled AI-ML professionals from DevRiser who have demonstrated proficiency in TensorFlow, Apache SystemML, Caffe, Apache Mahout, OpenNN, Torch, Neuroph, Mycroft AI, and other AI and ML projects, tools, and technologies. To increase productivity and allow AI and ML solutions, we incorporate AI components into already-existing business processes.",
       image: aiml,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
       buttonColor: "bg-skyblue-gradient",
+      RedirectURL: "/en/services/ai-ml-development",
     },
   ];
 
@@ -182,6 +192,7 @@ const MainServiceContent = () => {
                 buttonColor={item.buttonColor}
                 switchDescription={item.switchDescription}
                 switchTechArr={item.switchTechArr}
+                redirectURL={item.RedirectURL}
               />
             </div>
           ))}

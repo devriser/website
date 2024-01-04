@@ -69,7 +69,7 @@ const AIMLContent = async ({ params }: any) => {
               title={item.title}
               description={item.description}
               icon={item.icon}
-              iconBG='bg-light-skyblue'
+              iconBG='bg-skyblue-gradient'
             />
           ))}
         </div>
@@ -107,7 +107,7 @@ const AIMLContent = async ({ params }: any) => {
                 key={index}
                 icon={item.icon}
                 title={item.text}
-                iconBG='bg-light-skyblue'
+                iconBG='bg-skyblue-gradient'
               />
             ))}
           </div>
@@ -140,7 +140,7 @@ const AIMLContent = async ({ params }: any) => {
                 {lang.cc.section3.description}
               </div>
             </div>
-            <Button className='bg-light-skyblue text-[#171717]'>
+            <Button className='bg-skyblue-gradient text-[#171717]'>
               {lang.cc.section3.btnText}
             </Button>
           </div>
@@ -155,7 +155,7 @@ const AIMLContent = async ({ params }: any) => {
                 icon={<UIUXDesigner />}
                 title={lang.cc.section3.point2}
                 isBorder
-                bgColor='bg-light-skyblue'
+                bgColor='bg-skyblue-gradient'
                 iconColor='black'
               />
             </div>

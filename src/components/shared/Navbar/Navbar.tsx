@@ -4,8 +4,11 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   AboutUs,
   AboutUsDark,
+  ArabFlag,
   Contact,
   ContactDark,
+  EnglishFlag,
+  FrenchFlag,
   Industries,
   IndustriesDark,
   LanguageArrow,
@@ -55,11 +58,11 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
       transition={{ type: "spring", duration: 0.5 }}
       className={` flex flex-col ${
         params.lang === "ar" ? "right-[86px]" : "left-[86px]"
-      } absolute bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5`}
+      } absolute bg-secondary h-full -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5 z-50`}
     >
-      {subItems?.map((subItem: any) => (
+      {subItems?.map((subItem: any, index: any) => (
         <Link
-          key={subItem.name}
+          key={index}
           href={subItem.path}
           className={`flex text-secondary-reverse hover:bg-primary transition-colors duration-200 px-3 py-1 rounded-md ${
             subItem.name === "All Services" &&
@@ -67,7 +70,7 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
           } `}
         >
           {subItem.name === "All Services" ? (
-            <div className="flex items-center gap-3">
+            <div className='flex items-center gap-3'>
               <p>All Services</p>
               <GradientRightArrow />
             </div>
@@ -88,8 +91,6 @@ export default function Navbar({ params }: any) {
   const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  console.log(params.lang);
-
   const themes = useTheme();
 
   const navBarData = [
@@ -109,13 +110,31 @@ export default function Navbar({ params }: any) {
           name: "App Development",
           path: `/${params.lang}/services/app-development`,
         },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
+        {
+          name: "UI/UX Design",
+          path: `/${params.lang}/services/ui-ux-design`,
+        },
+        {
+          name: "Cloud Computing",
+          path: `/${params.lang}/services/cloud-computing`,
+        },
+        {
+          name: "Game Development",
+          path: `/${params.lang}/services/game-development`,
+        },
+        {
+          name: "Blockchain Development",
+          path: `/${params.lang}/services/block-chain-development`,
+        },
         { name: "IoT Development", path: "" },
-        { name: "AI/ML Developoment", path: "" },
-        { name: "All Services", path: "" },
+        {
+          name: "AI/ML Developoment",
+          path: `/${params.lang}/services/ai-ml-development`,
+        },
+        {
+          name: "All Services",
+          path: `/${params.lang}/services`,
+        },
       ],
     },
     {
@@ -134,8 +153,8 @@ export default function Navbar({ params }: any) {
       ],
     },
     {
-      name: "AboutUs",
-      icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
+      name: "Industries",
+      icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
       subItems: [
         { name: "Enterprise Solutions", path: "" },
         { name: "Web Development", path: "" },
@@ -148,17 +167,23 @@ export default function Navbar({ params }: any) {
         { name: "AI/ML Developoment", path: "" },
       ],
     },
+  ];
+
+  const navBarData2 = [
     {
-      name: "Industries",
-      icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
-    },
-    {
-      name: "Portfolio",
-      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+      name: "About Us",
+      href: "",
+      icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
       name: "Contact",
+      href: "",
       icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
+    },
+    {
+      name: "Portfolio",
+      href: "",
+      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
     },
   ];
 
@@ -166,17 +191,18 @@ export default function Navbar({ params }: any) {
     {
       name: "English",
       value: "en",
-      flag: "",
+
+      flag: <EnglishFlag />,
     },
     {
       name: "French",
       value: "fr",
-      flag: "",
+      flag: <FrenchFlag />,
     },
     {
       name: "Arabic",
       value: "ar",
-      flag: "",
+      flag: <ArabFlag />,
     },
   ];
 
@@ -189,24 +215,9 @@ export default function Navbar({ params }: any) {
     }
   };
 
-  useEffect(() => {
-    const currentLanguage = localStorage.getItem("selectedLanguage") || "en";
-
-    setSelectedLanguage(currentLanguage);
-  }, []);
-
-  const handleLanguageClick = () => {
+  const handleLanguageClick = (language: any) => {
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
-  };
-  const handleLanguageChange = (language: any) => {
     setSelectedLanguage(language);
-    const currentPath = window.location.pathname;
-    const pathSegments = currentPath.split("/");
-    const currentLanguage = pathSegments[1];
-
-    const newPath = currentPath.replace(`/${currentLanguage}`, `/${language}`);
-    window.history.replaceState(language, "", newPath);
-    window.location.reload();
   };
 
   const closeSidebar = () => {
@@ -222,19 +233,19 @@ export default function Navbar({ params }: any) {
   };
 
   return (
-    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden">
-      <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
-        <Link href={`/${params.lang}`} className="cursor-pointer">
+    <header className='bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden'>
+      <div className='sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]'>
+        <Link href={`/${params.lang}`} className='cursor-pointer'>
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt="img" height={56} width={56} />
+            <Image src={lightLogo} alt='img' height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt="img" height={56} width={56} />
+            <Image src={darkLogo} alt='img' height={56} width={56} />
           )}
         </Link>
-        <div className="flex flex-col items-center gap-6 ">
-          {navBarData.map((ele) => (
+        <div className='flex flex-col items-center gap-6 '>
+          {navBarData.map((ele, index) => (
             <div
-              key={ele.name}
+              key={index}
               className={`flex flex-col items-center cursor-pointer ${
                 activeLink === ele.name && toggle
                   ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
@@ -243,7 +254,7 @@ export default function Navbar({ params }: any) {
               onClick={() => handleItemClick(ele.name)}
             >
               <span>{ele.icon}</span>
-              <p className="text-secondary-reverse">{ele.name}</p>
+              <p className='text-secondary-reverse'>{ele.name}</p>
               {activeLink === ele.name && toggle && (
                 <Sidebar
                   subItems={ele.subItems}
@@ -253,25 +264,39 @@ export default function Navbar({ params }: any) {
               )}
             </div>
           ))}
+
+          {navBarData2.map((item, index) => (
+            <Link
+              className={`flex flex-col items-center cursor-pointer ${
+                activeLink === item.name && toggle
+                  ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
+                  : " py-2"
+              }`}
+              key={index}
+              href={item.href}
+            >
+              {item.icon}
+              <span className='text-secondary-reverse'>{item.name}</span>
+            </Link>
+          ))}
         </div>
 
-        {/* {i18n.locales.map((locales) => (
-          <li key={locales}>
-            <Link href={redirectedPathName(locales)}>{locales}</Link>
-          </li>
-        ))} */}
-
-        <div className="flex flex-col items-center justify-center gap-5">
-          <div className="flex items-center justify-center">
-            <ThemeSwitch />
+        <div className='flex flex-col items-center justify-center gap-5'>
+          <div className='flex items-center justify-center'>
+            <ThemeSwitch params={params} />
           </div>
-
           <div
-            onClick={handleLanguageClick}
-            className=" relative border px-4 border-primary-border flex items-center justify-center gap-1 rounded-sm cursor-pointer "
+            onClick={() => handleLanguageClick(selectedLanguage)}
+            className={`cursor-pointer relative border p-1  border-primary-border flex items-center justify-center gap-1 rounded-medium `}
           >
-            <span className="text-secondary-reverse">{selectedLanguage}</span>
-            <p className="pt-1">
+            <span className={`text-secondary-reverse flex items-center gap-1`}>
+              {
+                language.find((locale) => locale.value === selectedLanguage)
+                  ?.flag
+              }
+              {selectedLanguage}
+            </span>
+            <p className='pt-1'>
               {themes.theme === "dark" ? (
                 <LanguageArrowDark />
               ) : (
@@ -289,24 +314,20 @@ export default function Navbar({ params }: any) {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -10, opacity: 0 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className={`absolute ${
+              className={`absolute flex flex-col gap-4 ${
                 params.lang === "ar" ? "right-[86px]" : "left-[86px]"
-              } bg-secondary -bottom-[6px] py-1 px-1 rounded-md`}
+              } bg-secondary -bottom-[6px] py-2 px-1 rounded-md`}
             >
-              <div className="flex flex-col gap-2">
-                {language.map((item) => (
-                  <span
-                    onClick={() => {
-                      handleLanguageChange(item.value);
-                      setIsLanguageDropdownOpen(false);
-                    }}
-                    className="cursor-pointer hover:bg-primary text-secondary-reverse transition-colors duration-200 px-5 py-1 rounded-md"
-                    key={item.name}
+              {language.map((locale, index) => (
+                <Link href={redirectedPathName(locale.value)} key={index}>
+                  <div
+                    className={`cursor-pointer flex gap-2 px-2 hover:bg-primary py-1 rounded-large text-secondary-reverse transition-colors duration-200 `}
                   >
-                    {item.name}
-                  </span>
-                ))}
-              </div>
+                    {locale.flag}
+                    {locale.name}
+                  </div>
+                </Link>
+              ))}
             </motion.div>
           )}
         </div>

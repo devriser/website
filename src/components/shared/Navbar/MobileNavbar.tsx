@@ -3,13 +3,16 @@
 import {
   AboutUs,
   AboutUsDark,
+  ArabFlag,
   Contact,
   ContactDark,
-  DarkLogo,
   DownArrow,
+  EnglishFlag,
+  FrenchFlag,
   Industries,
   IndustriesDark,
-  LightMode,
+  LanguageArrow,
+  LanguageArrowDark,
   Portfolio,
   PortfolioDark,
   Services,
@@ -29,14 +32,18 @@ import ThemeSwitchMobile from "./ThereSwitchMobile";
 import darkLogo from "@/assets/images/devriserDarkLogo.png";
 import lightLogo from "@/assets/images/devriserLightLogo.png";
 import Image from "next/image";
-import { LeftArrow } from "@/assets/svg/ShelfSolutionsSvg";
-import UpArrow from "@/assets/svg/UpArrow";
+import { usePathname } from "next/navigation";
 
 export default function MobileNavbar({ params }: any) {
   const theme = useTheme();
   const dispatch = useAppDispatch();
   const { toggle } = useAppState();
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const themes = useTheme();
+
+  const pathName = usePathname();
 
   const navBarData = [
     {
@@ -82,8 +89,8 @@ export default function MobileNavbar({ params }: any) {
       ],
     },
     {
-      name: "AboutUs",
-      icon: theme.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
+      name: "Industries",
+      icon: theme.theme === "dark" ? <IndustriesDark /> : <Industries />,
 
       subItems: [
         { name: "Enterprise Solutions", path: "" },
@@ -97,17 +104,41 @@ export default function MobileNavbar({ params }: any) {
         { name: "AI/ML Development", path: "" },
       ],
     },
+  ];
+
+  const navBarData2 = [
     {
-      name: "Industries",
-      icon: theme.theme === "dark" ? <IndustriesDark /> : <Industries />,
-    },
-    {
-      name: "Portfolio",
-      icon: theme.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+      name: "About Us",
+      href: "",
+      icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
       name: "Contact",
-      icon: theme.theme === "dark" ? <ContactDark /> : <Contact />,
+      href: "",
+      icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
+    },
+    {
+      name: "Portfolio",
+      href: "",
+      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+    },
+  ];
+  const language = [
+    {
+      name: "English",
+      value: "en",
+
+      flag: <EnglishFlag />,
+    },
+    {
+      name: "French",
+      value: "fr",
+      flag: <FrenchFlag />,
+    },
+    {
+      name: "Arabic",
+      value: "ar",
+      flag: <ArabFlag />,
     },
   ];
 
@@ -117,25 +148,29 @@ export default function MobileNavbar({ params }: any) {
     );
   };
 
-  const themes = useTheme();
+  const redirectedPathName = (locale: string) => {
+    if (!pathName) return "/";
+    const segments = pathName.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  };
+
+  const handleLanguageClick = (language: any) => {
+    setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
+    setSelectedLanguage(language);
+  };
 
   return (
     <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.3 }}
-        className="flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden"
-      >
+      <div className='flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden'>
         <div>
           <ThemeSwitchMobile />
         </div>
-        <Link href={`/${params.lang}`} className="cursor-pointer">
+        <Link href={`/${params.lang}`} className='cursor-pointer'>
           {themes.theme === "dark" ? (
-            <Image src={lightLogo} alt="img" height={56} width={56} />
+            <Image src={lightLogo} alt='img' height={56} width={56} />
           ) : (
-            <Image src={darkLogo} alt="img" height={56} width={56} />
+            <Image src={darkLogo} alt='img' height={56} width={56} />
           )}
         </Link>
         <div>
@@ -166,20 +201,20 @@ export default function MobileNavbar({ params }: any) {
           </div>
           {toggle && (
             <>
-              <div className="fixed inset-0 top-20 backdrop-blur-2xl"></div>
+              <div className='fixed inset-0 top-20 backdrop-blur-2xl'></div>
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
-                className="  h-screen top-20 absolute w-full left-0 px-6  pt-2 "
+                className='  h-screen top-20 absolute w-full left-0 px-6  pt-2 '
               >
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="flex flex-col gap-8 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4"
+                  className='flex flex-col gap-6 overflow-auto h-screen pb-28 bg-secondary  p-2 rounded-large pt-4 px-4'
                 >
                   {navBarData.map((item, index) => (
                     <motion.div
@@ -188,16 +223,24 @@ export default function MobileNavbar({ params }: any) {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
-                      className="flex flex-col gap-2"
+                      className='flex flex-col gap-2'
                     >
                       <motion.div
-                        className="flex items-center gap-2 cursor-pointer bg-primary py-2 ps-2 rounded-banner-rounded border border-secondary-reverse"
+                        className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
                         onClick={() => handleItemClick(item.name)}
                       >
                         {item.icon}
-                        <span className="text-text-subtitle font-medium flex items-center justify-between w-full pe-6">
+                        <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
                           {item.name}
-                          <DownArrow />
+                          <div
+                            className={`${
+                              expandedItem === item.name
+                                ? "rotate-180 transition-all duration-200"
+                                : "rotate-0 transition-all duration-200"
+                            }`}
+                          >
+                            <DownArrow />
+                          </div>
                         </span>
                       </motion.div>
                       {expandedItem === item.name && item.subItems && (
@@ -206,13 +249,13 @@ export default function MobileNavbar({ params }: any) {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -20 }}
                           transition={{ duration: 0.3 }}
-                          className="flex flex-col gap-3 bg-primary py-2 ps-2 rounded-banner-rounded border-secondary-reverse border"
+                          className='flex flex-col gap-3  py-2 ps-2 '
                         >
-                          {item.subItems.map((subItem, subIndex) => (
+                          {item.subItems.map((subItem, index) => (
                             <Link
                               href={subItem.path}
-                              key={subIndex}
-                              className="border-b pb-3 ps-3"
+                              key={index}
+                              className='pb-2 ps-5'
                               onClick={() =>
                                 dispatch({
                                   type: "SET_TOGGLE",
@@ -227,16 +270,81 @@ export default function MobileNavbar({ params }: any) {
                       )}
                     </motion.div>
                   ))}
-                  <div className="border p-2 flex items-center  text-text-title font-semibold bg-gray-300 rounded-large justify-between ps-8 pe-6">
-                    English
-                    <DownArrow />
+
+                  {navBarData2.map((item, index) => (
+                    <Link
+                      className='flex items-center gap-2 cursor-pointer  py-2 ps-2 '
+                      key={index}
+                      href={item.href}
+                    >
+                      {item.icon}
+                      <span className='text-text-subtitle font-medium flex items-center justify-between w-full pe-6'>
+                        {item.name}
+                      </span>
+                    </Link>
+                  ))}
+
+                  <div
+                    onClick={() => handleLanguageClick(selectedLanguage)}
+                    className={`cursor-pointer flex-col  border p-1 bg-primary border-primary-border flex items-center justify-center gap-3 py-2 rounded-medium `}
+                  >
+                    <div
+                      className={`text-secondary-reverse flex items-center gap-3 text-text-title font-medium `}
+                    >
+                      {
+                        language.find(
+                          (locale) => locale.value === selectedLanguage
+                        )?.flag
+                      }
+                      <span>
+                        {selectedLanguage === "en" && "English"}
+                        {selectedLanguage === "fr" && "French"}
+                        {selectedLanguage === "ar" && "Arabic"}
+                      </span>
+                      <p
+                        className={`pt-1 ${
+                          isLanguageDropdownOpen
+                            ? "rotate-90 transition-all duration-200"
+                            : " transition-all duration-200"
+                        }`}
+                      >
+                        {themes.theme === "dark" ? (
+                          <LanguageArrowDark />
+                        ) : (
+                          <LanguageArrow />
+                        )}
+                      </p>
+                    </div>
+                    {isLanguageDropdownOpen && (
+                      <motion.div
+                        initial={{ y: -10, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: -10, opacity: 0 }}
+                        transition={{ type: "spring", duration: 0.5 }}
+                        className={` flex flex-col gap-4 bg-primary w-full  top-14 py-2 px-1 rounded-medium`}
+                      >
+                        {language.map((locale, index) => (
+                          <Link
+                            href={redirectedPathName(locale.value)}
+                            key={index}
+                          >
+                            <div
+                              className={`cursor-pointer flex gap-2 px-2 hover:bg-primary py-1 rounded-large text-secondary-reverse transition-colors duration-200 `}
+                            >
+                              {locale.flag}
+                              {locale.name}
+                            </div>
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
                   </div>
                 </motion.div>
               </motion.div>
             </>
           )}
         </div>
-      </motion.div>
+      </div>
     </AnimatePresence>
   );
 }

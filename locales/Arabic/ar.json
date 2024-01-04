@@ -179,5 +179,37 @@
       "cardHeadingFour": "Flexible Engagement Model Cycle"
     }
   },
+  "blockChainDevelopment": {
+    "mainHeading": "Blockchain Development",
+    "subHeading": "DevRiser is your trusted blockchain development partner, renowned for full-cycle blockchain application development services powered by cutting-edge technology. We deliver solutions that empower you to harness the potential of a decentralized ecosystem to its fullest.",
+    "buttonTextOne": "Our Portfolio",
+    "buttonTextTwo": "Contact Sales",
+    "sectionOne": {
+      "appHeading": "Our Services for Blockchain Development",
+      "appSubHeading": "As the top custom blockchain development firm for clients worldwide, we have significantly advanced the field over the years. For the following variety of services, we have employed creative blockchain application developers who can serve the main types of company domains:",
+      "appServiceArr": [
+        {
+          "title": "Development of Smart Contracts",
+          "description": "The client is assisted by our dedicated Blockchain specialist team at DevRiser in getting the time and advice they require, as well as recommendations based on the requirements of the project and the client's business needs.",
+          "icon": "DevelopmentOfSmartContracts"
+        },
+        {
+          "title": "Development of Blockchain Apps",
+          "description": "The way your company interacts with customers will alter as a result of the competent machine learning solutions integrated by our skilled and experienced team of Blockchain development professionals.",
+          "icon": "DevelopmentOfBlockchainApps"
+        },
+        {
+          "title": "End-to-End Apps Solutions",
+          "description": "Our Blockchain specialists provide end-to-end development solutions, from ideation, planning, to programming, and releasing the project, to assist you maximize ROI and get an advantage over your competitors.",
+          "icon": "EndToEndAppsSolutions"
+        },
+        {
+          "title": "Crypto Wallet & Exchange Development",
+          "description": "We are known as the top Cryptocurrency Development Company, assisting businesses in developing feature-rich, responsive, and secure crypto wallet apps that allow for the cross-chain exchange of digital assets and cryptocurrencies.",
+          "icon": "CryptoWalletExchangeDevelopment"
+        }
+      ]
+    }
+  },
   "webdev": {}
 }
