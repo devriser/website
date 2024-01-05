@@ -1,7 +1,7 @@
 import ContactUsForm from "@/components/shared/ContactUsForm/ContactUsForm";
 import React from "react";
 
-export default function ContactUs() {
+export default function ContactUs({ params }: any) {
   return (
     <div className="bg-primary p-6 px-8 flex flex-col gap-6">
       <div className="flex flex-col gap-1">
@@ -16,7 +16,7 @@ export default function ContactUs() {
       </div>
 
       <div>
-        <ContactUsForm />
+        <ContactUsForm params={params} />
       </div>
     </div>
   );

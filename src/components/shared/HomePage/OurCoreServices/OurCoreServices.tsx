@@ -76,25 +76,25 @@ export default function OurCoreServices({ params }: OurCoreServicesProps) {
       name: lang.ourCoreServices.pointSix,
       number: "06",
       icon: <UpArrow />,
-      path: `/${params.lang}/services/block-chain-development`,
+      path: `/${params.lang}/services/blockchain-development`,
     },
     {
       name: lang.ourCoreServices.pointSeven,
       number: "07",
       icon: <UpArrow />,
-      path: ``,
+      path: `/${params.lang}/services/game-development`,
     },
     {
       name: lang.ourCoreServices.pointEight,
       number: "08",
       icon: <UpArrow />,
-      path: ``,
+      path: `/${params.lang}/services/iot-development`,
     },
     {
       name: lang.ourCoreServices.pointNine,
       number: "09",
       icon: <UpArrow />,
-      path: ``,
+      path: `/${params.lang}/services/ui-ux-design`,
     },
   ];
 

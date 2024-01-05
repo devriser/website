@@ -26,7 +26,7 @@
   flex-direction: column;
   background-color: white;
   z-index: 10;
-  min-width: 320px;
+  width: 100%;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .flag_dropDown-searchbar {
@@ -63,9 +63,9 @@
   cursor: pointer;
 }
 
-.flag_dropDown div:hover {
+/* .flag_dropDown div:hover {
   background-color: rgb(237, 237, 237);
-}
+} */
 
 .flag_container {
   align-self: stretch;

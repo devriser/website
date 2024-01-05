@@ -16,7 +16,9 @@ export default async function LetDiscussYourProject({ params }: any) {
             {lang.letDiscussYourProject.heading}
           </p>
         </div>
-        <Button>{lang.letDiscussYourProject.buttonText}</Button>
+        <Button as="NextLink" href={`/${params.lang}/contact-us`}>
+          {lang.letDiscussYourProject.buttonText}
+        </Button>
       </div>
     </div>
   );

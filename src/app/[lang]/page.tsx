@@ -9,14 +9,14 @@ import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/Let
 
 export default function Home({ params }: any) {
   return (
-    <main className=" py-8 max-sm:pt-3 flex flex-col gap-8 bg-primary w-full">
+    <main className=" py-8 max-sm:pt-3 flex flex-col gap-16 bg-primary w-full">
       <LandingPage params={params} />
       <OurAchievments params={params} />
       <OurCoreServices params={params} />
       <SoftwareDevelopmentProcess params={params} />
       <ShelfSolutions params={params} />
       <Technologies params={params} />
-      <OurWork params={params} />
+      {/* <OurWork params={params} /> */}
       <LetDiscussYourProject params={params} />
     </main>
   );

@@ -20,6 +20,7 @@ import {
   HireDedicaed,
   JavaScriptDevelopment,
   UiUxDevelopment,
+  UiUxDevelopmentPurple,
   WebDevelopment,
 } from "@/assets/svg/AppDevelopmentSvg";
 
@@ -47,12 +48,12 @@ export default async function BlockChainDevelopment({ params }: any) {
     {
       parent: "",
       child: [
-        "Amazon AWS",
-        "Alibaba Cloud ",
-        "Digital Ocean",
-        "Kubernetes",
-        "OVHCloud",
-        "microsoft Azure",
+        "Solidity",
+        "React Js",
+        "Next Js",
+        "C++",
+        "Metamask",
+        "Ethereum Network",
       ],
     },
   ];
@@ -81,9 +82,9 @@ export default async function BlockChainDevelopment({ params }: any) {
   ];
 
   return (
-    <div className=' pt-14 pb-6 max-md:pt-6'>
-      <div className='flex flex-col gap-6 '>
-        <div className='px-6'>
+    <div className=" pt-14 pb-16 max-md:pt-6">
+      <div className="flex flex-col gap-16 ">
+        <div className="px-6">
           <TitleHeader
             title={lang.blockChainDevelopment.mainHeading}
             description={lang.blockChainDevelopment.subHeading}
@@ -103,20 +104,20 @@ export default async function BlockChainDevelopment({ params }: any) {
             ]}
           />
         </div>
-        <div className='px-6'>
+        <div className="px-6">
           <Image
             src={blockChainImg}
-            alt='block chain development'
-            className='rounded-banner-rounded w-full'
+            alt="block chain development"
+            className="rounded-banner-rounded w-full"
           />
         </div>
-        <div className='flex flex-col gap-5 px-6'>
+        <div className="flex flex-col gap-5 px-6">
           <ServiceHeader
             title={lang.blockChainDevelopment.sectionOne.appHeading}
             description={lang.blockChainDevelopment.sectionOne.appSubHeading}
           />
 
-          <div className='grid grid-cols-1 md:grid-cols-2  gap-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
             {lang.blockChainDevelopment.sectionOne.appServiceArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
@@ -130,18 +131,18 @@ export default async function BlockChainDevelopment({ params }: any) {
             )}
           </div>
         </div>
-        <div className='grid gap-16 py-16 bg-secondary'>
+        <div className="grid gap-16 py-16 bg-secondary">
           <ServiceHeader
-            title='Technologies We Use For Cloud Computing'
+            title="Technologies We Use For Blockchain Development"
             description={
-              "The technology stack for cloud computing that enables us to creatively translate software development ideas into actual projects is shown below."
+              "The technology stack for blockchain development that enables us to creatively translate software ideas into decentralized webs and apps."
             }
           />
-          <div className='grid gap-6 '>
+          <div className="grid gap-6 ">
             {techStackArr.map((item, index) => (
               <div
                 key={index}
-                className='flex flex-col justify-center gap-6 items-center px-20 max-md:px-6'
+                className="flex flex-col justify-center gap-6 items-center px-20 max-md:px-6"
               >
                 <TechRow parent={item.parent} child={item.child} />
                 <div
@@ -155,75 +156,76 @@ export default async function BlockChainDevelopment({ params }: any) {
             ))}
           </div>
         </div>
-        <div className='flex px-6 justify-between max-md:flex-col'>
-          <div className='flex-1'>
-            <h3 className='text-text-heading font-medium text-secondary-reverse'>
+        {/* <div className="flex px-6 justify-between max-md:flex-col">
+          <div className="flex-1">
+            <h3 className="text-text-heading font-medium text-secondary-reverse">
               Our Blockchain Development Methodology
             </h3>
           </div>
-          <div className='flex-1'>
+          <div className="flex-1">
             <Accordion content={BlockChainAccordionData} />
           </div>
-        </div>
+        </div> */}
 
         <div>
           <LetDiscussYourProject params={params} />
         </div>
-        <div className='flex bg-primary p-6 pt-8 gap-6 max-md:flex-col'>
-          <div className='flex flex-col gap-6 flex-1'>
-            <div className='flex flex-col gap-2'>
-              <p className='text-text-heading text-secondary-reverse font-medium'>
+        <div className="flex bg-secondary p-6 pt-8 gap-6 max-md:flex-col">
+          <div className="flex flex-col gap-6 flex-1">
+            <div className="flex flex-col gap-2">
+              <p className="text-text-heading text-secondary-reverse font-medium">
                 {lang.appDevelopment.sectionFour.title}
               </p>
-              <p className='text-secondary-reverse'>
+              <p className="text-light-secondary">
                 {lang.appDevelopment.sectionFour.description}
               </p>
             </div>
-            <Button className='bg-secondary-reverse text-primary' style='solid'>
+            <Button
+              className="bg-violet-gradient text-secondary-reverse"
+              style="solid"
+              as="NextLink"
+              href={`/${params.lang}/services`}
+            >
               {lang.appDevelopment.sectionFour.btnText}
             </Button>
           </div>
-          <div className='flex flex-col md:flex-row gap-10 max-md:gap-3 flex-1'>
-            <div className='flex flex-col gap-4 '>
+          <div className="flex flex-col md:flex-row gap-10 max-md:gap-3 flex-1">
+            <div className="flex flex-col gap-4 ">
               <SmallCard
                 icon={<JavaScriptDevelopment />}
                 title={lang.appDevelopment.sectionFour.point1}
                 isBorder
-                bgColor='bg-violet-gradient'
-                iconColor='black'
+                path={`/${params.lang}/services/ai-ml-development`}
               />
               <SmallCard
-                icon={<UiUxDevelopment />}
+                icon={<UiUxDevelopmentPurple />}
                 title={lang.appDevelopment.sectionFour.point2}
                 isBorder
-                bgColor='bg-violet-gradient'
-                iconColor='black'
+                path={`/${params.lang}/services/ui-ux-design`}
               />
             </div>
-            <div className='flex flex-col gap-4 pt-12 max-md:pt-0'>
+            <div className="flex flex-col gap-4 pt-12 max-md:pt-0">
               <SmallCard
                 icon={<WebDevelopment />}
                 title={lang.appDevelopment.sectionFour.point3}
                 isBorder
-                bgColor='bg-violet-gradient'
-                iconColor='black'
+                path={`/${params.lang}/services/website-development-services`}
               />
               <SmallCard
                 icon={<HireDedicaed />}
                 title={lang.appDevelopment.sectionFour.point4}
                 isBorder
-                bgColor='bg-violet-gradient'
-                iconColor='black'
+                path={`/${params.lang}/services/game-development`}
               />
             </div>
           </div>
         </div>
-        <div className='px-6 flex flex-col gap-6'>
-          <p className='text-text-heading text-secondary-reverse font-medium text-center'>
+        {/* <div className="px-6 flex flex-col gap-6">
+          <p className="text-text-heading text-secondary-reverse font-medium text-center">
             Frequently Asked Questions
           </p>
           <Accordion content={lang.esd.faq.faqList} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

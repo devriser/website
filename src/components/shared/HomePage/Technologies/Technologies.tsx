@@ -5,15 +5,19 @@ import { getLoacales } from "../../../../../getLocales";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Android,
+  AngularSVGTech,
   Flutter,
   Ionic,
   Ios,
   Kotlin,
   ObjectiveC,
   ReactNative,
+  ReactSVGTech,
   Swift,
   Titanium,
+  TypeScriptSVGTech,
 } from "@/assets/svg/TechnologiesSvg/Index";
+import { JavaSVG, ReactSVG, TypeScriptSVG } from "@/assets/svg/TechIcons";
 
 type TechnologyData = {
   heading: string;
@@ -91,6 +95,10 @@ export default function Technologies({ params }: any) {
         {
           icon: <Swift />,
           name: "Swift",
+        },
+        {
+          icon: <TypeScriptSVGTech />,
+          name: "TypeScript",
         },
       ],
     },
@@ -302,12 +310,12 @@ export default function Technologies({ params }: any) {
   ];
 
   return (
-    <div className='px-6 flex flex-col gap-8'>
-      <p className='text-secondary-reverse text-text-heading font-semibold text-center'>
+    <div className="px-6 flex flex-col gap-8">
+      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.technologies.mainHeading}
       </p>
-      <div className='flex flex-col items-center justify-center gap-12'>
-        <div className='flex gap-10 flex-wrap max-sm:justify-center'>
+      <div className="flex flex-col items-center justify-center gap-12">
+        {/* <div className='flex gap-10 flex-wrap max-sm:justify-center'>
           {technologiesData.map((data, index) => (
             <div key={index}>
               <p
@@ -320,11 +328,11 @@ export default function Technologies({ params }: any) {
               </p>
             </div>
           ))}
-        </div>
-        <div className='flex overflow-hidden '>
+        </div> */}
+        <div className="flex overflow-hidden ">
           {selectedHeading && (
             <motion.div
-              className='flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden'
+              className="flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden"
               initial={{ x: "100%" }}
               animate={{ x: "-100%" }}
               transition={{
@@ -339,13 +347,13 @@ export default function Technologies({ params }: any) {
                 {getIconsByHeading(selectedHeading)?.map((data, index) => (
                   <motion.div
                     key={index}
-                    className='flex flex-col items-center gap-2 p-2 whitespace-nowrap'
+                    className="flex flex-col items-center gap-2 p-2 whitespace-nowrap"
                     initial={{ opacity: 0, x: "100%" }}
                     animate={{ opacity: 1, x: "0%" }}
                     exit={{ opacity: 0, x: "100%" }}
                   >
                     {data.icon}
-                    <p className='text-secondary-reverse'>{data.name}</p>
+                    <p className="text-secondary-reverse">{data.name}</p>
                   </motion.div>
                 ))}
               </AnimatePresence>

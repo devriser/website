@@ -89,9 +89,9 @@ export default async function UXUIContent({ params }: any) {
   const lang = await getLoacales(params.lang);
 
   return (
-    <section className='bg-primary h-fit'>
-      <div className='pt-14 grid gap-16'>
-        <div className='bg-primary px-6 '>
+    <section className="bg-primary h-fit pb-8">
+      <div className="pt-14 grid gap-8">
+        <div className="bg-primary px-6 ">
           <TitleHeader
             title={lang.uxui.heroTitle}
             description={lang.uxui.heroHeading}
@@ -112,23 +112,21 @@ export default async function UXUIContent({ params }: any) {
           />
         </div>
 
-
         <div className="px-6 rounded-3xl ">
           <Image
             src={uxui}
             alt="Picture of ui ux services"
             className="w-full rounded-3xl"
           />
-
         </div>
 
-        <div className='grid gap-10 bg-primary px-6 '>
+        <div className="grid gap-10 bg-primary px-6 ">
           <ServiceHeader
             title={lang.uxui.section1.serviceHeaderTitle}
             description={lang.uxui.section1.serviceHeaderDesc}
           />
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {lang.uxui.section1.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <CardWithIcon
@@ -143,21 +141,21 @@ export default async function UXUIContent({ params }: any) {
           </div>
         </div>
 
-        <div className='grid gap-16 bg-secondary  p-6 '>
-          <div className=' rounded-2xl  '>
+        <div className="grid gap-8 bg-secondary  p-6 ">
+          {/* <div className=" rounded-2xl  ">
             <Image
               src={alldevices}
-              alt='All devices banner'
-              className='w-full rounded-2xl'
+              alt="All devices banner"
+              className="w-full rounded-2xl"
             />
-          </div>
+          </div> */}
 
           <ServiceHeader
             title={lang.uxui.section2.serviceHeaderTitle}
             description={lang.uxui.section2.serviceHeaderDesc}
           />
 
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center'>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
             {lang.uxui.section2.webServicesArr.map(
               (item: ServiceCardItem, index: number) => (
                 <SmallCard
@@ -172,62 +170,60 @@ export default async function UXUIContent({ params }: any) {
           </div>
         </div>
 
-        <div className='bg-primary p-6'>
+        <div className="bg-primary p-6">
           <ServiceHeader
             title={lang.uxui.section5.title}
             description={lang.uxui.section5.description}
           />
-          <div className='flex flex-col lg:flex-row gap-20 my-10'>
+          <div className="flex flex-col lg:flex-row gap-20 my-10">
             <Image
               src={banner}
-              alt='UI Design Methodology'
-              className='w-full rounded-2xl'
+              alt="UI Design Methodology"
+              className="w-full rounded-2xl"
             />
-            <div className='flex flex-col gap-10 '>
+            <div className="flex flex-col gap-10 ">
               {lang.uxui.section5.methodologies.map(
                 (item: any, index: number) => (
-                  <div key={index} className='flex flex-col gap-2'>
-                    <div className='text-text-title font-semibold text-secondary-reverse '>
+                  <div key={index} className="flex flex-col gap-2">
+                    <div className="text-text-title font-semibold text-secondary-reverse ">
                       {item.title}
                     </div>
-                    <div className='text-sub-text'>{item.subTitle}</div>
+                    <div className="text-sub-text">{item.subTitle}</div>
                   </div>
                 )
               )}
             </div>
           </div>
 
-          <ServiceHeader title={lang.uxui.section6.title} />
+          {/* <ServiceHeader title={lang.uxui.section6.title} />
 
-          <div className='flex flex-row flex-wrap items-start gap-10 justify-center mt-10 '>
+          <div className="flex flex-row flex-wrap items-start gap-10 justify-center mt-10 ">
             {lang.uxui.section6.services.map((item: any, index: number) => (
               <div
                 key={index}
-                className='flex flex-col gap-6 bg-secondary p-8 '
+                className="flex flex-col gap-6 bg-secondary p-8 "
               >
-                <div className='text-text-title font-semibold text-solid-greenish-yellow '>
+                <div className="text-text-title font-semibold text-solid-greenish-yellow ">
                   {item.title}
                 </div>
                 {item.points.map((item: any, index: number) => (
-                  <div className='flex gap-4' key={index}>
+                  <div className="flex gap-4" key={index}>
                     <Tick />
 
-
                     <div className="text-secondary-reverse">{item}</div>
-
                   </div>
                 ))}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
-        <div className='grid gap-10 bg-secondary py-10 '>
+        <div className="grid gap-10 bg-secondary py-10 ">
           <ServiceHeader
             title={lang.uxui.section7.title}
             description={lang.uxui.section7.description}
           />
-          <div className='flex gap-5 justify-center items-center flex-wrap px-6'>
+          <div className="flex gap-5 justify-center items-center flex-wrap px-6">
             {[
               "Sketch",
               "Adobe XD",
@@ -242,7 +238,7 @@ export default async function UXUIContent({ params }: any) {
             ].map((item: string, index: any) => (
               <p
                 key={index}
-                className='py-2 px-3 text-sm flex items-center justify-center text-center border border-primary-border text-secondary-reverse rounded-full w-fit'
+                className="py-2 px-3 text-sm flex items-center justify-center text-center border border-primary-border text-secondary-reverse rounded-full w-fit"
               >
                 {item}
               </p>
@@ -250,13 +246,13 @@ export default async function UXUIContent({ params }: any) {
           </div>
         </div>
 
-        <div className='grid gap-10 bg-primary px-6 py-6 '>
+        <div className="grid gap-10 bg-primary px-6 py-6 ">
           <ServiceHeader
             title={lang.uxui.section4.title}
             description={lang.uxui.section4.description}
           />
 
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center'>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
             {lang.uxui.section4.points.map(
               (item: ServiceCardItem, index: number) => (
                 <SmallCard
@@ -265,17 +261,17 @@ export default async function UXUIContent({ params }: any) {
                   title={item.title}
                   iconBG={"bg-parakeet-gradient"}
                   isBorder
-                  bgColor='bg-secondary'
+                  bgColor="bg-secondary"
                 />
               )
             )}
           </div>
         </div>
         <LetDiscussYourProject params={params} />
-        <div className='py-16 grid gap-10 px-6 lg:px-20'>
+        {/* <div className='py-16 grid gap-10 px-6 lg:px-20'>
           <ServiceHeader title={lang.uxui.faq.faqTitle} />
           <Accordion content={lang.uxui.faq.faqList} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

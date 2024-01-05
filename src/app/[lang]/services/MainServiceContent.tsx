@@ -53,7 +53,7 @@ const MainServiceContent = () => {
     {
       headerText: "Enterprise Solutions Development",
       description:
-        "DevRiser provides enterprise cloud IT solutions for all businesses through our company cloud computing services and solutions across the globe. Our area of expertise is in providing specialized cloud services, For organizations, our cloud computing DevRiser provides enterprise cloud IT solutions for all businesses through our company cloud computing services and solutions.",
+        "DevRiser specializes in crafting cutting-edge software solutions that elevate your business to new heights. Our team of experienced developers is dedicated to delivering tailor-made enterprise solutions, aligning seamlessly with your unique needs and challenges. From scalable applications to efficient system integrations, we are committed to propelling your business forward.",
       image: erp,
       buttonColor: "bg-purple-gradient",
       RedirectURL: "/en/services/enterprise-solutions-development",
@@ -74,7 +74,7 @@ const MainServiceContent = () => {
       ],
       buttonColor: "bg-green-gradient",
       switchDescription:
-        "DevRiser provides performance-driven, scalable, and responsive custom web app development services. The most recent technologies are used by our team of professionals to build cross-platform web applications.",
+        "DevRiser excels in backend web development, delivering robust, scalable, and efficient solutions. Our dedicated team leverages the latest technologies to craft powerful backend systems, ensuring seamless functionality and optimal performance for your web applications.",
       switchTechArr: [
         <NodeSVG />,
         <LaravelSVG />,
@@ -85,7 +85,7 @@ const MainServiceContent = () => {
       RedirectURL: "/en/services/website-development-services",
     },
     {
-      headerText: "Mobile App Development",
+      headerText: "App Development",
       description:
         "DevRiser offers a variety of mobile app development services, such as cross-platform, Android, and iOS app development, to assist businesses in accelerating their growth and creating a distinctive brand identity. Our team specializes in developing mobile apps.",
       image: mobile,
@@ -102,7 +102,7 @@ const MainServiceContent = () => {
       RedirectURL: "/en/services/app-development",
 
       switchDescription:
-        "DevRiser offers a variety of mobile app development services, such as cross-platform, Android, and iOS app development, to assist businesses in accelerating their growth and creating a distinctive brand identity. Our team specializes in developing mobile apps.",
+        "DevRiser transforms ideas into captivating mobile experiences. Our expert designers specialize in cross-platform, Android, and iOS app development, crafting visually appealing and user-centric designs that align seamlessly with your brand identity. Elevate your business presence with DevRiser's innovative mobile app design solutions",
       switchTechArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
     },
     {
@@ -140,7 +140,7 @@ const MainServiceContent = () => {
     {
       headerText: "Blockchain Development",
       description:
-        "DevRiser provides enterprise cloud IT solutions for all businesses through our company's cloud computing services and solutions across the globe. Our area of expertise is in providing specialized cloud services, For organizations, our cloud computing solutions",
+        "Unlock the potential of decentralized technology with DevRiser's cutting-edge blockchain development services. From smart contract deployment to DApp creation, we empower businesses to embrace the future of secure and transparent digital ecosystems. Partner with us for innovative solutions that redefine possibilities in the blockchain space.",
       image: blockchain,
       techArr: [
         <BlockOneSVG />,
@@ -151,7 +151,7 @@ const MainServiceContent = () => {
         <BlockSixSVG />,
       ],
       buttonColor: "bg-violet-gradient",
-      RedirectURL: "/en/services/block-chain-development",
+      RedirectURL: "/en/services/blockchain-development",
     },
     {
       headerText: "Internet of Things",
@@ -165,7 +165,7 @@ const MainServiceContent = () => {
     {
       headerText: "AI/ML Development",
       description:
-        "By creating AI-driven applications and integration services, DevRiser is a top provider of AI application development services that assist companies in bringing intelligence to their ecosystems. Hire skilled AI-ML professionals from DevRiser who have demonstrated proficiency in TensorFlow, Apache SystemML, Caffe, Apache Mahout, OpenNN, Torch, Neuroph, Mycroft AI, and other AI and ML projects, tools, and technologies. To increase productivity and allow AI and ML solutions, we incorporate AI components into already-existing business processes.",
+        "Empower your business with DevRiser's AI/ML development services. From predictive analytics to intelligent automation, we harness the power of artificial intelligence and machine learning to elevate your operations. Revolutionize your technology landscape with our expertise, driving innovation and efficiency for a competitive edge in the digital era.",
       image: aiml,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
       buttonColor: "bg-skyblue-gradient",
@@ -174,14 +174,14 @@ const MainServiceContent = () => {
   ];
 
   return (
-    <section className='bg-primary h-fit w-fit lg:w-full'>
-      <div className='pt-14 px-0 md:px-6 grid gap-2'>
-        <div className='max-w-xl'>
-          <TitleHeader title='Make the Most of Your Online Presence With Our Web & Mobile Solutions' />
+    <section className="bg-primary h-fit w-fit lg:w-full">
+      <div className="pt-14 px-0 md:px-6 grid gap-2">
+        <div className="max-w-xl px-6">
+          <TitleHeader title="Make the Most of Your Online Presence With Our Web & Mobile Solutions" />
         </div>
-        <div className=' grid gap-16 mb-12'>
+        <div className=" grid gap-16 mb-12">
           {serviceSummaryArr.map((item, index) => (
-            <div key={index} className='grid gap-6'>
+            <div key={index} className="grid gap-6">
               <Heading text={item.headerText} />
               <ServiceSummary
                 description={item.description}

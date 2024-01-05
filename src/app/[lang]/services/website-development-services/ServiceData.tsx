@@ -9,6 +9,7 @@ import {
   MobileAppIcon,
   ResponsiveIcon,
   SettingIcon,
+  SolutionDomain,
   TestQaIcon,
   UxIcon,
 } from "@/assets/svg/AllIconComponent";
@@ -57,30 +58,30 @@ export const webServicesArr = [
       "From business analysis to UI/UX design to front-end/back-end development and support and maintenance.",
     icon: <MaintenanceIcon />,
   },
-  {
-    title: "App & Web  Develop",
-    description:
-      "In the best features of online and mobile apps! Our Progressive Web Apps are built on the web but have the same look and as a mobile app",
-    icon: <MobileAppIcon />,
-  },
+  // {
+  //   title: "App & Web  Develop",
+  //   description:
+  //     "In the best features of online and mobile apps! Our Progressive Web Apps are built on the web but have the same look and as a mobile app",
+  //   icon: <MobileAppIcon />,
+  // },
   {
     title: "CMS",
     description:
       "We specialize in CMS development services that are tailored to your unique business requirements. we  with us for best-in-class CMS solutions.",
     icon: <CmsIcon />,
   },
-  {
-    title: "DB Architecture",
-    description:
-      "We create well-organized database architecture for our clients in order to provide them with solutions that are logical in structure.",
-    icon: <DBArchitectureIcon />,
-  },
-  {
-    title: "Front-end Development",
-    description:
-      "Integrate 3D preview, audio, and video streaming experiences directly into your website to immediately capture attention of your customers.",
-    icon: <ImproveIcon />,
-  },
+  // {
+  //   title: "DB Architecture",
+  //   description:
+  //     "We create well-organized database architecture for our clients in order to provide them with solutions that are logical in structure.",
+  //   icon: <DBArchitectureIcon />,
+  // },
+  // {
+  //   title: "Front-end Development",
+  //   description:
+  //     "Integrate 3D preview, audio, and video streaming experiences directly into your website to immediately capture attention of your customers.",
+  //   icon: <ImproveIcon />,
+  // },
 ];
 
 export const techStackArr = [
@@ -262,7 +263,7 @@ export const futureTechServicesArr = [
     title: "Solutions Specific to a Domaint",
     description:
       "Since we are a top custom website development company, we can offer complete website solutions that are tailored to the demands of our clients and the trends in the relevant industries",
-    icon: <BasicShape />,
+    icon: <SolutionDomain />,
   },
   {
     title: "Modern design and features",

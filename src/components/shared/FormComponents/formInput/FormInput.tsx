@@ -136,7 +136,7 @@ export default function FormInput({
                       </div>
                     </div>
                     {active && (
-                      <div className="select-dropdown absolute z-10 mt-1 w-full rounded-small border border-input bg-primary  ">
+                      <div className="select-dropdown absolute z-[1] mt-1 w-full rounded-small border border-input bg-primary  ">
                         {selectOptions.map((option) => (
                           <div
                             key={option.value}

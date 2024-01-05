@@ -35,7 +35,7 @@ type Props = {
 };
 
 export default function CustomPhoneInput({
-  defaultCountryCode = "+1",
+  defaultCountryCode = "United States of America",
   defaultValue,
   labelStyles,
   inputStyles,
@@ -65,11 +65,12 @@ export default function CustomPhoneInput({
   }, [error]);
 
   const defaultCountryData = countriesData.find(
-    (country) => country.dial_code === defaultCountryCode
+    (country) => country.country === defaultCountryCode
   );
 
   const [selectedValues, setSelectedValues] = useState<Country>({
     dial_code: defaultCountryData?.dial_code,
+
     flag: defaultCountryData?.flag,
     phoneLength: defaultCountryData?.phoneLength,
   });
@@ -125,12 +126,12 @@ export default function CustomPhoneInput({
       <div className="phone_input-container !bg-primary" id={labelStyles}>
         {show && (
           <div className="flag_dropDown !bg-primary">
-            <label className="flag_dropDown-searchbar !bg-primary !border-b !border-b-secondary-reverse">
+            <label className="flag_dropDown-searchbar !bg-primary !border-b !border-b-secondary-reverse ">
               <SearchIcon />
               <input
                 type="search"
                 placeholder="search country"
-                className="!bg-primary"
+                className="!bg-primary "
                 onChange={(e: ChangeEvent<HTMLInputElement>) =>
                   setSearchedCountry(e.target.value)
                 }
@@ -139,7 +140,11 @@ export default function CustomPhoneInput({
             </label>
 
             {filterCountriesData.map((country, i) => (
-              <div onClick={() => selectCountry(country)} key={country.country}>
+              <div
+                onClick={() => selectCountry(country)}
+                key={country.country}
+                className="hover:bg-light-secondary-two"
+              >
                 <img
                   src={country.flag}
                   alt="country_flag"

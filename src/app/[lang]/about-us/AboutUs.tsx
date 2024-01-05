@@ -51,19 +51,11 @@ export default async function AboutUs({ params }: any) {
   ];
 
   return (
-    <div className=" pt-14 flex flex-col gap-8 pb-6 max-md:pt-6">
+    <div className=" pt-14 flex flex-col gap-16 pb-16 max-md:pt-6">
       <div className="flex flex-col gap-6 px-6">
         <TitleHeader
           title={lang.aboutUs.mainHeading}
           description={lang.aboutUs.subHeading}
-          buttonArr={[
-            {
-              href: "/",
-              variant: "success",
-              style: "solid",
-              text: lang.aboutUs.buttonText,
-            },
-          ]}
         />
         <div>
           <Image
