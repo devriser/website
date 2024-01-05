@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     "Machine Learning",
     "Cloud Computing",
   ],
-  // manifest: "manifest.webmanifest",
-  // viewport: {
-  //   width: "device-width",
-  //   initialScale: 1,
-  //   maximumScale: 1,
-  // },
+  manifest: "manifest.webmanifest",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 const monaSans: any = localFont({
