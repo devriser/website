@@ -12,10 +12,10 @@ import {
 } from "@/assets/svg/IoTDevSVG/AlliOTSVG";
 
 export const IOTHeaderData =
-  "DevRiser provides comprehensive IoT software development services, with expertise in custom IoT development and IoT mobile app development. Our tailored solutions enhance operational efficiency, reduce costs, and increase productivity across diverse industries, delivering reliable and secure IoT solutions you can depend on.";
+  "DevRiser provides comprehensive IoT development services, with expertise in custom IoT development and IoT mobile app development. Our tailored solutions enhance operational efficiency, reduce costs, and increase productivity across diverse industries, delivering reliable and secure IoT solutions you can depend on.";
 
 export const IotserviceDesc =
-  "As the top custom blockchain development firm for clients worldwide, we have significantly advanced the field over the years. For the following variety of services, we have employed creative blockchain application developers who can serve the main types of company domains";
+  "As the top IoT development firm, we have significantly advanced the field over the years by developing and deploying creative IoT solutions across different domains.";
 
 export const IOTServicesArr = [
   {

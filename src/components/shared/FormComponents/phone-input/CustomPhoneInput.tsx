@@ -35,7 +35,7 @@ type Props = {
 };
 
 export default function CustomPhoneInput({
-  defaultCountryCode = "+1",
+  defaultCountryCode = "United States of America",
   defaultValue,
   labelStyles,
   inputStyles,
@@ -65,11 +65,12 @@ export default function CustomPhoneInput({
   }, [error]);
 
   const defaultCountryData = countriesData.find(
-    (country) => country.dial_code === defaultCountryCode
+    (country) => country.country === defaultCountryCode
   );
 
   const [selectedValues, setSelectedValues] = useState<Country>({
     dial_code: defaultCountryData?.dial_code,
+
     flag: defaultCountryData?.flag,
     phoneLength: defaultCountryData?.phoneLength,
   });

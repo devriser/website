@@ -78,8 +78,8 @@ const AIMLContent = async ({ params }: any) => {
 
         <div className="grid gap-16 py-16 bg-secondary">
           <ServiceHeader
-            title="Our AI/ML Techstack"
-            description="The most recent AI/ML technologies and industry-recognized AI/ML software tools utilized by Developer are listed below:"
+            title="Our AI/ML Tech Stack"
+            description="The most recent AI/ML technologies and industry-recognized AI/ML software tools utilized by Developer."
           />
           <div className="flex items-center justify-center flex-wrap container mx-auto gap-5">
             {aimlStackArr.map((item, index) => (
@@ -114,7 +114,7 @@ const AIMLContent = async ({ params }: any) => {
         </div>
 
         {/* methods with accordion */}
-        <div className="grid xl:grid-cols-2 gap-8  py-16">
+        {/* <div className="grid xl:grid-cols-2 gap-8  py-16">
           <div>
             <h3 className="text-text-heading font-medium text-secondary-reverse">
               The Method We Use to Develop Web Apps
@@ -127,7 +127,7 @@ const AIMLContent = async ({ params }: any) => {
             </p>
           </div>
           <Accordion content={aimlAccordionData} />
-        </div>
+        </div> */}
 
         {/* postional div */}
         <div className="bg-secondary flex flex-col gap-10 md:flex-row lg:gap-80 justify-start items-center px-6 py-10">
@@ -137,7 +137,8 @@ const AIMLContent = async ({ params }: any) => {
                 {lang.cc.section3.title}
               </div>
               <div className="text-sub-text">
-                {lang.cc.section3.description}
+                Share your ideas, and let us help you transform them into
+                outstanding digital solutions.
               </div>
             </div>
             <Button
@@ -154,6 +155,7 @@ const AIMLContent = async ({ params }: any) => {
                 icon={<JavascriptDevelopment />}
                 title={lang.cc.section3.point1}
                 isBorder
+                path={`/${params.lang}/services/ai-ml-development`}
               />
               <SmallCard
                 icon={<UIUXDesigner />}
@@ -161,6 +163,7 @@ const AIMLContent = async ({ params }: any) => {
                 isBorder
                 bgColor="bg-skyblue-gradient"
                 iconColor="black"
+                path={`/${params.lang}/services/ui-ux-design`}
               />
             </div>
             <div className="flex flex-col gap-6">
@@ -168,21 +171,23 @@ const AIMLContent = async ({ params }: any) => {
                 icon={<WebDevelopment />}
                 title={lang.cc.section3.point3}
                 isBorder
+                path={`/${params.lang}/services/website-development-services`}
               />
               <SmallCard
                 icon={<HireDedicatedDevelopers />}
                 title={lang.cc.section3.point4}
                 isBorder
+                path={`/${params.lang}/services/game-development`}
               />
             </div>
           </div>
         </div>
 
         {/* FAQ */}
-        <div className="py-16 grid gap-10 container mx-auto">
+        {/* <div className="py-16 grid gap-10 container mx-auto">
           <ServiceHeader title="Frequently Asked Questions" />
           <Accordion content={FAQData} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

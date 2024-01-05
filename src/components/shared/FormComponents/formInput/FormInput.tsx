@@ -136,7 +136,7 @@ export default function FormInput({
                       </div>
                     </div>
                     {active && (
-                      <div className="select-dropdown absolute z-10 mt-1 w-full rounded-small border border-input bg-primary  ">
+                      <div className="select-dropdown absolute z-[1] mt-1 w-full rounded-small border border-input bg-primary  ">
                         {selectOptions.map((option) => (
                           <div
                             key={option.value}
@@ -163,7 +163,7 @@ export default function FormInput({
                 min={0}
                 className={` placeholder:text-linkColor flex w-full ${
                   selectOptions ? "rounded-l-none" : ""
-                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none z-10`}
+                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none `}
                 placeholder={placeHolder}
                 accept={accept}
                 type={type === "password" && showPassword ? "text" : type}

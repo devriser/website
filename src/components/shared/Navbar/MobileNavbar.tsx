@@ -63,13 +63,28 @@ export default function MobileNavbar({ params }: any) {
           name: "App Development",
           path: `/${params.lang}/services/app-development`,
         },
-        { name: "UI/UX Design", path: "" },
-        { name: "Cloud Computing", path: "" },
-        { name: "Game Development", path: "" },
-        { name: "Blockchain Development", path: "" },
-        { name: "IoT Development", path: "" },
-        { name: "AI/ML Development", path: "" },
-        { name: "All Services", path: "" },
+        { name: "UI/UX Design", path: `/${params.lang}/services/ui-ux-design` },
+        {
+          name: "Cloud Computing",
+          path: `/${params.lang}/services/cloud-computing`,
+        },
+        {
+          name: "Game Development",
+          path: `/${params.lang}/services/game-development`,
+        },
+        {
+          name: "Blockchain Development",
+          path: `/${params.lang}/services/blockchain-development`,
+        },
+        {
+          name: "IoT Development",
+          path: `/${params.lang}/services/iot-development`,
+        },
+        {
+          name: "AI/ML Development",
+          path: `/${params.lang}/services/ai-ml-development`,
+        },
+        { name: "All Services", path: `/${params.lang}/services` },
       ],
     },
     // {

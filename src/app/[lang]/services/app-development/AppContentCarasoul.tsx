@@ -86,7 +86,7 @@ export default function AppContentCarasoul({ params }: AppDevelopment) {
         }}
         modules={[Navigation, FreeMode]}
         freeMode={true}
-        className="flex overflow-hidden max-sm:ps-3 mySwiper "
+        className="flex overflow-hidden max-sm:ps-3 mySwiper z-1"
       >
         <div className="flex gap-4 flex-col overflow-hidden  ">
           {lang.appDevelopment.sectionThree.cards &&
@@ -100,7 +100,7 @@ export default function AppContentCarasoul({ params }: AppDevelopment) {
                   {item && item.mainPoint ? (
                     <SwiperSlide
                       key={index}
-                      className="flex bg-secondary   px-6 overflow-hidden py-2 whitespace-nowrap w-full"
+                      className="flex bg-secondary   px-6 overflow-hidden py-2 whitespace-nowrap w-full z-1"
                     >
                       <div className=" flex flex-col gap-2">
                         <p className="text-text-subtitle font-medium">

@@ -1,7 +1,7 @@
 {
   "homepage": {
     "heroTitle": "The Way to Next Generation Software Development",
-    "heroHeading": "Your gateway to next-gen software solutions: AI, blockchain, web, mobile, and more. Innovation starts by your vision and our expertise.",
+    "heroHeading": "Your gateway to next generation software solutions: AI, blockchain, web, mobile, and more. Innovation starts by your vision and our expertise.",
     "heroButtonOne": "Our Solutions",
     "heroButtonTwo": "Contact Sales"
   },
@@ -20,9 +20,9 @@
     "pointFour": "Cloud Computing",
     "pointFive": "AI/ML Development",
     "pointSix": "Blockchain Development Services",
-    "pointSeven": "Data Science",
-    "pointEight": "DevOps",
-    "pointNine": "Quality Assurance"
+    "pointSeven": "Game Development",
+    "pointEight": "IoT Development",
+    "pointNine": "UI/UX Design"
   },
   "softwareDevelopmentProcess": {
     "mainHeading": "We Simplify Software Development Process",
@@ -32,7 +32,7 @@
     "headingFour": "Launch",
     "subTextOne": "We develop brands through discovery, using in-depth research to constantly test presumptions.",
     "subTextTwo": "We design brands through design, using in-depth research to constantly test assumptions.",
-    "subTextThree": "We develop brands through development, using in-depth research to constantly test assumptions.",
+    "subTextThree": "Using modern technologies, we build with efficiency and skill, creating flexible and scalable business-driven solutions.",
     "subTextFour": "We launch brands through launch, using in-depth research to constantly test assumptions."
   },
   "shelfSolutions": {
@@ -83,14 +83,15 @@
     },
     "servicesDetails": {
       "services": "Services",
-      "headingOne": "Mobile Development",
+      "headingOne": "App Development",
       "headingTwo": "Web Development",
       "headingThree": "Game Development",
       "headingFour": "Cloud Computing",
       "headingFive": "AI/ML Development",
       "headingSix": "Blockchain Development",
       "headingSeven": "UI/UX Design",
-      "headingEight": "Internet of Things"
+      "headingEight": "IoT Development",
+      "headingNine": "Enterprise Solutions"
     },
     "industries": {
       "industries": "Industries",
@@ -106,17 +107,17 @@
     },
     "conversation": {
       "conversation": "Start a Conversation",
-      "email": "hello@devriser.com",
+      "email": "sales@devriser.com",
       "phone": "+91 123-456-0123",
       "whatsApp": "+91 123-456-0124"
     },
     "copyright": {
-      "heading": "Copyright © 2023. All Rights Reserved."
+      "heading": "Copyright © 2024. All Rights Reserved."
     }
   },
   "esd": {
     "heroTitle": "Enterprise Solutions Development Services",
-    "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
+    "heroHeading": "DevRiser, a leading software development service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance",
     "heroButtonOne": "Our Portfolio",
     "heroButtonTwo": "Contact Sales",
     "section1": {
@@ -129,8 +130,8 @@
           "icon": "AutomationTesting"
         },
         {
-          "title": "Functional Evaluation",
-          "description": "The software system is validated to make sure that all of the functional requirements of the application are satisfied and that the desired results are obtained. Our skilled QA testing team does functional testing, concentrating.",
+          "title": "Software Development",
+          "description": "Our Enterprise Software Development Services deliver tailored solutions, leveraging the latest technologies for scalable, secure, and innovative software. From design to deployment, we empower businesses for success in a dynamic market.",
           "icon": "FunctionalEvaluation"
         },
         {
@@ -228,7 +229,7 @@
     "heroButtonTwo": "Contact Sales",
     "section1": {
       "serviceHeaderTitle": "Our Services for Cloud Computing",
-      "serviceHeaderDesc": "As a stand-alone software development & testing business, DevRiser provides sophisticated and thorough software development & testing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
+      "serviceHeaderDesc": "As a stand-alone software development company, DevRiser provides sophisticated and thorough cloud computing services, backed by a dedicated, capable, and experienced staff devoted to consistently improving quality.",
       "webServicesArr": [
         {
           "title": "Architecture for Cloud Solutions",
@@ -280,15 +281,15 @@
     "section3": {
       "title": "Are you Looking for other Services?",
       "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
-      "point1": "JavaScript Development",
-      "point2": "Hire UI UX Designer",
+      "point1": "AI/ML Development",
+      "point2": "UI/UX Design",
       "point3": "Web Development",
-      "point4": "Hire Dedicated Developers",
+      "point4": "Game Development",
       "btnText": "Explore all Services "
     },
     "section4": {
-      "title": "Why Go with DevRiser’s App Development Services?",
-      "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "title": "Why Go with DevRiser’s Cloud Computing Services?",
+      "description": "We have five years of combined expertise in cloud computing. Here are some further details on why we are your go-to mobile app development company",
       "points": [
         {
           "title": "Transparency Work Modal",
@@ -380,8 +381,8 @@
       ]
     },
     "section2": {
-      "serviceHeaderTitle": "Benefits Of A Design First/Discovery First Approach",
-      "serviceHeaderDesc": "The engineering team is meant to feed the discovery workshop, not the other way around as is customary in many IT businesses.",
+      "serviceHeaderTitle": "Our Design First - Discovery First Approach",
+      "serviceHeaderDesc": "Embrace innovation with our 'Design First - Discovery First' approach, ensuring transformative solutions through thoughtful design and strategic discovery.",
       "webServicesArr": [
         {
           "title": "Design for User Experience",
@@ -420,30 +421,30 @@
     "section3": {
       "title": "Are you Looking for other Services?",
       "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
-      "point1": "JavaScript Development",
-      "point2": "Hire UI UX Designer",
+      "point1": "AI/ML Development",
+      "point2": "UI/UX Design",
       "point3": "Web Development",
-      "point4": "Hire Dedicated Developers",
+      "point4": "Game Development",
       "btnText": "Explore all Services "
     },
     "section4": {
-      "title": "Why Go with DevRiser’s App Development Services?",
-      "description": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "title": "Why Go with DevRiser’s UI/UX Services?",
+      "description": "We have ten years of combined expertise developing UI/UX design services. Here are some further details on why we are your go-to design design services company",
       "points": [
         {
-          "title": "Transparency Work Modal",
+          "title": "Transparent Work Modal",
           "icon": "TransparencyWorkModal"
         },
         {
-          "title": "Direct Contact With Team Member",
+          "title": "Dedicated Project Manager",
           "icon": "DirectContactWithTeamMember"
         },
         {
-          "title": "Uplifted  User Experience",
+          "title": "Uplifted User Experience",
           "icon": "UpliftedUserExperience"
         },
         {
-          "title": "Flexible Engagement Model Cycle",
+          "title": "Agile Model Cycle",
           "icon": "FlexibleEngagementModelCycle"
         }
       ]
@@ -537,8 +538,8 @@
     "heroButtonOne": "Our Portfolio",
     "heroButtonTwo": "Contact Sales",
     "section1": {
-      "serviceHeaderTitle": "Our Services for Developing Web Apps",
-      "serviceHeaderDesc": "We have experience developing specialized software, and we employ a wide range of cutting-edge web technologies to create websites and web apps that are specifically tailored to the needs of various business sectors. The following is a list of the web app development services we provide.",
+      "serviceHeaderTitle": "Our Services for Developing Games",
+      "serviceHeaderDesc": "We have experience developing specialized software, and we employ a wide range of cutting-edge web technologies to create web and app games that are specifically tailored to the needs of various business sectors.",
       "webServicesArr": [
         {
           "title": "Mobile Game Development",
@@ -609,7 +610,7 @@
       ]
     },
     "section7": {
-      "title": "Technologies We Use For Web Development",
+      "title": "Technologies We Use For Game Development",
       "description": "Technology Used in Game Development The most recent design tools and cutting-edge game development platforms used at Developer are listed below: Adobe Creative Suite"
     },
     "faq": {
@@ -647,27 +648,27 @@
       "faqList": [
         {
           "headerText": "Concept Evaluation",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "We collaborate closely with our clients to fully grasp the concept, idea, and game type. To choose the platform, design, target market, technology, business expectations, and budget, our marketing team conducts a requirement analysis for a thorough client engagement."
         },
         {
           "headerText": "Planning",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "In the planning phase, our expert team refines the project scope, defining milestones, timelines, and resource requirements. Strategic planning ensures a solid foundation for the game development process, aligning objectives with client expectations."
         },
         {
           "headerText": "Design",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "Our creative designers bring the game to life in this stage. From characters and environments to user interfaces, every element is meticulously crafted. We prioritize an engaging and immersive design that resonates with the target audience and aligns with the game's vision."
         },
         {
           "headerText": "Development",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "The development stage sees our skilled team turning concepts and designs into a functional game. Through agile development methodologies, we ensure iterative progress, allowing for continuous client feedback and refinement throughout the development journey."
         },
         {
           "headerText": "Testing",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "Rigorous testing is paramount to delivering a flawless gaming experience. Our dedicated testing team thoroughly evaluates every aspect of the game, identifying and addressing any bugs or performance issues. This stage ensures a polished, high-quality product before launch."
         },
         {
           "headerText": "Launch",
-          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+          "description": "The launch phase marks the culmination of our meticulous process. We coordinate a seamless release, utilizing strategic marketing efforts to maximize visibility. Post-launch, we remain committed to monitoring and addressing any post-release issues, ensuring a successful and sustained presence in the gaming market."
         }
       ]
     }
@@ -716,7 +717,7 @@
     },
     "sectionTwo": {
       "mainHeading": "Technologies & Tools Used In App Development",
-      "subHeading": "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
+      "subHeading": "Technology and tools we use for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
     },
     "sectionThree": {
       "mainHeading": "Digital Product Solutions For Different Industries",
@@ -794,11 +795,11 @@
     },
     "sectionFour": {
       "title": "Are you Looking for other Services?",
-      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
-      "point1": "JavaScript Development",
-      "point2": "Hire UI UX Designer",
+      "description": "Share your ideas, and let us help you transform them into outstanding digital solutions.",
+      "point1": "AI/ML Development",
+      "point2": "UI/UX Design",
       "point3": "Web Development",
-      "point4": "Hire Dedicated Developers",
+      "point4": "Game Development",
       "btnText": "Explore all Services "
     },
     "sectionFive": {
@@ -812,7 +813,7 @@
   },
   "blockChainDevelopment": {
     "mainHeading": "Blockchain Development",
-    "subHeading": "DevRiser is your trusted blockchain development partner, renowned for full-cycle blockchain application development services powered by cutting-edge technology. We deliver solutions that empower you to harness the potential of a decentralized ecosystem to its fullest.",
+    "subHeading": "DevRiser is your trusted blockchain development partner, renowned for blockchain based decentralized application development services powered by cutting-edge technology. We deliver solutions that empower you to harness the potential of a decentralized ecosystem to its fullest.",
     "buttonTextOne": "Our Portfolio",
     "buttonTextTwo": "Contact Sales",
     "sectionOne": {

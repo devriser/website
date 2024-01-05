@@ -14,8 +14,9 @@ import {
   MailIconContact,
   SkypeIcon,
 } from "@/assets/svg/ContactUsSvg";
+import Link from "next/link";
 
-export default function ContactUsForm() {
+export default function ContactUsForm({ params }: any) {
   const [active, setActive] = useState(null);
   const [budgetActive, setBudgetActive] = useState(null);
   const [selectedRadio1, setSelectedRadio1] = useState<number>(1);
@@ -56,19 +57,19 @@ export default function ContactUsForm() {
       name: "I don’t know yet",
     },
     {
-      name: "$10-$20k",
+      name: "$5k-$10k",
     },
     {
-      name: "$30-$40k",
+      name: "$10k-$20k",
     },
     {
-      name: "$40-$50k",
+      name: "$20k-$30k",
     },
     {
-      name: "$50-$100k",
+      name: "$30k-$40k",
     },
     {
-      name: ">$100K",
+      name: ">$40K",
     },
   ];
 
@@ -286,6 +287,22 @@ export default function ContactUsForm() {
                   {/* <span>{errors?.file?.message}</span> */}
                 </div>
               </label>
+              <div className="flex gap-2 flex-col pt-3">
+                <p>
+                  Only Documents, Images, Videos, PDF or ZIP file. Max size 100
+                  MB
+                </p>
+                <div className="flex gap-1 items-center">
+                  <p>All your project details and attachments are subject to</p>
+                  <Link
+                    className="text-solid-blue"
+                    href={`/${params.lang}/nda`}
+                  >
+                    NDA
+                  </Link>
+                  <p>between both parties</p>
+                </div>
+              </div>
             </div>
             <div className="flex justify-end">
               <Button variant="success" style="solid">
@@ -311,7 +328,7 @@ export default function ContactUsForm() {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-8 justify-center max-md:grid-cols-1 max-lg:grid-cols-2">
+      {/* <div className="grid grid-cols-4 gap-8 justify-center max-md:grid-cols-1 max-lg:grid-cols-2">
         {socialLinksArr.map((item, index) => (
           <div key={index} className="flex gap-4 bg-secondary p-3 items-center">
             {item.icon}
@@ -323,7 +340,7 @@ export default function ContactUsForm() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

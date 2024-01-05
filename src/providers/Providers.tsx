@@ -1,7 +1,7 @@
 "use client";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useLayoutEffect, useState } from "react";
 import ContextProviders from "./state-providers/ContextProviders";
-import { ThemeProvider, useTheme } from "next-themes";
+import { ThemeProvider } from "@/components/shared/ThemeProvider/ThemeProvider";
 type Props = {
   children: ReactNode;
 };
@@ -9,8 +9,7 @@ type Props = {
 export default function Providers({ children }: Props) {
   const [mounted, setMounted] = useState(false);
 
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
+  useLayoutEffect(() => {
     setMounted(true);
   }, []);
 
@@ -19,8 +18,8 @@ export default function Providers({ children }: Props) {
   }
 
   return (
-    <ContextProviders>
-      <ThemeProvider enableSystem={true}>{children}</ThemeProvider>
-    </ContextProviders>
+    <ThemeProvider enableSystem={true}>
+      <ContextProviders>{children}</ContextProviders>
+    </ThemeProvider>
   );
 }

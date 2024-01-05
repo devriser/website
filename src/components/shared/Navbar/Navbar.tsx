@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   AboutUs,
   AboutUsDark,
@@ -36,31 +36,9 @@ import { usePathname } from "next/navigation";
 import { i18n } from "../../../../i18n";
 
 const Sidebar = ({ subItems, params, closeSidebar }: any) => {
-  const sidebarRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (closeSidebar) {
-      const handleDomClick = (e: any) => {
-        if (
-          !sidebarRef.current?.contains(e.target) &&
-          !e.target.closest(".your-sidebar-class") &&
-          !e.target.closest(".your-navbar-class")
-        ) {
-          closeSidebar();
-        }
-      };
-      document.addEventListener("click", handleDomClick);
-
-      return () => {
-        document.removeEventListener("click", handleDomClick);
-      };
-    }
-  }, [closeSidebar]);
-
   return (
     <div className="h-full">
       <motion.div
-        ref={sidebarRef}
         initial={
           params.lang === "ar" ? { x: 10, opacity: 0 } : { x: -10, opacity: 0 }
         }
@@ -69,7 +47,7 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
         transition={{ type: "spring", duration: 0.5 }}
         className={` flex flex-col ${
           params.lang === "ar" ? "right-[86px]" : "left-[86px]"
-        } absolute bg-secondary h-screen -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5 z-50 your-sidebar-class`}
+        } absolute bg-secondary h-screen -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5 z-50 `}
       >
         {subItems?.map((subItem: any, index: any) => (
           <Link
@@ -102,8 +80,29 @@ export default function Navbar({ params }: any) {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [openSideBar, setOpenSideBar] = useState(false);
 
+  const sidebarRef = useRef<HTMLDivElement>(null);
   const themes = useTheme();
+
+  useLayoutEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [openSideBar]);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      sidebarRef.current &&
+      !sidebarRef.current.contains(event.target as Node) &&
+      openSideBar
+    ) {
+      setOpenSideBar(false);
+    }
+  };
 
   const navBarData = [
     {
@@ -238,10 +237,10 @@ export default function Navbar({ params }: any) {
 
   const handleItemClick = (itemName: any) => {
     if (activeLink === itemName) {
-      dispatch({ type: "SET_TOGGLE", payload: !toggle });
+      setOpenSideBar((prev) => !prev);
     } else {
       dispatch({ type: "ACTIVE_LINK", payload: itemName });
-      dispatch({ type: "SET_TOGGLE", payload: true });
+      setOpenSideBar(true);
     }
   };
 
@@ -263,7 +262,7 @@ export default function Navbar({ params }: any) {
   };
 
   return (
-    <header className="bg-secondary h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden your-navbar-class">
+    <header className="bg-secondary  h-full p-3 pt-6 flex flex-col items-center gap-8 justify-between max-lg:hidden ">
       <div className="sticky top-6 flex flex-col items-center justify-between h-[calc(100vh-3rem)]">
         <Link href={`/${params.lang}`} className="cursor-pointer">
           {themes.theme === "dark" ? (
@@ -272,12 +271,12 @@ export default function Navbar({ params }: any) {
             <Image src={darkLogo} alt="img" height={56} width={56} />
           )}
         </Link>
-        <div className="flex flex-col items-center gap-6 ">
+        <div className="flex flex-col items-center gap-6 " ref={sidebarRef}>
           {navBarData.map((ele, index) => (
             <div
               key={index}
               className={`flex flex-col items-center cursor-pointer ${
-                activeLink === ele.name && toggle
+                activeLink === ele.name && openSideBar
                   ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
                   : " py-2"
               }`}
@@ -285,7 +284,7 @@ export default function Navbar({ params }: any) {
             >
               <span>{ele.icon}</span>
               <p className="text-secondary-reverse">{ele.name}</p>
-              {activeLink === ele.name && toggle && (
+              {activeLink === ele.name && openSideBar && (
                 <Sidebar
                   subItems={ele.subItems}
                   params={params}
@@ -298,7 +297,7 @@ export default function Navbar({ params }: any) {
           {navBarData2.map((item, index) => (
             <Link
               className={`flex flex-col items-center cursor-pointer ${
-                activeLink === item.name && toggle
+                activeLink === item.name && openSideBar
                   ? "bg-primary w-full py-2 transition-colors duration-200 rounded-md"
                   : " py-2"
               }`}

@@ -12,7 +12,9 @@ import {
   EnterpriseMobileAppDevelopment,
   FlexibleEngagement,
   HireDedicaed,
+  HireDedicaedYellow,
   JavaScriptDevelopment,
+  JavaScriptDevelopmentYellow,
   MobileGameDevelopment,
   SupportMaintenanceApps,
   Transperancy,
@@ -20,6 +22,7 @@ import {
   UiUxDevelopment,
   Uplifted,
   WebDevelopment,
+  WebDevelopmentYellow,
 } from "@/assets/svg/AppDevelopmentSvg";
 import TechRow from "@/components/shared/TechRow";
 import Button from "@/components/shared/Button";
@@ -145,7 +148,7 @@ export default async function AppDevelopment({ params }: any) {
   ];
 
   return (
-    <div className=" pt-14 flex flex-col gap-6 pb-6 max-md:pt-6">
+    <div className=" pt-14 flex flex-col gap-16 pb-16 max-md:pt-6">
       <div className="flex flex-col gap-6 px-6">
         <TitleHeader
           title={lang.appDevelopment.mainHeading}
@@ -195,10 +198,8 @@ export default async function AppDevelopment({ params }: any) {
       </div>
       <div className="grid gap-16 py-16 bg-secondary">
         <ServiceHeader
-          title="Technologies & Tools Used In App Development"
-          description={
-            "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
-          }
+          title={lang.appDevelopment.sectionTwo.mainHeading}
+          description={lang.appDevelopment.sectionTwo.subHeading}
         />
         <div className="grid gap-6 ">
           {techStackArr.map((item, index: any) => (
@@ -220,18 +221,18 @@ export default async function AppDevelopment({ params }: any) {
       <div className="flex flex-col container  mx-auto relative overflow-hidden h-full">
         <AppContentCarasoul params={params} />
       </div>
-      <div className="flex bg-primary p-6 pt-8 gap-6 max-md:flex-col">
+      <div className="flex bg-secondary p-6 pt-8 gap-6 max-md:flex-col">
         <div className="flex flex-col gap-6 flex-1">
           <div className="flex flex-col gap-2">
             <p className="text-text-heading text-secondary-reverse font-medium">
               {lang.appDevelopment.sectionFour.title}
             </p>
-            <p className="text-secondary-reverse">
+            <p className="text-light-secondary w-[60%]">
               {lang.appDevelopment.sectionFour.description}
             </p>
           </div>
           <Button
-            className="bg-secondary-reverse text-primary"
+            className="bg-yellow-gradient text-secondary"
             style="solid"
             as="NextLink"
             href={`/${params.lang}/services`}
@@ -242,34 +243,32 @@ export default async function AppDevelopment({ params }: any) {
         <div className="flex flex-col md:flex-row gap-10 max-md:gap-3 flex-1">
           <div className="flex flex-col gap-4 ">
             <SmallCard
-              icon={<JavaScriptDevelopment />}
+              icon={<JavaScriptDevelopmentYellow />}
               title={lang.appDevelopment.sectionFour.point1}
               isBorder
-              bgColor="bg-yellow-gradient"
-              iconColor="black"
+              path={`/${params.lang}/services/ai-ml-development`}
             />
             <SmallCard
               icon={<UiUxDevelopment />}
               title={lang.appDevelopment.sectionFour.point2}
               isBorder
-              bgColor="bg-yellow-gradient"
-              iconColor="black"
+              // bgColor="bg-yellow-gradient"
+              // iconColor={"black"}
+              path={`/${params.lang}/services/ui-ux-design`}
             />
           </div>
           <div className="flex flex-col gap-4 pt-12 max-md:pt-0">
             <SmallCard
-              icon={<WebDevelopment />}
+              icon={<WebDevelopmentYellow />}
               title={lang.appDevelopment.sectionFour.point3}
               isBorder
-              bgColor="bg-yellow-gradient"
-              iconColor="black"
+              path={`/${params.lang}/services/website-development-services`}
             />
             <SmallCard
-              icon={<HireDedicaed />}
+              icon={<HireDedicaedYellow />}
               title={lang.appDevelopment.sectionFour.point4}
               isBorder
-              bgColor="bg-yellow-gradient"
-              iconColor="black"
+              path={`/${params.lang}/services/game-development`}
             />
           </div>
         </div>
@@ -301,12 +300,12 @@ export default async function AppDevelopment({ params }: any) {
         <div></div>
       </div>
       <LetDiscussYourProject params={params} />
-      <div className="px-6 flex flex-col gap-6">
+      {/* <div className="px-6 flex flex-col gap-6">
         <p className="text-text-heading text-secondary-reverse font-medium text-center">
           Frequently Asked Questions
         </p>
         <Accordion content={lang.esd.faq.faqList} />
-      </div>
+      </div> */}
     </div>
   );
 }

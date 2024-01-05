@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface serviceCardProps {
@@ -7,6 +8,7 @@ interface serviceCardProps {
   iconBG?: any;
   bgColor?: string;
   isBorder?: boolean;
+  path?: any;
 }
 
 const SmallCard = ({
@@ -16,14 +18,16 @@ const SmallCard = ({
   bgColor = "bg-secondary",
   isBorder = false,
   iconBG,
+  path,
 }: serviceCardProps) => {
   return (
-    <div
+    <Link
+      href={`${path}`}
       className={`flex flex-col gap-5 w-full p-10 ${bgColor} ${
         isBorder ? "border border-primary-border" : ""
       } `}
     >
-      <div className='flex flex-col justify-center items-center gap-3'>
+      <div className="flex flex-col justify-center items-center gap-3">
         <div
           className={` ${
             iconBG ? iconBG : ""
@@ -39,7 +43,7 @@ const SmallCard = ({
           {title}
         </h2>
       </div>
-    </div>
+    </Link>
   );
 };
 
