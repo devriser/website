@@ -294,12 +294,12 @@ export default function ContactUsForm({ params }: any) {
                 </p>
                 <div className="flex gap-1 items-center">
                   <p>All your project details and attachments are subject to</p>
-                  <Link
+                  <div
                     className="text-solid-blue"
-                    href={`/${params.lang}/nda`}
+                    // href={`/${params.lang}/nda`}
                   >
                     NDA
-                  </Link>
+                  </div>
                   <p>between both parties</p>
                 </div>
               </div>

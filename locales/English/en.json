@@ -292,19 +292,23 @@
       "description": "We have five years of combined expertise in cloud computing. Here are some further details on why we are your go-to mobile app development company",
       "points": [
         {
-          "title": "Transparency Work Modal",
+          "title": "Transparency",
+          "titleTwo": "Work Modal",
           "icon": "TransparencyWorkModal"
         },
         {
-          "title": "Direct Contact With Team Member",
+          "title": "Direct Contact",
+          "titleTwo": "With Team Member",
           "icon": "DirectContactWithTeamMember"
         },
         {
-          "title": "Uplifted  User Experience",
+          "title": "Uplifted",
+          "titleTwo": "User Experience",
           "icon": "UpliftedUserExperience"
         },
         {
-          "title": "Flexible Engagement Model Cycle",
+          "title": "Flexible Engagement",
+          "titleTwo": "Model Cycle",
           "icon": "FlexibleEngagementModelCycle"
         }
       ]
@@ -432,19 +436,23 @@
       "description": "We have ten years of combined expertise developing UI/UX design services. Here are some further details on why we are your go-to design design services company",
       "points": [
         {
-          "title": "Transparent Work Modal",
+          "title": "Transparent",
+          "titleTwo": "Work Modal",
           "icon": "TransparencyWorkModal"
         },
         {
-          "title": "Dedicated Project Manager",
+          "title": "Dedicated",
+          "titleTwo": "Project Manager",
           "icon": "DirectContactWithTeamMember"
         },
         {
-          "title": "Uplifted User Experience",
+          "title": "Uplifted",
+          "titleTwo": "User Experience",
           "icon": "UpliftedUserExperience"
         },
         {
-          "title": "Agile Model Cycle",
+          "title": "Agile",
+          "titleTwo": "Model Cycle",
           "icon": "FlexibleEngagementModelCycle"
         }
       ]
@@ -733,17 +741,7 @@
             "Facilities Management Solutions"
           ]
         },
-        {
-          "mainPoint": "Sports 2",
-          "subPoints": [
-            "Sports Training and Coaching Apps",
-            "Sports Live Streaming Solutions",
-            "Fantasy Sports Games Development",
-            "Sports Betting Platforms",
-            "AR/VR-based Game Development",
-            "Facilities Management Solutions"
-          ]
-        },
+
         {
           "mainPoint": "Fintech",
           "subPoints": [
@@ -774,21 +772,93 @@
           ]
         },
         {
-          "mainPoint": "E-Commerce 2",
+          "mainPoint": "Logistics",
           "subPoints": [
-            "AR-based eCommerce solutions",
-            "Grocery E-Commerce Apps",
-            "End to End Marketplace",
-            "Custom eCommerce Store Development"
+            "Delivery Management",
+            "Shipping Logistics Management",
+            "Fleet Management Software",
+            "Inventory Management Software",
+            "Telematics Software Development"
           ]
         },
         {
-          "mainPoint": "E-Commerce 3",
+          "mainPoint": "Real Estate",
           "subPoints": [
-            "AR-based eCommerce solutions",
-            "Grocery E-Commerce Apps",
-            "End to End Marketplace",
-            "Custom eCommerce Store Development"
+            "MLS Solutions for Real Estate",
+            "Virtual Property Tours",
+            "Property Valuation Tools",
+            "Real Estate Investment Platforms",
+            "Property Management Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Healthcare",
+          "subPoints": [
+            "Telemedicine Solutions",
+            "Electronic Health Records",
+            "Practice Management Systems",
+            "Clinical  Software Solutions",
+            "Medical Device Integrations Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Business",
+          "subPoints": [
+            "Sales & Marketing",
+            "Employee Management",
+            "HR Portals",
+            "Cloud Solutions",
+            "Business Process Automation Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Travel",
+          "subPoints": [
+            "Travel Planning Solution",
+            "Itinerary Management Platform",
+            "Ticket & Hotel Booking Solutions",
+            "Car Booking Solutions",
+            "Travel Loyalty & Rewards Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Education",
+          "subPoints": [
+            "Education App Development",
+            "E2C E-leaming App Development",
+            "Learning Management System",
+            "Virtual Classrooms & Video Conferencing",
+            "Online Exam Management System"
+          ]
+        },
+        {
+          "mainPoint": "Fitness",
+          "subPoints": [
+            "Online Workout Coach Apps",
+            "Gym Management Solutions",
+            "Wellness Apps",
+            "Fitness Tracker (with wearable integration)",
+            "Online Fitness Supplement Store Development"
+          ]
+        },
+        {
+          "mainPoint": "Social Networking",
+          "subPoints": [
+            "Community App Development",
+            "Dating & Matrimony App Development",
+            "Social Networking App Development",
+            "Messaging App Development",
+            "Media Sharing App Development"
+          ]
+        },
+        {
+          "mainPoint": "Restaurant",
+          "subPoints": [
+            "Food Delivery App Development",
+            "Cloud Kitchen Delivery Solutions",
+            "Grocery Delivery Solutions",
+            "Direct delivery Solutions",
+            "Restaurant PoS Software Development"
           ]
         }
       ]

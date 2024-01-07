@@ -59,7 +59,7 @@ export default async function GDContent({ params }: any) {
                 text: lang.gd.heroButtonOne,
               },
               {
-                href: "/",
+                href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
                 text: lang.gd.heroButtonTwo,

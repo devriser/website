@@ -78,7 +78,7 @@ export default function AppContentCarasoul({ params }: AppDevelopment) {
       </div>
       <Swiper
         slidesPerView={"auto"}
-        slidesOffsetAfter={170}
+        slidesOffsetAfter={300}
         navigation={true}
         {...{
           nextel: ".swiper-button-next",

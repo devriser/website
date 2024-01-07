@@ -158,7 +158,7 @@ export default function FormInput({
               )}
             </div>
 
-            <div className="relative  w-full">
+            <div className="relative   w-full">
               <input
                 min={0}
                 className={` placeholder:text-linkColor flex w-full ${
@@ -177,7 +177,7 @@ export default function FormInput({
               )}
               {type === "password" && hasValue && (
                 <div
-                  className="absolute bottom-0 right-[12px] top-[25%] cursor-pointer"
+                  className="absolute bottom-0 right-[12px] top-[25%] cursor-pointer z-10"
                   onClick={togglePasswordVisibility}
                 >
                   {showPassword ? (

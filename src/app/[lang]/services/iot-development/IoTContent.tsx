@@ -32,7 +32,7 @@ const IoTContent = ({ params }: any) => {
               text: "Our Portfolio",
             },
             {
-              href: "/",
+              href: `/${params.lang}/contact-us`,
               variant: "success",
               style: "solid",
               text: "Contact Sales",

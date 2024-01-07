@@ -11,10 +11,11 @@ line-height: normal; */
 
 interface serviceHeaderProps {
   title: string;
+  title2?: string;
   description?: string;
 }
 
-const ServiceHeader = ({ title, description }: serviceHeaderProps) => {
+const ServiceHeader = ({ title, description, title2 }: serviceHeaderProps) => {
   return (
     <div className="flex flex-col gap-4 items-center text-center px-6">
       <h2 className="text-text-heading font-semibold text-secondary-reverse">

@@ -96,7 +96,7 @@ export default async function BlockChainDevelopment({ params }: any) {
                 text: lang.blockChainDevelopment.buttonTextOne,
               },
               {
-                href: "/",
+                href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
                 text: lang.blockChainDevelopment.buttonTextTwo,

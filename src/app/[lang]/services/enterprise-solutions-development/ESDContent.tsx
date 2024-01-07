@@ -78,7 +78,7 @@ export default async function ESDContent({ params }: any) {
                 text: lang.esd.heroButtonOne,
               },
               {
-                href: "/",
+                href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
                 text: lang.esd.heroButtonTwo,

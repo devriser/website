@@ -81,6 +81,7 @@ const iconComponents: IconComponents = {
 
 interface ServiceCardItem {
   title: string;
+  titleTwo: string;
   description: string;
   icon: keyof IconComponents;
 }
@@ -103,7 +104,7 @@ export default async function UXUIContent({ params }: any) {
                 text: lang.uxui.heroButtonOne,
               },
               {
-                href: "/",
+                href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
                 text: lang.uxui.heroButtonTwo,
@@ -259,6 +260,7 @@ export default async function UXUIContent({ params }: any) {
                   key={index}
                   icon={iconComponents[item.icon]}
                   title={item.title}
+                  titleTwo={item.titleTwo}
                   iconBG={"bg-parakeet-gradient"}
                   isBorder
                   bgColor="bg-secondary"

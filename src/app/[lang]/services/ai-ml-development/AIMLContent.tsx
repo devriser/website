@@ -32,37 +32,39 @@ const AIMLContent = async ({ params }: any) => {
   console.log(lang);
   return (
     <section className="bg-primary h-fit w-full">
-      <div className="pt-14 px-0 xl:px-6 grid gap-16 mb-14">
-        <TitleHeader
-          title="AI/ML Development"
-          description={aimlDesc}
-          buttonArr={[
-            {
-              href: "/",
-              variant: "primary",
-              style: "outlined",
-              text: "Our Portfolio",
-            },
-            {
-              href: "/",
-              variant: "success",
-              style: "solid",
-              text: "Contact Sales",
-            },
-          ]}
-        />
-        {/* banner image */}
-        <Image
-          src={aimlBanner}
-          alt="Picture of a client"
-          className="xl:w-full w-fit"
-        />
+      <div className="pt-14  grid gap-16 pb-16">
+        <div className="px-6 flex flex-col gap-16">
+          <TitleHeader
+            title="AI/ML Development"
+            description={aimlDesc}
+            buttonArr={[
+              {
+                href: "/",
+                variant: "primary",
+                style: "outlined",
+                text: "Our Portfolio",
+              },
+              {
+                href: `/${params.lang}/contact-us`,
+                variant: "success",
+                style: "solid",
+                text: "Contact Sales",
+              },
+            ]}
+          />
+          {/* banner image */}
+          <Image
+            src={aimlBanner}
+            alt="Picture of a client"
+            className="xl:w-full w-fit"
+          />
+        </div>
         <ServiceHeader
           title={aimlserviceHeader}
           description={aimlservicesubtext}
         />
         {/* service cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  px-6">
           {aimlServicesArr.map((item, index) => (
             <CardWithIcon
               key={index}
@@ -74,14 +76,12 @@ const AIMLContent = async ({ params }: any) => {
           ))}
         </div>
 
-        <LetDiscussYourProject params={params} />
-
-        <div className="grid gap-16 py-16 bg-secondary">
+        <div className="grid gap-16 py-16 bg-secondary ">
           <ServiceHeader
             title="Our AI/ML Tech Stack"
             description="The most recent AI/ML technologies and industry-recognized AI/ML software tools utilized by Developer."
           />
-          <div className="flex items-center justify-center flex-wrap container mx-auto gap-5">
+          <div className="flex items-center justify-center flex-wrap  gap-5">
             {aimlStackArr.map((item, index) => (
               <div
                 key={index}
@@ -95,7 +95,7 @@ const AIMLContent = async ({ params }: any) => {
 
         {/* advantage/perks */}
 
-        <div className="grid gap-10">
+        <div className="grid gap-10 px-6">
           <ServiceHeader
             title="Why Go With DevRiser for AI/ML Development?"
             description="In order to address the different industrial use cases with AI-enabled algorithms and machine learning solutions, DevRiser utilizes the best in the business of AI/ML development services."
@@ -161,8 +161,6 @@ const AIMLContent = async ({ params }: any) => {
                 icon={<UIUXDesigner />}
                 title={lang.cc.section3.point2}
                 isBorder
-                bgColor="bg-skyblue-gradient"
-                iconColor="black"
                 path={`/${params.lang}/services/ui-ux-design`}
               />
             </div>
@@ -188,6 +186,7 @@ const AIMLContent = async ({ params }: any) => {
           <ServiceHeader title="Frequently Asked Questions" />
           <Accordion content={FAQData} />
         </div> */}
+        <LetDiscussYourProject params={params} />
       </div>
     </section>
   );
