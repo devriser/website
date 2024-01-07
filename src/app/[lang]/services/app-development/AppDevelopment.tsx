@@ -161,7 +161,7 @@ export default async function AppDevelopment({ params }: any) {
               text: lang.appDevelopment.buttonTextOne,
             },
             {
-              href: "/",
+              href: `/${params.lang}/contact-us`,
               variant: "success",
               style: "solid",
               text: lang.appDevelopment.buttonTextTwo,

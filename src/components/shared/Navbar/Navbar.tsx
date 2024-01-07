@@ -47,7 +47,7 @@ const Sidebar = ({ subItems, params, closeSidebar }: any) => {
         transition={{ type: "spring", duration: 0.5 }}
         className={` flex flex-col ${
           params.lang === "ar" ? "right-[86px]" : "left-[86px]"
-        } absolute bg-secondary h-screen -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5 z-50 `}
+        } z-50  absolute bg-secondary h-screen -top-6 -bottom-12 gap-7 whitespace-nowrap px-2 py-5`}
       >
         {subItems?.map((subItem: any, index: any) => (
           <Link

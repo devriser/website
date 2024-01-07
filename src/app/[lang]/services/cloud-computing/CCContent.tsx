@@ -61,6 +61,7 @@ const iconComponents: IconComponents = {
 
 interface ServiceCardItem {
   title: string;
+  titleTwo: string;
   description: string;
   icon: keyof IconComponents;
 }
@@ -83,7 +84,7 @@ export default async function CCContent({ params }: any) {
                 text: lang.cc.heroButtonOne,
               },
               {
-                href: "/",
+                href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
                 text: lang.cc.heroButtonTwo,
@@ -176,8 +177,6 @@ export default async function CCContent({ params }: any) {
                 icon={<UIUXDesigner />}
                 title={lang.cc.section3.point2}
                 isBorder
-                bgColor="bg-teal-gradient"
-                iconColor="black"
                 path={`/${params.lang}/services/ui-ux-design`}
               />
             </div>
@@ -211,6 +210,7 @@ export default async function CCContent({ params }: any) {
                   key={index}
                   icon={iconComponents[item.icon]}
                   title={item.title}
+                  titleTwo={item.titleTwo}
                   iconBG={"bg-teal-gradient"}
                 />
               )
