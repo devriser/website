@@ -19,7 +19,7 @@ export default async function OurAchievments({ params }: any) {
     {
       name: lang.ourAchievement.subHeadingTwo,
       icon: <IndustryExperience />,
-      number: "5+",
+      number: "5+ Years",
     },
     {
       name: lang.ourAchievement.subHeadingThree,
