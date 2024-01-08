@@ -6,6 +6,7 @@ import {
   CallSvg,
   FaceBookSvg,
   InstaGramSvg,
+  LinkDinSvg,
   MailSvg,
   TwitterSvg,
   WhatsAppSvg,
@@ -225,10 +226,23 @@ export default function Footer({ params }: FooterProps) {
               {lang.footer.follow}
             </p>
             <span className="flex gap-2">
-              <TwitterSvg />
-              <FaceBookSvg />
+              <Link
+                href={socialLinks.linkDinLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkDinSvg />
+              </Link>
+              <Link
+                href={socialLinks.twitterLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TwitterSvg />
+              </Link>
+              {/* <FaceBookSvg />
               <InstaGramSvg />
-              <YoutubeSvg />
+              <YoutubeSvg /> */}
             </span>
           </div>
         </div>
