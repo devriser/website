@@ -107,12 +107,7 @@ export default function Navbar({ params }: any) {
   const navBarData = [
     {
       name: "Services",
-      icon:
-        themes.theme === "dark" && themes.systemTheme === "dark" ? (
-          <ServicesDark />
-        ) : (
-          <Services />
-        ),
+      icon: themes.theme === "dark" ? <ServicesDark /> : <Services />,
       subItems: [
         {
           name: "Enterprise Solutions",
@@ -192,22 +187,12 @@ export default function Navbar({ params }: any) {
     {
       name: "About Us",
       href: `/${params.lang}/about-us`,
-      icon:
-        themes.theme === "dark" && themes.systemTheme === "dark" ? (
-          <AboutUsDark />
-        ) : (
-          <AboutUs />
-        ),
+      icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
       name: "Contact",
       href: `/${params.lang}/contact-us`,
-      icon:
-        themes.theme === "dark" && themes.systemTheme === "dark" ? (
-          <ContactDark />
-        ) : (
-          <Contact />
-        ),
+      icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
     },
     // {
     //   name: "Portfolio",
