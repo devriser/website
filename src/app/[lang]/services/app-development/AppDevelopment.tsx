@@ -1,5 +1,4 @@
 import React, { ReactElement } from "react";
-import { getLoacales } from "../../../../../getLocales";
 import TitleHeader from "@/components/shared/TitleHeader";
 import appDevelopment from "@/assets/images/appDevelopment1.webp";
 import Image from "next/image";
@@ -30,9 +29,10 @@ import SmallCard from "@/components/shared/Cards/SmallCard";
 import Accordion from "@/components/shared/Accordion/Accordion";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 import AppContentCarasoul from "./AppContentCarasoul";
+import { getLocales } from "../../../../../getLocales";
 
 export default async function AppDevelopment({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   interface IconComponents {
     ApplicationDevelopmentConsultancy: ReactElement;

@@ -13,7 +13,6 @@ import Image from "next/image";
 import aimlBanner from "@/assets/images/aiml-banner.png";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
-import { getLoacales } from "../../../../../getLocales";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
 import StackRow from "@/components/shared/StackRow";
 import SmallCard from "@/components/shared/Cards/SmallCard";
@@ -26,9 +25,10 @@ import {
   UIUXDesigner,
   WebDevelopment,
 } from "@/assets/svg/AIMLDevelopmentSVG/OtherService";
+import { getLocales } from "../../../../../getLocales";
 
 const AIMLContent = async ({ params }: any) => {
-  const lang = await getLoacales(params?.lang);
+  const lang = await getLocales(params?.lang);
   console.log(lang);
   return (
     <section className="bg-primary h-fit w-full">

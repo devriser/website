@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { getLoacales } from "../../../../getLocales";
 import { DarkLogo } from "@/assets/svg/HeaderSvg";
 import {
   CallSvg,
@@ -18,6 +17,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { socialLinks } from "./socialLinks";
+import { getLocales } from "../../../../getLocales";
 
 interface LocaleData {
   footer: {
@@ -78,7 +78,7 @@ export default function Footer({ params }: FooterProps) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const locales = await getLoacales(params.lang);
+      const locales = await getLocales(params.lang);
       setLang(locales);
     };
 
@@ -387,7 +387,7 @@ export function CopyRight({ params }: any) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const locales = await getLoacales(params.lang);
+      const locales = await getLocales(params.lang);
       setLang(locales);
     };
 

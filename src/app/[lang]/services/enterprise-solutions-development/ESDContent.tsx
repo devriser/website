@@ -18,11 +18,11 @@ import {
   ManualTesting,
 } from "@/assets/svg/AllIconComponent";
 
-import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
+import { getLocales } from "../../../../../getLocales";
 interface IconComponents {
   AutomationTesting: ReactElement;
   FunctionalEvaluation: ReactElement;
@@ -61,7 +61,7 @@ interface ServiceCardItem {
 }
 
 export default async function ESDContent({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   return (
     <section className="bg-primary h-fit pb-8">

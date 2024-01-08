@@ -1,9 +1,9 @@
 import React from "react";
-import { getLoacales } from "../../../../getLocales";
 import Button from "../Button";
+import { getLocales } from "../../../../getLocales";
 
 export default async function LetDiscussYourProject({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   return (
     <div className="px-6">

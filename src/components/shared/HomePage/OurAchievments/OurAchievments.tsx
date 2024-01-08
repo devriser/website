@@ -1,14 +1,14 @@
 import React from "react";
-import { getLoacales } from "../../../../../getLocales";
 import {
   GlobalOffices,
   HappyClients,
   IndustryExperience,
   Union,
 } from "@/assets/svg/OurAchievementsSvg";
+import { getLocales } from "../../../../../getLocales";
 
 export default async function OurAchievments({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   const ourAchievementData = [
     {

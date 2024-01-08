@@ -7,7 +7,6 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { getLoacales } from "../../../../../getLocales";
 import {
   LeftArrow,
   RightArrow,
@@ -19,6 +18,7 @@ import "./style.css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import Tick from "@/assets/svg/Tick";
+import { getLocales } from "../../../../../getLocales";
 
 interface AppDevelopment {
   params: { lang: string };
@@ -50,7 +50,7 @@ export default function AppContentCarasoul({ params }: AppDevelopment) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const locales = await getLoacales(params.lang);
+      const locales = await getLocales(params.lang);
       setLang(locales);
     };
 
