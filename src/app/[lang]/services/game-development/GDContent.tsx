@@ -4,7 +4,6 @@ import React, { ReactElement } from "react";
 import ServiceHeader from "@/components/shared/ServiceHeader";
 import gd from "@/assets/images/game-development.webp";
 
-import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
@@ -17,6 +16,7 @@ import {
   NFTGameDevelopment,
   TwoDAnd3DGameDevelopment,
 } from "@/assets/svg/GameDevelopment";
+import { getLocales } from "../../../../../getLocales";
 interface IconComponents {
   MobileGameDevelopment: ReactElement;
   FantasyGameDevelopment: ReactElement;
@@ -42,7 +42,7 @@ interface ServiceCardItem {
 }
 
 export default async function GDContent({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   return (
     <section className="bg-primary h-fit pb-16">

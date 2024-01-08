@@ -1,6 +1,5 @@
 import TitleHeader from "@/components/shared/TitleHeader";
 import React, { ReactElement } from "react";
-import { getLoacales } from "../../../../../getLocales";
 import Image from "next/image";
 import blockChainImg from "@/assets/images/blockChain.webp";
 import ServiceHeader from "@/components/shared/ServiceHeader";
@@ -23,9 +22,10 @@ import {
   UiUxDevelopmentPurple,
   WebDevelopment,
 } from "@/assets/svg/AppDevelopmentSvg";
+import { getLocales } from "../../../../../getLocales";
 
 export default async function BlockChainDevelopment({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
   interface IconComponents {
     DevelopmentOfSmartContracts: ReactElement;
     DevelopmentOfBlockchainApps: ReactElement;

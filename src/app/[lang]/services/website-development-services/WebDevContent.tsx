@@ -19,13 +19,13 @@ import {
 } from "./ServiceData";
 import Card from "@/components/shared/Cards/Card";
 
-import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
+import { getLocales } from "../../../../../getLocales";
 
 export default async function WebDevContent({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
   console.log(lang);
   return (
     <section className="bg-primary h-fit w-full pb-8">

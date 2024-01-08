@@ -1,5 +1,4 @@
 import React from "react";
-import { getLoacales } from "../../../../../getLocales";
 import {
   CRM,
   Enterprise,
@@ -8,9 +7,10 @@ import {
   RMS,
 } from "@/assets/svg/ShelfSolutionsSvg";
 import Link from "next/link";
+import { getLocales } from "../../../../../getLocales";
 
 export default async function ShelfSolutions({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   const shelfSolutionsData = [
     {

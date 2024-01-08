@@ -27,7 +27,6 @@ import {
   WebAndMobileDesign,
 } from "@/assets/svg/UXUIDesign";
 
-import { getLoacales } from "../../../../../getLocales";
 import Accordion from "@/components/shared/Accordion/Accordion";
 
 import CardWithIcon from "@/components/shared/Cards/CardWithIcon";
@@ -35,6 +34,7 @@ import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/Let
 import SmallCard from "@/components/shared/Cards/SmallCard";
 import Tick from "@/assets/svg/Tick";
 import { useTheme } from "next-themes";
+import { getLocales } from "../../../../../getLocales";
 interface IconComponents {
   CustomWebsiteDesign: ReactElement;
   DesigningMobileApps: ReactElement;
@@ -87,7 +87,7 @@ interface ServiceCardItem {
 }
 
 export default async function UXUIContent({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   return (
     <section className="bg-primary h-fit pb-8">

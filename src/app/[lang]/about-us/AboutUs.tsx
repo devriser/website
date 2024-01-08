@@ -1,5 +1,4 @@
 import React from "react";
-import { getLoacales } from "../../../../getLocales";
 import TitleHeader from "@/components/shared/TitleHeader";
 import Image from "next/image";
 import aboutUsImage from "@/assets/images/aboutUs.webp";
@@ -13,9 +12,10 @@ import {
   Transperancy,
 } from "@/assets/svg/AboutUsSvg";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
+import { getLocales } from "../../../../getLocales";
 
 export default async function AboutUs({ params }: any) {
-  const lang = await getLoacales(params.lang);
+  const lang = await getLocales(params.lang);
 
   const corevalueArr = [
     {

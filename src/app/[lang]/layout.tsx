@@ -4,10 +4,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Providers from "@/providers/Providers";
-import { ReactNode } from "react";
 import Footer from "@/components/shared/Footer/Footer";
 import MobileNavbar from "@/components/shared/Navbar/MobileNavbar";
-import { i18n } from "../../../i18n";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -32,11 +31,11 @@ export const metadata: Metadata = {
     "Cloud Computing",
   ],
   manifest: "manifest.webmanifest",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  // viewport: {
+  //   width: "device-width",
+  //   initialScale: 1,
+  //   maximumScale: 1,
+  // },
 };
 
 const monaSans: any = localFont({
@@ -74,6 +73,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang} dir={params.lang === "ar" ? "rtl" : "ltr"}>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5K1RYWF57Z"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5K1RYWF57Z');
+          `}
+        </Script>
+      </head>
       <Providers>
         <body className={`${cn(monaSans.variable, "font-mono-sans")}`}>
           <div className="flex max-lg:flex-col bg-primary mx-auto">

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { getLoacales } from "../../../../../getLocales";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Android,
@@ -18,6 +17,7 @@ import {
   TypeScriptSVGTech,
 } from "@/assets/svg/TechnologiesSvg/Index";
 import { JavaSVG, ReactSVG, TypeScriptSVG } from "@/assets/svg/TechIcons";
+import { getLocales } from "../../../../../getLocales";
 
 type TechnologyData = {
   heading: string;
@@ -32,7 +32,7 @@ export default function Technologies({ params }: any) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const locales = await getLoacales(params.lang);
+      const locales = await getLocales(params.lang);
       setLang(locales);
     };
 

@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { getLoacales } from "../../../../../getLocales";
 import UpArrow from "@/assets/svg/UpArrow";
 import ourCoreServicesImg from "@/assets/images/ourCoreServices.webp";
 import Image from "next/image";
 import Link from "next/link";
+import { getLocales } from "../../../../../getLocales";
 
 interface OurCoreServicesProps {
   params: { lang: string };
@@ -31,7 +31,7 @@ export default function OurCoreServices({ params }: OurCoreServicesProps) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const locales = await getLoacales(params.lang);
+      const locales = await getLocales(params.lang);
       setLang(locales);
     };
 
