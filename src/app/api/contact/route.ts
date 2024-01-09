@@ -1,5 +1,11 @@
 import { NextResponse, NextRequest } from "next/server";
-import { getDate, getPaginationParams, handleCatchError, repeatString, createOrUpdateTable } from "@/utility/Utils";
+import {
+  getDate,
+  getPaginationParams,
+  handleCatchError,
+  repeatString,
+  createOrUpdateTable,
+} from "@/utility/Utils";
 import { ApiResponseFailed, ApiResponseSuccess } from "@/dbConf/ApiConf";
 import { query } from "@/dbConf/lib/db";
 import { db_name } from "@/dbConf/dbConf";
@@ -8,24 +14,25 @@ import { create_db } from "@/dbConf/lib/create_db";
 export async function POST(request: NextRequest) {
   try {
     let payload: any = await request.json();
-    const { fullName, email, phone, country, faq, document } = payload;
+    const { fullName, email, phone, country, faq, document, description } =
+      payload;
 
     const { createdAt, updatedAt } = getDate();
     const db_create = await create_db({
-      query: `CREATE DATABASE IF NOT EXISTS ${db_name}`
+      query: `CREATE DATABASE IF NOT EXISTS ${db_name}`,
     });
     if (db_create.status_code === 200) {
-
       const contact_table_create_res: any = await createOrUpdateTable({
         db_name: db_name,
         query: `
-          CREATE TABLE IF NOT EXISTS Contact (
+          CREATE TABLE Contact (
             id INT PRIMARY KEY AUTO_INCREMENT,
             fullName VARCHAR(200),
             email VARCHAR(100),
             phone VARCHAR(20),
             country VARCHAR(50),
             faq JSON,
+            description text,
             document VARCHAR(2083) DEFAULT NULL,
             createdAt VARCHAR(20) NOT NULL,
             updatedAt VARCHAR(20) NOT NULL
@@ -36,26 +43,34 @@ export async function POST(request: NextRequest) {
       if (contact_table_create_res.status_code === 200) {
         const insert_contact_table_data: any = await query({
           db_name: db_name,
-          query: `INSERT INTO Contact (fullName, email, phone, country, faq, document, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+          query: `INSERT INTO Contact (fullName, email, phone, country, faq, description, document,  createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
           values: [
             fullName,
             email,
             phone,
             country,
             faq,
+            description,
             document,
             createdAt,
             updatedAt,
           ],
         });
         if (insert_contact_table_data.status_code === 200) {
-          delete insert_contact_table_data.data
-          return NextResponse.json({ ...insert_contact_table_data, message: "Data stored!" }, { status: insert_contact_table_data.status_code });
+          delete insert_contact_table_data.data;
+          return NextResponse.json(
+            { ...insert_contact_table_data, message: "Data stored!" },
+            { status: insert_contact_table_data.status_code }
+          );
         } else {
-          return NextResponse.json(insert_contact_table_data, { status: insert_contact_table_data.status_code });
+          return NextResponse.json(insert_contact_table_data, {
+            status: insert_contact_table_data.status_code,
+          });
         }
       } else {
-        return NextResponse.json(contact_table_create_res, { status: contact_table_create_res.status_code });
+        return NextResponse.json(contact_table_create_res, {
+          status: contact_table_create_res.status_code,
+        });
       }
     } else {
       return NextResponse.json(db_create, { status: db_create.status_code });

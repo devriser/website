@@ -171,7 +171,6 @@ export default function CustomPhoneInput({
         <input
           onBlur={(e) => validation && validateField(e.target.value)}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
-            console.log(e.target.value);
             onChange({
               value: e.target.value,
               countryCode: selectedValues.dial_code,

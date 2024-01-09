@@ -8,134 +8,44 @@ import { countriesNameData } from "./countriesNameData";
 import RadioButton from "../FormComponents/RadioButton";
 import FileIcon from "./FileIcon";
 import Button from "../Button";
+import { useController, useForm } from "react-hook-form";
+import { ContactFormTypes } from "./contactFormTypes";
 import {
-  CallIconContact,
-  InqueryIcon,
-  MailIconContact,
-  SkypeIcon,
-} from "@/assets/svg/ContactUsSvg";
-import Link from "next/link";
+  budget,
+  progressArr,
+  projectType,
+  radioTextArr1,
+} from "./ContactUsFormData";
+import Prompt from "../Prompts/Prompt";
+import toast from "react-hot-toast";
 
 export default function ContactUsForm({ params }: any) {
-  const [active, setActive] = useState(null);
-  const [budgetActive, setBudgetActive] = useState(null);
+  const [active, setActive] = useState<number | null>(null);
+  const [budgetActive, setBudgetActive] = useState<number | null>(null);
   const [selectedRadio1, setSelectedRadio1] = useState<number>(1);
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadFileName, setUploadFileName] = useState<string | null>(null);
+  const [uploadFileSize, setUploadFileSize] = useState<number | null>(null);
 
-  const projectType = [
-    {
-      name: "Website",
-    },
-    {
-      name: "Mobile Application",
-    },
-    {
-      name: "Game Development",
-    },
-    {
-      name: "Blockchain",
-    },
-    {
-      name: "UI & UX Design",
-    },
-    {
-      name: "AI & ML",
-    },
-    {
-      name: "Cloud Computing",
-    },
-    {
-      name: "Internet of Things",
-    },
-    {
-      name: "Enterprise Solutions",
-    },
-  ];
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm<ContactFormTypes>();
 
-  const budget = [
-    {
-      name: "I don’t know yet",
-    },
-    {
-      name: "$5k-$10k",
-    },
-    {
-      name: "$10k-$20k",
-    },
-    {
-      name: "$20k-$30k",
-    },
-    {
-      name: "$30k-$40k",
-    },
-    {
-      name: ">$40K",
-    },
-  ];
+  const { field: country } = useController({
+    name: "country",
+    control,
+    rules: { required: true },
+  });
 
-  const radioTextArr1 = [
-    { id: 1, label: "Design & Development" },
-    {
-      id: 2,
-      label:
-        "Design Only (We designing your product, you will develop yourself)",
-    },
-    {
-      id: 3,
-      label:
-        "Development Only (We Developing Web & App, you provide us with designs)",
-    },
-  ];
-
-  const progressArr = [
-    {
-      number: "1",
-      heading: "Get a comprehensive free technical consultation.",
-      subHeading:
-        "Following a discussion of your project, we will provide you with a full technical consultation regarding the technology stack we employ and which technology would be most suited for your project.",
-    },
-    {
-      number: "2",
-      heading:
-        "We will provide you an all-inclusive proposal paper for your Project.",
-      subHeading:
-        "We will provide you an all-inclusive proposal document that includes all of the features, timetable, pricing, and smallest details related to your project after we have a firm hold on it.",
-    },
-    {
-      number: "3",
-      heading:
-        "We will provide you an all-inclusive proposal paper for your Project.",
-      subHeading:
-        "Once you've approved the proposal and given us the go-ahead for the project, we'll assemble an all-star team to realize your vision and go above and beyond your expectations.",
-    },
-  ];
-
-  const socialLinksArr = [
-    {
-      icon: <MailIconContact />,
-      heading: "Sales & Marketing",
-      subHeading1: "hello@devriser.com",
-      subHeading2: "",
-    },
-    {
-      icon: <SkypeIcon />,
-      heading: "Skype",
-      subHeading1: "Devriser",
-      subHeading2: "",
-    },
-    {
-      icon: <InqueryIcon />,
-      heading: "HR Inquiry",
-      subHeading1: "hr@devriser.com",
-      subHeading2: "+1 123-123-1212 (US)",
-    },
-    {
-      icon: <CallIconContact />,
-      heading: "Sales Inquiry",
-      subHeading1: "+1 123-123-1212 (US)",
-      subHeading2: "+1 123-123-1212 (US)",
-    },
-  ];
+  const { field: phone } = useController({
+    name: "phone",
+    control,
+    rules: { required: true },
+  });
 
   const handleProjectClick = (index: any) => {
     setActive(index === active ? null : index);
@@ -148,26 +58,166 @@ export default function ContactUsForm({ params }: any) {
     setSelectedRadio1(id);
   };
 
+  const [filePath, setFilePath] = useState<string | null>(null);
+
+  const handleFileChange = async (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const fileInput = event.target;
+    const file = fileInput.files?.[0];
+
+    if (file) {
+      try {
+        setIsUploading(true);
+        const formData = new FormData();
+        formData.append("file", file);
+        setUploadFileName(file.name);
+        setUploadFileSize(file.size);
+
+        const response = await fetch(
+          "http://localhost:3000/api/common/upload-file",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+
+        if (response.ok) {
+          const result = await response.json();
+
+          if (result.status === "success") {
+            {
+              toast.custom((t) => (
+                <Prompt
+                  t={t}
+                  type="success"
+                  text="File Uploaded Successfully"
+                />
+              ));
+            } // Display success toast
+            const { file_url } = result.data;
+            setFilePath(file_url);
+          } else {
+            console.error("File upload failed");
+          }
+        } else {
+          console.error("File upload failed");
+        }
+      } catch (error) {
+        console.error("An error occurred during file upload:", error);
+      } finally {
+        setIsUploading(false);
+      }
+    }
+  };
+
+  const onSubmit = async (data: ContactFormTypes) => {
+    const projectTypeAnswer = projectType[0].answers[active!]?.name || "";
+    const radioTextAnswer =
+      radioTextArr1[0].options.find((option) => option.id === selectedRadio1)
+        ?.label || "";
+    const budgetAnswer = budget[0].answers[budgetActive!]?.name || "";
+
+    const faq = {
+      "2. What is your next project about?": projectTypeAnswer,
+      "3. What will be our involvement in your project?": radioTextAnswer,
+      "4. What is your approximate budget (in USD)?": budgetAnswer,
+    };
+
+    const mergedData = {
+      ...data,
+      faq: faq,
+      document: filePath,
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(mergedData),
+      });
+
+      if (response.ok) {
+        reset();
+        setFilePath(null);
+        setUploadFileName(null);
+        setUploadFileSize(null);
+        setActive(null);
+        setBudgetActive(null);
+        setSelectedRadio1(1);
+        <div>
+          {toast.custom((t) => (
+            <Prompt t={t} type="success" text="Query Submitted Successfully" />
+          ))}
+        </div>;
+      } else {
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("An error occurred during form submission:", error);
+    }
+  };
+
+  function formatFileSize(size: number | null): string {
+    if (size === null) return "";
+    const units = ["B", "KB", "MB", "GB", "TB"];
+    let i = 0;
+    while (size >= 1024 && i < units.length - 1) {
+      size /= 1024;
+      i++;
+    }
+    return `${size.toFixed(2)} ${units[i]}`;
+  }
+
   return (
     <div className="flex flex-col gap-8 pb-8">
       <div className="flex gap-8">
-        <form className="flex flex-col gap-8 flex-[2]">
+        <form
+          className="flex flex-col gap-8 flex-[2]"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="bg-secondary p-5 flex flex-col gap-4 ">
             <p className="text-text-title font-medium">
               1. Personal Information
             </p>
             <div className="flex flex-col  gap-2">
               <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-                <FormInput label="Full Name" labelColumn />
-                <FormInput label="Email" labelColumn />
+                <FormInput
+                  label="Full Name"
+                  labelColumn
+                  register={register}
+                  registerValue="fullName"
+                  error={errors.fullName}
+                  registerReq
+                />
+                <FormInput
+                  label="Email"
+                  labelColumn
+                  register={register}
+                  registerValue="email"
+                  error={errors.email}
+                  registerReq
+                  type="email"
+                />
               </div>
               <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-                <CustomPhoneInput label="Phone Number" />
+                <CustomPhoneInput
+                  label="Phone Number"
+                  onChange={({ formattedValue }) => {
+                    phone.onChange(formattedValue!);
+                  }}
+                />
                 <Select
                   label="Country"
                   options={countriesNameData}
-                  values={selectedCountry}
-                  onChange={(e) => setSelectedCountry(e.target.value)}
+                  values={country.value}
+                  onChange={(value) => {
+                    country.onChange(value);
+                  }}
+                  error={errors.country}
+                  showSelectedOptions
                   labelColumn
                   searchable
                 />
@@ -176,10 +226,10 @@ export default function ContactUsForm({ params }: any) {
           </div>
           <div className="bg-secondary p-5 flex flex-col gap-4">
             <p className="text-text-title font-medium">
-              2. What is your next project about?*
+              {projectType[0].question}
             </p>
             <div className="grid grid-cols-3 gap-4 max-md:grid-cols-1 max-lg:grid-cols-2">
-              {projectType.map((project, index) => (
+              {projectType[0].answers.map((project, index) => (
                 <div
                   key={project.name}
                   className={`flex p-4 justify-center cursor-pointer ${
@@ -196,31 +246,28 @@ export default function ContactUsForm({ params }: any) {
           </div>
           <div className="bg-secondary p-5 flex flex-col gap-4">
             <p className="text-text-title font-medium">
-              3. What will be our involvement in your project?*
+              {radioTextArr1[0].question}
             </p>
             <div className="flex flex-col gap-4">
-              {radioTextArr1.map(
-                ({ id, label }: { id: number; label: string }, index) => (
-                  <RadioButton
-                    key={`rule-${id}`}
-                    id={id}
-                    checked={selectedRadio1 === id}
-                    onChange={() => handleRadioChange1(id)}
-                    label={label}
-                    name={`rule-${id}`}
-                  />
-                )
-              )}
+              {radioTextArr1[0].options.map(({ id, label }) => (
+                <RadioButton
+                  key={`rule-${id}`}
+                  id={id}
+                  checked={selectedRadio1 === id}
+                  onChange={() => handleRadioChange1(id)}
+                  label={label}
+                  name={`rule-${id}`}
+                />
+              ))}
             </div>
           </div>
+
           <div className="bg-secondary p-5 flex flex-col gap-4">
-            <p className="text-text-title font-medium">
-              4. What is your approximate budget (in USD)?*
-            </p>
+            <p className="text-text-title font-medium">{budget[0].question}</p>
             <div className="grid grid-cols-3 gap-4 max-md:grid-cols-1 max-lg:grid-cols-2">
-              {budget.map((budget, index) => (
+              {budget[0].answers.map((budgetOption, index) => (
                 <div
-                  key={budget.name}
+                  key={budgetOption.name}
                   className={`flex p-4 justify-center cursor-pointer ${
                     index === budgetActive
                       ? "bg-solid-blue text-primary"
@@ -228,7 +275,7 @@ export default function ContactUsForm({ params }: any) {
                   }`}
                   onClick={() => handleBudgetClick(index)}
                 >
-                  <span>{budget.name}</span>
+                  <span>{budgetOption.name}</span>
                 </div>
               ))}
             </div>
@@ -237,54 +284,41 @@ export default function ContactUsForm({ params }: any) {
             <p className="text-text-title font-medium">
               5. Tell us about your project
             </p>
+
             <div>
               <FormInput
                 inputType="textarea"
                 placeHolder="Describe your project"
                 labelColumn
                 row={4}
+                register={register}
+                registerValue="description"
               />
             </div>
             <div className="flex flex-col gap-1">
               <label className="cursor-pointer">
                 <div className="bg-primary rounded flex  p-1 py-2 cursor-pointer ps-4 gap-2">
-                  <input
-                    type="file"
-                    hidden
-                    accept=".pdf, .doc, .docx"
-                    // {...register("file", {
-                    //   onChange: (e: ChangeEvent<HTMLInputElement>) => {
-                    //     if (e.target.files) {
-                    //       clearErrors("file");
-                    //       if (e?.target?.files[0].size < 10000000)
-                    //         setValue("file", e.target.files[0]);
-                    //       else {
-                    //         resetField("file");
-                    //         setError("file", {
-                    //           type: "custom",
-                    //           message: "File Size is Greater than 10 mb",
-                    //         });
-                    //       }
-                    //     }
-                    //   },
-                    // })}
-                  />
+                  <input type="file" hidden onChange={handleFileChange} />
                   <div className="flex flex-col ">
                     <FileIcon />
-                    {/* <div>
-                  <p>Attach File:- Max (10MB)</p>
-                  <span>Selected File - {file && file?.name}</span>
-                </div> */}
                   </div>
                   <div>
                     <p className="ps-[3px] text-secondary-reverse">
                       Upload Document
                     </p>
-                    <p className="ps-[3px] text-secondary-reverse">
-                      Drag and drop or browse your file
-                    </p>
+                    {!isUploading && filePath && (
+                      <div>
+                        File Name: {uploadFileName} (
+                        {formatFileSize(uploadFileSize)})
+                      </div>
+                    )}
+                    {isUploading && (
+                      <div>
+                        Uploading File Please Wait: {uploadFileName} (
+                        {formatFileSize(uploadFileSize)})
+                      </div>
+                    )}
                   </div>
-                  {/* <span>{errors?.file?.message}</span> */}
                 </div>
               </label>
               <div className="flex gap-2 flex-col pt-3">
@@ -305,7 +339,12 @@ export default function ContactUsForm({ params }: any) {
               </div>
             </div>
             <div className="flex justify-end">
-              <Button variant="success" style="solid">
+              <Button
+                variant="success"
+                style="solid"
+                type="submit"
+                loading={isSubmitting}
+              >
                 Submit
               </Button>
             </div>
