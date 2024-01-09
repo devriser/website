@@ -7,6 +7,7 @@ import Providers from "@/providers/Providers";
 import Footer from "@/components/shared/Footer/Footer";
 import MobileNavbar from "@/components/shared/Navbar/MobileNavbar";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "DevRiser LLC",
@@ -107,6 +108,7 @@ export default function RootLayout({
             />
           </noscript>
           <div className="flex max-lg:flex-col bg-primary mx-auto">
+            <Toaster />
             <div className="sticky top-0">
               <Navbar params={params} />
             </div>
