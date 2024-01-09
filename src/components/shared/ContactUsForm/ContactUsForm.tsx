@@ -58,6 +58,9 @@ export default function ContactUsForm({ params }: any) {
     setSelectedRadio1(id);
   };
 
+  const apiUrlContact = process.env.NEXT_PUBLIC_SUBMIT_CONTACT_FORM || "";
+  const apiUrlUpload = process.env.NEXT_PUBLIC_UPLOAD_FILE || "";
+
   const [filePath, setFilePath] = useState<string | null>(null);
 
   const handleFileChange = async (
@@ -74,13 +77,10 @@ export default function ContactUsForm({ params }: any) {
         setUploadFileName(file.name);
         setUploadFileSize(file.size);
 
-        const response = await fetch(
-          "http://localhost:3000/api/common/upload-file",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
+        const response = await fetch(apiUrlUpload, {
+          method: "POST",
+          body: formData,
+        });
 
         if (response.ok) {
           const result = await response.json();
@@ -131,7 +131,7 @@ export default function ContactUsForm({ params }: any) {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/api/contact", {
+      const response = await fetch(apiUrlContact, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
