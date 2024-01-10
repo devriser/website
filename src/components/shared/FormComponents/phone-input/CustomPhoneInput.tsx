@@ -130,7 +130,7 @@ export default function CustomPhoneInput({
               <SearchIcon />
               <input
                 type="search"
-                placeholder="search country"
+                placeholder="Search country"
                 className="!bg-primary "
                 onChange={(e: ChangeEvent<HTMLInputElement>) =>
                   setSearchedCountry(e.target.value)
@@ -177,6 +177,15 @@ export default function CustomPhoneInput({
               formattedValue: `${selectedValues?.dial_code}-${e.target.value}`,
             });
           }}
+          onInput={(e: ChangeEvent<HTMLInputElement>) => {
+            const numericValue = e.target.value.replace(/\D/g, "");
+            e.target.value = numericValue;
+            onChange({
+              value: numericValue,
+              countryCode: selectedValues.dial_code,
+              formattedValue: `${selectedValues?.dial_code}-${numericValue}`,
+            });
+          }}
           id={inputStyles}
           defaultValue={defaultValue}
           className="input !bg-primary  "
@@ -184,6 +193,7 @@ export default function CustomPhoneInput({
           placeholder={placeholder}
           maxLength={Number(selectedValues?.phoneLength)}
           required={required}
+          pattern="[0-9]*"
         />
       </div>
       {fieldError && <span className="error_phone_input">{fieldError}</span>}

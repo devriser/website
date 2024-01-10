@@ -10,8 +10,12 @@ import { ApiResponseFailed, ApiResponseSuccess } from "@/dbConf/ApiConf";
 import { query } from "@/dbConf/lib/db";
 import { db_name } from "@/dbConf/dbConf";
 import { create_db } from "@/dbConf/lib/create_db";
+import sendMail from "@/services/email/EmailService";
+import { json } from "stream/consumers";
 
 export async function POST(request: NextRequest) {
+  const salesEmail = "sales@devriser.com";
+
   try {
     let payload: any = await request.json();
     const { fullName, email, phone, country, faq, document, description } =
@@ -58,6 +62,12 @@ export async function POST(request: NextRequest) {
         });
         if (insert_contact_table_data.status_code === 200) {
           delete insert_contact_table_data.data;
+          sendMail({
+            email: email,
+            subject: "Query From DevRiser website",
+            payload: payload,
+          });
+
           return NextResponse.json(
             { ...insert_contact_table_data, message: "Data stored!" },
             { status: insert_contact_table_data.status_code }

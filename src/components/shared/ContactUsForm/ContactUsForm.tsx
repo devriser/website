@@ -26,6 +26,8 @@ export default function ContactUsForm({ params }: any) {
   const [isUploading, setIsUploading] = useState(false);
   const [uploadFileName, setUploadFileName] = useState<string | null>(null);
   const [uploadFileSize, setUploadFileSize] = useState<number | null>(null);
+  const [filePath, setFilePath] = useState<string | null>(null);
+  const [validationError, setValidationError] = useState<string | null>(null);
 
   const {
     register,
@@ -60,8 +62,6 @@ export default function ContactUsForm({ params }: any) {
 
   const apiUrlContact = process.env.NEXT_PUBLIC_SUBMIT_CONTACT_FORM || "";
   const apiUrlUpload = process.env.NEXT_PUBLIC_UPLOAD_FILE || "";
-
-  const [filePath, setFilePath] = useState<string | null>(null);
 
   const handleFileChange = async (
     event: React.ChangeEvent<HTMLInputElement>
@@ -112,6 +112,11 @@ export default function ContactUsForm({ params }: any) {
   };
 
   const onSubmit = async (data: ContactFormTypes) => {
+    if (active === null || budgetActive === null) {
+      setValidationError("Please select options for Project and Budget");
+      return;
+    }
+
     const projectTypeAnswer = projectType[0].answers[active!]?.name || "";
     const radioTextAnswer =
       radioTextArr1[0].options.find((option) => option.id === selectedRadio1)
@@ -147,6 +152,7 @@ export default function ContactUsForm({ params }: any) {
         setActive(null);
         setBudgetActive(null);
         setSelectedRadio1(1);
+        setValidationError(null);
         <div>
           {toast.custom((t) => (
             <Prompt t={t} type="success" text="Query Submitted Successfully" />
@@ -280,6 +286,7 @@ export default function ContactUsForm({ params }: any) {
               ))}
             </div>
           </div>
+          {validationError && <p className="text-red-500">{validationError}</p>}
           <div className="bg-secondary p-5 flex flex-col gap-4">
             <p className="text-text-title font-medium">
               5. Tell us about your project
@@ -338,6 +345,7 @@ export default function ContactUsForm({ params }: any) {
                 </div>
               </div>
             </div>
+
             <div className="flex justify-end">
               <Button
                 variant="success"
