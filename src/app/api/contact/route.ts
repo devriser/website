@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
         if (insert_contact_table_data.status_code === 200) {
           delete insert_contact_table_data.data;
           sendMail({
-            email: email,
+            email: salesEmail,
             subject: "Query From DevRiser website",
             payload: payload,
           });
