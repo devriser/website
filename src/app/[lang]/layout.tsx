@@ -73,7 +73,11 @@ export default function RootLayout({
   params: { lang: string };
 }) {
   return (
-    <html lang={params.lang} dir={params.lang === "ar" ? "rtl" : "ltr"}>
+    <html
+      lang={params.lang}
+      dir={params.lang === "ar" ? "rtl" : "ltr"}
+      suppressHydrationWarning={true}
+    >
       <head>
         <Script id="google-analytics">
           {`
