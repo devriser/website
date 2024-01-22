@@ -3,6 +3,7 @@ import "./styles.css";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import countriesData from "./countriesData.json";
 import { SearchIcon } from "../form-select/Icons";
+import { getLocales } from "../../../../../getLocales";
 
 type Country = {
   country?: string;
@@ -17,7 +18,7 @@ type Props = {
   labelStyles?: string;
   inputStyles?: string;
   label?: string;
-  defaultCountryCode?: string;
+  // defaultCountryCode?: string;
   placeholder?: string;
   defaultValue?: string;
   error?: string;
@@ -32,10 +33,11 @@ type Props = {
     formattedValue?: string;
     countryCode?: string;
   }) => void;
+  params?: any;
 };
 
 export default function CustomPhoneInput({
-  defaultCountryCode = "United States of America",
+  // defaultCountryCode = "United States of America",
   defaultValue,
   labelStyles,
   inputStyles,
@@ -45,6 +47,7 @@ export default function CustomPhoneInput({
   validation = true,
   required = validation,
   onChange = ({ value, countryCode, formattedValue }) => {},
+  params,
 }: Props) {
   const dropDownNode = useRef<HTMLDivElement>(null);
 
@@ -53,6 +56,46 @@ export default function CustomPhoneInput({
   const [searchedCountry, setSearchedCountry] = useState<string>("");
 
   const [fieldError, setFieldError] = useState(!validation ? error : "");
+
+  const getDefaultCountryCode = () => {
+    switch (params.lang) {
+      case "en":
+        return "United States of America";
+      case "fr":
+        return "France";
+      case "ar":
+        return "United Arab Emirates"; // Default to Dubai for Arabic
+      default:
+        return "United States of America"; // Default to a fallback value
+    }
+  };
+  const [defaultCountryCode, setDefaultCountryCode] = useState<string>(
+    getDefaultCountryCode()
+  );
+
+  useEffect(() => {
+    if (show) {
+      const handleDomClick = (e: any) => {
+        e.stopPropagation();
+        if (
+          !dropDownNode.current?.contains(e.target) &&
+          e.target !== dropDownNode.current
+        ) {
+          setShow(false);
+        }
+      };
+
+      document.addEventListener("click", handleDomClick);
+      return () => {
+        document.removeEventListener("click", handleDomClick);
+      };
+    }
+  }, [show]);
+
+  useEffect(() => {
+    // Update defaultCountryCode if params.lang changes
+    setDefaultCountryCode(getDefaultCountryCode());
+  }, [params.lang]);
 
   const filterCountriesData = searchedCountry
     ? countriesData.filter((country) =>
@@ -93,25 +136,6 @@ export default function CustomPhoneInput({
     }
     return setFieldError("");
   }
-
-  useEffect(() => {
-    if (show) {
-      const handleDomClick = (e: any) => {
-        e.stopPropagation();
-        if (
-          !dropDownNode.current?.contains(e.target) &&
-          e.target !== dropDownNode.current
-        ) {
-          setShow(false);
-        }
-      };
-
-      document.addEventListener("click", handleDomClick);
-      return () => {
-        document.removeEventListener("click", handleDomClick);
-      };
-    }
-  }, [show]);
 
   return (
     <div ref={dropDownNode} className="phone_library ">

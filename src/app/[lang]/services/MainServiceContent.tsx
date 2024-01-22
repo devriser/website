@@ -47,22 +47,23 @@ import {
   UnrealSVG,
   XdSVG,
 } from "@/assets/svg/TechIcons";
+import { getLocales } from "../../../../getLocales";
 
-const MainServiceContent = () => {
+const MainServiceContent = async ({ params }: any) => {
+  const lang = await getLocales(params?.lang);
+
   const serviceSummaryArr = [
     {
-      headerText: "Enterprise Solutions Development",
-      description:
-        "DevRiser specializes in crafting cutting-edge software solutions that elevate your business to new heights. Our team of experienced developers is dedicated to delivering tailor-made enterprise solutions, aligning seamlessly with your unique needs and challenges. From scalable applications to efficient system integrations, we are committed to propelling your business forward.",
+      headerText: lang.mainServices.headingOne,
+      description: lang.mainServices.descriptionOne,
       image: erp,
       buttonColor: "bg-purple-gradient",
       RedirectURL: "/en/services/enterprise-solutions-development",
     },
 
     {
-      headerText: "Web Development",
-      description:
-        "DevRiser provides performance-driven, scalable, and responsive custom web app development services. The most recent technologies are used by our team of professionals to build cross-platform web applications.",
+      headerText: lang.mainServices.headingTwo,
+      description: lang.mainServices.descriptionTwo,
       image: web,
       progressArr: ["Frontend", "Backend"],
       techArr: [
@@ -73,8 +74,7 @@ const MainServiceContent = () => {
         <HTMLSVG />,
       ],
       buttonColor: "bg-green-gradient",
-      switchDescription:
-        "DevRiser excels in backend web development, delivering robust, scalable, and efficient solutions. Our dedicated team leverages the latest technologies to craft powerful backend systems, ensuring seamless functionality and optimal performance for your web applications.",
+      switchDescription: lang.mainServices.switchDescriptionOne,
       switchTechArr: [
         <NodeSVG />,
         <LaravelSVG />,
@@ -85,9 +85,8 @@ const MainServiceContent = () => {
       RedirectURL: "/en/services/website-development-services",
     },
     {
-      headerText: "App Development",
-      description:
-        "DevRiser offers a variety of mobile app development services, such as cross-platform, Android, and iOS app development, to assist businesses in accelerating their growth and creating a distinctive brand identity. Our team specializes in developing mobile apps.",
+      headerText: lang.mainServices.headingThree,
+      description: lang.mainServices.descriptionThree,
       image: mobile,
       progressArr: ["Development", "Design"],
       techArr: [
@@ -101,23 +100,20 @@ const MainServiceContent = () => {
       buttonColor: "bg-yellow-gradient",
       RedirectURL: "/en/services/app-development",
 
-      switchDescription:
-        "DevRiser transforms ideas into captivating mobile experiences. Our expert designers specialize in cross-platform, Android, and iOS app development, crafting visually appealing and user-centric designs that align seamlessly with your brand identity. Elevate your business presence with DevRiser's innovative mobile app design solutions",
+      switchDescription: lang.mainServices.switchDescriptionTwo,
       switchTechArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
     },
     {
-      headerText: "UI UX Design",
-      description:
-        "DevRiser's UI/UX design services consist of intuitive and eye-catching digital designs. To satisfy your business objectives and user needs, our UX design consulting company offers specialized design approaches. For UI/UX design services that promote company's expansion, contact us.",
+      headerText: lang.mainServices.headingFour,
+      description: lang.mainServices.descriptionFour,
       image: uiux,
       techArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
       buttonColor: "bg-parakeet-gradient",
       RedirectURL: "/en/services/ui-ux-design",
     },
     {
-      headerText: "Cloud Computing Services",
-      description:
-        "DevRiser provides enterprise cloud IT solutions for all businesses through our company's cloud computing services and solutions across the globe. Our area of expertise is in providing specialized cloud services, For organizations, our cloud computing solutions",
+      headerText: lang.mainServices.headingFive,
+      description: lang.mainServices.descriptionFive,
       image: cloud,
       techArr: [
         <AwsSVG />,
@@ -129,18 +125,16 @@ const MainServiceContent = () => {
       RedirectURL: "/en/services/cloud-computing",
     },
     {
-      headerText: "Game Development",
-      description:
-        "DevRiser is a leading game development company that specializes in creating 2D and 3D game apps for desktops, iOS and Android. Using Unity and Unreal Engine, we develop original video games as well as AR/VR applications.",
+      headerText: lang.mainServices.headingSix,
+      description: lang.mainServices.descriptionSix,
       image: game,
       techArr: [<UnitySVG />, <UnrealSVG />, <EyeGameDevSVG />],
       buttonColor: "bg-orange-gradient",
       RedirectURL: "/en/services/game-development",
     },
     {
-      headerText: "Blockchain Development",
-      description:
-        "Unlock the potential of decentralized technology with DevRiser's cutting-edge blockchain development services. From smart contract deployment to DApp creation, we empower businesses to embrace the future of secure and transparent digital ecosystems. Partner with us for innovative solutions that redefine possibilities in the blockchain space.",
+      headerText: lang.mainServices.headingSeven,
+      description: lang.mainServices.descriptionSeven,
       image: blockchain,
       techArr: [
         <BlockOneSVG />,
@@ -154,18 +148,16 @@ const MainServiceContent = () => {
       RedirectURL: "/en/services/blockchain-development",
     },
     {
-      headerText: "Internet of Things",
-      description:
-        "We offer complete IoT software development services, specialized in custom IoT development and IoT mobile app development. Our specialized solutions boost operational effectiveness, cut expenses, and boost output across a range of industries. You can rely on us for dependable and secure IoT solutions.",
+      headerText: lang.mainServices.headingEight,
+      description: lang.mainServices.descriptionEight,
       image: internet,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
       buttonColor: "bg-emerald-gradient",
       RedirectURL: "/en/services/iot-development",
     },
     {
-      headerText: "AI/ML Development",
-      description:
-        "Empower your business with DevRiser's AI/ML development services. From predictive analytics to intelligent automation, we harness the power of artificial intelligence and machine learning to elevate your operations. Revolutionize your technology landscape with our expertise, driving innovation and efficiency for a competitive edge in the digital era.",
+      headerText: lang.mainServices.headingNine,
+      description: lang.mainServices.descriptionNine,
       image: aiml,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
       buttonColor: "bg-skyblue-gradient",

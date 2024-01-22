@@ -25,7 +25,7 @@ import {
   useAppState,
 } from "@/providers/state-providers/ContextProviders";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import ThemeSwitchMobile from "./ThereSwitchMobile";
@@ -33,8 +33,33 @@ import darkLogo from "@/assets/images/devriserDarkLogo.png";
 import lightLogo from "@/assets/images/devriserLightLogo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { getLocales } from "../../../../getLocales";
 
-export default function MobileNavbar({ params }: any) {
+interface LocaleData {
+  navBar: {
+    mainHeadingOne: string;
+    mainHeadingTwo: string;
+    mainHeadingThree: string;
+    mainHeadingFour: string;
+    mainHeadingFive: string;
+    subHeadingOne: string;
+    subHeadingTwo: string;
+    subHeadingThree: string;
+    subHeadingFour: string;
+    subHeadingFive: string;
+    subHeadingSix: string;
+    subHeadingSeven: string;
+    subHeadingEight: string;
+    subHeadingNine: string;
+    subHeadingTen: string;
+  };
+}
+
+interface NavbarProps {
+  params: { lang: string };
+}
+
+export default function MobileNavbar({ params }: NavbarProps) {
   const theme = useTheme();
   const dispatch = useAppDispatch();
   const { toggle } = useAppState();
@@ -42,55 +67,73 @@ export default function MobileNavbar({ params }: any) {
   const [selectedLanguage, setSelectedLanguage] = useState(params.lang);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const themes = useTheme();
+  const [lang, setLang] = useState<LocaleData | null>(null);
 
   const pathName = usePathname();
 
+  useLayoutEffect(() => {
+    const fetchData = async () => {
+      const locales = await getLocales(params.lang);
+      setLang(locales);
+    };
+
+    fetchData();
+  }, [params.lang]);
+
+  if (!lang) {
+    return null;
+  }
+
   const navBarData = [
     {
-      name: "Services",
-      icon: theme.theme === "dark" ? <ServicesDark /> : <Services />,
-
+      name: lang.navBar.mainHeadingOne,
+      icon: themes.theme === "dark" ? <ServicesDark /> : <Services />,
       subItems: [
         {
-          name: "Enterprise Solutions",
+          name: lang.navBar.subHeadingOne,
           path: `/${params.lang}/services/enterprise-solutions-development`,
         },
         {
-          name: "Web Development",
+          name: lang.navBar.subHeadingTwo,
           path: `/${params.lang}/services/website-development-services`,
         },
         {
-          name: "App Development",
+          name: lang.navBar.subHeadingThree,
           path: `/${params.lang}/services/app-development`,
         },
-        { name: "UI/UX Design", path: `/${params.lang}/services/ui-ux-design` },
         {
-          name: "Cloud Computing",
+          name: lang.navBar.subHeadingFour,
+          path: `/${params.lang}/services/ui-ux-design`,
+        },
+        {
+          name: lang.navBar.subHeadingFive,
           path: `/${params.lang}/services/cloud-computing`,
         },
         {
-          name: "Game Development",
+          name: lang.navBar.subHeadingSix,
           path: `/${params.lang}/services/game-development`,
         },
         {
-          name: "Blockchain Development",
+          name: lang.navBar.subHeadingSeven,
           path: `/${params.lang}/services/blockchain-development`,
         },
         {
-          name: "IoT Development",
+          name: lang.navBar.subHeadingEight,
           path: `/${params.lang}/services/iot-development`,
         },
         {
-          name: "AI/ML Development",
+          name: lang.navBar.subHeadingNine,
           path: `/${params.lang}/services/ai-ml-development`,
         },
-        { name: "All Services", path: `/${params.lang}/services` },
+        {
+          name: lang.navBar.subHeadingTen,
+          path: `/${params.lang}/services`,
+        },
       ],
     },
     // {
     //   name: "Solutions",
-    //   icon: theme.theme === "dark" ? <SolutionsDark /> : <Solutions />,
-
+    //   icon: themes.theme === "dark" ? <SolutionsDark /> : <Solutions />,
     //   subItems: [
     //     { name: "Enterprise Solutions", path: "" },
     //     { name: "Web Development", path: "" },
@@ -100,13 +143,12 @@ export default function MobileNavbar({ params }: any) {
     //     { name: "Game Development", path: "" },
     //     { name: "Blockchain Development", path: "" },
     //     { name: "IoT Development", path: "" },
-    //     { name: "AI/ML Development", path: "" },
+    //     { name: "AI/ML Developoment", path: "" },
     //   ],
     // },
     // {
     //   name: "Industries",
-    //   icon: theme.theme === "dark" ? <IndustriesDark /> : <Industries />,
-
+    //   icon: themes.theme === "dark" ? <IndustriesDark /> : <Industries />,
     //   subItems: [
     //     { name: "Enterprise Solutions", path: "" },
     //     { name: "Web Development", path: "" },
@@ -116,19 +158,19 @@ export default function MobileNavbar({ params }: any) {
     //     { name: "Game Development", path: "" },
     //     { name: "Blockchain Development", path: "" },
     //     { name: "IoT Development", path: "" },
-    //     { name: "AI/ML Development", path: "" },
+    //     { name: "AI/ML Developoment", path: "" },
     //   ],
     // },
   ];
 
   const navBarData2 = [
     {
-      name: "About Us",
+      name: lang.navBar.mainHeadingFour,
       href: `/${params.lang}/about-us`,
       icon: themes.theme === "dark" ? <AboutUsDark /> : <AboutUs />,
     },
     {
-      name: "Contact",
+      name: lang.navBar.mainHeadingFive,
       href: `/${params.lang}/contact-us`,
       icon: themes.theme === "dark" ? <ContactDark /> : <Contact />,
     },
@@ -138,6 +180,7 @@ export default function MobileNavbar({ params }: any) {
     //   icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
     // },
   ];
+
   const language = [
     {
       name: "English",
@@ -179,7 +222,7 @@ export default function MobileNavbar({ params }: any) {
     <AnimatePresence>
       <div className="flex items-center justify-between px-6 py-3 sticky top-0 z-50 bg-secondary lg:hidden">
         <div>
-          <ThemeSwitchMobile />
+          <ThemeSwitchMobile params={params} />
         </div>
         <Link href={`/${params.lang}`} className="cursor-pointer">
           {themes.theme === "dark" ? (
@@ -302,7 +345,7 @@ export default function MobileNavbar({ params }: any) {
                     </Link>
                   ))}
 
-                  {/* <div
+                  <div
                     onClick={() => handleLanguageClick(selectedLanguage)}
                     className={`cursor-pointer flex-col  border p-1 bg-primary border-primary-border flex items-center justify-center gap-3 py-2 rounded-medium `}
                   >
@@ -356,7 +399,7 @@ export default function MobileNavbar({ params }: any) {
                         ))}
                       </motion.div>
                     )}
-                  </div> */}
+                  </div>
                 </motion.div>
               </motion.div>
             </>

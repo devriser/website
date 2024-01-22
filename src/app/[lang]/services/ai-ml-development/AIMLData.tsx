@@ -64,18 +64,6 @@ export const aimlServicesArr = [
       "DevRiser is a machine learning and artificial intelligence software development company focused on supporting enterprises all over the world with image processing business intelligence solutions to find data insights and support.",
     icon: <ImgProcessingSVG />,
   },
-  // {
-  //   title: "Computing without servers",
-  //   description:
-  //     "Allow us to create your mission-critical cloud-native applications that are running on a secure public cloud platform with a pay-as-you-go, flexible automated service subscription model.",
-  //   icon: <CloudIcon />,
-  // },
-  // {
-  //   title: "Exclusive Cloud Support",
-  //   description:
-  //     "Maintain your hectic schedules while delegating all concerns about managing your cloud computing solutions to our managed cloud services providers, who will guarantee your cloud computing solutions' continuous availability.",
-  //   icon: <TechServiceIcon />,
-  // },
 ];
 
 export const aimlStackArr = [

@@ -77,7 +77,13 @@ const ThemeSwitch = ({ params }: any) => {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -10, opacity: 0 }}
           transition={{ type: "spring", duration: 0.5 }}
-          className="absolute -top-24 left-[65px] w-30 bg-secondary   rounded overflow-hidden z-50"
+          className={`absolute -top-24 ${
+            params.lang === "ar"
+              ? "right-[78px]"
+              : params.lang === "fr"
+              ? "left-[84px]"
+              : "left-[65px]"
+          }  w-30 bg-secondary   rounded overflow-hidden z-50`}
         >
           <div className="flex flex-col p-1 gap-1">
             <motion.div

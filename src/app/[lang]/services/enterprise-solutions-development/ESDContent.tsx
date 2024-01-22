@@ -64,7 +64,7 @@ export default async function ESDContent({ params }: any) {
   const lang = await getLocales(params.lang);
 
   return (
-    <section className="bg-primary h-fit pb-8">
+    <section className="bg-primary h-fit pb-8 ">
       <div className="px-6 pt-14 grid gap-16">
         <div className="bg-primary">
           <TitleHeader

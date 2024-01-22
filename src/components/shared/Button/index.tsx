@@ -29,7 +29,7 @@ const Button = ({
       transparent: "bg-transparent text-blue border border-blue-border",
     },
     success: {
-      solid: "bg-blue-gradient border border-transparent",
+      solid: "bg-solid-blue border border-transparent",
       outlined: "bg-main-background text-success border blue-border",
       transparent: "bg-transparent text-success border blue-border",
     },

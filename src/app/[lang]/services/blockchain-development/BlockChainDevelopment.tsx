@@ -58,29 +58,6 @@ export default async function BlockChainDevelopment({ params }: any) {
     },
   ];
 
-  const BlockChainAccordionData = [
-    {
-      headerText: "Requirement Analysis & Platform",
-      description:
-        "Our Blockchain consultants assess the system in place  the company's objectives. Choose the finest platform based on your company's requirements.",
-    },
-    {
-      headerText: "Proof of Concept Development",
-      description:
-        "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
-    },
-    {
-      headerText: "Blockchain App Development",
-      description:
-        "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
-    },
-    {
-      headerText: "Integration",
-      description:
-        "Our specialists conduct a thorough project study to comprehend the business model, scope, and market trends. Our web development consultants do market research and competitor analysis based on the specifics of your project before making recommendations for the top digital solutions",
-    },
-  ];
-
   return (
     <div className=" pt-14 pb-16 max-md:pt-6">
       <div className="flex flex-col gap-16 ">
@@ -133,10 +110,8 @@ export default async function BlockChainDevelopment({ params }: any) {
         </div>
         <div className="grid gap-16 py-16 bg-secondary">
           <ServiceHeader
-            title="Technologies We Use For Blockchain Development"
-            description={
-              "The technology stack for blockchain development that enables us to creatively translate software ideas into decentralized webs and apps."
-            }
+            title={lang.blockChainDevelopment.section1.mainHeading}
+            description={lang.blockChainDevelopment.section1.subHeading}
           />
           <div className="grid gap-6 ">
             {techStackArr.map((item, index) => (

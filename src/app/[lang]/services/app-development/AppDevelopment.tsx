@@ -202,20 +202,26 @@ export default async function AppDevelopment({ params }: any) {
           description={lang.appDevelopment.sectionTwo.subHeading}
         />
         <div className="grid gap-6 ">
-          {techStackArr.map((item, index: any) => (
-            <div
-              key={index}
-              className="flex flex-col justify-start gap-6 items-start px-20 max-md:px-6"
-            >
-              <TechRow parent={item.parent} child={item.child} />
+          {lang.appDevelopment.techSection?.techStackArr?.map(
+            (item: any, index: any) => (
               <div
-                className={`border-b border-primary-border w-full`}
-                style={{
-                  display: index + 1 < techStackArr.length ? "block" : " none",
-                }}
-              ></div>
-            </div>
-          ))}
+                key={index}
+                className="flex flex-col justify-start gap-6 items-start px-20 max-md:px-6"
+              >
+                <TechRow parent={item.parent} child={item.child} />
+                <div
+                  className={`border-b border-primary-border w-full`}
+                  style={{
+                    display:
+                      index + 1 <
+                      lang.appDevelopment.techSection?.techStackArr?.length
+                        ? "block"
+                        : " none",
+                  }}
+                ></div>
+              </div>
+            )
+          )}
         </div>
       </div>
       <div className="flex flex-col container  mx-auto relative overflow-hidden h-full">
