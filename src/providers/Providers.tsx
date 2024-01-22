@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode, useEffect, useLayoutEffect, useState } from "react";
 import ContextProviders from "./state-providers/ContextProviders";
-import { ThemeProvider } from "@/components/shared/ThemeProvider/ThemeProvider";
+import { ThemeProvider } from "next-themes";
 type Props = {
   children: ReactNode;
 };
@@ -18,8 +18,10 @@ export default function Providers({ children }: Props) {
   }
 
   return (
-    <ThemeProvider defaultTheme="system">
-      <ContextProviders>{children}</ContextProviders>
-    </ThemeProvider>
+    <>
+      <ThemeProvider defaultTheme="dark">
+        <ContextProviders>{children}</ContextProviders>
+      </ThemeProvider>
+    </>
   );
 }

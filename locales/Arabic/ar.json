@@ -71,182 +71,1429 @@
     "heading": "حول رؤيتك إلى واقع من خلال استشارة مجانية للمشروع. شاركنا أفكارك، ودعنا نساعدك في تحويلها إلى حلول رقمية متميزة.",
     "buttonText": "تحدث إلى خبرائنا"
   },
+
+  "webDevelopment": {
+    "mainHeading": "خدمات تطوير المواقع",
+    "subHeadingOne": "تقدم DevRiser خدمات تطوير مواقع ويب مخصصة تعتمد على الأداء وقابلة للتطوير وسريعة الاستجابة. يستفيد فريق الخبراء لدينا من أحدث التقنيات لصياغة حلول الويب عبر الأنظمة الأساسية. كما نقدم أيضًا الصيانة والدعم المستمرين لضمان بقاء موقع الويب الخاص بك محدثًا. الوصول إلى جميع احتياجات تطوير الويب الخاصة بك.",
+    "heroButtonOne": "لدينا محفظة",
+    "heroButtonTwo": "مبيعات الاتصال",
+    "section1": {
+      "serviceHeaderTitle": "خدماتنا لتطوير تطبيقات الويب",
+      "serviceHeaderDesc": "لدينا خبرة في تطوير البرامج المتخصصة، ونستخدم مجموعة واسعة من تقنيات الويب المتطورة لإنشاء مواقع الويب وتطبيقات الويب المصممة خصيصًا لتلبية احتياجات قطاعات الأعمال المختلفة. فيما يلي قائمة بخدمات تطوير تطبيقات الويب التي نقدمها.",
+      "webServicesArr": [
+        {
+          "title": "تطوير واجهة المستخدم/تجربة المستخدم",
+          "description": "بفضل تصميم UI UX الجذاب، يمكنك تحسين تجربة المستخدم وتعزيز سعادة العملاء وولائهم.",
+          "icon": "UIUXDevelopment"
+        },
+        {
+          "title": "ترحيل النظام",
+          "description": "تتوفر خدمات ترحيل مواقع الويب الخاصة بنا لمساعدتك في تلبية احتياجات شركتك. سواء كان موقعًا إلكترونيًا أو مجمعًا، فقد قمنا بتغطيتك.",
+          "icon": "SystemMigration"
+        },
+        {
+          "title": "الاختبار وضمان الجودة",
+          "description": "نحن نستفيد من خبرتنا للتأكد من أن مشروعك هو الأفضل. خدمات اختبار موقعنا الإلكتروني تقيس الأداء والكفاءة.",
+          "icon": "TestingQA"
+        },
+        {
+          "title": "الرسم المتجاوب",
+          "description": "يمكن للتصميم المثير للاهتمام والمتوافق مع الأجهزة المحمولة تحسين تجربة المستخدم ونسبة الاحتفاظ بالعملاء.",
+          "icon": "ResponsiveDesign"
+        },
+        {
+          "title": "التنمية المخصصة",
+          "description": "من تحليل الأعمال إلى تصميم UI/UX إلى تطوير الواجهة الأمامية/الخلفية والدعم والصيانة.",
+          "icon": "CustomDevelopment"
+        },
+        {
+          "title": "نظام إدارة المحتوى",
+          "description": "نحن متخصصون في خدمات تطوير أنظمة إدارة المحتوى (CMS) التي تم تصميمها خصيصًا لتناسب متطلبات عملك الفريدة. نحن معنا للحصول على حلول CMS الأفضل في فئتها.",
+          "icon": "CMS"
+        }
+      ]
+    },
+    "section2": {
+      "title": "التقنيات التي نستخدمها لتطوير الويب",
+      "description": "نحن نستخدم مجموعة كاملة من التصميم التفاعلي والرسوم التوضيحية والرسومات المتحركة والرسوم المتحركة أثناء عملية تطوير الويب لإنتاج مواقع ويب تجذب انتباه الجماهير التي يحاول عملاؤنا الوصول إليها.",
+      "techStackArr": [
+        {
+          "parent": "نهاية المقدمة",
+          "child": [
+            "رد فعل شبيبة",
+            "الزاوي",
+            "التالي شبيبة",
+            "تايب سكريبت",
+            "HTML5",
+            "CSS3",
+            "Vue.js"
+          ]
+        },
+        {
+          "parent": "الخلفية",
+          "child": [
+            "Node.js",
+            "بايثون",
+            "جافا",
+            "روبي",
+            ".شبكة",
+            "بي أتش بي",
+            "لارافيل"
+          ]
+        },
+        {
+          "parent": "قاعدة البيانات",
+          "child": [
+            "PostgreSQL",
+            "MongoDB",
+            "خادم قاعدة البيانات",
+            "وحي",
+            "بحث مرن",
+            "ريديس",
+            "أوس رديز",
+            "ماي إس كيو إل"
+          ]
+        },
+        {
+          "parent": "سحاب",
+          "child": [
+            "أوس",
+            "جوجل كلاود",
+            "مايكروسوفت أزور",
+            "سحابة OVH",
+            "علي بابا كلاود"
+          ]
+        },
+        {
+          "parent": "ديف أوبس",
+          "child": ["كوبيرنيتيس", "عامل ميناء", "جنكينز"]
+        }
+      ]
+    },
+    "section3": {
+      "title": "ما هو أهمية حلاً لتطوير البرمجيات المخصصة؟",
+      "description": "تعتبر تطوير البرمجيات المخصصة أمرًا حاسمًا حيث يمكن أن يساعد في جعل عملياتك أكثر إبداعًا وكفاءة وابتكارًا من خلال توفير خدمات مرنة وآمنة وصيانة مكلفة مصممة خصيصًا لتلبية احتياجاتك الخاصة.",
+      "customDevArr": [
+        {
+          "title": "مخصصة لعلامتك التجارية",
+          "description": "يمكن للشركات الترويج لشخصياتها من خلال مواقع الويب المخصصة، بالإضافة إلى منتجاتها وخدماتها. يمكن للشركة العمل مع فريق تصميم في وكالة للحصول على موقع الويب الخاص بها. ونتيجة لذلك، يكون تجربة المستخدم فريدة وليست مقيدة بما تقدمه معظم قوالب السحب والإسقاط."
+        },
+        {
+          "title": "استثمار دائم",
+          "description": "حتى إذا كان استخدام قالب أقل تكلفة، سيؤدي الاستثمار في موقع ويب مخصص إلى العائد على المدى الطويل لعملك. ونتيجة لذلك، سيكون من السهل على عملك توسيع موقع الويب أو التطبيق الحالي بمجرد توسيع عملك، وستنخفض التكلفة مع مرور الوقت."
+        },
+        {
+          "title": "المرونة والتوسع",
+          "description": "على الرغم من أن الحلول الجاهزة قد تكون كافية لتلبية احتياجات الأعمال الحالية، قد لا تكون مرنة أو قابلة للتوسع بما يكفي. يشمل موقع الويب المخصص جميع الوظائف التي تحتاجها. يمكنك تحليلها أثناء عملية الاستكشاف والنمذجة الأولية."
+        },
+        {
+          "title": "تكامل غير متوقف",
+          "description": "حلاً برمجيًا للشركة يمكن أن يتكامل مع الأنظمة الحالية هو ممتاز. سيتم تحسين استخدام أنظمتك الحالية بمساعدة تطوير البرمجيات المخصصة. يتم ذلك قبل أن يبدأ المطورون في العمل على مشروعك."
+        },
+        {
+          "title": "تعزيز الأمان",
+          "description": "نظرًا لأن النظام CMS الموسع أو التطبيق المخصص يُعتبر أكثر أمانًا من الخيار الجاهز. سيتم سرقة بياناتك إذا كان لدي القراصنة وصولًا إلى حلاً فريدًا لديك. ولكن إذا نجح نفس القراصنة في الوصول إلى أحد هذه الإصلاحات."
+        },
+        {
+          "title": "تحسين دعم المنتج",
+          "description": "أفضل دعم للمنتج هو ما يمكنك توقعه عندما تعمل مع شركة تطوير برمجيات مخصصة. ستحصل على وصول إلى فريق الدعم الذي عمل على المشروع عن كثب. بالإضافة إلى ذلك، ستكون صيانة البرمجيات أفضل وأكثر أمانًا لأنك لا تعتمد على بائع طرف ثالث."
+        }
+      ]
+    },
+
+    "section4": {
+      "title": "تقنيات المستقبل لتطوير الويب",
+      "futureWebTech": [
+        {
+          "title": "تكنولوجيا البلوكشين",
+          "description": "نحن نساعدك في تصميم وتطوير وصيانة تطبيقات البلوكشين التي تدعم الفئات الرئيسية للتكنولوجيا، بما في ذلك البلوكشين الرابط، والبلوكشين الخاص."
+        },
+        {
+          "title": "PWAs",
+          "description": "من خلال تطوير حلاً متقدمًا لتطوير تطبيقات PWAs لجعل تطبيقات الجوال متاحة عبر جميع المنصات، نحافظ على عملائنا في المقدمة بخطوة واحدة عن المنافسة."
+        },
+        {
+          "title": "استخدام التخزين السحابي",
+          "description": "نقدم دعمًا شاملاً لتطوير الحوسبة السحابية بحيث يمكنك استخدام Microsoft Azure وGoogle Cloud Platform وAWS لبناء تطبيقات الويب التي تكون سريعة للغاية وقابلة للتكيف."
+        },
+        {
+          "title": "أطُر الجافا سكريبت",
+          "description": "نستفيد من أطُر الجافا سكريبت مثل Angular وReact.js كنظام كامل لبناء تطبيقات ويب ذات واجهات مستخدم حديثة ومتجاوبة بالكامل لعملاء في جميع أنحاء العالم."
+        },
+        {
+          "title": "واجهات أمامية مدمجة",
+          "description": "في DevRiser، نقوم بإنشاء واجهات أمامية صلبة الميزات للمواقع الإلكترونية وتطبيقات الإنترنت التي يمكن توسيعها عبر العديد من الفرق لتحقيق وظائف الأعمال الفريدة."
+        },
+        {
+          "title": "هندسة الخوادم بدون خوادم",
+          "description": "نقدم دعمًا كاملاً في إنشاء تطبيقات قابلة للتوسع، مخصصة مع هندسة الخوادم بدون خوادم، مما يمنح العملاء إمكانية الوصول إلى التوسع التلقائي والتحمل المدمج وتكاليف التشغيل المنخفضة."
+        }
+      ]
+    },
+    "section5": {
+      "title": "تقنيات المستقبل لتطوير الويب",
+      "futureTechServicesArr": [
+        {
+          "title": "حلول مخصصة لنطاق معين",
+          "description": "نظرًا لأننا نعتبر من أفضل شركات تطوير المواقع المخصصة، يمكننا تقديم حلاً شاملاً للمواقع الإلكترونية يتم تصميمه وفقًا لمتطلبات عملائنا والاتجاهات في الصناعات ذات الصلة.",
+          "icon": "SolutionDomain"
+        },
+        {
+          "title": "تصميم حديث وميزات",
+          "description": "لدينا خدمات من مصممين ومبرمجين وفين لديهم خبرة عميقة في بناء مواقع الويب التي تحقق توازنًا بين المظهر الجذاب والقدرات الفعّالة.",
+          "icon": "BasicShape"
+        },
+        {
+          "title": "عملية تستخدمها الصناعة",
+          "description": "لتوفير التميز الدائم لكل عميل من عملائنا والالتزام بتقديم مواقع الويب ذات النتائج التجارية الحقيقية ورضا العملاء، نلتزم بعملية التطوير القياسية في الصناعة.",
+          "icon": "SettingIcon"
+        },
+        {
+          "title": "تقنيات متقدمة تقنيًا",
+          "description": "تستخدم فريقنا المؤهل وذو الخبرة العالية أدوات التصميم والتكنولوجيا والمنهجيات الحديثة لإنشاء حلول مواقع الويب المتطورة.",
+          "icon": "HalfGearIcon"
+        }
+      ]
+    }
+  },
+
+  "iOtDevelopement": {
+    "mainHeading": "تطوير الأشياء عبر الإنترنت (IoT)",
+    "subHeading": "تقدم DevRiser خدمات شاملة لتطوير الأشياء عبر الإنترنت (IoT)، مع خبرة في تطوير IoT المخصص وتطوير تطبيقات IoT للهواتف المحمولة. تعزز حلولنا المخصصة كفاءة العمليات وتقلل التكاليف، مما يزيد من الإنتاجية عبر صناعات متنوعة، وتقدم حلول IoT موثوقة وآمنة يمكنك الاعتماد عليها.",
+    "buttonTextOne": "لدينا محفظة",
+    "buttonTextTwo": "مبيعات الاتصال",
+    "section1": {
+      "title": "خدماتنا لتطوير الأشياء عبر الإنترنت (IoT)",
+      "description": "كشركة رائدة في تطوير الأشياء عبر الإنترنت (IoT)، قد قمنا بتقدم كبير في هذا المجال على مر السنين من خلال تطوير ونشر حلول IoT المبتكرة عبر مجموعة متنوعة من المجالات.",
+      "IOTServicesArr": [
+        {
+          "title": "تطوير تطبيقات IoT",
+          "description": "نقوم بإنشاء تطبيقات IoT قائمة على الويب والتطبيقات الأصلية والهجينة وPWAs لتلبية احتياجات الأعمال المحددة والمنصات. تعتمد هذه التطبيقات على الذكاء الاصطناعي وتعلم الآلة، مما يخلق تجارب استثنائية للعملاء في كل نقطة اتصال.",
+          "icon": "IOTApps"
+        },
+        {
+          "title": "تطوير تطبيقات IoT للأجهزة القابلة للارتداء",
+          "description": "لدينا خبراء IoT ذوو خبرة واسعة في تصميم تطبيقات IoT جاهزة للمستقبل لأجهزة الارتداء مثل متتبع اللياقة ونظارات التكنولوجيا والساعات الذكية وسماعات الألعاب المتكاملة بخلفيات قوية وواجهات برمجة تطبيقات متكاملة.",
+          "icon": "ClockSVG"
+        },
+        {
+          "title": "تكامل منصات IoT",
+          "description": "يساعدك فريقنا المؤهل وذو الخبرة من محترفي IoT في زيادة عائد الاستثمار لشركتك من خلال دمج حلول IoT في بنية البنية التحتية الحالية والمنصات والأجهزة المتصلة.",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "حلول لتقنية الصوت الممكّنة",
+          "description": "مع مساعدة حلول برمجيات IoT الممكنة صوتيًا، يمكنك ثورة طريقة تفاعل العملاء عبر الإنترنت مع شركتك، مما يزيد من تفاعل المستخدم وتحقيق قيم أعمال هامة.",
+          "icon": "IOTMicSVG"
+        },
+        {
+          "title": "إنشاء بوابات IoT",
+          "description": "نحن ندعم بشكل كامل تطوير بوابات IoT وتكاملها مع مجموعة واسعة من الأجهزة والمستشعرات لمنح الشركات الفارق التنافسي في السوق. ويشمل ذلك كل من الاتصالات الأكثر ذكاءً وعرض النطاق الترددي الأعلى.",
+          "icon": "GatewaySVG"
+        },
+        {
+          "title": "اختبار وصيانة IoT",
+          "description": "يقدم فريقنا الملتزم من خبراء الأشياء عبر الإنترنت (IoT) اختبارًا وتنفيذًا ودعمًا لضمان تنفيذ IoT خالٍ من العيوب وتجربة مستخدم ممتعة. من أجل أداء موثوق وتواصل مستمر.",
+          "icon": "NetworkSVG"
+        }
+      ]
+    },
+    "section2": {
+      "title": "مكدس تكنولوجيا تطوير إنترنت الأشياء الخاص بنا",
+      "description": "وفقًا لحالات استخدام المشروع وقطاعات الصناعة في DevRiser، يتم استخدام القائمة التالية لتقنيات ومنصات تطوير blockchain المعاصرة:"
+    },
+    "section3": {
+      "title": "تقنيات إنترنت الأشياء (IoT) الناشئة",
+      "IOTEmergeArr": [
+        {
+          "title": "الشبكات",
+          "description": "بالنسبة لتطبيقات الـ IoT مثل المراقبة والتحكم عن بعد، يجب أن تقدم الشبكات سرعة نقل أعلى وتأخيرًا أقل.",
+          "icon": "NetworkSVG"
+        },
+        {
+          "title": "الحوسبة",
+          "description": "تمكين الحوسبة عند الحافة تتيح معالجة البيانات بالقرب من المصدر، مما يقلل من كمية البيانات التي يجب نقلها إلى نقطة مركزية.",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "الذكاء الاصطناعي وتعلم الآلة",
+          "description": "يتم استخدام الذكاء الاصطناعي وتعلم الآلة لتحسين أداء وفعالية أنظمة الأجهزة IoT، مثل الصيانة التنبؤية والكشف الفوري.",
+          "icon": "AutomationSVG"
+        },
+        {
+          "title": "الحوسبة السحابية",
+          "description": "تسهل الحوسبة السحابية تخزين ومعالجة كميات ضخمة من البيانات من أجهزة IoT، مما يجعلها أداة حاسمة للبيانات الكبيرة.",
+          "icon": "CloudCompute"
+        },
+        {
+          "title": "الواقع الافتراضي/الواقع المعزز",
+          "description": "يتم استخدام الواقع الافتراضي والواقع المعزز لتحسين تطبيقات الـ IoT مثل المراقبة والتحكم عن بعد، وكذلك لإنشاء حالات استخدام جديدة.",
+          "icon": "VRSVG"
+        },
+        {
+          "title": "البلوكشين",
+          "description": "تزداد استخدام تكنولوجيا البلوكشين لتحسين الأمان والجدارة في أنظمة الـ IoT، التي تعتبر شبكاتًا لأجهزة متصلة.",
+          "icon": "BlockchainSVG"
+        }
+      ]
+    }
+  },
+
+  "aiMlDevelopement": {
+    "mainHeading": "تطوير الذكاء الاصطناعي وتعلم الآلة",
+    "subHeading": "DevRiser هي شركة رائدة في تقديم خدمات تطوير تطبيقات الذكاء الاصطناعي، متخصصة في تطبيقات الذكاء الاصطناعي وحلول التكامل التي تعزز استخدام الذكاء في أعمال الأعمال. يجلب محترفو الذكاء الاصطناعي وتعلم الآلة لدينا، الذين يتقنون تقنيات مثل TensorFlow وPyTorch وغيرها من التقنيات الحديثة، الذكاء إلى بيئتك.",
+    "buttonTextOne": "لدينا محفظة",
+    "buttonTextTwo": "اتصل بالمبيعات",
+
+    "section1": {
+      "title": "خدمات تطوير الذكاء الاصطناعي وتعلم الآلة لدينا",
+      "description": "نحن شركة تطوير مخصصة للذكاء الاصطناعي وتعلم الآلة، نستخدم مجموعة من خدمات استشارات وذكاء تجاري مدعومة باتجاهات الصناعة واتخاذ القرارات الحكيمة وتحليلات سلوك المستخدم.",
+      "aimlServicesArr": [
+        {
+          "title": "خدمات استشارات الذكاء الاصطناعي وتعلم الآلة",
+          "description": "من أجل الاستفادة القصوى من الذكاء الاصطناعي، يعمل فريق الاستشاريين المتخصصين في الذكاء الاصطناعي وتعلم الآلة لدينا معك لتقديم الإرشاد والتوصيات اللازمة وفقًا لاحتياجات مشروعك.",
+          "icon": "CyborgIcon"
+        },
+        {
+          "title": "حلول تعلم الآلة",
+          "description": "يضم فريقنا الماهر من محترفي الذكاء الاصطناعي وتعلم الآلة حلاً فعّالًا باستخدام تقنيات تعلم الآلة لتوتيع العمليات التجارية وزيادة الإنتاجية وتقليل الأخطاء البشرية لتحديث كيفية تفاعل شركتك مع العملاء.",
+          "icon": "BrainIcon"
+        },
+        {
+          "title": "التعرف التلقائي على اللغة",
+          "description": "استنادًا إلى مجموعات البيانات الخاصة بك، نستخدم معالجة اللغة الطبيعية (NLP) لتطوير خوارزميات متقدمة تحلل وتمييز بين مكونات مختلفة من النص والصوت والمشاعر لإنشاء نماذج تعلم آلي مذهلة.",
+          "icon": "NLPIcon"
+        },
+        {
+          "title": "تعزيز تطبيقات الويب والهاتف المحمول بواسطة الذكاء الاصطناعي وتعلم الآلة",
+          "description": "يساعد فريقنا في تطوير تطبيقات الذكاء الاصطناعي وتعلم الآلة للشركات على إنشاء منصات وتطبيقات ويب وهواتف محمولة متطورة وآمنة على مستوى المؤسسة لتقديم تجارب عملاء مخصصة وجمع رؤى سلوك المستخدم.",
+          "icon": "AISVG"
+        },
+        {
+          "title": "الروبوتات الدردشة",
+          "description": "لتوفير مستوى أعلى من التفاعل للعملاء وتمييز نفسك عن المنافسة، يقوم خبراؤنا في الذكاء الاصطناعي وتعلم الآلة ببناء حلول الروبوتات الدردشة الموثوقة والإبداعية لشركتك.",
+          "icon": "ChatbotIcon"
+        },
+        {
+          "title": "معالجة الصور",
+          "description": "تركز DevRiser كشركة تطوير برمجيات الذكاء الاصطناعي وتعلم الآلة على دعم الشركات في جميع أنحاء العالم بحلول استخبارات الأعمال لمعالجة الصور للعثور على رؤى البيانات والدعم.",
+          "icon": "ImgProcessingSVG"
+        }
+      ]
+    },
+
+    "section2": {
+      "title": "تكنولوجيا الذكاء الاصطناعي وتعلم الآلة لدينا",
+      "description": "أحدث تقنيات الذكاء الاصطناعي وأدوات البرمجيات المعترف بها في الصناعة المستخدمة بواسطة DevRiser."
+    },
+    "section3": {
+      "title": "لماذا تختار DevRiser لتطوير الذكاء الاصطناعي وتعلم الآلة؟",
+      "description": "تستخدم DevRiser أفضل خدمات تطوير الذكاء الاصطناعي وتعلم الآلة في الصناعة من أجل معالجة حالات الاستخدام الصناعية المختلفة باستخدام خوارزميات الذكاء الاصطناعي وحلول تعلم الآلة.",
+      "aimlPerks": [
+        {
+          "icon": "ExpertSVG",
+          "title": "فريق من خبراء الذكاء الاصطناعي وتعلم الآلة المخصصين"
+        },
+        {
+          "icon": "DomainSVG",
+          "title": "معرفة عميقة في المجال"
+        },
+        {
+          "icon": "CustomerServiceSVG",
+          "title": "دعم إضافي للعملاء"
+        },
+        {
+          "icon": "AwardSVG",
+          "title": "حلول متميزة في الذكاء الاصطناعي وتعلم الآلة"
+        },
+        {
+          "icon": "WebsiteSVG",
+          "title": "تجربة واسعة النطاق"
+        },
+        {
+          "icon": "SoftDevSVG",
+          "title": "تطوير برمجيات كامل للذكاء الاصطناعي وتعلم الآلة"
+        },
+        {
+          "icon": "DirectionSVG",
+          "title": "تقنية الذكاء الاصطناعي وتعلم الآلة عبر المنصات"
+        },
+        {
+          "icon": "LowCostSVG",
+          "title": "أسعار معقولة"
+        }
+      ]
+    },
+    "section4": {
+      "title": "هل تبحث عن خدمات أخرى؟",
+      "description": "شاركنا أفكارك ودعنا نساعدك في تحويلها إلى حلول رقمية ممتازة.",
+      "point1": "تطوير الذكاء الاصطناعي وتعلم الآلة",
+      "point2": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "point3": "تطوير الويب",
+      "point4": "تطوير الألعاب",
+      "btnText": "استكشاف جميع الخدمات"
+    }
+  },
+
+  "mainServices": {
+    "headingOne": "تطوير حلول الشركات",
+    "descriptionOne": "تختص DevRiser في صناعة حلاً برمجياً متطوراً يرفع شركتك إلى آفاق جديدة. يكرس فريقنا من المطورين ذوي الخبرة جهدهم لتقديم حلول مخصصة للشركات، تنسجم بسلاسة مع احتياجاتك وتحدياتك الفريدة. من التطبيقات القابلة للتوسع إلى التكامل الفعّال للنظم، نحن ملتزمون بدفع شركتك للأمام.",
+    "headingTwo": "تطوير الويب",
+    "descriptionTwo": "تقدم DevRiser خدمات تطوير تطبيقات الويب المخصصة التي تعتمد على الأداء وقابلة للتوسع وذات استجابة فائقة. يستخدم فريقنا من المحترفين أحدث التقنيات لبناء تطبيقات ويب عبر المنصات.",
+    "switchDescriptionOne": "تتفوق DevRiser في تطوير الواجهة الخلفية للويب، حيث يتم تقديم حلول قوية وقابلة للتوسع وفعّالة. يستفيد فريقنا المخصص من أحدث التقنيات لصنع أنظمة الواجهة الخلفية القوية، مضمنين التشغيل السلس والأداء الأمثل لتطبيقات الويب الخاصة بك.",
+    "headingThree": "تطوير التطبيقات",
+    "descriptionThree": "تقدم DevRiser مجموعة من خدمات تطوير التطبيقات المحمولة، مثل تطوير التطبيقات عبر المنصات وتطوير تطبيقات ذكري المظهر و دائرة الرقابة الداخلية، لمساعدة الشركات في تسريع نموها وخلق هوية تميزية. يتخصص فريقنا في تطوير التطبيقات المحمولة.",
+    "switchDescriptionTwo": "تحوّل DevRiser الأفكار إلى تجارب محمولة جذابة. يتخصص مصممونا الخبراء في تطوير التطبيقات عبر المنصات وتطبيقات ذكري المظهر و دائرة الرقابة الداخلية، حيث يصممون تصاميم جذابة بصرياً وموجهة نحو المستخدم تتناسب بسلاسة مع هوية علامتك التجارية. ارفع حضور شركتك مع حلول تصميم التطبيقات المبتكرة من DevRiser.",
+    "headingFour": "تصميم واجهة المستخدم/تجربة المستخدم",
+    "descriptionFour": "تتكون خدمات تصميم واجهة المستخدم/تجربة المستخدم في DevRiser من تصميمات رقمية سهلة الاستخدام وجاذبة للعين. لتحقيق أهداف عملك واحتياجات المستخدم، تقدم شركتنا للاستشارات في مجال تصميم واجهة المستخدم/تجربة المستخدم نهجًا تصميميًا متخصصًا. اتصل بنا للحصول على خدمات تصميم واجهة المستخدم/تجربة المستخدم التي تعزز توسع الشركة.",
+    "headingFive": "خدمات الحوسبة السحابية",
+    "descriptionFive": "تقدم DevRiser حلاول الحوسبة السحابية للشركات من خلال خدمات الحوسبة السحابية والحلول الخاصة بشركتنا في جميع أنحاء العالم. تكمن خبرتنا في تقديم خدمات الحوسبة السحابية المتخصصة، حيث نوفر حلاولًا مخصصة للشركات.",
+    "headingSix": "تطوير الألعاب",
+    "descriptionSix": "DevRiser هي شركة رائدة في تطوير الألعاب التي تختص في إنشاء تطبيقات ألعاب ثنائية وثلاثية الأبعاد لأجهزة الكمبيوتر الشخصية ودائرة الرقابة الداخلية وذكري المظهر. باستخدام Unity وUnreal Engine، نقوم بتطوير ألعاب فيديو أصلية بالإضافة إلى تطبيقات الواقع المعزز/الافتراضي.",
+    "headingSeven": "تطوير تقنية البلوكشين",
+    "descriptionSeven": "فتح إمكانيات التكنولوجيا المركزية مع خدمات تطوير التكنولوجيا البلوكشين المتقدمة من DevRiser. من نشر العقود الذكية إلى إنشاء تطبيقات البلوكشين اللامركزية، نمكن الشركات من استقبال مستقبل النظم الرقمية بأمان وشفافية. انضم إلينا للحصول على حلول مبتكرة تعيد تعريف الإمكانيات في مجال التكنولوجيا البلوكشين.",
+    "headingEight": "إنترنت الأشياء",
+    "descriptionEight": "نقدم خدمات كاملة لتطوير برمجيات الإنترنت الذكية، متخصصين في تطوير الإنترنت الذكي المخصص وتطوير تطبيقات الإنترنت الذكية للهواتف المحمولة. تعزز حلولنا المتخصصة الفعالية التشغيلية، وتقلل التكاليف، وتعزز الإنتاجية عبر مجموعة من الصناعات. يمكنك الاعتماد علينا للحصول على حلول إنترنت الأشياء موثوقة وآمنة.",
+    "headingNine": "تطوير الذكاء الاصطناعي وتعلم الآلة",
+    "descriptionNine": "قوِّن عملك مع خدمات تطوير الذكاء الاصطناعي وتعلم الآلة من DevRiser. من التحليل التنبؤي إلى الأتمتة الذكية، نستغل قوة الذكاء الاصطناعي وتعلم الآلة لرفع عملياتك. غيِّر مناظر التكنولوجيا الخاصة بك باستخدام خبرتنا، مدفوعين الابتكار والكفاءة للحصول على ميزة تنافسية في العصر الرقمي."
+  },
+
+  "contactForm": {
+    "mainHeading": "لا تتردد في مشاركة أفكارك؟",
+    "subHeading": "أنت على بُعد خطوة واحدة من تطوير منتج تجاري رشيق سيصبح قصة نجاحك التالية. دعونا نتحدث بعمق حول متطلبات مشروعك ونموذج عملك",
+    "formContent": {
+      "headingOne": "1. المعلومات الشخصية",
+      "headingTwo": "2. ما هو مشروعك القادم؟",
+      "headingThree": "3. ما سيكون تورطنا في مشروعك؟*",
+      "headingFour": "4. ما هو ميزانيتك التقريبية (بالدولار الأمريكي)؟*",
+      "headingFive": "5. أخبرنا عن مشروعك"
+    },
+    "projects": {
+      "projetOne": "موقع إلكتروني",
+      "projetTwo": "تطبيق محمول",
+      "projetThree": "تطوير الألعاب",
+      "projetFour": "البلوكشين",
+      "projetFive": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "projetSix": "الذكاء الاصطناعي وتعلم الآلة",
+      "projetSeven": "خدمات الحوسبة السحابية",
+      "projetEight": "إنترنت الأشياء",
+      "projetNine": "حلول الشركات"
+    },
+    "involvement": {
+      "involvementOne": "التصميم والتطوير",
+      "involvementTwo": "التصميم فقط (نقوم بتصميم منتجك، وستقوم بالتطوير بنفسك)",
+      "involvementThree": "التطوير فقط (نقوم بتطوير الويب والتطبيقات، وتقدم لنا التصاميم)"
+    },
+
+    "budget": {
+      "budgetOne": "لا أعلم حتى الآن",
+      "budgetTwo": "$5k-$10k",
+      "budgetThree": "$10k-$20k",
+      "budgetFour": "$20k-$30k",
+      "budgetFive": "$30k-$40k",
+      "budgetSix": ">$40K"
+    },
+    "progressBar": {
+      "headingOne": "احصل على استشارة تقنية شاملة مجانية.",
+      "headingTwo": "سنقدم لك وثيقة اقتراح شاملة لمشروعك.",
+      "headingThree": "سنقدم لك وثيقة اقتراح شاملة لمشروعك.",
+      "subHeadingOne": "بعد مناقشة مشروعك، سنقدم لك استشارة تقنية كاملة بخصوص التكنولوجيا التي نستخدمها والتي تكون أكثر ملاءمة لمشروعك.",
+      "subHeadingTwo": "سنقدم لك وثيقة اقتراح شاملة تتضمن جميع الميزات والجدول الزمني والتسعير وأدق التفاصيل المتعلقة بمشروعك بعد أن نكون قد تحكمنا تمامًا فيه.",
+      "subHeadingThree": "بمجرد الموافقة على الاقتراح وإعطائنا الضوء الأخضر للمشروع، سنجمع فريقًا من الخبراء لتحقيق رؤيتك وتجاوز توقعاتك."
+    },
+
+    "documents": {
+      "headingOne": "  فقط مستندات، صور، فيديوهات، ملفات PDF أو ZIP. الحجم الأقصى 100 ميجابايت",
+      "headingTwo": "جميع تفاصيل مشروعك والمرفقات تخضع لاتفاقية",
+      "headingThree": "NDA",
+      "headingFour": "بين الطرفين"
+    },
+
+    "fieldContent": {
+      "fullname": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "country": "البلد",
+      "uploadDocument": "تحميل المستند",
+      "fileName": "اسم الملف:",
+      "uploadingFile": "جاري رفع الملف، يرجى الانتظار:",
+      "descriptionPlaceHolder": "صف مشروعك",
+      "submitButton": "يُقدِّم",
+      "popupText": "تم إرسال الاستعلام بنجاح",
+      "popupTextFile": "تم رفع الملف بنجاح"
+    }
+  },
+
+  "navBar": {
+    "mainHeadingOne": "خدمات",
+    "mainHeadingTwo": "حلول",
+    "mainHeadingThree": "الصناعات",
+    "mainHeadingFour": "معلومات عنا",
+    "mainHeadingFive": "اتصال",
+    "subHeadingOne": "حلول المشاريع",
+    "subHeadingTwo": "تطوير الشبكة",
+    "subHeadingThree": "تطوير التطبيقات",
+    "subHeadingFour": "تصميم واجهة المستخدم/تجربة المستخد",
+    "subHeadingFive": "حوسبة سحابية",
+    "subHeadingSix": "تطوير اللعبة",
+    "subHeadingSeven": "تطوير البلوكشين",
+    "subHeadingEight": "تطوير إنترنت الأشياء",
+    "subHeadingNine": "تطوير الذكاء الاصطناعي/تعلم الآلة",
+    "subHeadingTen": "جميع الخدمات"
+  },
   "footer": {
-    "mainHeading": "DevRiser: Elevating Your Project",
-    "follow": "Follow us on",
+    "mainHeading": "DevRiser: الارتقاء بمشروعك",
+    "follow": "اتبعنا",
     "companyDetail": {
-      "company": "Company",
-      "headingOne": "About Us",
+      "company": "شركة",
+      "headingOne": "معلومات عنا",
       "headingTwo": "Blog",
       "headingThree": "FAQs",
       "headingFour": "Customer Reviews",
       "headingFive": "Jobs",
-      "headingSix": "Contact Us"
+      "headingSix": "اتصل بنا"
     },
     "servicesDetails": {
-      "services": "Services",
-      "headingOne": "Mobile Development",
-      "headingTwo": "Web Development",
-      "headingThree": "Game Development",
-      "headingFour": "Cloud Computing",
-      "headingFive": "AI/ML Development",
-      "headingSix": "Blockchain Development",
-      "headingSeven": "UI/UX Design",
-      "headingEight": "Internet of Things"
+      "services": "خدمات",
+      "headingOne": "تطوير التطبيقات",
+      "headingTwo": "تطوير الشبكة",
+      "headingThree": "تطوير اللعبة",
+      "headingFour": "حوسبة سحابية",
+      "headingFive": "تطوير الذكاء الاصطناعي/تعلم الآلة",
+      "headingSix": "تطوير البلوكشين",
+      "headingSeven": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "headingEight": "تطوير إنترنت الأشياء",
+      "headingNine": "حلول المشاريع"
     },
     "industries": {
-      "industries": "Industries",
-      "headingOne": "Market place",
-      "headingTwo": "Financial",
-      "headingThree": "Healthcare",
-      "headingFour": "Media & communication",
-      "headingFive": "Real estate",
-      "headingSix": "Events",
-      "headingSeven": "Restaurant",
-      "headingEight": "Agriculture",
-      "headingNine": "Media entertainment"
+      "industries": "الصناعات",
+      "headingOne": "المتجر",
+      "headingTwo": "مالي",
+      "headingThree": "الرعاىة الصحية",
+      "headingFour": "وسائل الاتصال",
+      "headingFive": "العقارات",
+      "headingSix": "الأحداث",
+      "headingSeven": "مطعم",
+      "headingEight": "زراعة",
+      "headingNine": "الترفيه الإعلامي"
     },
     "conversation": {
-      "conversation": "Start a Conversation",
-      "email": "hello@devriser.com",
+      "conversation": "بدء محادثة",
+      "email": "sales@devriser.com",
       "phone": "+91 123-456-0123",
       "whatsApp": "+91 123-456-0124"
     },
     "copyright": {
-      "heading": "Copyright © 2023. All Rights Reserved."
+      "heading": "حقوق الطبع والنشر © 2024. جميع الحقوق محفوظة."
     }
   },
   "esd": {
-    "heroTitle": "Enterprise Solutions Development Services",
-    "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
-    "heroButtonOne": "Our Portfolio",
-    "heroButtonTwo": "Contact Sales"
+    "heroTitle": "خدمات تطوير حلول الشركات",
+    "heroHeading": "DevRiser، مزود خدمات تطوير البرمجيات الرائد، يتفوق في تطوير مجموعة واسعة من حلول الشركات، بما في ذلك نظم إدارة العلاقات مع العملاء، نظم إدارة الموارد البشرية، الحسابات، إدارة المخزون، التسويق، نظم تخطيط الموارد، والمزيد. منهجياتنا المحددة بوضوح والقياسية في الصناعة تضمن حلاً مخصصًا عالي الجودة يعزز كفاءة الأعمال والأداء.",
+    "heroButtonOne": "محفظتنا",
+    "heroButtonTwo": "تواصل مع المبيعات",
+    "section1": {
+      "serviceHeaderTitle": "خدماتنا لتطوير البرمجيات والاختبار",
+      "serviceHeaderDesc": "كشركة مستقلة متخصصة في تطوير البرمجيات والاختبار، تقدم DevRiser خدمات تطوير البرمجيات والاختبار المتقدمة والشاملة، بدعم من فريق متفرغ وكفء وخبراء ملتزمين بتحسين الجودة باستمرار.",
+      "webServicesArr": [
+        {
+          "title": "خدمات اختبار الأتمتة",
+          "description": "نقدم اهتمامًا خاصًا بخدمات اختبار البرمجيات التلقائي عن طريق تجميع فرق من الأشخاص الذين يبقون على اطلاع دائم على أحدث أدوات الاختبار ويقدمون رؤاهم لعملائنا الكرام. كجزء من خططنا للاختبار وحالات الاختبار.",
+          "icon": "AutomationTesting"
+        },
+        {
+          "title": "تطوير البرمجيات",
+          "description": "تقدم خدمات تطوير البرمجيات للشركات لدينا حلاً مخصصًا، يستغل أحدث التقنيات لتطبيقات برمجية قابلة للتوسع وآمنة ومبتكرة. من التصميم إلى التنفيذ، نمكن الشركات لتحقيق النجاح في سوق ديناميكي.",
+          "icon": "FunctionalEvaluation"
+        },
+        {
+          "title": "تقييم الأداء",
+          "description": "يقوم فريقنا الماهر من مختبري الجودة بإجراء اختبارات جودة وتحليل سلوك البرمجيات تحت الحمل والتوتر لضمان تطبيقات خالية من الأخطاء وقوي وذكي. يمكنك التغلب على بطء أوقات التحميل وضعف الاستجابة.",
+          "icon": "PerformanceEvaluation"
+        },
+        {
+          "title": "تقييم الاستخدام",
+          "description": "تتيح لنا خدماتنا مراقبة سلوك عدة وظائف تعمل بشكل متزامن في تطبيق. كجزء من خدماتنا، نفحص بعناية أنماط سلوك المستخدم لاكتشاف أي مشاكل في الاستخدام في وقت مبكر وإنشاء منتج سلس.",
+          "icon": "UsabilityEvaluation"
+        },
+        {
+          "title": "اختبار التوافق",
+          "description": "استكشف فوائد اختبار التوافق الذي يقيم بدقة تطبيقًا عبر متصفحات متعددة وقواعد بيانات وأجهزة وأنظمة تشغيل وبنية خوادم وشاشات العرض والأجهزة.",
+          "icon": "TestingForCompatibility"
+        },
+        {
+          "title": "تقييم الوظائف",
+          "description": "يتأكد اختبار الوظائف من أن متطلبات المستخدم والوظائف للتطبيق تلتزم بالمواصفات؛ يتأكد اختبار الوظائف عالي الجودة من أن برنامجك يحقق جميع أهدافه.",
+          "icon": "FunctionalEvaluation2"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "خدمات اختبار البرمجيات متنوعة",
+      "serviceHeaderDesc": "نقدم حلاً محسنًا تمامًا يؤدي إلى زيادة الكفاءة وزيادة الإنتاجية بفضل سنوات خبرتنا في ضمان جودة البرمجيات واختبارها.",
+      "webServicesArr": [
+        {
+          "title": "اختبار واجهة برمجة التطبيقات (API)",
+          "description": "قمنا بإجراء اختبار API اليدوي لبروتوكولات مثل SOAP و REST و JASON و XML وغيرها لتلبية التوقعات.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "اختبار التطبيقات",
+          "description": "قم بتحسين واختبار تطبيقات الهواتف المحمولة باستخدام المزيج الصحيح من أدوات الأتمتة لتحسين الإنتاجية العامة.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "اختبار أمان الويب",
+          "description": "احصل على تقييم كامل لأمان موقع الويب من خبراء، بغض النظر عن نوع الموقع.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "اختبار الحمل",
+          "description": "قيم مدى فعالية برنامجك تحت ظروف الطلب العالي والتوتر.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "اختبار الأداء",
+          "description": "استخدم خدمات اختبار الأداء التي تعزز أداء تطبيقك بتكلفة معقولة.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "اختبار يدوي",
+          "description": "استفد من خبرتنا في الاختبار اليدوي لتحقيق نتائج قابلة للقياس ومدفوعة بالجودة.",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
   },
   "appDevelopment": {
-    "mainHeading": "App Development",
-    "subHeading": "DevRiser delivers a comprehensive array of mobile app development services, encompassing cross-platform, Android, and iOS app development. We're your trusted partner in propelling business growth and forging a unique brand identity. Our specialists craft apps tailored to industry requirements and corporate goals.",
-    "buttonTextOne": "Our Portfolio",
-    "buttonTextTwo": "Contact Sales",
+    "mainHeading": "تطوير التطبيقات",
+    "subHeading": "تقدم DevRiser مجموعة شاملة من خدمات تطوير التطبيقات المحمولة، بما في ذلك تطوير التطبيقات المتعددة المنصات وتطوير تطبيقات ذكري المظهر و دائرة الرقابة الداخلية. نحن شريكك الموثوق لتعزيز نمو الأعمال وبناء هوية علامة تجارية فريدة. يقوم خبراؤنا بصياغة تطبيقات مصممة حسب متطلبات الصناعة وأهداف الشركات.",
+    "buttonTextOne": "محفظتنا",
+    "buttonTextTwo": "تواصل مع المبيعات",
     "sectionOne": {
-      "appHeading": "Our App Development Services",
-      "appSubHeading": "Transform your app concept into a reality, emphasizing rich user experiences and robust app performance, with our end-to-end mobile app development services. In this mobile-first era, we're your partners in setting new industry standards for your company.",
+      "appHeading": "خدمات تطوير التطبيقات لدينا",
+      "appSubHeading": "حوّل فكرة تطبيقك إلى واقع، مع التركيز على تجارب المستخدم الغنية وأداء التطبيق القوي، من خلال خدماتنا الشاملة لتطوير التطبيقات المحمولة من البداية إلى النهاية. في هذا العصر الذي يعتمد بشكل كبير على الهواتف المحمولة، نحن شركاؤك في تحديد معايير صناعية جديدة لشركتك.",
       "appServiceArr": [
         {
-          "title": "Application Development Consultancy",
-          "description": "Our application development consultancy services are designed to help you refine your vision. We offer guidance in defining essential features, choosing the optimal technology stack, and crafting a comprehensive plan to kickstart your app development journey."
+          "title": "خدمات استشارات تطوير التطبيقات",
+          "description": "تم تصميم خدماتنا للاستشارات في تطوير التطبيقات لمساعدتك في تحديد رؤيتك. نقدم إرشادًا في تحديد الميزات الأساسية، واختيار التكنولوجيا المثلى، وصياغة خطة شاملة لبدء رحلة تطوير تطبيقك.",
+          "icon": "ApplicationDevelopmentConsultancy"
         },
         {
-          "title": "UI/UX Design for Mobile Apps",
-          "description": "Elevate user interactions through enhanced app design. Our expertise lies in crafting visually captivating, aesthetically pleasing, and seamlessly navigable mobile app interfaces, ensuring a superior user experience that resonates with your audience."
+          "title": "تصميم واجهة المستخدم/تجربة المستخدم لتطبيقات الهواتف المحمولة",
+          "description": "رفع تفاعلات المستخدم من خلال تصميم تطبيقات محسن. تتمثل خبرتنا في صياغة واجهات تطبيقات الهواتف المحمولة جذابة بصريًا وجميلة من الناحية الجمالية، مع ضمان تجربة مستخدم متفوقة تت resonates مع جمهورك.",
+          "icon": "UIUXDesignMobileApps"
         },
         {
-          "title": "Custom Mobile Application Development",
-          "description": "We specialize in turning your unique mobile app development concept into a reality, infusing it with innovative features to create a one-of-a-kind solution. Whether it's a business-driven or community-centric custom mobile app, we're here to make your vision stand out."
+          "title": "تطوير تطبيقات الجوال المخصصة",
+          "description": "نتخصص في تحويل مفهوم تطوير تطبيقك المحمول الفريد إلى واقع، من خلال دمجه بميزات مبتكرة لإنشاء حلاً فريدًا. سواء كانت تطبيقًا مدفوعًا من قبل الأعمال أو مركزًا على المجتمع، نحن هنا لجعل رؤيتك تتميز.",
+          "icon": "CustomMobileApplicationDevelopment"
         },
         {
-          "title": "Enterprise Mobile App Development",
-          "description": "Enhance your business processes with our enterprise mobile app development solutions, integrating industry-leading innovations and third-party connectors to boost operational efficiency and productivity."
+          "title": "تطوير تطبيقات الجوال للشركات",
+          "description": "عزز عمليات الشركة الخاصة بك مع حلول تطوير تطبيقات الجوال للشركات لدينا، من خلال دمج الابتكارات الرائدة في الصناعة وموصلات الطرف الثالث لتعزيز الكفاءة التشغيلية والإنتاجية.",
+          "icon": "EnterpriseMobileAppDevelopment"
         },
         {
-          "title": "Mobile Game Development",
-          "description": "Our team of game designers and developers brings a decade of collective experience to craft captivating games across both native and cross-platform platforms, ensuring immersive entertainment for your audience."
+          "title": "تطوير ألعاب الجوال",
+          "description": "يقدم فريقنا من مصممي ومطوري الألعاب عقدًا من الخبرة المشتركة في صياغة ألعاب جذابة عبر منصات الجوال الطبيعية والمتعددة الأنظمة، مما يضمن توفير تجربة ترفيه مغمورة لجمهورك.",
+          "icon": "MobileGameDevelopment"
         },
         {
-          "title": "Support and Maintenance of Apps",
-          "description": "Unlock the potential of our post-development app maintenance and support services, ensuring your app's continued excellence through version upgrades post-launch. We're dedicated to delivering a seamless, crash-free performance."
+          "title": "دعم وصيانة التطبيقات",
+          "description": "أطلق العنان لإمكانات خدمات دعم وصيانة التطبيقات لدينا بعد التطوير، مما يضمن استمرار تميز تطبيقك من خلال ترقيات الإصدار بعد الإطلاق. نحن ملتزمون بتقديم أداء سلس وخالٍ من التعطل.",
+          "icon": "SupportMaintenanceApps"
         }
       ]
     },
     "sectionTwo": {
-      "mainHeading": "Technologies & Tools Used In App Development",
-      "subHeading": "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
+      "mainHeading": "التقنيات والأدوات المستخدمة في تطوير التطبيقات",
+      "subHeading": "التكنولوجيا والأدوات التي نستخدمها في تطوير التطبيقات تتيح لنا تحويل مفاهيمنا لتطبيقات الهواتف المحمولة إلى مشاريع فعلية."
+    },
+    "sectionThree": {
+      "mainHeading": "حلول المنتجات الرقمية لصناعات مختلفة",
+      "cards": [
+        {
+          "mainPoint": "الرياضة",
+          "subPoints": [
+            "تطبيقات تدريب وتدريب الرياضة",
+            "حلول بث الفيديو المباشر للرياضة",
+            "تطوير ألعاب الرياضة الخيالية",
+            "منصات المراهنة الرياضية",
+            "تطوير ألعاب AR/VR",
+            "حلول إدارة المرافق"
+          ]
+        },
+        {
+          "mainPoint": "تكنولوجيا المال",
+          "subPoints": [
+            "أنظمة الدفع الرقمية",
+            "حلول البنوك الرقمية المخصصة",
+            "تطوير تطبيقات الدفع المحمول",
+            "تطوير تطبيقات التأمين",
+            "حلول إدارة الثروة/التمويل"
+          ]
+        },
+        {
+          "mainPoint": "الترفيه",
+          "subPoints": [
+            "حلول رسم السيناريو والتعاون",
+            "حلول بث الفيديو",
+            "منصات حجز تذاكر الفعاليات الحية",
+            "حلاً بالذكاء الاصطناعي للبيانات الكبيرة",
+            "حلول VFX"
+          ]
+        },
+        {
+          "mainPoint": "التجارة الإلكترونية",
+          "subPoints": [
+            "حلول التجارة الإلكترونية بناءً على تقنية الواقع المعزز",
+            "تطبيقات التجارة الإلكترونية للبقالة",
+            "سوق نهاية إلى نهاية",
+            "تطوير متجر التجارة الإلكترونية المخصص"
+          ]
+        },
+        {
+          "mainPoint": "اللوجستيات",
+          "subPoints": [
+            "إدارة التوصيل",
+            "إدارة لوجستيات الشحن",
+            "برمجيات إدارة الأسطول",
+            "برامج إدارة المخزون",
+            "تطوير برامج تلميح البيانات"
+          ]
+        },
+        {
+          "mainPoint": "العقارات",
+          "subPoints": [
+            "حلول MLS للعقارات",
+            "جولات افتراضية للممتلكات",
+            "أدوات تقييم العقارات",
+            "منصات استثمار العقارات",
+            "حلول إدارة الممتلكات"
+          ]
+        },
+        {
+          "mainPoint": "الرعاية الصحية",
+          "subPoints": [
+            "حلول الطب عن بُعد",
+            "سجلات الصحة الإلكترونية",
+            "أنظمة إدارة الممارسة",
+            "حلول برمجيات العيادات الطبية",
+            "حلول تكامل أجهزة الطب"
+          ]
+        },
+        {
+          "mainPoint": "الأعمال",
+          "subPoints": [
+            "المبيعات والتسويق",
+            "إدارة الموظفين",
+            "بوابات الموارد البشرية",
+            "حلول الحوسبة السحابية",
+            "حلول الأتمتة لعمليات الأعمال"
+          ]
+        },
+        {
+          "mainPoint": "السفر",
+          "subPoints": [
+            "حلاً لتخطيط الرحلات",
+            "منصة إدارة خطط السفر",
+            "حلول حجز التذاكر والفنادق",
+            "حلول حجز السيارات",
+            "حلول ولاء ومكافآت السفر"
+          ]
+        },
+        {
+          "mainPoint": "التعليم",
+          "subPoints": [
+            "تطوير تطبيقات التعليم",
+            "تطوير تطبيقات E2C E-leaming",
+            "نظام إدارة التعلم",
+            "فصول دراسية افتراضية ومؤتمرات فيديو",
+            "نظام إدارة امتحانات الإنترنت"
+          ]
+        },
+        {
+          "mainPoint": "اللياقة البدنية",
+          "subPoints": [
+            "تطبيقات مدرب اللياقة البدنية عبر الإنترنت",
+            "حلول إدارة الصالات الرياضية",
+            "تطبيقات العناية بالصحة",
+            "متتبع لياقة بدنية (مع التكامل مع الأجهزة القابلة للارتداء)",
+            "تطوير متجر اللياقة بدنية عبر الإنترنت"
+          ]
+        },
+        {
+          "mainPoint": "شبكات التواصل الاجتماعي",
+          "subPoints": [
+            "تطوير تطبيقات المجتمع",
+            "تطوير تطبيقات المواعدة والزواج",
+            "تطوير تطبيقات شبكات التواصل الاجتماعي",
+            "تطوير تطبيقات المراسلة",
+            "تطوير تطبيقات مشاركة الوسائط"
+          ]
+        },
+        {
+          "mainPoint": "المطاعم",
+          "subPoints": [
+            "تطوير تطبيقات توصيل الطعام",
+            "حلول توصيل المطابخ السحابية",
+            "حلول توصيل المواد الغذائية",
+            "حلول التوصيل المباشر",
+            "تطوير برمجيات نقاط البيع للمطاعم"
+          ]
+        }
+      ]
     },
     "sectionFour": {
-      "title": "Are you Looking for other Services?",
-      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
-      "point1": "JavaScript Development",
-      "point2": "Hire UI UX Designer",
-      "point3": "Web Development",
-      "point4": "Hire Dedicated Developers",
-      "btnText": "Explore all Services "
+      "title": "هل تبحث عن خدمات أخرى؟",
+      "description": "شارك أفكارك، ودعنا نساعدك في تحويلها إلى حلول رقمية ممتازة.",
+      "point1": "تطوير الذكاء الاصطناعي وتعلم الآلة",
+      "point2": "تصميم واجهة المستخدم وتجربة المستخدم",
+      "point3": "تطوير الويب",
+      "point4": "تطوير الألعاب",
+      "btnText": "استكشاف جميع الخدمات"
     },
     "sectionFive": {
-      "mainHeading": "Why Go with DevRiser’s App Development Services?",
-      "subHeading": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
-      "cardHeadingOne": "Transparency Work Modal",
-      "cardHeadingTwo": "Direct Contact With Team Member",
-      "cardHeadingThree": "Uplifted User Experience",
-      "cardHeadingFour": "Flexible Engagement Model Cycle"
-    }
-  },
-  "blockChainDevelopment": {
-    "mainHeading": "Blockchain Development",
-    "subHeading": "DevRiser is your trusted blockchain development partner, renowned for full-cycle blockchain application development services powered by cutting-edge technology. We deliver solutions that empower you to harness the potential of a decentralized ecosystem to its fullest.",
-    "buttonTextOne": "Our Portfolio",
-    "buttonTextTwo": "Contact Sales",
-    "sectionOne": {
-      "appHeading": "Our Services for Blockchain Development",
-      "appSubHeading": "As the top custom blockchain development firm for clients worldwide, we have significantly advanced the field over the years. For the following variety of services, we have employed creative blockchain application developers who can serve the main types of company domains:",
-      "appServiceArr": [
+      "mainHeading": "لماذا تختار خدمات تطوير التطبيقات من DevRiser؟",
+      "subHeading": "لدينا عشر سنوات من الخبرة المجتمعة في تطوير كل من المنصات الأصلية والمنصات المتعددة. فيما يلي بعض التفاصيل الإضافية حول الأسباب التي تجعلنا شركتك المفضلة لتطوير تطبيقات الجوال",
+      "cardHeadingOne": "نموذج عمل شفاف",
+      "cardHeadingTwo": "الاتصال المباشر مع أعضاء الفريق",
+      "cardHeadingThree": "تحسين تجربة المستخدم",
+      "cardHeadingFour": "نموذج دورة تعاقد مرن"
+    },
+    "techSection": {
+      "techStackArr": [
         {
-          "title": "Development of Smart Contracts",
-          "description": "The client is assisted by our dedicated Blockchain specialist team at DevRiser in getting the time and advice they require, as well as recommendations based on the requirements of the project and the client's business needs.",
-          "icon": "DevelopmentOfSmartContracts"
+          "parent": "ذكري المظهر",
+          "child": [
+            "جافا",
+            "كوتلين",
+            "ذكري المظهر استوديو",
+            "جرادل",
+            "خنجر2",
+            "جيت باك",
+            "كوروتين"
+          ]
         },
         {
-          "title": "Development of Blockchain Apps",
-          "description": "The way your company interacts with customers will alter as a result of the competent machine learning solutions integrated by our skilled and experienced team of Blockchain development professionals.",
-          "icon": "DevelopmentOfBlockchainApps"
+          "parent": "دائرة الرقابة الداخلية",
+          "child": [
+            "سويفت",
+            "Objective-C",
+            "سويفت واجهة المستخدم",
+            "قرون الكاكاو",
+            "Rx سويفت",
+            "سويفت لينت",
+            "دائرة سي آي",
+            "X-Code"
+          ]
         },
         {
-          "title": "End-to-End Apps Solutions",
-          "description": "Our Blockchain specialists provide end-to-end development solutions, from ideation, planning, to programming, and releasing the project, to assist you maximize ROI and get an advantage over your competitors.",
-          "icon": "EndToEndAppsSolutions"
+          "parent": "عبر منصة",
+          "child": [
+            "رفرفة",
+            "رد الفعل الأصلي",
+            "النص الأصلي",
+            "أيوني",
+            "جافا سكريبت",
+            "تايب سكريبت",
+            "HTML5"
+          ]
         },
         {
-          "title": "Crypto Wallet & Exchange Development",
-          "description": "We are known as the top Cryptocurrency Development Company, assisting businesses in developing feature-rich, responsive, and secure crypto wallet apps that allow for the cross-chain exchange of digital assets and cryptocurrencies.",
-          "icon": "CryptoWalletExchangeDevelopment"
+          "parent": "Cloud",
+          "child": [
+            "أوس",
+            "جوجل كلاود",
+            "مايكروسوفت أزور",
+            "سحابة OVH",
+            "علي بابا كلاود"
+          ]
+        },
+        {
+          "parent": "قاعدة البيانات",
+          "child": [
+            "Firebase",
+            "ريديس",
+            "PostgreSQL",
+            "MongoDB",
+            "ماي إس كيو إل",
+            "وحي",
+            "سكليتي",
+            "دينامو دي بي",
+            "مكتبة ثبات الغرفة"
+          ]
         }
       ]
     }
   },
-  "webdev": {},
+
+  "uxui": {
+    "heroTitle": "تصميم واجهة المستخدم/تجربة المستخدم",
+    "heroHeading": "تتميز خدمات تصميم واجهة المستخدم/تجربة المستخدم من DevRiser بتصميماتها الرقمية البديهية والجذابة. نحن ملتزمون بصقل حلاً لا يلبي فقط أهداف عملك ولكن يعطي أولوية لاحتياجات مستخدميك الفريدة. يستخدم فريقنا مجموعة من النهج التصميمية المتخصصة لضمان تجربة مستخدم مخصصة وجذابة بالفعل.",
+    "heroButtonOne": "محفظتنا",
+    "heroButtonTwo": "اتصل بالمبيعات",
+    "section1": {
+      "serviceHeaderTitle": "خدماتنا لتصميم واجهة المستخدم/تجربة المستخدم",
+      "serviceHeaderDesc": "يستخدم فريقنا من مصممي تجربة المستخدم/تجربة المستخدم المحترفين خبرتهم في تطبيق المعلومات الخاصة بصناعة التصميم وأدوات التصميم المعاصرة لإنشاء تصميمات بسيطة ومتطورة في الوقت نفسه. فيما يلي قائمة بخدمات تصميم واجهة المستخدم/تجربة المستخدم التي يقدمها المطور:",
+      "webServicesArr": [
+        {
+          "title": "تصميم موقع ويب مخصص",
+          "description": "فهم مختلف نماذج الأعمال والعمليات يسمح لنا بإنشاء تخطيطات صفحة مبتكرة مع هندسة المعلومات المصممة خصيصًا لثيمة الشركة، مما يؤدي إلى تجارب مستخدم ديناميكية وتصفح سهل.",
+          "icon": "CustomWebsiteDesign"
+        },
+        {
+          "title": "تصميم تطبيقات الجوال",
+          "description": "تقدم خدمات تصميم تطبيقات الجوال لدينا تجربة رقمية ديناميكية وإبداعية تقدم تجربة رقمية متسقة عبر المنصات باستخدام أحدث التقنيات وأحدث الاتجاهات.",
+          "icon": "DesigningMobileApps"
+        },
+        {
+          "title": "تصميم تطبيقات الأجهزة القابلة للارتداء",
+          "description": "يفهم فريقنا الموهبة من مصممي تطبيقات الأجهزة القابلة للارتداء الغرض المتنوع للمستخدم وعملية التطبيق. نحن خبراء في إنتاج تصميمات فائقة لتطبيقات الأجهزة القابلة للارتداء عبر جميع المنصات والأحجام.",
+          "icon": "DesignOfWearableApps"
+        },
+        {
+          "title": "دمج الواجهة الأمامية",
+          "description": "يمكن لفريقنا من خبراء تطوير الواجهة الأمامية تحويل البرمجة المعقدة إلى واجهات مستخدم مثيرة للاهتمام ومستجيبة عبر جميع الأجهزة ومتصفحات الويب.",
+          "icon": "IntegratingTheFrontEnd"
+        },
+        {
+          "title": "تطبيقات الأجهزة القابلة للارتداء",
+          "description": "تساعد DevRiser العملاء في تصميم ورسم خط تصميم الواجهة عبر الإنترنت والجوال بمعمارية المعلومات. ",
+          "icon": "WearableApps"
+        },
+        {
+          "title": "تدقيق وتقييم واجهة المستخدم/تجربة المستخدم",
+          "description": "لتقييم أعلى مستويات جودة التصميم والتخطيط ، يقوم محلل الجودة لدينا بإجراء اختبارات شاملة لسهولة الاستخدام ودقة الشاشة وتوافق المنصة واختبارات أخرى ذات الصلة.",
+          "icon": "AuditOfUIUX"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "نهجنا 'Design First - Discovery First'",
+      "serviceHeaderDesc": "اعتنق الابتكار مع نهجنا 'Design First - Discovery First'، مما يضمن حلاً محوريًا من خلال تصميم دقيق واكتشاف استراتيجي.",
+      "webServicesArr": [
+        {
+          "title": "تصميم لتجربة المستخدم",
+          "icon": "DesignForUserExperience"
+        },
+        {
+          "title": "رسومات متفوقة",
+          "icon": "SuperiorGraphics"
+        },
+        {
+          "title": "اختبار قابلية الاستخدام وتجربة مستخدم بدون احتكاك",
+          "icon": "TestingUsabilityUIFrictionlessUX"
+        },
+        {
+          "title": "نماذج عالية الوضوح",
+          "icon": "HighDefinitionPrototyping"
+        },
+        {
+          "title": "تصور المفاهيم",
+          "icon": "VisualizationOfConcepts"
+        },
+        {
+          "title": "تصميم واجهة المستخدم للأجهزة",
+          "icon": "DeviceUIDesign"
+        },
+        {
+          "title": "تصميم الويب والهواتف المحمولة",
+          "icon": "WebAndMobileDesign"
+        },
+        {
+          "title": "تصميم العلامة التجارية",
+          "icon": "BrandingDesign"
+        }
+      ]
+    },
+
+    "section3": {
+      "title": "هل تبحث عن خدمات أخرى؟",
+      "description": "هل لديك اقتراح لتطبيق؟ يمكن أن تساعدك خدمات تطوير التطبيقات لدينا هل لديك اقتراح لتطبيق؟ يمكن أن تساعدك استشارات تطوير التطبيقات لدينا",
+      "point1": "تطوير الذكاء الاصطناعي/تعلم الآلة",
+      "point2": "تصميم واجهة المستخدم/تجربة المستخدم",
+      "point3": "تطوير الويب",
+      "point4": "تطوير الألعاب",
+      "btnText": "استكشاف جميع الخدمات"
+    },
+    "section4": {
+      "title": "لماذا تختار خدمات تصميم واجهة المستخدم/تجربة المستخدم من DevRiser؟",
+      "description": "لدينا عشر سنوات من الخبرة المجتمعة في تطوير خدمات تصميم واجهة المستخدم/تجربة المستخدم. فيما يلي بعض التفاصيل الإضافية حول الأسباب التي تجعلنا الخيار الأمثل لشركتك في مجال خدمات تصميم واجهة المستخدم/تجربة المستخدم:",
+      "points": [
+        {
+          "title": "شفافية",
+          "titleTwo": "في نمط العمل",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "مدير مشروع",
+          "titleTwo": "مخصص",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "تحسين",
+          "titleTwo": "تجربة المستخدم",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "نموذج دورة",
+          "titleTwo": "التطوير المرن",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+    "section5": {
+      "title": "منهجية تصميم واجهة المستخدم",
+      "description": "لإنتاج تصميمات واجهة مستخدم غامرة قائمة على السلك الشائك القوي، تكيف عقولنا الإبداعية أحدث اتجاهات التصميم والتقنيات والنهج المحددة من قبل العميل:",
+      "methodologies": [
+        {
+          "title": "التفاعل مع السلك الشائك",
+          "subTitle": "من أجل سلك الشائك النموذجي، يتعاون فريق التصميم المؤهل وذو الخبرة العالية مع العملاء عن كثب لفهم عمليات الأعمال والجماهير المستهدفة ومجال الصناعة."
+        },
+        {
+          "title": "تصميم البكسل المثالي",
+          "subTitle": "استنادًا إلى السلك الشائك، يقوم خبراؤنا بتنفيذ تصميمات واجهة مستخدم (UI) من الدرجة الأولى وجذابة تلبي أهداف الأعمال وتجذب المستخدمين المستهدفين باستخدام التقنيات والموارد الأمامية المناسبة."
+        }
+      ]
+    },
+    "section6": {
+      "title": "خدمات تصميم واجهة المستخدم/تجربة المستخدم",
+      "services": [
+        {
+          "title": "البحث في السوق والمستخدم",
+          "points": [
+            "بحث نوعي",
+            "بحث كمي",
+            "بحث استنباطي",
+            "تحليل المنافسين",
+            "اختبار قابلية الاستخدام"
+          ]
+        },
+        {
+          "title": "رؤية واستراتيجية المنتج",
+          "points": [
+            "التفكير التصميمي",
+            "استراتيجية النمو",
+            "خريطة الطريق للمنتج",
+            "تصور البيانات",
+            "مشاركة المستخدم"
+          ]
+        },
+        {
+          "title": "تصميم تجربة المستخدم/واجهة المستخدم",
+          "points": [
+            "بنية المعلومات",
+            "واجهة المستخدم",
+            "تصميم التفاعل",
+            "نمذجة سريعة",
+            "رسوم توضيحية ورموز"
+          ]
+        }
+      ]
+    },
+    "section7": {
+      "title": "خدمات تصميم واجهة المستخدم/تجربة المستخدم",
+      "description": "وفقًا لحالات استخدام المشروع والقطاعات الرأسية في DevRiser، يتم استخدام القائمة التالية من تقنيات ومنصات تطوير البلوكشين المعاصرة:"
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+  "cc": {
+    "heroTitle": "الحوسبة السحابية",
+    "heroHeading": "تقدم DevRiser حلاًّ في مستوى الشركات لحلول تكنولوجيا المعلومات السحابية التي تمتد حول العالم، متخصصة في تقديم خدمات تكنولوجيا المعلومات السحابية المخصصة. تمكّن خبرتنا المؤسسات من زيادة الإنتاجية وتقليل التكاليف وتحقيق التوسع من خلال حلولنا السحابية الشاملة.",
+    "heroButtonOne": "محفظتنا",
+    "heroButtonTwo": "اتصل بالمبيعات",
+    "section1": {
+      "serviceHeaderTitle": "خدماتنا في مجال تكنولوجيا المعلومات السحابية",
+      "serviceHeaderDesc": "كشركة مستقلة في تطوير البرمجيات، تقدم DevRiser خدمات تكنولوجيا المعلومات السحابية متطورة وشاملة، مدعومة بفريق متفان وقوي ومتخصص ملتزم بتحسين الجودة باستمرار.",
+      "webServicesArr": [
+        {
+          "title": "هندسة حلول تكنولوجيا المعلومات السحابية",
+          "description": "نمكن من استخدام حلاول تكنولوجيا المعلومات السحابية والتخلص من الاعتماد على هندسة الشبكة أو البنية التحتية للخوادم في الموقع من خلال خدماتنا المعمارية لحلول تكنولوجيا المعلومات السحابية.",
+          "icon": "ArchitectureForCloudSolutions"
+        },
+        {
+          "title": "خدمات هجرة التكنولوجيا السحابية",
+          "description": "تمكن خدمات هجرة السحابة لدينا الشركات من خوض تحول رقمي من خلال استخدام أفضل استراتيجية هجرة للسحابة والتحليل والتنفيذ، والتي تحدد الاكتمال المثلى لخدمات السحابة.",
+          "icon": "ServicesForCloudMigration"
+        },
+        {
+          "title": "تطوير تطبيقات السحابة",
+          "description": "نقدم خدمات شاملة لتطوير تطبيقات السحابة المخصصة مدعومة بالأدوات والخبرة اللازمة لتثبيتها بنجاح في خدمات السحابة العامة أو الخاصة.",
+          "icon": "DevelopmentOfCloudReadyApps"
+        },
+        {
+          "title": "أمان السحابة ومراقبة المخاطر",
+          "description": "نضمن أعلى مستويات الأمان لتطبيقات السحابة من خلال تدقيق هندسي قوي لتكنولوجيا المعلومات السحابية وخدمات حماية البيانات وتقييم المخاطر وإدارتها.",
+          "icon": "CloudSecurityAndRiskControl"
+        },
+        {
+          "title": "DevOps",
+          "description": "يلتزم فريقنا المتخصص في تكنولوجيا المعلومات السحابية بمنهجيات وموارد DevOps لدمج تطبيقات السحابة بشكل أكثر فعالية وأمانًا وتوحيدًا.",
+          "icon": "DevOps"
+        },
+        {
+          "title": "دعم السحابة والمراقبة",
+          "description": "نقدم تطبيقات شاملة قائمة على السحابة ومراقبة مستمرة لتنفيذ خطط التحسين لتحسين بنية البنية التحتية وتقليل التكلفة. خدمات أمان بيانات التطبيق وإدارة النسخ الاحتياطي عن بعد للكوارث.",
+          "icon": "CloudSupportAndMonitoring"
+        },
+        {
+          "title": "الحوسبة بدون خوادم",
+          "description": "دعونا نقوم بإنشاء تطبيقات الأعمال الحيوية الخاصة بك التي تعمل على منصة سحابية عامة آمنة بنموذج اشتراك مرن وآلي.",
+          "icon": "ComputingWithoutServers"
+        },
+        {
+          "title": "دعم السحابة الحصري",
+          "description": "استمر في جداول أعمالك المزدحمة بينما نكلف جميع القلق بإدارة حلول تكنولوجيا المعلومات السحابية من خلال مقدمي خدمات السحابة المُدارين، الذين سيضمنون استمرار توفر حلول تكنولوجيا المعلومات السحابية الخاصة بك.",
+          "icon": "ExclusiveCloudSupport"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "التقنيات التي نستخدمها في تكنولوجيا المعلومات السحابية",
+      "serviceHeaderDesc": "يُظهر التكوين التكنولوجي لتكنولوجيا المعلومات السحابية الذي يمكننا من ترجمة أفكار البرمجيات إلى مشاريع فعلية كما هو موضح أدناه.",
+      "webServicesArr": []
+    },
+    "section3": {
+      "title": "هل تبحث عن خدمات أخرى؟",
+      "description": "هل لديك اقتراح لتطبيق؟ قد تساعدك خدمات تطوير التطبيقات لدينا هل لديك اقتراح لتطبيق؟ يمكن أن تساعد استشارات تطوير التطبيقات لدينا",
+      "point1": "تطوير الذكاء الصناعي/التعلم الآلي",
+      "point2": "تصميم وتجربة المستخدم",
+      "point3": "تطوير الويب",
+      "point4": "تطوير الألعاب",
+      "btnText": "استكشاف جميع الخدمات"
+    },
+
+    "section4": {
+      "title": "لماذا تختار خدمات حوسبة السحابة من DevRiser؟",
+      "description": "لدينا خمس سنوات من الخبرة المجتمعة في مجال حوسبة السحابة. فيما يلي بعض التفاصيل الإضافية حول سبب اختيارنا كشركة تطوير تطبيقات الهاتف المحمول الرئيسية",
+      "points": [
+        {
+          "title": "الشفافية",
+          "titleTwo": "نمط العمل",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "الاتصال المباشر",
+          "titleTwo": "مع أحد أفراد الفريق",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "تحسين",
+          "titleTwo": "تجربة المستخدم",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "نموذج",
+          "titleTwo": "التفاعل المرن",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+  "gd": {
+    "heroTitle": "تطوير الألعاب",
+    "heroHeading": "تعتبر DevRiser من الشركات الرائدة في مجال تطوير الألعاب، حيث تتميز بصنع تطبيقات ألعاب 2D و 3D جذابة عبر منصات سطح المكتب وiOS وAndroid. باستخدام خبرتنا في Unity وUnreal Engine، نقوم بتصميم ألعاب فيديو أصلية وتجارب واقع معزز/افتراضي غامرة.",
+    "heroButtonOne": "معرض أعمالنا",
+    "heroButtonTwo": "التواصل مع فريق المبيعات",
+    "section1": {
+      "serviceHeaderTitle": "خدماتنا لتطوير الألعاب",
+      "serviceHeaderDesc": "لدينا خبرة في تطوير برمجيات متخصصة، ونستخدم مجموعة واسعة من تقنيات الويب الحديثة لإنشاء ألعاب وتطبيقات ويب مصممة خصيصًا لاحتياجات مختلف قطاعات الأعمال.",
+      "webServicesArr": [
+        {
+          "title": "تطوير الألعاب للهواتف المحمولة",
+          "description": "يمكن لمطوري ألعاب الهواتف المحمولة لدينا إنشاء ألعاب لنظامي التشغيل Android و iOS برسوم متحركة جذابة وواجهات برمجة تطبيقات متكاملة وميزات رائعة تتوافق مع أجهزة الهواتف الذكية الرئيسية.",
+          "icon": "MobileGameDevelopment"
+        },
+        {
+          "title": "تطوير ألعاب الخيال",
+          "description": "لقد قمنا بإنشاء ونشر ألعاب الرياضات الخيالية للشركات في جميع أنحاء العالم. لإنتاج ألعاب خيالية مبتكرة ومربحة بتصاميم فريدة وميزات عصرية، قم بتوظيف مطوري الألعاب الموهوبين.",
+          "icon": "FantasyGameDevelopment"
+        },
+        {
+          "title": "تطوير ألعاب 2D و 3D",
+          "description": "لقد قمنا بإنشاء ونشر ألعاب الرياضات الخيالية للشركات في جميع أنحاء العالم. لإنتاج ألعاب خيالية مبتكرة ومربحة بتصاميم فريدة وميزات عصرية، قم بتوظيف مطوري الألعاب الموهوبين.",
+          "icon": "TwoDAnd3DGameDevelopment"
+        },
+        {
+          "title": "تطوير ألعاب الواقع المعزز والواقع الافتراضي",
+          "description": "مع خيارات إنتاج ألعاب الواقع المعزز/الواقع الافتراضي التي تشمل ألعاب ال-concept وإنشاء الأصول وتحريك الشخصيات، يساعدك فريقنا على استخدام قوة أحدث تكنولوجيا الألعاب.",
+          "icon": "ARAndVRGameDevelopment"
+        },
+        {
+          "title": "ألعاب HTML5",
+          "description": "نقدم خدمات تطوير ألعاب HTML5 من البداية إلى النهاية لمجموعة من الأنواع مثل البطاقات والألعاب الأركيد والمغامرات والألغاز، والتي تدعمها واجهات برمجة تطبيقات الصوت والرسومات ثنائية وثلاثية الأبعاد وتعمل بسلاسة عبر العديد من متصفحات الويب.",
+          "icon": "HTML5Games"
+        },
+        {
+          "title": "تطوير ألعاب NFT",
+          "description": "نساعد العملاء في تطوير ألعاب عالية الجودة قائمة على تقنية NFT مع ميزات جذابة. يتمتع مطورو ألعاب NFT لدينا بكفاءة قابلة للتحقق منها في تطوير منصات ألعاب NFT قوية وآمنة وقوية لدعم النمو الشركاتي.",
+          "icon": "NFTGameDevelopment"
+        }
+      ]
+    },
+
+    "section2": {
+      "serviceHeaderTitle": "خدمات اختبار البرمجيات ذات النطاق الواسع",
+      "serviceHeaderDesc": "نقدم حلاً مُحسّنًا تمامًا يؤدي إلى زيادة الكفاءة وزيادة الإنتاجية بفضل سنوات خبرتنا في ضمان جودة البرمجيات واختبارها.",
+      "webServicesArr": [
+        {
+          "title": "اختبار واجهة برمجة التطبيقات (API)",
+          "description": "لقد قمنا بإجراء اختبار API اليدوي لبروتوكولات مثل SOAP وREST وJASON وXML وغيرها لتلبية التوقعات.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "اختبار التطبيقات",
+          "description": "قم بتحسين واختبار التطبيقات الجوالة باستخدام المزيج الصحيح من أدوات التشغيل التلقائي لتحسين الإنتاجية العامة.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "اختبار أمان الويب",
+          "description": "احصل على تقييم كامل لأمان موقع الويب من خبراء، بغض النظر عن نوع الموقع.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "اختبار الحمل",
+          "description": "قم بتقييم كيفية عمل برنامجك تحت ظروف الطلب العالي وظروف الإجهاد.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "اختبار الأداء",
+          "description": "استخدم خدمات اختبار الأداء التي تعزز الأداء التطبيق الخاص بك بتكلفة معقولة.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "اختبار يدوي",
+          "description": "استفد من خبرتنا في الاختبار اليدوي لتحقيق نتائج قابلة للقياس ومدفوعة بالجودة.",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "section7": {
+      "title": "التكنولوجيات التي نستخدمها في تطوير الألعاب",
+      "description": "التكنولوجيا المستخدمة في تطوير الألعاب يتم سرد أحدث أدوات التصميم ومنصات تطوير الألعاب الحديثة المستخدمة في Developer أدناه: Adobe Creative Suite"
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    },
+    "faq2": {
+      "faqTitle": "منهجيتنا لتطوير الألعاب",
+      "faqDisc": "كشركة رائدة في تطوير الألعاب، يستخدم DevRiser عمليات تطوير صناعية قياسية وأدوات لإنتاج ألعاب جوالة مخصصة. نقدم ألعابًا مسلية تدعم معظم الأجهزة والمنصات، من الألعاب للاعب واحد إلى الألعاب الجماعية مع رسوم ثنائية الأبعاد أو ثلاثية الأبعاد.",
+      "faqList": [
+        {
+          "headerText": "تقييم الفكرة",
+          "description": "نتعاون بشكل وثيق مع عملائنا لفهم تمامًا الفكرة ونوع اللعبة. يقوم فريق التسويق لدينا بإجراء تحليل متطلبات لمشاركة العميل بشكل كامل لاختيار المنصة والتصميم والسوق المستهدف والتكنولوجيا وتوقعات الأعمال والميزانية."
+        },
+        {
+          "headerText": "التخطيط",
+          "description": "في مرحلة التخطيط، يقوم فريقنا المتخصص بتحديد نطاق المشروع وتعريف الأهداف والجداول الزمنية ومتطلبات الموارد. يضمن التخطيط الاستراتيجي أساسًا قويًا لعملية تطوير اللعبة، مع محاذاة الأهداف مع توقعات العميل."
+        },
+        {
+          "headerText": "التصميم",
+          "description": "في هذه المرحلة، يعيش مصممونا الإبداعيون اللعبة. يتم صياغة كل عنصر بعناية، من الشخصيات والبيئات إلى واجهات المستخدم. نحن نعتبر التصميم المشوق والجذاب أمرًا أساسيًا وجزءًا من التجربة المستخدم التي تتناسب مع جمهور الهدف وتتماشى مع رؤية اللعبة."
+        },
+        {
+          "headerText": "التطوير",
+          "description": "ترى مرحلة التطوير فريقنا الماهر تحويل المفاهيم والتصاميم إلى لعبة وظيفية. من خلال منهجيات التطوير الرشيقة، نضمن تقدمًا تدريجيًا، مما يتيح للعميل إعطاء ملاحظات مستمرة وتحسينها طوال رحلة التطوير."
+        },
+        {
+          "headerText": "الاختبار",
+          "description": "الاختبار الدقيق أمر بالغ الأهمية لتقديم تجربة لعب خالية من العيوب. يقوم فريق الاختبار المخصص لدينا بتقييم كل جانب من جوانب اللعبة بدقة، محددًا ومعالجًا أي عيوب أو مشكلات في الأداء. تضمن هذه المرحلة منتجًا نهائيًا وعالي الجودة قبل الإطلاق."
+        },
+        {
+          "headerText": "الإطلاق",
+          "description": "تمثل مرحلة الإطلاق ذروة عمليةنا الدقيقة. ننسق إطلاقًا سلسًا، باستخدام جهود تسويق استراتيجية لتعظيم الرؤية. بعد الإطلاق، نظل ملتزمين بمراقبة ومعالجة أي قضايا بعد الإطلاق، مما يضمن وجود ناجح ومستدام في سوق الألعاب."
+        }
+      ]
+    }
+  },
+  "blockChainDevelopment": {
+    "mainHeading": "تطوير تقنية البلوكتشين",
+    "subHeading": "DevRiser هو شريكك الموثوق لتطوير تقنية البلوكتشين، والمعروف بخدمات تطوير تطبيقات تقنية البلوكتشين على مدار الدورة الكاملة مدعومة بأحدث التقنيات. نقدم حلاً يمكنك من الاستفادة الكاملة من إمكانيات البيئة المركزية إلى أقصى حد.",
+    "buttonTextOne": "محفظتنا",
+    "buttonTextTwo": "تواصل مع المبيعات",
+    "sectionOne": {
+      "appHeading": "خدماتنا لتطوير تقنية البلوكتشين",
+      "appSubHeading": "بصفتنا الشركة الرائدة في تطوير تقنية البلوكتشين المخصصة للعملاء في جميع أنحاء العالم، قد قمنا بتطوير هذا المجال بشكل كبير على مر السنين. للأنواع الرئيسية لخدمات الشركات التي يمكن أن يخدمها مطورو تطبيقات تقنية البلوكتشين الإبداعيون لدينا، فإن لدينا:",
+      "appServiceArr": [
+        {
+          "title": "تطوير العقود الذكية",
+          "description": "يساعد فريقنا المتخصص في تقنية البلوكتشين في DevRiser العميل في الحصول على الوقت والمشورة التي يحتاجونها، بالإضافة إلى التوصيات القائمة على متطلبات المشروع واحتياجات عملائهم التجارية.",
+          "icon": "DevelopmentOfSmartContracts"
+        },
+        {
+          "title": "تطوير تطبيقات تقنية البلوكتشين",
+          "description": "ستتغير طريقة تفاعل شركتك مع العملاء نتيجة لحلاول التعلم الآلي الكفءة المدمجة من قبل فريقنا الماهر والمتخصص في تطوير تقنية البلوكتشين.",
+          "icon": "DevelopmentOfBlockchainApps"
+        },
+        {
+          "title": "حلاول نهاية إلى نهاية للتطبيقات",
+          "description": "يقدم خبراؤنا في تقنية البلوكتشين حلاول تطوير نهاية إلى نهاية، من التصور والتخطيط إلى البرمجة وإطلاق المشروع، لمساعدتك في تحقيق أقصى قدر من عائد الاستثمار والحصول على ميزة على منافسيك.",
+          "icon": "EndToEndAppsSolutions"
+        },
+        {
+          "title": "تطوير محفظة وتبادل العملات الرقمية",
+          "description": "نحن معروفون باعتبارنا أفضل شركة لتطوير العملات المشفرة، والتي تساعد الشركات في تطوير تطبيقات محفظة عملات رقمية آمنة ومتجاوبة تتيح لتبادل الأصول الرقمية والعملات المشفرة بين الشبكات.",
+          "icon": "CryptoWalletExchangeDevelopment"
+        }
+      ]
+    },
+    "section1": {
+      "mainHeading": "التقنيات التي نستخدمها في تطوير تقنية البلوكتشين",
+      "subHeading": "مجموعة التقنيات الخاصة بتطوير تقنية البلوكتشين التي تمكننا من ترجمة أفكار البرمجيات إلى شبكات وتطبيقات لامركزية بإبداع."
+    }
+  },
 
   "aboutUs": {
-    "mainHeading": "About Us",
-    "subHeading": "DevRiser is a distinguished global hub for software innovation and services, Anchored in unwavering human values. We passionately uphold the significance of the six core pillars: Innovation, Quality, Collaboration, Agility, Integrity, and Transparency. Our relentless dedication to these principles not only drives growth but also fosters an equitable and harmonious environment for our valued employees and esteemed clients, ensuring mutual prosperity & fulfillment.",
-    "buttonText": "Get Started",
+    "mainHeading": "معلومات عنا",
+    "subHeading": "DevRiser هو مركز عالمي متميز لابتكار البرمجيات والخدمات، ويرتكز على القيم الإنسانية الراسخة. نحن نتمسك بشغف بأهمية الركائز الأساسية الستة: الابتكار والجودة والتعاون والمرونة والنزاهة والشفافية. إن تفانينا المتواصل لهذه المبادئ لا يؤدي إلى النمو فحسب، بل يعزز أيضًا بيئة عادلة ومتناغمة لموظفينا وعملائنا، مما يضمن الرخاء والوفاء المتبادل.",
+    "buttonText": "ابدأ",
     "coreValues": {
-      "heading": "Innovation",
-      "subHeading": "Creative Breakthrough",
-      "headingOne": "Quality",
-      "subHeadingOne": "Exceptional Standard",
-      "headingTwo": "Collaboration",
-      "subHeadingTwo": "Team Harmony",
-      "headingThree": "Agility",
-      "subHeadingThree": "Swift Adaptation",
-      "headingFour": "Integrity",
-      "subHeadingFour": "Honest Character",
-      "headingFive": "Transparency",
-      "subHeadingFive": "Clear Communication"
+      "heading": "ابتكار",
+      "subHeading": "اختراق إبداعي",
+      "headingOne": "جودة",
+      "subHeadingOne": "معيار استثنائي",
+      "headingTwo": "تعاون",
+      "subHeadingTwo": "انسجام الفريق",
+      "headingThree": "خفة الحركة",
+      "subHeadingThree": "التكيف السريع",
+      "headingFour": "نزاهة",
+      "subHeadingFour": "شخصية صادقة",
+      "headingFive": "الشفافية",
+      "subHeadingFive": "تواصل واضح"
     },
     "ourVision": {
-      "mainHeading": "Our Vision",
-      "subHeading": "DevRiser aspires to shape an innovative future driven by our unwavering commitment to principles like innovation, quality, collaboration, agility, integrity, and transparency. Our mission is to lead transformative advancements, instigating positive change, and leaving an enduring legacy as pioneers of purposeful innovation."
+      "mainHeading": "رؤيتنا",
+      "subHeading": "تطمح DevRiser إلى تشكيل مستقبل مبتكر مدفوع بالتزامنا الثابت بمبادئ مثل الابتكار والجودة والتعاون والمرونة والنزاهة والشفافية. مهمتنا هي قيادة التطورات التحويلية، والتحريض على التغيير الإيجابي، وترك إرث دائم كرواد الابتكار الهادف."
     },
     "ourMission": {
-      "mainHeading": "Our Mission",
-      "subHeading": "At DevRiser, our mission is a relentless pursuit of positive change. We achieve this by fostering innovation, upholding unwavering quality, nurturing collaborative partnerships, embracing agility, demonstrating integrity, and fostering transparent relationships. Our goal is to reshape industries, unlock technology's full potential, and create a lasting impact, always staying true to our unwavering core principles."
+      "mainHeading": "مهمتنا",
+      "subHeading": "في DevRiser، مهمتنا هي السعي الدؤوب للتغيير الإيجابي. نحن نحقق ذلك من خلال تعزيز الابتكار، ودعم الجودة التي لا تتزعزع، ورعاية الشراكات التعاونية، وتبني المرونة، وإظهار النزاهة، وتعزيز العلاقات الشفافة. هدفنا هو إعادة تشكيل الصناعات، وإطلاق الإمكانات الكاملة للتكنولوجيا، وإحداث تأثير دائم، والبقاء دائمًا صادقين مع مبادئنا الأساسية التي لا تتزعزع."
     },
 
     "thirdSection": {
-      "headingOne": "Customer-centered Approach",
-      "subHeadingOne": "Our commitment to a customer-centered approach extends beyond serving immediate clients. As a leading software development company, we prioritize understanding your company's unique needs, listening to your ideas, and considering the perspectives and pain points of your end-users. Your success is our ultimate goal.",
-      "headingTwo": "Effective Collaboration",
-      "subHeadingTwo": "Effective collaboration hinges on clear communication. We believe in proactive and open communication, even if it may seem abundant, as it significantly influences our clients' success. We employ platforms and mediums that ensure efficiency, transparency, and precision when our development team collaborates with clients.",
-      "headingThree": "Quality Delivered in Time",
-      "subHeadingThree": "With extensive experience in IT software development, we've curated a robust collection of internal frameworks and top-notch infrastructure. This ensures our consistent delivery of top-quality solutions. Our years of expertise enable us to replicate success and evade pitfalls. We are dedicated to maintaining the highest standards of quality."
+      "headingOne": "النهج الذي يركز على العملاء",
+      "subHeadingOne": "يمتد التزامنا بالنهج الذي يركز على العملاء إلى ما هو أبعد من خدمة العملاء المباشرين. باعتبارنا شركة رائدة في مجال تطوير البرمجيات، فإننا نعطي الأولوية لفهم الاحتياجات الفريدة لشركتك، والاستماع إلى أفكارك، والنظر في وجهات نظر المستخدمين النهائيين ونقاط الضعف لديهم. نجاحك هو هدفنا النهائي.",
+      "headingTwo": "التعاون الفعال",
+      "subHeadingTwo": "التعاون الفعال يتوقف على التواصل الواضح. نحن نؤمن بالتواصل الاستباقي والمفتوح، حتى لو كان يبدو وفيرًا، لأنه يؤثر بشكل كبير على نجاح عملائنا. نحن نستخدم منصات ووسائط تضمن الكفاءة والشفافية والدقة عندما يتعاون فريق التطوير لدينا مع العملاء.",
+      "headingThree": "الجودة يتم تسليمها في الوقت المناسب",
+      "subHeadingThree": "بفضل خبرتنا الواسعة في تطوير برمجيات تكنولوجيا المعلومات، قمنا برعاية مجموعة قوية من أطر العمل الداخلية والبنية التحتية المتطورة. وهذا يضمن تقديمنا المستمر للحلول عالية الجودة. تمكننا سنوات خبرتنا من تكرار النجاح والتهرب من المخاطر. نحن ملتزمون بالحفاظ على أعلى معايير الجودة."
     }
   }
 }

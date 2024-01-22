@@ -8,7 +8,7 @@
   "ourAchievement": {
     "heading": "Notre Réalisation",
     "subHeadingOne": "Clients satisfaits",
-    "subHeadingTwo": "Expérience industrielle",
+    "subHeadingTwo": "Années d'expérience",
     "subHeadingThree": "Experts professionnels",
     "subHeadingFour": "Bureaux mondiaux"
   },
@@ -69,108 +69,1111 @@
     "heading": "Transformez votre vision en réalité avec une consultation de projet gratuite. Partagez vos idées et laissez-nous vous aider à les transformer en solutions numériques exceptionnelles.",
     "buttonText": "Parlez à notre expert"
   },
+
+  "webDevelopment": {
+    "mainHeading": "Services de développement de sites Web",
+    "subHeadingOne": "DevRiser propose des services de développement de sites Web personnalisés axés sur les performances, évolutifs et réactifs. Notre équipe d'experts exploite les dernières technologies pour créer des solutions Web multiplateformes. Nous fournissons également une maintenance et une assistance continues pour garantir que votre site Web reste à jour. Répondez à tous vos besoins en matière de développement Web.",
+    "heroButtonOne": "Notre portfolio",
+    "heroButtonTwo": "Contactez-nous",
+    "section1": {
+      "serviceHeaderTitle": "Nos services de développement d'applications Web",
+      "serviceHeaderDesc": "Nous avons de l'expérience dans le développement de logiciels spécialisés et nous utilisons un large éventail de technologies Web de pointe pour créer des sites Web et des applications Web spécifiquement adaptés aux besoins de divers secteurs d'activité. Voici une liste des services de développement d'applications Web que nous proposons.",
+      "webServicesArr": [
+        {
+          "title": "Développement UI/UX",
+          "description": "Avec une conception UI UX accrocheuse, vous pouvez améliorer votre expérience utilisateur et accroître le bonheur et la fidélité des clients.",
+          "icon": "UIUXDevelopment"
+        },
+        {
+          "title": "Migration du système",
+          "description": "Nos services de migration de sites Web sont disponibles pour vous aider à répondre aux besoins de votre entreprise. Qu'il s'agisse d'un site Web ou d'un complexe, nous avons ce qu'il vous faut.",
+          "icon": "SystemMigration"
+        },
+        {
+          "title": "Tests et assurance qualité",
+          "description": "Nous mettons à profit notre expertise pour garantir que votre projet soit le meilleur possible. Nos services de test de sites Web mesurent les performances et l’efficacité.",
+          "icon": "TestingQA"
+        },
+        {
+          "title": "Conception réactive",
+          "description": "Une conception intéressante et adaptée aux mobiles peut améliorer l’expérience utilisateur et le taux de fidélisation des clients.",
+          "icon": "ResponsiveDesign"
+        },
+        {
+          "title": "Développement personnalisé",
+          "description": "De l'analyse commerciale à la conception UI/UX en passant par le développement front-end/back-end, le support et la maintenance.",
+          "icon": "CustomDevelopment"
+        },
+        {
+          "title": "CMS",
+          "description": "Nous sommes spécialisés dans les services de développement de CMS adaptés aux besoins uniques de votre entreprise. nous sommes avec nous pour les meilleures solutions CMS de leur catégorie.",
+          "icon": "CMS"
+        }
+      ]
+    },
+    "section2": {
+      "title": "Technologies que nous utilisons pour le développement Web",
+      "description": "Nous utilisons toute la gamme de conception interactive, d'illustrations, d'animations graphiques et d'animations pendant le processus de développement Web pour produire des sites Web qui captivent l'attention des publics que nos clients tentent d'atteindre.",
+      "techStackArr": [
+        {
+          "parent": "L'extrémité avant",
+          "child": [
+            "Réagir à JS",
+            "Angulaire",
+            "Suivant JS",
+            "Manuscrit",
+            "HTML5",
+            "CSS3",
+            "Vue.js"
+          ]
+        },
+        {
+          "parent": "Backend",
+          "child": [
+            "Node.js",
+            "Python",
+            "Java",
+            "Rubis",
+            ".NET",
+            "PHP",
+            "Laravel"
+          ]
+        },
+        {
+          "parent": "Base de données",
+          "child": [
+            "PostgreSQL",
+            "MongoDB",
+            "SQL Server",
+            "Oracle",
+            "Elasticsearch",
+            "Redis",
+            "AWS RDS",
+            "MySQL"
+          ]
+        },
+        {
+          "parent": "Nuage",
+          "child": [
+            "AWS",
+            "Google Cloud",
+            "Microsoft Azure",
+            "OVH Cloud",
+            "Alibaba Cloud"
+          ]
+        },
+        {
+          "parent": "DevOps",
+          "child": ["Kubernetes", "Docker", "Jenkins"]
+        }
+      ]
+    },
+    "section3": {
+      "title": "Quelle est l’importance d’une solution de développement personnalisée ?",
+      "description": "Le développement de logiciels personnalisés est crucial car il peut contribuer à rendre votre processus plus créatif, efficace et innovant en fournissant des services de flexibilité, de sécurité et de maintenance rentables adaptés à vos besoins spécifiques.",
+      "customDevArr": [
+        {
+          "title": "Personnalisé pour votre marque",
+          "description": "Les entreprises peuvent faire connaître leur personnalité via des sites Web personnalisés, en plus de leurs produits et services. Une entreprise peut travailler avec une équipe de conception dans une agence pour personnaliser son site Web. De ce fait, l’expérience utilisateur est unique et ne se limite pas à ce que proposent la majorité des modèles glisser-déposer."
+        },
+        {
+          "title": "Un investissement durable",
+          "description": "Même si l’utilisation d’un modèle coûte moins cher, investir dans un site Web personnalisé sera rentable à long terme pour votre entreprise. En conséquence, il sera simple pour votre entreprise de développer votre site Web ou votre application actuel à mesure que votre entreprise se développe, et le coût diminuera au fil du temps."
+        },
+        {
+          "title": "Flexibilité et évolutivité",
+          "description": "Même si les solutions disponibles dans le commerce peuvent suffire à répondre aux demandes actuelles des entreprises, elles ne sont peut-être pas suffisamment flexibles ou évolutives. Toutes les fonctionnalités dont vous avez besoin sont couvertes par un site Web personnalisé. Vous pouvez analyser pendant le processus d’exploration et de prototypage."
+        },
+        {
+          "title": "Intégration ininterrompue",
+          "description": "Une solution logicielle d’entreprise pouvant s’interfacer avec vos systèmes existants est excellente. L'utilisation de vos systèmes actuels sera améliorée à l'aide du développement de logiciels personnalisés. Avant que les développeurs ne commencent à travailler sur votre projet."
+        },
+        {
+          "title": "Sécurité renforcée",
+          "description": "Étant donné que le premier est une cible plus petite, un CMS étendu ou une application personnalisée est considéré comme plus sécurisé qu'une offre standard. Vos données seront volées si un pirate informatique a accès à votre solution unique. Mais si le même hacker parvenait à accéder à l’un de ces correctifs."
+        },
+        {
+          "title": "Assistance produit améliorée",
+          "description": "Le meilleur support produit est ce à quoi vous pouvez vous attendre si vous travaillez avec une entreprise de développement de logiciels personnalisés. Vous aurez accès au personnel de soutien qui a travaillé en étroite collaboration sur le projet. De plus, la maintenance des logiciels sera supérieure et plus sûre car vous ne dépendez pas d'un fournisseur tiers."
+        }
+      ]
+    },
+    "section4": {
+      "title": "Technologies du futur pour le développement Web",
+      "futureWebTech": [
+        {
+          "title": "Technologie Blockchain",
+          "description": "Nous vous assistons dans la conception, le développement et la maintenance d'applications blockchain prenant en charge les principales catégories de technologies, notamment la blockchain de consortium et la blockchain privée."
+        },
+        {
+          "title": "PWAs",
+          "description": "En développant des solutions de développement de PWA de pointe pour rendre les applications mobiles accessibles sur toutes les plateformes, nous gardons à nos clients une longueur d'avance sur la concurrence."
+        },
+        {
+          "title": "Utiliser le cloud",
+          "description": "Nous fournissons une prise en charge complète du développement du cloud computing afin que vous puissiez utiliser Microsoft Azure, Google Cloud Platform et AWS pour créer des applications Web incroyablement rapides et adaptables."
+        },
+        {
+          "title": "Cadres pour JavaScript",
+          "description": "Nous exploitons les frameworks JavaScript comme Angular et React.js en tant que full-stack pour créer des applications Web entièrement fonctionnelles avec des interfaces utilisateur de pointe et réactives pour les clients du monde entier."
+        },
+        {
+          "title": "Frontaux compacts",
+          "description": "Chez DevRiser, nous créons des micro-frontends riches en fonctionnalités pour les sites Web et les applications en ligne qui peuvent être étendus à de nombreuses équipes pour des fonctionnalités commerciales uniques."
+        },
+        {
+          "title": "Architecture sans serveur",
+          "description": "Nous fournissons une assistance complète dans la création d'applications évolutives et personnalisées avec une architecture sans serveur, donnant aux clients l'accès à une évolutivité automatique, une tolérance aux pannes intégrée et des dépenses opérationnelles réduites."
+        }
+      ]
+    },
+    "section5": {
+      "title": "Technologies du futur pour le développement Web",
+      "futureTechServicesArr": [
+        {
+          "title": "Solutions spécifiques à un domaine",
+          "description": "Puisque nous sommes l'une des principales sociétés de développement de sites Web personnalisés, nous pouvons proposer des solutions de sites Web complètes adaptées aux demandes de nos clients et aux tendances des secteurs concernés.",
+          "icon": "SolutionDomain"
+        },
+        {
+          "title": "Design et fonctionnalités modernes",
+          "description": "Nous avons fait appel aux services de concepteurs et de programmeurs Web dévoués possédant une expertise approfondie dans la création de sites Web qui établissent un équilibre entre une apparence attrayante et des fonctionnalités efficaces.",
+          "icon": "BasicShape"
+        },
+        {
+          "title": "Procédé utilisé par l'industrie",
+          "description": "Pour offrir à chacun de nos clients une excellence inébranlable et notre engagement à fournir des sites Web avec de réels résultats commerciaux et le plaisir des clients, nous adhérons à la procédure de développement standard de l'industrie.",
+          "icon": "SettingIcon"
+        },
+        {
+          "title": "Techniquement avancé",
+          "description": "Des outils de conception, des technologies et des méthodologies modernes sont utilisés par notre équipe de développeurs hautement qualifiés et expérimentés pour créer des solutions de sites Web de pointe.",
+          "icon": "HalfGearIcon"
+        }
+      ]
+    }
+  },
+
+  "iOtDevelopement": {
+    "mainHeading": "Développement IoT",
+    "subHeading": "DevRiser fournit des services complets de développement IoT, avec une expertise dans le développement IoT personnalisé et le développement d'applications mobiles IoT. Nos solutions sur mesure améliorent l'efficacité opérationnelle, réduisent les coûts et augmentent la productivité dans divers secteurs, offrant ainsi des solutions IoT fiables et sécurisées sur lesquelles vous pouvez compter.",
+    "buttonTextOne": "Notre portfolio",
+    "buttonTextTwo": "Contactez-nous",
+    "section1": {
+      "title": "Nos services pour le développement IoT",
+      "description": "En tant que première société de développement IoT, nous avons considérablement progressé dans ce domaine au fil des années en développant et en déployant des solutions IoT créatives dans différents domaines.",
+      "IOTServicesArr": [
+        {
+          "title": "Développement d'applications IoT",
+          "description": "Nous créons des applications IoT Web, natives, hybrides et basées sur des PWA pour des besoins et des plates-formes commerciales spécifiques. L'IA/ML alimente ces applications IoT, qui créent des expériences client exceptionnelles à chaque point de contact.",
+          "icon": "IOTApps"
+        },
+        {
+          "title": "Développement d'applications IoT portables",
+          "description": "Nos experts IoT possèdent une vaste expérience dans la conception d’applications IoT d’avenir pour les appareils portables tels que les trackers de fitness, les lunettes technologiques, les montres intelligentes et les casques de jeu qui sont intégrés par de puissants backends et des API riches en fonctionnalités.",
+          "icon": "ClockSVG"
+        },
+        {
+          "title": "Intégration des plateformes IoT",
+          "description": "Notre équipe qualifiée et expérimentée de professionnels de l'IoT vous aide à augmenter le retour sur investissement de votre entreprise en intégrant des solutions IoT dans votre infrastructure, vos plateformes et vos appareils connectés existants.",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "Solutions pour la technologie vocale",
+          "description": "À l'aide de nos solutions logicielles IoT à commande vocale, vous pouvez révolutionner la façon dont les clients interagissent en ligne avec votre entreprise, augmentant ainsi l'engagement des utilisateurs et générant des valeurs commerciales significatives.",
+          "icon": "IOTMicSVG"
+        },
+        {
+          "title": "Création de passerelle IoT",
+          "description": "Afin de donner aux entreprises un avantage concurrentiel sur le marché, nous soutenons pleinement le développement de passerelles IoT et leur intégration avec une large gamme d'appareils et de capteurs. Cela inclut à la fois une connectivité plus intelligente et une bande passante plus élevée.",
+          "icon": "GatewaySVG"
+        },
+        {
+          "title": "Test et maintenance IoT",
+          "description": "Notre équipe d’experts engagés de l’Internet des objets (IoT) assure les tests, la mise en œuvre et l’assistance pour garantir une exécution parfaite de l’IoT et une expérience utilisateur agréable. Pour des performances fiables et une connectivité continue.",
+          "icon": "NetworkSVG"
+        }
+      ]
+    },
+    "section2": {
+      "title": "Notre pile technologique de développement IoT",
+      "description": "Selon les cas d'utilisation du projet et les secteurs verticaux de l'industrie chez DevRiser, la liste suivante de technologies et de plates-formes contemporaines de développement de blockchain est utilisée :"
+    },
+    "section3": {
+      "title": "Technologies émergentes de l’Internet des objets (IoT)",
+      "IOTEmergeArr": [
+        {
+          "title": "Réseaux",
+          "description": "Pour les applications IoT telles que la surveillance et le contrôle à distance, les réseaux doivent offrir une bande passante plus rapide et une latence plus faible.",
+          "icon": "NetworkSVG"
+        },
+        {
+          "title": "L'informatique",
+          "description": "Notre Edge computing permet un traitement des données au plus près de la source, réduisant ainsi la quantité de données qui doivent être transportées vers un point central.",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "AI/ML",
+          "description": "L'IA et le ML sont utilisés pour améliorer les performances et l'efficacité des systèmes d'appareils IoT, tels que la maintenance prédictive et la détection en temps réel.",
+          "icon": "AutomationSVG"
+        },
+        {
+          "title": "Le cloud computing",
+          "description": "Le cloud computing facilite le stockage et le traitement d'énormes quantités de données provenant d'appareils IoT, ce qui en fait un outil essentiel pour le Big Data.",
+          "icon": "CloudCompute"
+        },
+        {
+          "title": "VR/AR",
+          "description": "La réalité virtuelle et la réalité augmentée sont utilisées pour améliorer les applications IoT telles que la surveillance et le contrôle à distance, ainsi que pour générer de nouveaux cas d'utilisation.",
+          "icon": "VRSVG"
+        },
+        {
+          "title": "Chaîne de blocs",
+          "description": "La technologie Blockchain est de plus en plus utilisée pour améliorer la sécurité et la fiabilité des systèmes IoT, qui sont des réseaux d'appareils liés.",
+          "icon": "BlockchainSVG"
+        }
+      ]
+    }
+  },
+
+  "aiMlDevelopement": {
+    "mainHeading": "Développement IA/ML",
+    "subHeading": "DevRiser est l'un des principaux fournisseurs de services de développement d'applications d'IA, spécialisé dans les applications basées sur l'IA et les solutions d'intégration qui améliorent la business intelligence. Nos professionnels IA/ML, compétents en TensorFlow, PyTorch et d'autres technologies de pointe, apportent de l'intelligence à votre écosystème.",
+    "buttonTextOne": "Notre portfolio",
+    "buttonTextTwo": "Contactez-nous",
+
+    "section1": {
+      "title": "Nos services de développement pour l'IA/ML",
+      "description": "Nous sommes une société de développement d'IA/ML personnalisée qui utilise une variété de services de business intelligence et de conseil soutenus par les tendances du secteur, une prise de décision judicieuse et des informations sur le comportement des utilisateurs.",
+      "aimlServicesArr": [
+        {
+          "title": "Services de conseil en IA/ML",
+          "description": "Afin d'utiliser l'intelligence artificielle à son plein potentiel, l'équipe dédiée de spécialistes IA/ML de DevRiser travaille avec vous pour vous fournir les conseils et les recommandations nécessaires en fonction des besoins de votre projet.",
+          "icon": "CyborgIcon"
+        },
+        {
+          "title": "Solutions pour l'apprentissage automatique",
+          "description": "Notre équipe qualifiée de professionnels de l'IA/ML intègre des solutions efficaces d'apprentissage automatique pour automatiser les processus métier, augmenter la productivité et réduire les erreurs humaines afin de révolutionner la façon dont votre entreprise interagit avec les clients.",
+          "icon": "BrainIcon"
+        },
+        {
+          "title": "Reconnaissance automatique de la langue",
+          "description": "En fonction de vos ensembles de données, nous utilisons la PNL pour développer des algorithmes sophistiqués qui analysent et distinguent les différents composants du texte, de l'audio et des sentiments afin de créer d'étonnants modèles d'apprentissage automatique.",
+          "icon": "NLPIcon"
+        },
+        {
+          "title": "Applications mobiles et Web améliorées par l'IA/ML",
+          "description": "Notre équipe de développement d'applications IA/ML aide les entreprises à créer des plates-formes Web et des applications mobiles de pointe, sécurisées et de niveau entreprise, alimentées par l'IA, afin d'offrir des expériences client personnalisées et de collecter des informations sur le comportement des utilisateurs.",
+          "icon": "AISVG"
+        },
+        {
+          "title": "Chatbots",
+          "description": "Afin d'offrir aux clients un plus grand niveau d'interaction et de vous démarquer de la concurrence, nos experts en IA/ML créent des solutions de chatbot fiables et créatives pour votre entreprise.",
+          "icon": "ChatbotIcon"
+        },
+        {
+          "title": "Traitement d'image",
+          "description": "DevRiser est une société de développement de logiciels d'apprentissage automatique et d'intelligence artificielle qui se concentre sur le soutien aux entreprises du monde entier avec des solutions de business intelligence de traitement d'images pour trouver des informations et une assistance sur les données.",
+          "icon": "ImgProcessingSVG"
+        }
+      ]
+    },
+    "section2": {
+      "title": "Notre pile technologique IA/ML",
+      "description": "Les technologies IA/ML les plus récentes et les outils logiciels IA/ML reconnus par l'industrie utilisés par le développeur."
+    },
+    "section3": {
+      "title": "Pourquoi opter pour DevRiser pour le développement AI/ML ?",
+      "description": "Afin de répondre aux différents cas d'utilisation industrielle avec des algorithmes basés sur l'IA et des solutions d'apprentissage automatique, DevRiser utilise le meilleur du secteur des services de développement IA/ML.",
+      "aimlPerks": [
+        {
+          "icon": "ExpertSVG",
+          "title": "Équipe d'experts dédiés en IA/ML"
+        },
+        {
+          "icon": "DomainSVG",
+          "title": "Connaissance approfondie du domaine"
+        },
+        {
+          "icon": "CustomerServiceSVG",
+          "title": "Assistance client supplémentaire"
+        },
+        {
+          "icon": "AwardSVG",
+          "title": "Solutions IA/ML exceptionnelles"
+        },
+        {
+          "icon": "WebsiteSVG",
+          "title": "Une expérience variée"
+        },
+        {
+          "icon": "SoftDevSVG",
+          "title": "Développement logiciel complet pour l'IA/ML"
+        },
+        {
+          "icon": "DirectionSVG",
+          "title": "IA/ML pour multiplateformes"
+        },
+        {
+          "icon": "LowCostSVG",
+          "title": "Prix ​​abordables"
+        }
+      ]
+    },
+    "section4": {
+      "title": "Recherchez-vous d’autres services ?",
+      "description": "Partagez vos idées et laissez-nous vous aider à les transformer en solutions numériques exceptionnelles.",
+      "point1": "Développement IA/ML",
+      "point2": "Conception UI/UX",
+      "point3": "Développement web",
+      "point4": "Développement de jeu",
+      "btnText": "Explorez tous les services"
+    }
+  },
+
+  "mainServices": {
+    "headingOne": "Développement de solutions d'entreprise",
+    "descriptionOne": "DevRiser est spécialisé dans la création de solutions logicielles de pointe qui élèvent votre entreprise vers de nouveaux sommets. Notre équipe de développeurs expérimentés se consacre à fournir des solutions d'entreprise sur mesure, s'adaptant parfaitement à vos besoins et défis uniques. Des applications évolutives aux intégrations de systèmes efficaces, nous nous engageons à faire progresser votre entreprise.",
+    "headingTwo": "Développement web",
+    "descriptionTwo": "DevRiser fournit des services de développement d'applications Web personnalisées axés sur les performances, évolutifs et réactifs. Les technologies les plus récentes sont utilisées par notre équipe de professionnels pour créer des applications Web multiplateformes.",
+    "switchDescriptionOne": "DevRiser excelle dans le développement Web backend, offrant des solutions robustes, évolutives et efficaces. Notre équipe dédiée exploite les dernières technologies pour créer des systèmes backend puissants, garantissant une fonctionnalité transparente et des performances optimales pour vos applications Web. ",
+    "headingThree": "Développement d'applications",
+    "descriptionThree": "DevRiser propose une variété de services de développement d'applications mobiles, tels que le développement d'applications multiplateformes, Android et iOS, pour aider les entreprises à accélérer leur croissance et à créer une identité de marque distinctive. Notre équipe est spécialisée dans le développement d'applications mobiles.",
+    "switchDescriptionTwo": "DevRiser transforme les idées en expériences mobiles captivantes. Nos concepteurs experts se spécialisent dans le développement d’applications multiplateformes, Android et iOS, créant des conceptions visuellement attrayantes et centrées sur l’utilisateur qui s’alignent parfaitement avec votre identité de marque. Renforcez la présence de votre entreprise avec les solutions innovantes de conception d'applications mobiles de DevRiser",
+    "headingFour": "Conception UI UX",
+    "descriptionFour": "Les services de conception UI/UX de DevRiser consistent en des conceptions numériques intuitives et accrocheuses. Pour satisfaire vos objectifs commerciaux et les besoins des utilisateurs, notre société de conseil en conception UX propose des approches de conception spécialisées. Pour des services de conception UI/UX favorisant l'expansion de l'entreprise, contactez-nous.",
+    "headingFive": "Services de cloud computing",
+    "descriptionFive": "DevRiser fournit des solutions informatiques cloud d'entreprise à toutes les entreprises grâce aux services et solutions de cloud computing de notre société à travers le monde. Notre domaine d'expertise est la fourniture de services cloud spécialisés. Pour les organisations, nos solutions de cloud computing",
+    "headingSix": "Développement de jeu",
+    "descriptionSix": "DevRiser est une société leader dans le développement de jeux, spécialisée dans la création d'applications de jeux 2D et 3D pour ordinateurs de bureau, iOS et Android. Grâce à Unity et Unreal Engine, nous développons des jeux vidéo originaux ainsi que des applications AR/VR.",
+    "headingSeven": "Développement de la blockchain",
+    "descriptionSeven": "Libérez le potentiel de la technologie décentralisée avec les services de développement blockchain de pointe de DevRiser. Du déploiement de contrats intelligents à la création de DApp, nous permettons aux entreprises d’embrasser l’avenir des écosystèmes numériques sécurisés et transparents. Associez-vous à nous pour des solutions innovantes qui redéfinissent les possibilités dans l'espace blockchain.",
+    "headingEight": "Internet des objets",
+    "descriptionEight": "Nous proposons des services complets de développement de logiciels IoT, spécialisés dans le développement IoT personnalisé et le développement d'applications mobiles IoT. Nos solutions spécialisées améliorent l’efficacité opérationnelle, réduisent les dépenses et augmentent la production dans une gamme d’industries. Vous pouvez compter sur nous pour des solutions IoT fiables et sécurisées.",
+    "headingNine": "Développement IA/ML",
+    "descriptionNine": "Renforcez votre entreprise avec les services de développement IA/ML de DevRiser. De l'analyse prédictive à l'automatisation intelligente, nous exploitons la puissance de l'intelligence artificielle et de l'apprentissage automatique pour améliorer vos opérations. Révolutionnez votre paysage technologique grâce à notre expertise, en favorisant l'innovation et l'efficacité pour un avantage concurrentiel à l'ère numérique."
+  },
+
+  "contactForm": {
+    "mainHeading": "N'hésitez pas à partager votre idée ?",
+    "subHeading": "Vous êtes sur le point de développer un produit commercial agile qui deviendra votre prochaine réussite. Parlons en profondeur des exigences et du modèle économique de votre projet",
+    "formContent": {
+      "headingOne": "1. Informations personnelles",
+      "headingTwo": "2. De quoi parle votre prochain projet ?*",
+      "headingThree": "3. Quelle sera notre implication dans votre projet ?*",
+      "headingFour": "4. Quel est votre budget approximatif (EUR) ?*",
+      "headingFive": "5. Parlez-nous de votre projet"
+    },
+    "projects": {
+      "projetOne": "Site web",
+      "projetTwo": "Application mobile",
+      "projetThree": "Développement de jeu",
+      "projetFour": "Chaîne de blocs",
+      "projetFive": "Conception UI et UX",
+      "projetSix": "AI & ML",
+      "projetSeven": "Cloud Computing",
+      "projetEight": "Internet des objets",
+      "projetNine": "Solutions d'entreprise"
+    },
+    "involvement": {
+      "involvementOne": "Conception et développement",
+      "involvementTwo": "Design Only (Nous concevons votre produit, vous le développerez vous-même)",
+      "involvementThree": "Développement uniquement (nous développons des sites Web et des applications, vous nous fournissez des conceptions)"
+    },
+    "budget": {
+      "budgetOne": "je ne sais pas encore",
+      "budgetTwo": "€5k-€10k",
+      "budgetThree": "€10k-€20k",
+      "budgetFour": "€20k-€30k",
+      "budgetFive": "€30k-€40k",
+      "budgetSix": ">€40K"
+    },
+    "progressBar": {
+      "headingOne": "Obtenez une consultation technique gratuite et complète.",
+      "headingTwo": "Nous vous fournirons un document de proposition tout compris pour votre projet.",
+      "headingThree": "Nous vous fournirons un document de proposition tout compris pour votre projet.",
+      "subHeadingOne": "Après une discussion sur votre projet, nous vous fournirons une consultation technique complète concernant la pile technologique que nous utilisons et quelle technologie serait la plus adaptée à votre projet.",
+      "subHeadingTwo": "Nous vous fournirons un document de proposition complet comprenant toutes les fonctionnalités, le calendrier, les prix et les moindres détails liés à votre projet une fois que nous l'aurons fermement pris en main.",
+      "subHeadingThree": "Une fois que vous aurez approuvé la proposition et donné le feu vert pour le projet, nous constituerons une équipe d'étoiles pour réaliser votre vision et aller au-delà de vos attentes."
+    },
+
+    "documents": {
+      "headingOne": "Uniquement les documents, images, vidéos, fichiers PDF ou ZIP. Taille maximale 100 Mo",
+      "headingTwo": "Tous les détails et pièces jointes de votre projet sont soumis à",
+      "headingThree": "NDA",
+      "headingFour": "entre les deux parties"
+    },
+
+    "fieldContent": {
+      "fullname": "Nom et prénom",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "country": "Pays",
+      "uploadDocument": "Télécharger un document",
+      "fileName": "Nom de fichier:",
+      "uploadingFile": "Téléchargement du fichier, veuillez patienter :",
+      "descriptionPlaceHolder": "Décrivez votre projet",
+      "submitButton": "Soumettre",
+      "popupText": "Requête soumise avec succès",
+      "popupTextFile": "Fichier téléchargé avec succès"
+    }
+  },
+
+  "navBar": {
+    "mainHeadingOne": "Prestations de service",
+    "mainHeadingTwo": "Solutions",
+    "mainHeadingThree": "les industries",
+    "mainHeadingFour": "À propos de nous",
+    "mainHeadingFive": "Contact",
+    "subHeadingOne": "Solutions d'entreprise",
+    "subHeadingTwo": "Développement web",
+    "subHeadingThree": "Développement d'applications",
+    "subHeadingFour": "Conception UI/UX",
+    "subHeadingFive": "Cloud Computing",
+    "subHeadingSix": "Développement de jeu",
+    "subHeadingSeven": "Développement de la blockchain",
+    "subHeadingEight": "Développement IoT",
+    "subHeadingNine": "Développement IA/ML",
+    "subHeadingTen": "Tous les services"
+  },
   "footer": {
-    "mainHeading": "DevRiser: Elevating Your Project",
-    "follow": "Follow us on",
+    "mainHeading": "DevRiser : élever votre projet",
+    "follow": "Suivez-nous sur",
     "companyDetail": {
-      "company": "Company",
-      "headingOne": "About Us",
+      "company": "Entreprise",
+      "headingOne": "À propos de nous",
       "headingTwo": "Blog",
       "headingThree": "FAQs",
-      "headingFour": "Customer Reviews",
-      "headingFive": "Jobs",
-      "headingSix": "Contact Us"
+      "headingFour": "Avis des clients",
+      "headingFive": "Emplois",
+      "headingSix": "Contactez-nous"
     },
     "servicesDetails": {
-      "services": "Services",
-      "headingOne": "Mobile Development",
-      "headingTwo": "Web Development",
-      "headingThree": "Game Development",
+      "services": "Prestations de service",
+      "headingOne": "Développement d'applications",
+      "headingTwo": "Développement web",
+      "headingThree": "Développement de jeu",
       "headingFour": "Cloud Computing",
-      "headingFive": "AI/ML Development",
-      "headingSix": "Blockchain Development",
-      "headingSeven": "UI/UX Design",
-      "headingEight": "Internet of Things"
+      "headingFive": "Développement IA/ML",
+      "headingSix": "Développement de la blockchain",
+      "headingSeven": "Conception UI/UX",
+      "headingEight": "Développement IoT",
+      "headingNine": "Solutions d'entreprise"
     },
     "industries": {
-      "industries": "Industries",
-      "headingOne": "Market place",
-      "headingTwo": "Financial",
-      "headingThree": "Healthcare",
-      "headingFour": "Media & communication",
-      "headingFive": "Real estate",
-      "headingSix": "Events",
+      "industries": "les industries",
+      "headingOne": "Place du marché",
+      "headingTwo": "Financier",
+      "headingThree": "Soins de santé",
+      "headingFour": "Communication médiatique",
+      "headingFive": "Immobilier",
+      "headingSix": "Événements",
       "headingSeven": "Restaurant",
       "headingEight": "Agriculture",
-      "headingNine": "Media entertainment"
+      "headingNine": "Divertissement médiatique"
     },
     "conversation": {
-      "conversation": "Start a Conversation",
-      "email": "hello@devriser.com",
+      "conversation": "Commencer une conversation",
+      "email": "sales@devriser.com",
       "phone": "+91 123-456-0123",
       "whatsApp": "+91 123-456-0124"
     },
     "copyright": {
-      "heading": "Copyright © 2023. All Rights Reserved."
+      "heading": "Copyright © 2024. Tous droits réservés."
     }
   },
   "esd": {
-    "heroTitle": "Enterprise Solutions Development Services",
-    "heroHeading": "DevRiser, a leading IT service provider, excels in the development of a wide range of enterprise solutions, including CRM, HRM, Accounting, Inventory Management, Marketing, ERP, and more. Our well-defined, industry-standard methodologies ensure high-quality, customized solutions that enhance business efficiency and performance.",
-    "heroButtonOne": "Our Portfolio",
-    "heroButtonTwo": "Contact Sales"
+    "heroTitle": "Services de développement de solutions d'entreprise",
+    "heroHeading": "DevRiser, l'un des principaux fournisseurs de services informatiques, excelle dans le développement d'une large gamme de solutions d'entreprise, notamment CRM, GRH, comptabilité, gestion des stocks, marketing, ERP, etc. Nos méthodologies bien définies et conformes aux normes de l'industrie garantissent des solutions personnalisées de haute qualité qui améliorent l'efficacité et les performances de l'entreprise.",
+    "heroButtonOne": "Notre portfolio",
+    "heroButtonTwo": "Contactez-nous",
+    "section1": {
+      "serviceHeaderTitle": "Nos services de développement et de tests de logiciels",
+      "serviceHeaderDesc": "En tant qu'entreprise autonome de développement et de test de logiciels, DevRiser fournit des services de développement et de test de logiciels sophistiqués et approfondis, soutenus par un personnel dédié, compétent et expérimenté qui se consacre à l'amélioration constante de la qualité.",
+      "webServicesArr": [
+        {
+          "title": "Services de tests d'automatisation",
+          "description": "Nous offrons une attention particulière aux services de tests de logiciels automatisés en réunissant des équipes de personnes qui se tiennent toujours au courant des derniers outils de test et offrent leurs idées à nos estimés clients. Dans le cadre de nos plans de tests et cas de tests",
+          "icon": "AutomationTesting"
+        },
+        {
+          "title": "Développement de logiciels",
+          "description": "Nos services de développement de logiciels d'entreprise fournissent des solutions sur mesure, tirant parti des dernières technologies pour des logiciels évolutifs, sécurisés et innovants. De la conception au déploiement, nous donnons aux entreprises les moyens de réussir sur un marché dynamique.",
+          "icon": "FunctionalEvaluation"
+        },
+        {
+          "title": "Évaluation des performances",
+          "description": "Notre équipe qualifiée de testeurs QA effectue des tests de qualité et analyse le comportement des logiciels sous charge et stress pour garantir des applications sans erreur, fiables et intelligentes. Vous pouvez surmonter des temps de chargement lents et une mauvaise réactivité.",
+          "icon": "PerformanceEvaluation"
+        },
+        {
+          "title": "Évaluation de la convivialité",
+          "description": "Gardez un œil sur le comportement des multiples fonctions exécutées simultanément d’une application. Dans le cadre de nos services, nous examinons attentivement les modèles de comportement des utilisateurs pour détecter très tôt tout problème d'utilisabilité et créer un produit transparent.",
+          "icon": "UsabilityEvaluation"
+        },
+        {
+          "title": "Test de compatibilité",
+          "description": "Découvrez les avantages des tests de compatibilité, qui évaluent minutieusement une application sur plusieurs navigateurs, bases de données, matériel, systèmes d'exploitation, infrastructures de serveur, écrans de résolution et appareils.",
+          "icon": "TestingForCompatibility"
+        },
+        {
+          "title": "Évaluation fonctionnelle",
+          "description": "Les tests fonctionnels garantissent que les exigences utilisateur et les fonctionnalités d'une application sont conformes aux spécifications ; des services de tests fonctionnels de qualité garantissent que votre programme atteint tous ses objectifs.",
+          "icon": "FunctionalEvaluation2"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Services de tests de logiciels étendus",
+      "serviceHeaderDesc": "Nous produisons une solution entièrement optimisée qui conduit à une plus grande efficacité et à une productivité accrue grâce à nos années d’expérience dans l’assurance qualité et les tests de logiciels.",
+      "webServicesArr": [
+        {
+          "title": "Tests d'API",
+          "description": "Nous avons effectué des tests manuels d'API pour SOAP, REST, JASON, XML et d'autres protocoles similaires afin de répondre aux attentes.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "Test d'application",
+          "description": "Optimisez et testez les applications mobiles à l’aide de la bonne combinaison d’outils d’automatisation pour améliorer la productivité globale.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Tests de sécurité Web",
+          "description": "Obtenez une évaluation complète de la sécurité d’un site Web par des spécialistes, quel que soit le type de site Web.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "Test de charge",
+          "description": "dans quelle mesure votre programme fonctionne dans des circonstances de forte demande et de stress.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "Test de performance",
+          "description": "Utilisez des services de tests de performances abordables pour améliorer les performances de votre application.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "Tests manuels",
+          "description": "Utilisez notre expertise en matière de tests manuels pour obtenir des résultats quantifiables et axés sur la qualité.",
+          "icon": "ManualTesting"
+        }
+      ]
+    }
   },
+
+  "uxui": {
+    "heroTitle": "Conception UI/UX",
+    "heroHeading": "Les services de conception UI/UX de DevRiser se démarquent par leurs conceptions numériques intuitives et accrocheuses. Nous nous engageons à élaborer des solutions qui répondent non seulement à vos objectifs commerciaux, mais qui donnent également la priorité aux besoins uniques de vos utilisateurs. Notre équipe utilise une gamme d’approches de conception spécialisées pour garantir une expérience utilisateur véritablement personnalisée et engageante.",
+    "heroButtonOne": "Notre portfolio",
+    "heroButtonTwo": "Contactez-nous",
+    "section1": {
+      "serviceHeaderTitle": "Nos services pour la conception UI/UX",
+      "serviceHeaderDesc": "Notre équipe de designers UX/UX professionnels utilise leur expertise dans l’application d’informations spécifiques à l’industrie et d’outils de conception contemporains pour créer des conceptions à la fois simples et sophistiquées. Voici une liste des services de conception UI/UX proposés par Developer :",
+      "webServicesArr": [
+        {
+          "title": "Conception de site Web personnalisé",
+          "description": "Comprendre divers modèles commerciaux et opérations nous permet de créer des mises en page innovantes avec une architecture d'informations adaptée au thème de l'entreprise, ce qui se traduit par des expériences utilisateur dynamiques et une navigation facile.",
+          "icon": "CustomWebsiteDesign"
+        },
+        {
+          "title": "Conception d'applications mobiles",
+          "description": "Nos services de conception d'applications mobiles hautement dynamiques et créatifs offrent une expérience numérique cohérente sur toutes les plateformes en utilisant des techniques de pointe et les dernières tendances.",
+          "icon": "DesigningMobileApps"
+        },
+        {
+          "title": "Conception d'applications portables",
+          "description": "Les divers objectifs des utilisateurs et le processus d'application sont compris par notre talentueuse équipe de concepteurs d'applications portables. Nous sommes experts dans la production de conceptions immersives pour les applications portables sur toutes les plateformes et toutes les tailles.",
+          "icon": "DesignOfWearableApps"
+        },
+        {
+          "title": "Intégration du front-end",
+          "description": "Notre équipe de spécialistes du développement front-end peut convertir un codage complexe en interfaces utilisateur intéressantes, optimisées et réactives sur tous les appareils et navigateurs Web.",
+          "icon": "IntegratingTheFrontEnd"
+        },
+        {
+          "title": "Applications portables",
+          "description": "Afin de conceptualiser et de décrire le modèle d'interface en ligne et mobile avec l'architecture de l'information, DevRiser aide les clients à créer des conceptions filaires en utilisant nos outils et ressources de conception numérique les plus récents.",
+          "icon": "WearableApps"
+        },
+        {
+          "title": "Audit UI/UX",
+          "description": "Pour évaluer le plus haut niveau de qualité de conception et de mise en page, notre analyste qualité effectue des tests d'utilisabilité approfondis de la résolution de l'écran, de la réactivité, de la compatibilité de la plate-forme et d'autres tests connexes.",
+          "icon": "AuditOfUIUX"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Notre conception d'abord - L'approche découverte d'abord",
+      "serviceHeaderDesc": "Adoptez l'innovation avec notre approche « Design First - Discovery First », garantissant des solutions transformatrices grâce à une conception réfléchie et à une découverte stratégique.",
+      "webServicesArr": [
+        {
+          "title": "Conception pour l'expérience utilisateur",
+          "icon": "DesignForUserExperience"
+        },
+        {
+          "title": "Graphiques supérieurs",
+          "icon": "SuperiorGraphics"
+        },
+        {
+          "title": "Test de convivialité de l'interface utilisateur UX sans friction",
+          "icon": "TestingUsabilityUIFrictionlessUX"
+        },
+        {
+          "title": "Prototypage haute définition",
+          "icon": "HighDefinitionPrototyping"
+        },
+        {
+          "title": "Visualisation des concepts",
+          "icon": "VisualizationOfConcepts"
+        },
+        {
+          "title": "Conception de l'interface utilisateur de l'appareil",
+          "icon": "DeviceUIDesign"
+        },
+        {
+          "title": "Conception Web et mobile",
+          "icon": "WebAndMobileDesign"
+        },
+        {
+          "title": "Conception de marque",
+          "icon": "BrandingDesign"
+        }
+      ]
+    },
+    "section3": {
+      "title": "Recherchez-vous d’autres services ?",
+      "description": "Avez-vous une suggestion d'application? Nos services de développement d'applications peuvent vous aider. Avez-vous une suggestion d'application ? Nos consultants en développement d'applications ont une suggestion",
+      "point1": "Développement IA/ML",
+      "point2": "Conception UI/UX",
+      "point3": "Développement web",
+      "point4": "Développement de jeu",
+      "btnText": "Explorez tous les services"
+    },
+    "section4": {
+      "title": "Pourquoi opter pour les services UI/UX de DevRiser ?",
+      "description": "Nous avons dix ans d’expertise combinée dans le développement de services de conception UI/UX. Voici quelques détails supplémentaires sur les raisons pour lesquelles nous sommes votre entreprise de services de conception de référence.",
+      "points": [
+        {
+          "title": "Transparent",
+          "titleTwo": "Modal de travail",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "Dédié",
+          "titleTwo": "Chef de projet",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "Élevé",
+          "titleTwo": "Expérience utilisateur",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "Agile",
+          "titleTwo": "Cycle de modèle",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+    "section5": {
+      "title": "Méthodologie de conception d'interface utilisateur",
+      "description": "Pour produire des conceptions d'interface utilisateur immersives basées sur un wireframing solide, nos esprits créatifs adaptent les tendances de conception, les techniques et l'approche spécifique au client les plus récentes :",
+      "methodologies": [
+        {
+          "title": "Interagir avec les wireframes",
+          "subTitle": "Aux fins des prototypes filaires, notre équipe de conception hautement qualifiée et expérimentée collabore étroitement avec les clients pour comprendre les opérations commerciales, les publics cibles et le domaine industriel."
+        },
+        {
+          "title": "Conceptions de pixels parfaites",
+          "subTitle": "Sur la base du wireframe, nos spécialistes mettent en œuvre des conceptions d'interface utilisateur (UI) de premier ordre et attrayantes qui répondent aux objectifs commerciaux et attirent les utilisateurs cibles en utilisant les technologies et ressources frontales appropriées."
+        }
+      ]
+    },
+    "section6": {
+      "title": "Services de conception UI/UX",
+      "services": [
+        {
+          "title": "Étude de marché et d'utilisateurs",
+          "points": [
+            "QUALITATIVE RESEARCH",
+            "QUANTITATIVE RESEARCH",
+            "HEURISTIC RESEARCH",
+            "COMPETITOR ANALYSIS",
+            "USABILITY TESTING"
+          ]
+        },
+        {
+          "title": "Product Vision & Strategy",
+          "points": [
+            "DESIGN THINKING",
+            "GROWTH STRATEGY",
+            "PRODUCT ROADMAP",
+            "DATA VISUALIZATION",
+            "USER ENGAGEMENT"
+          ]
+        },
+        {
+          "title": "UX/UI Design",
+          "points": [
+            "INFORMATION ARCHITECTURE",
+            "USER INTERFACE",
+            "INTERACTION DESIGN",
+            "RAPID PROTOTYPING",
+            "ILLUSTRATIONS & ICONOGRAPHY"
+          ]
+        }
+      ]
+    },
+    "section7": {
+      "title": "UI/UX Design Services",
+      "description": "According to project use cases and industry verticals at DevRiser, the following list of contemporary blockchain development technologies and platforms is used:"
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+
+  "cc": {
+    "heroTitle": "Services d'informatique en nuage",
+    "heroHeading": "DevRiser propose des solutions informatiques cloud au niveau de l'entreprise qui couvrent le monde entier, spécialisées dans les services de cloud computing sur mesure. Notre expertise permet aux organisations d’augmenter leur productivité, de réduire leurs coûts et d’atteindre l’évolutivité grâce à nos solutions cloud complètes.",
+    "heroButtonOne": "Notre portfolio",
+    "heroButtonTwo": "Contactez-nous",
+    "section1": {
+      "serviceHeaderTitle": "Nos services pour le Cloud Computing",
+      "serviceHeaderDesc": "En tant que société de développement de logiciels autonome, DevRiser fournit des services de cloud computing sophistiqués et complets, soutenus par un personnel dédié, compétent et expérimenté qui se consacre à l'amélioration constante de la qualité.",
+      "webServicesArr": [
+        {
+          "title": "Architecture pour les solutions cloud",
+          "description": "L'utilisation de la puissance des solutions de cloud computing et la suppression de la dépendance à l'égard de l'architecture réseau ou de l'infrastructure de serveurs sur site sont rendues possibles grâce à nos services d'architecture de solutions cloud.",
+          "icon": "ArchitectureForCloudSolutions"
+        },
+        {
+          "title": "Services pour la migration vers le cloud",
+          "description": "Nos services de migration vers le cloud permettent aux entreprises d'entreprendre une transformation numérique en utilisant la stratégie, l'analyse et l'exécution de migration vers le cloud les plus efficaces, qui déterminent la solution optimale pour le service basé sur le cloud.",
+          "icon": "ServicesForCloudMigration"
+        },
+        {
+          "title": "Développement d'applications prêtes pour le cloud",
+          "description": "Nous proposons des services complets de développement d'applications cloud personnalisées, soutenus par les outils et le savoir-faire nécessaires pour les installer avec succès dans des services cloud publics ou privés.",
+          "icon": "DevelopmentOfCloudReadyApps"
+        },
+        {
+          "title": "Sécurité du cloud et contrôle des risques",
+          "description": "Le plus haut niveau de sécurité pour les applications déployées dans le cloud est garanti par les services fiables d’audit architectural, de protection des données, d’évaluation des risques et de gestion du cloud computing de DevRiser.",
+          "icon": "CloudSecurityAndRiskControl"
+        },
+        {
+          "title": "DevOps",
+          "description": "Notre groupe collectif de professionnels du cloud computing adhère aux méthodologies et ressources DevOps pour intégrer des applications cloud plus efficaces, plus sûres et standardisées.",
+          "icon": "DevOps"
+        },
+        {
+          "title": "Prise en charge et surveillance du cloud",
+          "description": "Nous fournissons des applications cloud complètes et une surveillance continue pour mettre en œuvre des plans d'amélioration pour l'optimisation de l'infrastructure et la réduction des coûts. Services de gestion de la sécurité des données des applications et de la sauvegarde à distance après sinistre.",
+          "icon": "CloudSupportAndMonitoring"
+        },
+        {
+          "title": "Informatique sans serveurs",
+          "description": "Permettez-nous de créer vos applications cloud natives critiques qui s'exécutent sur une plate-forme de cloud public sécurisée avec un modèle d'abonnement à des services automatisés et flexibles, avec paiement à l'utilisation.",
+          "icon": "ComputingWithoutServers"
+        },
+        {
+          "title": "Prise en charge exclusive du cloud",
+          "description": "Maintenez vos horaires chargés tout en déléguant toutes les préoccupations liées à la gestion de vos solutions de cloud computing à nos fournisseurs de services cloud gérés, qui garantiront la disponibilité continue de vos solutions de cloud computing.",
+          "icon": "ExclusiveCloudSupport"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Technologies que nous utilisons pour le cloud computing",
+      "serviceHeaderDesc": "La pile technologique pour le cloud computing qui nous permet de traduire de manière créative des idées logicielles en projets réels est présentée ci-dessous.",
+      "webServicesArr": []
+    },
+    "section3": {
+      "title": "Recherchez-vous d’autres services ?",
+      "description": "Avez-vous une suggestion d'application? Nos services de développement d'applications peuvent vous aider. Avez-vous une suggestion d'application ? Nos consultants en développement d'applications ont une suggestion",
+      "point1": "Développement IA/ML",
+      "point2": "Conception UI/UX",
+      "point3": "Développement web",
+      "point4": "Développement de jeu",
+      "btnText": "Explore all Services "
+    },
+    "section4": {
+      "title": "Pourquoi opter pour les services de cloud computing de DevRiser ?",
+      "description": "Nous avons cinq années d’expertise combinée dans le cloud computing. Voici quelques détails supplémentaires sur les raisons pour lesquelles nous sommes votre société de développement d'applications mobiles de référence.",
+      "points": [
+        {
+          "title": "Transparence",
+          "titleTwo": "Modal de travail",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "Contact direct",
+          "titleTwo": "Avec un membre de l'équipe",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "Élevé",
+          "titleTwo": "Expérience utilisateur",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "Engagement flexible",
+          "titleTwo": "Cycle de modèle",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+
   "appDevelopment": {
-    "mainHeading": "App Development",
-    "subHeading": "DevRiser delivers a comprehensive array of mobile app development services, encompassing cross-platform, Android, and iOS app development. We're your trusted partner in propelling business growth and forging a unique brand identity. Our specialists craft apps tailored to industry requirements and corporate goals.",
-    "buttonTextOne": "Our Portfolio",
-    "buttonTextTwo": "Contact Sales",
+    "mainHeading": "Développement d'applications",
+    "subHeading": "DevRiser propose une gamme complète de services de développement d'applications mobiles, englobant le développement d'applications multiplateformes, Android et iOS. Nous sommes votre partenaire de confiance pour propulser la croissance de votre entreprise et forger une identité de marque unique. Nos spécialistes créent des applications adaptées aux exigences du secteur et aux objectifs de l'entreprise.",
+    "buttonTextOne": "Notre portfolio",
+    "buttonTextTwo": "Contactez-nous",
     "sectionOne": {
-      "appHeading": "Our App Development Services",
-      "appSubHeading": "Transform your app concept into a reality, emphasizing rich user experiences and robust app performance, with our end-to-end mobile app development services. In this mobile-first era, we're your partners in setting new industry standards for your company.",
+      "appHeading": "Nos services de développement d'applications",
+      "appSubHeading": "Transformez votre concept d'application en réalité, en mettant l'accent sur des expériences utilisateur riches et des performances d'application robustes, grâce à nos services de développement d'applications mobiles de bout en bout. À l’ère du mobile, nous sommes vos partenaires pour établir de nouvelles normes industrielles pour votre entreprise.",
       "appServiceArr": [
         {
-          "title": "Application Development Consultancy",
-          "description": "Our application development consultancy services are designed to help you refine your vision. We offer guidance in defining essential features, choosing the optimal technology stack, and crafting a comprehensive plan to kickstart your app development journey."
+          "title": "Conseil en développement d'applications",
+          "description": "Nos services de conseil en développement d’applications sont conçus pour vous aider à affiner votre vision. Nous vous proposons des conseils pour définir les fonctionnalités essentielles, choisir la pile technologique optimale et élaborer un plan complet pour démarrer votre parcours de développement d'applications.",
+          "icon": "ApplicationDevelopmentConsultancy"
         },
         {
-          "title": "UI/UX Design for Mobile Apps",
-          "description": "Elevate user interactions through enhanced app design. Our expertise lies in crafting visually captivating, aesthetically pleasing, and seamlessly navigable mobile app interfaces, ensuring a superior user experience that resonates with your audience."
+          "title": "Conception UI/UX pour applications mobiles",
+          "description": "Améliorez les interactions des utilisateurs grâce à une conception d’application améliorée. Notre expertise réside dans la création d'interfaces d'applications mobiles visuellement captivantes, esthétiques et parfaitement navigables, garantissant une expérience utilisateur supérieure qui résonne auprès de votre public.",
+          "icon": "UIUXDesignMobileApps"
         },
         {
-          "title": "Custom Mobile Application Development",
-          "description": "We specialize in turning your unique mobile app development concept into a reality, infusing it with innovative features to create a one-of-a-kind solution. Whether it's a business-driven or community-centric custom mobile app, we're here to make your vision stand out."
+          "title": "Développement d'applications mobiles personnalisées",
+          "description": "Nous sommes spécialisés dans la transformation de votre concept unique de développement d'applications mobiles en réalité, en lui insufflant des fonctionnalités innovantes pour créer une solution unique en son genre. Qu'il s'agisse d'une application mobile personnalisée axée sur l'entreprise ou centrée sur la communauté, nous sommes là pour faire ressortir votre vision.",
+          "icon": "CustomMobileApplicationDevelopment"
         },
         {
-          "title": "Enterprise Mobile App Development",
-          "description": "Enhance your business processes with our enterprise mobile app development solutions, integrating industry-leading innovations and third-party connectors to boost operational efficiency and productivity."
+          "title": "Développement d'applications mobiles d'entreprise",
+          "description": "Améliorez vos processus métier avec nos solutions de développement d'applications mobiles d'entreprise, intégrant des innovations de pointe et des connecteurs tiers pour améliorer l'efficacité opérationnelle et la productivité.",
+          "icon": "EnterpriseMobileAppDevelopment"
         },
         {
-          "title": "Mobile Game Development",
-          "description": "Our team of game designers and developers brings a decade of collective experience to craft captivating games across both native and cross-platform platforms, ensuring immersive entertainment for your audience."
+          "title": "Développement de jeux mobiles",
+          "description": "Notre équipe de concepteurs et de développeurs de jeux apporte une décennie d'expérience collective pour créer des jeux captivants sur des plateformes natives et multiplateformes, garantissant ainsi un divertissement immersif à votre public.",
+          "icon": "MobileGameDevelopment"
         },
         {
-          "title": "Support and Maintenance of Apps",
-          "description": "Unlock the potential of our post-development app maintenance and support services, ensuring your app's continued excellence through version upgrades post-launch. We're dedicated to delivering a seamless, crash-free performance."
+          "title": "Support et maintenance des applications",
+          "description": "Libérez le potentiel de nos services de maintenance et d'assistance après développement d'applications, en garantissant l'excellence continue de votre application grâce aux mises à niveau de version après le lancement. Nous nous engageons à offrir des performances fluides et sans crash.",
+          "icon": "SupportMaintenanceApps"
         }
       ]
     },
     "sectionTwo": {
-      "mainHeading": "Technologies & Tools Used In App Development",
-      "subHeading": "Here is a summary of the technology and tools for app development that allow us to creatively translate our Mobile Application concepts into actual projects."
+      "mainHeading": "Technologies et outils utilisés dans le développement d'applications",
+      "subHeading": "Voici un résumé de la technologie et des outils de développement d'applications qui nous permettent de traduire de manière créative nos concepts d'applications mobiles en projets réels."
+    },
+    "sectionThree": {
+      "mainHeading": "Solutions de produits numériques pour différentes industries",
+      "cards": [
+        {
+          "mainPoint": "Sports",
+          "subPoints": [
+            "Sports Training and Coaching Apps",
+            "Sports Live Streaming Solutions",
+            "Fantasy Sports Games Development",
+            "Sports Betting Platforms",
+            "AR/VR-based Game Development",
+            "Facilities Management Solutions"
+          ]
+        },
+
+        {
+          "mainPoint": "Fintech",
+          "subPoints": [
+            "Digital Payment Systems",
+            "Custom Digital Banking Solutions",
+            "Mobile Payment App Development",
+            "Insurance App Development",
+            "Wealth/Finance Management Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Entertainment",
+          "subPoints": [
+            "Storyboarding and Collaboration Solutions",
+            "Video Streaming Solutions",
+            "Live Event Ticketing Platforms",
+            "ML Solution for Large Data",
+            "VFX Solutions"
+          ]
+        },
+        {
+          "mainPoint": "E-Commerce",
+          "subPoints": [
+            "AR-based eCommerce solutions",
+            "Grocery E-Commerce Apps",
+            "End to End Marketplace",
+            "Custom eCommerce Store Development"
+          ]
+        },
+        {
+          "mainPoint": "Logistics",
+          "subPoints": [
+            "Delivery Management",
+            "Shipping Logistics Management",
+            "Fleet Management Software",
+            "Inventory Management Software",
+            "Telematics Software Development"
+          ]
+        },
+        {
+          "mainPoint": "Real Estate",
+          "subPoints": [
+            "MLS Solutions for Real Estate",
+            "Virtual Property Tours",
+            "Property Valuation Tools",
+            "Real Estate Investment Platforms",
+            "Property Management Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Healthcare",
+          "subPoints": [
+            "Telemedicine Solutions",
+            "Electronic Health Records",
+            "Practice Management Systems",
+            "Clinical  Software Solutions",
+            "Medical Device Integrations Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Business",
+          "subPoints": [
+            "Sales & Marketing",
+            "Employee Management",
+            "HR Portals",
+            "Cloud Solutions",
+            "Business Process Automation Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Travel",
+          "subPoints": [
+            "Travel Planning Solution",
+            "Itinerary Management Platform",
+            "Ticket & Hotel Booking Solutions",
+            "Car Booking Solutions",
+            "Travel Loyalty & Rewards Solutions"
+          ]
+        },
+        {
+          "mainPoint": "Education",
+          "subPoints": [
+            "Education App Development",
+            "E2C E-leaming App Development",
+            "Learning Management System",
+            "Virtual Classrooms & Video Conferencing",
+            "Online Exam Management System"
+          ]
+        },
+        {
+          "mainPoint": "Fitness",
+          "subPoints": [
+            "Online Workout Coach Apps",
+            "Gym Management Solutions",
+            "Wellness Apps",
+            "Fitness Tracker (with wearable integration)",
+            "Online Fitness Supplement Store Development"
+          ]
+        },
+        {
+          "mainPoint": "Social Networking",
+          "subPoints": [
+            "Community App Development",
+            "Dating & Matrimony App Development",
+            "Social Networking App Development",
+            "Messaging App Development",
+            "Media Sharing App Development"
+          ]
+        },
+        {
+          "mainPoint": "Restaurant",
+          "subPoints": [
+            "Food Delivery App Development",
+            "Cloud Kitchen Delivery Solutions",
+            "Grocery Delivery Solutions",
+            "Direct delivery Solutions",
+            "Restaurant PoS Software Development"
+          ]
+        }
+      ]
     },
     "sectionFour": {
-      "title": "Are you Looking for other Services?",
-      "description": "Do you have a suggestion for an app? Our app development  services may assist you Do you have a suggestion for an app? Our app development consulting  have a suggestion",
-      "point1": "JavaScript Development",
-      "point2": "Hire UI UX Designer",
-      "point3": "Web Development",
-      "point4": "Hire Dedicated Developers",
-      "btnText": "Explore all Services "
+      "title": "Recherchez-vous d’autres services ?",
+      "description": "Avez-vous une suggestion d'application? Nos services de développement d'applications peuvent vous aider. Avez-vous une suggestion d'application ? Nos consultants en développement d'applications ont une suggestion",
+      "point1": "Développement de IA/ML",
+      "point2": "UI/UX Design",
+      "point3": "Développement de Web",
+      "point4": "Développement de jeu",
+      "btnText": "Explorez tous les services"
     },
     "sectionFive": {
-      "mainHeading": "Why Go with DevRiser’s App Development Services?",
-      "subHeading": "We have ten years of combined expertise developing both native and cross-platform platforms. Here are some further details on why we are your go-to mobile app development company",
+      "mainHeading": "Pourquoi opter pour les services de développement d'applications de DevRiser ?",
+      "subHeading": "Nous avons dix ans d’expertise combinée dans le développement de plateformes natives et multiplateformes. Voici quelques détails supplémentaires sur les raisons pour lesquelles nous sommes votre société de développement d'applications mobiles de référence.",
       "cardHeadingOne": "Transparency Work Modal",
       "cardHeadingTwo": "Direct Contact With Team Member",
       "cardHeadingThree": "Uplifted User Experience",
@@ -178,72 +1181,219 @@
     }
   },
   "blockChainDevelopment": {
-    "mainHeading": "Blockchain Development",
-    "subHeading": "DevRiser is your trusted blockchain development partner, renowned for full-cycle blockchain application development services powered by cutting-edge technology. We deliver solutions that empower you to harness the potential of a decentralized ecosystem to its fullest.",
-    "buttonTextOne": "Our Portfolio",
-    "buttonTextTwo": "Contact Sales",
+    "mainHeading": "Développement de la blockchain",
+    "subHeading": "DevRiser est votre partenaire de développement blockchain de confiance, réputé pour ses services de développement d'applications blockchain à cycle complet optimisés par une technologie de pointe. Nous proposons des solutions qui vous permettent d’exploiter pleinement le potentiel d’un écosystème décentralisé.",
+    "buttonTextOne": "Notre portfolio",
+    "buttonTextTwo": "Contactez-nous",
     "sectionOne": {
-      "appHeading": "Our Services for Blockchain Development",
-      "appSubHeading": "As the top custom blockchain development firm for clients worldwide, we have significantly advanced the field over the years. For the following variety of services, we have employed creative blockchain application developers who can serve the main types of company domains:",
+      "appHeading": "Nos services pour le développement de la blockchain",
+      "appSubHeading": "En tant que première société de développement de blockchain personnalisée pour des clients du monde entier, nous avons considérablement progressé dans ce domaine au fil des ans. Pour la variété de services suivante, nous avons employé des développeurs d'applications blockchain créatifs qui peuvent servir les principaux types de domaines d'entreprise :",
       "appServiceArr": [
         {
-          "title": "Development of Smart Contracts",
-          "description": "The client is assisted by our dedicated Blockchain specialist team at DevRiser in getting the time and advice they require, as well as recommendations based on the requirements of the project and the client's business needs.",
+          "title": "Développement de contrats intelligents",
+          "description": "Le client est assisté par notre équipe de spécialistes Blockchain dédiée chez DevRiser pour obtenir le temps et les conseils dont il a besoin, ainsi que des recommandations basées sur les exigences du projet et les besoins commerciaux du client.",
           "icon": "DevelopmentOfSmartContracts"
         },
         {
-          "title": "Development of Blockchain Apps",
-          "description": "The way your company interacts with customers will alter as a result of the competent machine learning solutions integrated by our skilled and experienced team of Blockchain development professionals.",
+          "title": "Développement d'applications Blockchain",
+          "description": "La façon dont votre entreprise interagit avec les clients changera grâce aux solutions d'apprentissage automatique compétentes intégrées par notre équipe compétente et expérimentée de professionnels du développement Blockchain.",
           "icon": "DevelopmentOfBlockchainApps"
         },
         {
-          "title": "End-to-End Apps Solutions",
-          "description": "Our Blockchain specialists provide end-to-end development solutions, from ideation, planning, to programming, and releasing the project, to assist you maximize ROI and get an advantage over your competitors.",
+          "title": "Solutions d'applications de bout en bout",
+          "description": "Nos spécialistes Blockchain fournissent des solutions de développement de bout en bout, depuis l'idéation, la planification, la programmation et la publication du projet, pour vous aider à maximiser le retour sur investissement et à obtenir un avantage sur vos concurrents.",
           "icon": "EndToEndAppsSolutions"
         },
         {
-          "title": "Crypto Wallet & Exchange Development",
-          "description": "We are known as the top Cryptocurrency Development Company, assisting businesses in developing feature-rich, responsive, and secure crypto wallet apps that allow for the cross-chain exchange of digital assets and cryptocurrencies.",
+          "title": "Développement de portefeuilles et d'échanges cryptographiques",
+          "description": "Nous sommes connus comme la principale société de développement de crypto-monnaies, aidant les entreprises à développer des applications de portefeuille crypto riches en fonctionnalités, réactives et sécurisées qui permettent l'échange inter-chaînes d'actifs numériques et de crypto-monnaies.",
           "icon": "CryptoWalletExchangeDevelopment"
+        }
+      ]
+    },
+    "section1": {
+      "mainHeading": "Technologies que nous utilisons pour le développement de la blockchain",
+      "subHeading": "La pile technologique pour le développement de la blockchain qui nous permet de traduire de manière créative les idées logicielles en applications et réseaux décentralisés."
+    }
+  },
+
+  "gd": {
+    "heroTitle": "Développement de jeu",
+    "heroHeading": "DevRiser est une société de développement de jeux de premier plan, connue pour créer des applications de jeux 2D et 3D attrayantes sur les plateformes de bureau, iOS et Android. Forts de notre expertise Unity et Unreal Engine, nous concevons à la fois des jeux vidéo originaux et des expériences AR/VR immersives.",
+    "heroButtonOne": "Notre portfolio",
+    "heroButtonTwo": "Contactez-nous",
+    "section1": {
+      "serviceHeaderTitle": "Nos services de développement d'applications Web",
+      "serviceHeaderDesc": "Nous avons de l'expérience dans le développement de logiciels spécialisés et nous utilisons un large éventail de technologies Web de pointe pour créer des sites Web et des applications Web spécifiquement adaptés aux besoins de divers secteurs d'activité. Voici une liste des services de développement d'applications Web que nous proposons :",
+      "webServicesArr": [
+        {
+          "title": "Développement de jeux mobiles",
+          "description": "Nos créateurs de jeux mobiles créatifs peuvent créer des jeux Android et iOS avec des graphismes convaincants, des API intégrées et des fonctionnalités de premier ordre compatibles avec les principaux smartphones.",
+          "icon": "MobileGameDevelopment"
+        },
+        {
+          "title": "Développement de jeux fantastiques",
+          "description": "Nous avons créé et déployé des jeux de sports fantastiques pour les entreprises du monde entier. Pour produire des jeux fantastiques imaginatifs et lucratifs avec des designs distinctifs et des fonctionnalités contemporaines, employez des développeurs de jeux talentueux..",
+          "icon": "FantasyGameDevelopment"
+        },
+        {
+          "title": "Développement de jeux 2D et 3D",
+          "description": "Nous avons créé et déployé des jeux de sports fantastiques pour les entreprises du monde entier. Pour produire des jeux fantastiques imaginatifs et lucratifs avec des designs distinctifs et des fonctionnalités contemporaines, employez des développeurs de jeux talentueux.",
+          "icon": "TwoDAnd3DGameDevelopment"
+        },
+        {
+          "title": "Développement de jeux AR et VR",
+          "description": "Options de production de jeux AR/VR comprenant des jeux conceptuels, la création d'actifs et l'animation de personnages, nos professionnels vous aident à libérer la puissance des dernières technologies de jeu.",
+          "icon": "ARAndVRGameDevelopment"
+        },
+        {
+          "title": "Jeux HTML5",
+          "description": "Nous fournissons des services de développement de jeux HTML5 de bout en bout pour une variété de genres tels que les cartes, l'arcade, l'aventure et les puzzles, qui sont pris en charge par des API audio et des graphiques 2D/3D.",
+          "icon": "HTML5Games"
+        },
+        {
+          "title": "Développement de jeux NFT",
+          "description": "Nous aidons nos clients à développer des jeux NFT de haute qualité dotés de fonctionnalités attrayantes. Les développeurs de jeux NFT possèdent des compétences démontrables dans le développement de plates-formes de jeux NFT fiables, sécurisées et solides pour soutenir la croissance des entreprises.",
+          "icon": "NFTGameDevelopment"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "Wide-Ranging Software Testing Services",
+      "serviceHeaderDesc": "We produce a thoroughly optimized solution that leads to greater effectiveness and increased productivity thanks to our years of experience in software quality assurance and testing.",
+      "webServicesArr": [
+        {
+          "title": "API Testing",
+          "description": "We have been undertaking manual API testing for SOAP, REST, JASON, XML, and other similar protocols in order to meet expectations.",
+          "icon": "APITesting"
+        },
+        {
+          "title": "App Testing",
+          "description": "Optimize and test mobile apps using the correct mix of automation tools to improve overall productivity.",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Web Security Testing",
+          "description": "Get a full website security assessment from specialists, regardless of the type of website.",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "Load Testing",
+          "description": "how well your program works under high demand and stress circumstances.",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "Performance Testing",
+          "description": "Utilize services for performance testing that are affordable to boost the performance of your application.",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "Manual Testing",
+          "description": "Utilize our manual testing expertise to achieve quantifiable, quality-driven results.",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "section7": {
+      "title": "Technologies que nous utilisons pour le développement de jeux",
+      "description": "Technology Used in Game Development The most recent design tools and cutting-edge game development platforms used at Developer are listed below: Adobe Creative Suite"
+    },
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    },
+    "faq2": {
+      "faqTitle": "Notre méthodologie de développement de jeux",
+      "faqDisc": "En tant que société de développement de jeux de premier plan, DevRiser utilise des processus et des outils de développement conformes aux normes de l'industrie pour produire des jeux mobiles sur mesure. Nous publions des jeux divertissants prenant en charge la plupart des appareils et des plates-formes, des jeux solo aux jeux multijoueurs avec des graphismes 2D ou 3D.",
+      "faqList": [
+        {
+          "headerText": "Évaluation du concept",
+          "description": "Nous collaborons étroitement avec nos clients pour comprendre pleinement le concept, l'idée et le type de jeu. Pour choisir la plateforme, la conception, le marché cible, la technologie, les attentes commerciales et le budget, notre équipe marketing effectue une analyse des exigences pour un engagement client approfondi."
+        },
+        {
+          "headerText": "Planification",
+          "description": "Lors de la phase de planification, notre équipe d'experts affine la portée du projet, en définissant les jalons, les échéanciers et les besoins en ressources. La planification stratégique garantit une base solide pour le processus de développement de jeux, en alignant les objectifs sur les attentes des clients."
+        },
+        {
+          "headerText": "Conception",
+          "description": "Nos concepteurs créatifs donnent vie au jeu à ce stade. Des personnages et environnements aux interfaces utilisateur, chaque élément est méticuleusement conçu. Nous accordons la priorité à un design engageant et immersif qui résonne auprès du public cible et s'aligne sur la vision du jeu."
+        },
+        {
+          "headerText": "Développement",
+          "description": "La phase de développement voit notre équipe qualifiée transformer les concepts et les conceptions en un jeu fonctionnel. Grâce à des méthodologies de développement agiles, nous garantissons une progression itérative, permettant un retour continu des clients et un affinement tout au long du parcours de développement."
+        },
+        {
+          "headerText": "Essai",
+          "description": "Des tests rigoureux sont primordiaux pour offrir une expérience de jeu irréprochable. Notre équipe de test dédiée évalue minutieusement chaque aspect du jeu, identifiant et résolvant tout bug ou problème de performances. Cette étape garantit un produit soigné et de haute qualité avant le lancement."
+        },
+        {
+          "headerText": "Lancement",
+          "description": "La phase de lancement marque le point culminant de notre processus méticuleux. Nous coordonnons une version transparente, en utilisant des efforts de marketing stratégiques pour maximiser la visibilité. Après le lancement, nous restons déterminés à surveiller et à résoudre tout problème post-lancement, garantissant ainsi une présence réussie et durable sur le marché du jeu."
         }
       ]
     }
   },
+
   "webdev": {},
   "aboutUs": {
-    "mainHeading": "About Us",
-    "subHeading": "DevRiser is a distinguished global hub for software innovation and services, Anchored in unwavering human values. We passionately uphold the significance of the six core pillars: Innovation, Quality, Collaboration, Agility, Integrity, and Transparency. Our relentless dedication to these principles not only drives growth but also fosters an equitable and harmonious environment for our valued employees and esteemed clients, ensuring mutual prosperity & fulfillment.",
-    "buttonText": "Get Started",
+    "mainHeading": "À propos de nous",
+    "subHeading": "DevRiser est une plateforme mondiale distinguée pour l'innovation logicielle et les services, ancrée dans des valeurs humaines inébranlables. Nous défendons avec passion l’importance des six piliers fondamentaux : innovation, qualité, collaboration, agilité, intégrité et transparence. Notre dévouement incessant à ces principes stimule non seulement la croissance, mais favorise également un environnement équitable et harmonieux pour nos précieux employés et clients estimés, garantissant la prospérité et l'épanouissement mutuels.",
+    "buttonText": "Commencer",
     "coreValues": {
       "heading": "Innovation",
-      "subHeading": "Creative Breakthrough",
-      "headingOne": "Quality",
-      "subHeadingOne": "Exceptional Standard",
+      "subHeading": "Percée créative",
+      "headingOne": "Qualité",
+      "subHeadingOne": "Norme exceptionnelle",
       "headingTwo": "Collaboration",
-      "subHeadingTwo": "Team Harmony",
-      "headingThree": "Agility",
-      "subHeadingThree": "Swift Adaptation",
-      "headingFour": "Integrity",
-      "subHeadingFour": "Honest Character",
+      "subHeadingTwo": "Harmonie d'équipe",
+      "headingThree": "Agilité",
+      "subHeadingThree": "Adaptation rapide",
+      "headingFour": "Intégrité",
+      "subHeadingFour": "Caractère honnête",
       "headingFive": "Transparency",
-      "subHeadingFive": "Clear Communication"
+      "subHeadingFive": "Communication claire"
     },
     "ourVision": {
-      "mainHeading": "Our Vision",
-      "subHeading": "DevRiser aspires to shape an innovative future driven by our unwavering commitment to principles like innovation, quality, collaboration, agility, integrity, and transparency. Our mission is to lead transformative advancements, instigating positive change, and leaving an enduring legacy as pioneers of purposeful innovation."
+      "mainHeading": "Notre vision",
+      "subHeading": "DevRiser aspire à façonner un avenir innovant motivé par notre engagement inébranlable envers des principes tels que l'innovation, la qualité, la collaboration, l'agilité, l'intégrité et la transparence. Notre mission est de diriger des progrès transformateurs, de susciter des changements positifs et de laisser un héritage durable en tant que pionniers de l’innovation ciblée."
     },
     "ourMission": {
-      "mainHeading": "Our Mission",
-      "subHeading": "At DevRiser, our mission is a relentless pursuit of positive change. We achieve this by fostering innovation, upholding unwavering quality, nurturing collaborative partnerships, embracing agility, demonstrating integrity, and fostering transparent relationships. Our goal is to reshape industries, unlock technology's full potential, and create a lasting impact, always staying true to our unwavering core principles."
+      "mainHeading": "Notre mission",
+      "subHeading": "Chez DevRiser, notre mission est une recherche incessante de changement positif. Nous y parvenons en favorisant l’innovation, en maintenant une qualité inébranlable, en entretenant des partenariats collaboratifs, en adoptant l’agilité, en faisant preuve d’intégrité et en favorisant des relations transparentes. Notre objectif est de remodeler les industries, de libérer tout le potentiel de la technologie et de créer un impact durable, en restant toujours fidèles à nos principes fondamentaux inébranlables."
     },
 
     "thirdSection": {
-      "headingOne": "Customer-centered Approach",
-      "subHeadingOne": "Our commitment to a customer-centered approach extends beyond serving immediate clients. As a leading software development company, we prioritize understanding your company's unique needs, listening to your ideas, and considering the perspectives and pain points of your end-users. Your success is our ultimate goal.",
-      "headingTwo": "Effective Collaboration",
-      "subHeadingTwo": "Effective collaboration hinges on clear communication. We believe in proactive and open communication, even if it may seem abundant, as it significantly influences our clients' success. We employ platforms and mediums that ensure efficiency, transparency, and precision when our development team collaborates with clients.",
-      "headingThree": "Quality Delivered in Time",
-      "subHeadingThree": "With extensive experience in IT software development, we've curated a robust collection of internal frameworks and top-notch infrastructure. This ensures our consistent delivery of top-quality solutions. Our years of expertise enable us to replicate success and evade pitfalls. We are dedicated to maintaining the highest standards of quality."
+      "headingOne": "Approche centrée sur le client",
+      "subHeadingOne": "Notre engagement envers une approche centrée sur le client va au-delà du service aux clients immédiats. En tant que leader du développement de logiciels, nous accordons la priorité à la compréhension des besoins uniques de votre entreprise, à l'écoute de vos idées et à la prise en compte des points de vue et des problèmes de vos utilisateurs finaux. Votre réussite est notre objectif ultime.",
+      "headingTwo": "Collaboration efficace",
+      "subHeadingTwo": "Une collaboration efficace repose sur une communication claire. Nous croyons en une communication proactive et ouverte, même si elle peut paraître abondante, car elle influence considérablement le succès de nos clients. Nous utilisons des plates-formes et des supports qui garantissent l'efficacité, la transparence et la précision lorsque notre équipe de développement collabore avec les clients.",
+      "headingThree": "Qualité livrée dans les délais",
+      "subHeadingThree": "Forts d'une vaste expérience dans le développement de logiciels informatiques, nous avons organisé une solide collection de cadres internes et d'infrastructures de premier ordre. Cela garantit notre fourniture constante de solutions de qualité supérieure. Nos années d’expertise nous permettent de reproduire le succès et d’éviter les pièges. Nous nous engageons à maintenir les normes de qualité les plus élevées."
     }
   }
 }

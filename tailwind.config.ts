@@ -58,6 +58,7 @@ const config: Config = {
         "blue-border": "var(--solid-blue)",
         "dark-border": "var(--dark-border)",
         "light-border": "var(--light-border)",
+        "blue-gradient": "var(--blue-gradient)",
       },
       borderRadius: {
         "hero-rounded": "var(--hero-rounded)",

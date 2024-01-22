@@ -1,5 +1,5 @@
 import TitleHeader from "@/components/shared/TitleHeader";
-import React from "react";
+import React, { ReactElement } from "react";
 import {
   aimlAccordionData,
   aimlDesc,
@@ -26,29 +26,86 @@ import {
   WebDevelopment,
 } from "@/assets/svg/AIMLDevelopmentSVG/OtherService";
 import { getLocales } from "../../../../../getLocales";
+import {
+  AISVG,
+  BrainIcon,
+  ChatbotIcon,
+  CyborgIcon,
+  ImgProcessingSVG,
+  NLPIcon,
+} from "@/assets/svg/AIMLDevelopmentSVG/ServiceIcons";
+import {
+  AwardSVG,
+  CustomerServiceSVG,
+  DirectionSVG,
+  DomainSVG,
+  ExpertSVG,
+  LowCostSVG,
+  SoftDevSVG,
+  WebsiteSVG,
+} from "@/assets/svg/AIMLDevelopmentSVG/PerksIcon";
+
+interface IconComponents {
+  CyborgIcon: ReactElement;
+  BrainIcon: ReactElement;
+  NLPIcon: ReactElement;
+  AISVG: ReactElement;
+  ChatbotIcon: ReactElement;
+  ImgProcessingSVG: ReactElement;
+  ExpertSVG: ReactElement;
+  DomainSVG: ReactElement;
+  CustomerServiceSVG: ReactElement;
+  AwardSVG: ReactElement;
+  WebsiteSVG: ReactElement;
+  SoftDevSVG: ReactElement;
+  DirectionSVG: ReactElement;
+  LowCostSVG: ReactElement;
+}
+
+const iconComponents: IconComponents = {
+  CyborgIcon: <CyborgIcon />,
+  BrainIcon: <BrainIcon />,
+  NLPIcon: <NLPIcon />,
+  AISVG: <AISVG />,
+  ChatbotIcon: <ChatbotIcon />,
+  ImgProcessingSVG: <ImgProcessingSVG />,
+  ExpertSVG: <ExpertSVG />,
+  DomainSVG: <DomainSVG />,
+  CustomerServiceSVG: <CustomerServiceSVG />,
+  AwardSVG: <AwardSVG />,
+  WebsiteSVG: <WebsiteSVG />,
+  SoftDevSVG: <SoftDevSVG />,
+  DirectionSVG: <DirectionSVG />,
+  LowCostSVG: <LowCostSVG />,
+};
+
+interface ServiceCardItem {
+  title: string;
+  description: string;
+  icon: keyof IconComponents;
+}
 
 const AIMLContent = async ({ params }: any) => {
   const lang = await getLocales(params?.lang);
-  console.log(lang);
   return (
     <section className="bg-primary h-fit w-full">
       <div className="pt-14  grid gap-16 pb-16">
         <div className="px-6 flex flex-col gap-16">
           <TitleHeader
-            title="AI/ML Development"
-            description={aimlDesc}
+            title={lang.aiMlDevelopement.mainHeading}
+            description={lang.aiMlDevelopement.subHeading}
             buttonArr={[
               {
                 href: "/",
                 variant: "primary",
                 style: "outlined",
-                text: "Our Portfolio",
+                text: lang.aiMlDevelopement.buttonTextOne,
               },
               {
                 href: `/${params.lang}/contact-us`,
                 variant: "success",
                 style: "solid",
-                text: "Contact Sales",
+                text: lang.aiMlDevelopement.buttonTextTwo,
               },
             ]}
           />
@@ -60,26 +117,28 @@ const AIMLContent = async ({ params }: any) => {
           />
         </div>
         <ServiceHeader
-          title={aimlserviceHeader}
-          description={aimlservicesubtext}
+          title={lang.aiMlDevelopement.section1.title}
+          description={lang.aiMlDevelopement.section1.description}
         />
         {/* service cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8  px-6">
-          {aimlServicesArr.map((item, index) => (
-            <CardWithIcon
-              key={index}
-              title={item.title}
-              description={item.description}
-              icon={item.icon}
-              iconBG="bg-skyblue-gradient"
-            />
-          ))}
+          {lang.aiMlDevelopement.section1?.aimlServicesArr?.map(
+            (item: ServiceCardItem, index: any) => (
+              <CardWithIcon
+                key={index}
+                title={item?.title}
+                description={item?.description}
+                icon={iconComponents[item?.icon]}
+                iconBG="bg-skyblue-gradient"
+              />
+            )
+          )}
         </div>
 
         <div className="grid gap-16 py-16 bg-secondary ">
           <ServiceHeader
-            title="Our AI/ML Tech Stack"
-            description="The most recent AI/ML technologies and industry-recognized AI/ML software tools utilized by Developer."
+            title={lang.aiMlDevelopement.section2.title}
+            description={lang.aiMlDevelopement.section2.description}
           />
           <div className="flex items-center justify-center flex-wrap  gap-5">
             {aimlStackArr.map((item, index) => (
@@ -97,19 +156,21 @@ const AIMLContent = async ({ params }: any) => {
 
         <div className="grid gap-10 px-6">
           <ServiceHeader
-            title="Why Go With DevRiser for AI/ML Development?"
-            description="In order to address the different industrial use cases with AI-enabled algorithms and machine learning solutions, DevRiser utilizes the best in the business of AI/ML development services."
+            title={lang.aiMlDevelopement.section3.title}
+            description={lang.aiMlDevelopement.section3.description}
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
-            {aimlPerks.map((item, index) => (
-              <SmallCard
-                key={index}
-                icon={item.icon}
-                title={item.text}
-                iconBG="bg-skyblue-gradient"
-              />
-            ))}
+            {lang.aiMlDevelopement.section3?.aimlPerks?.map(
+              (item: ServiceCardItem, index: any) => (
+                <SmallCard
+                  key={index}
+                  icon={iconComponents[item?.icon]}
+                  title={item?.title}
+                  iconBG="bg-skyblue-gradient"
+                />
+              )
+            )}
           </div>
         </div>
 
@@ -134,11 +195,10 @@ const AIMLContent = async ({ params }: any) => {
           <div className="flex flex-col gap-16 self-start">
             <div className="flex flex-col gap-6">
               <div className="text-text-heading font-semibold text-secondary-reverse">
-                {lang.cc.section3.title}
+                {lang.aiMlDevelopement.section4.title}
               </div>
               <div className="text-sub-text">
-                Share your ideas, and let us help you transform them into
-                outstanding digital solutions.
+                {lang.aiMlDevelopement.section4.description}
               </div>
             </div>
             <Button
@@ -146,20 +206,20 @@ const AIMLContent = async ({ params }: any) => {
               as="NextLink"
               href={`/${params.lang}/services`}
             >
-              {lang.cc.section3.btnText}
+              {lang.aiMlDevelopement.section4.btnText}
             </Button>
           </div>
           <div className="flex flex-col md:flex-row gap-10 ">
             <div className="flex flex-col gap-6 md:-mt-5">
               <SmallCard
                 icon={<JavascriptDevelopment />}
-                title={lang.cc.section3.point1}
+                title={lang.aiMlDevelopement.section4.point1}
                 isBorder
                 path={`/${params.lang}/services/ai-ml-development`}
               />
               <SmallCard
                 icon={<UIUXDesigner />}
-                title={lang.cc.section3.point2}
+                title={lang.aiMlDevelopement.section4.point2}
                 isBorder
                 path={`/${params.lang}/services/ui-ux-design`}
               />
@@ -167,13 +227,13 @@ const AIMLContent = async ({ params }: any) => {
             <div className="flex flex-col gap-6">
               <SmallCard
                 icon={<WebDevelopment />}
-                title={lang.cc.section3.point3}
+                title={lang.aiMlDevelopement.section4.point3}
                 isBorder
                 path={`/${params.lang}/services/website-development-services`}
               />
               <SmallCard
                 icon={<HireDedicatedDevelopers />}
-                title={lang.cc.section3.point4}
+                title={lang.aiMlDevelopement.section4.point4}
                 isBorder
                 path={`/${params.lang}/services/game-development`}
               />
