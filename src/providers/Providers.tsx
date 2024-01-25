@@ -7,15 +7,15 @@ type Props = {
 };
 
 export default function Providers({ children }: Props) {
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
 
-  useLayoutEffect(() => {
-    setMounted(true);
-  }, []);
+  // useLayoutEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  if (!mounted) {
-    return <ContextProviders>{children}</ContextProviders>;
-  }
+  // if (!mounted) {
+  //   return <ContextProviders>{children}</ContextProviders>;
+  // }
 
   return (
     <>

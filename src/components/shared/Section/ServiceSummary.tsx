@@ -30,63 +30,61 @@ const ServiceSummary = ({
   };
 
   return (
-    <div className="px-6">
-      <div
-        className={`${bgImage} flex max-md:flex-col bg-cover gap-6 xl:gap-0 items-center justify-around  px-8 py-12 rounded-3xl  ${
-          (index + 1) % 2 === 0 ? "flex-row-reverse" : "flex-row"
-        } bg-cover  `}
-      >
-        <div className="flex flex-col gap-8">
-          <div className={`flex items-center ${!progressArr && "hidden"}`}>
-            {progressArr &&
-              progressArr.map((item: any, index: any) => (
-                <div key={index} className="flex items-center">
-                  <p
-                    className={`border-b-2 w-fit  px-4 pb-1 ${
-                      selectedTab === index
-                        ? "border-secondary-reverse"
-                        : "text-light-secondary border-primary-border"
-                    } cursor-pointer`}
-                    onClick={() => setSelectedTab(index)}
-                  >
-                    {item}
-                  </p>
-                </div>
-              ))}
-          </div>
+    <div
+      className={`${bgImage} flex max-md:flex-col bg-cover gap-6 xl:gap-0 items-center justify-around  py-12 rounded-3xl  ${
+        (index + 1) % 2 === 0 ? "flex-row-reverse" : "flex-row"
+      } bg-cover  `}
+    >
+      <div className="flex flex-col gap-8">
+        <div className={`flex items-center ${!progressArr && "hidden"}`}>
+          {progressArr &&
+            progressArr.map((item: any, index: any) => (
+              <div key={index} className="flex items-center">
+                <p
+                  className={`border-b-2 w-fit  px-4 pb-1 ${
+                    selectedTab === index
+                      ? "border-secondary-reverse"
+                      : "text-light-secondary border-primary-border"
+                  } cursor-pointer`}
+                  onClick={() => setSelectedTab(index)}
+                >
+                  {item}
+                </p>
+              </div>
+            ))}
+        </div>
 
-          <div className="flex items-center flex-wrap gap-7 ">
-            {techArr &&
-              selectedTab === 0 &&
-              techArr.map((item: any, index: any) => (
-                <div key={index}>{item}</div>
-              ))}
-            {switchTechArr &&
-              selectedTab === 1 &&
-              switchTechArr.map((item: any, index: any) => (
-                <div key={index}>{item}</div>
-              ))}
-          </div>
+        <div className="flex items-center flex-wrap gap-7 ">
+          {techArr &&
+            selectedTab === 0 &&
+            techArr.map((item: any, index: any) => (
+              <div key={index}>{item}</div>
+            ))}
+          {switchTechArr &&
+            selectedTab === 1 &&
+            switchTechArr.map((item: any, index: any) => (
+              <div key={index}>{item}</div>
+            ))}
+        </div>
 
-          {progressArr ? (
-            <p className="max-w-xl text-service-text">
-              {selectedTab === 0 && description}
-              {selectedTab === 1 && switchDescription}
-            </p>
-          ) : (
-            <p className="max-w-xl text-service-text">{description}</p>
+        {progressArr ? (
+          <p className="max-w-xl text-service-text">
+            {selectedTab === 0 && description}
+            {selectedTab === 1 && switchDescription}
+          </p>
+        ) : (
+          <p className="max-w-xl text-service-text">{description}</p>
+        )}
+        <div>
+          {buttonColor && (
+            <Button className={`${buttonColor}`} onClick={handleNavigate}>
+              Explore More
+            </Button>
           )}
-          <div>
-            {buttonColor && (
-              <Button className={`${buttonColor}`} onClick={handleNavigate}>
-                Explore More
-              </Button>
-            )}
-          </div>
         </div>
-        <div className="object-cover">
-          <Image src={image} alt="erp" />
-        </div>
+      </div>
+      <div className="object-cover">
+        <Image src={image} alt="erp" />
       </div>
     </div>
   );

@@ -64,7 +64,9 @@ export default function CustomPhoneInput({
       case "fr":
         return "France";
       case "ar":
-        return "United Arab Emirates"; // Default to Dubai for Arabic
+        return "Saudi Arabia"; // Default to Dubai for Arabic
+      case "cn":
+        return "China"; // Default to Dubai for Arabic
       default:
         return "United States of America"; // Default to a fallback value
     }

@@ -167,9 +167,12 @@ const MainServiceContent = async ({ params }: any) => {
 
   return (
     <section className="bg-primary h-fit w-fit lg:w-full">
-      <div className="pt-14 px-0 md:px-6 grid gap-2">
-        <div className="max-w-xl px-6">
-          <TitleHeader title="Make the Most of Your Online Presence With Our Web & Mobile Solutions" />
+      <div className="pt-14 grid gap-2">
+        <div className="flex items-center justify-center mb-12">
+          <h2 className="text-3xl font-semibold text-secondary-reverse dark:text-dark-secondary-reverse leading-relaxed text-center">
+            Make the Most of Your Online Presence With Our Web & Mobile
+            Solutions
+          </h2>
         </div>
         <div className=" grid gap-16 mb-12">
           {serviceSummaryArr.map((item, index) => (

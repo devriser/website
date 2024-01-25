@@ -35,10 +35,7 @@ interface Locales {
 
 export default function AppContentCarasoul({ params }: AppDevelopment) {
   const [lang, setLang] = useState<Locales | null>(null);
-  const swiper = useRef<typeof Swiper>();
   const [swiperRef, setSwiperRef] = useState<SwiperClass>();
-
-  const theSlides = useMemo(() => ["slide one", "slide two"], []);
 
   const handlePrevious = useCallback(() => {
     swiperRef?.slidePrev();
@@ -62,7 +59,7 @@ export default function AppContentCarasoul({ params }: AppDevelopment) {
   }
 
   return (
-    <div className="flex flex-col gap-6 max-md:px-3 max-md:gap-10">
+    <div className="flex flex-col gap-6 max-md:px-3 max-md:gap-10 ">
       <div className="flex items-center justify-center gap-5  max-md:flex-col ">
         <p className="text-text-heading text-secondary-reverse font-medium text-center">
           {lang.appDevelopment.sectionThree.mainHeading}

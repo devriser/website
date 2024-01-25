@@ -99,10 +99,10 @@ export default function OurCoreServices({ params }: OurCoreServicesProps) {
   ];
 
   return (
-    <div className="bg-secondary flex flex-col gap-8 p-6">
-      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
+    <div className="bg-secondary flex flex-col gap-8 p-6 ">
+      <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.ourCoreServices.heading}
-      </p>
+      </h2>
       <div className="flex gap-8 max-lg:flex-col">
         <Image
           src={ourCoreServicesImg}

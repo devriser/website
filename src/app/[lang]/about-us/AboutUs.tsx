@@ -52,7 +52,7 @@ export default async function AboutUs({ params }: any) {
 
   return (
     <div className=" pt-14 flex flex-col gap-16 pb-16 max-md:pt-6">
-      <div className="flex flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6">
         <TitleHeader
           title={lang.aboutUs.mainHeading}
           description={lang.aboutUs.subHeading}
@@ -66,11 +66,11 @@ export default async function AboutUs({ params }: any) {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-3 px-6 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
+        <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
           {corevalueArr.map((value, index) => (
             <div
               key={index}
-              className="bg-secondary px-4 py-6 flex flex-col justify-center items-center gap-3 "
+              className="bg-secondary py-6 flex flex-col justify-center items-center gap-3 "
             >
               <p>{value.icon}</p>
               <div className="flex flex-col justify-center items-center">
@@ -81,7 +81,7 @@ export default async function AboutUs({ params }: any) {
           ))}
         </div>
       </div>
-      <div className="flex px-6 gap-6 max-lg:flex-col">
+      <div className="flex gap-6 max-lg:flex-col">
         <div className="flex-1">
           <Image
             src={missionVision}

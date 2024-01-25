@@ -65,7 +65,7 @@ export default async function ESDContent({ params }: any) {
 
   return (
     <section className="bg-primary h-fit pb-8 ">
-      <div className="px-6 pt-14 grid gap-16">
+      <div className="pt-14 grid gap-16">
         <div className="bg-primary">
           <TitleHeader
             title={lang.esd.heroTitle}

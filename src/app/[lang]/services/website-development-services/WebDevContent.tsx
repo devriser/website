@@ -76,7 +76,7 @@ export default async function WebDevContent({ params }: any) {
     <section className="bg-primary h-fit w-full pb-16">
       <div className="pt-14 grid gap-16 ">
         {/* top header */}
-        <div className="bg-primary px-6">
+        <div className="bg-primary">
           <TitleHeader
             title={lang.webDevelopment.mainHeading}
             description={lang.webDevelopment.subHeadingOne}
@@ -99,7 +99,7 @@ export default async function WebDevContent({ params }: any) {
           {/* <div className=''></div> */}
         </div>
 
-        <div className="px-6">
+        <div>
           {/* banner Image */}
           <Image
             src={webTech}
@@ -218,7 +218,7 @@ export default async function WebDevContent({ params }: any) {
           {/* service Header */}
           <ServiceHeader title={lang.webDevelopment.section5.title} />
           {/* service cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-8 px-6">
             {lang.webDevelopment.section5?.futureTechServicesArr?.map(
               (item: ServiceCardItem, index: any) => (
                 <CardWithIcon

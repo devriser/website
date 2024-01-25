@@ -35,21 +35,23 @@ export default async function OurAchievments({ params }: any) {
 
   return (
     <div className="bg-primary flex flex-col gap-8 px-6">
-      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
+      <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.ourAchievement.heading}
-      </p>
+      </h2>
 
       <div className="grid grid-cols-4 max-md:grid-cols-2 max-md:gap-5  justify-between px-5 flex-wrap">
         {ourAchievementData.map((item) => (
           <div key={item.name} className="flex flex-col">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-3">
               <span>{item.icon}</span>
-              <p className="text-secondary-reverse text-text-subtitle font-semibold text-center">
-                {item.number}
-              </p>
-              <p className="text-secondary-reverse text-text-subtitle  text-center">
-                {item.name}
-              </p>
+              <div>
+                <p className="text-secondary-reverse text-text-subtitle font-semibold text-center">
+                  {item.number}
+                </p>
+                <p className="text-secondary-reverse text-text-subtitle  text-center">
+                  {item.name}
+                </p>
+              </div>
             </div>
           </div>
         ))}

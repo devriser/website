@@ -67,6 +67,9 @@ const config: Config = {
         medium: "var(--medium)",
       },
     },
+    fontFamily: {
+      "mono-sans": ["var(--font-mona-sans)"],
+    },
   },
   plugins: [],
   darkMode: "class",

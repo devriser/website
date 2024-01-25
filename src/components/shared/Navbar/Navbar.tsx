@@ -5,6 +5,7 @@ import {
   AboutUs,
   AboutUsDark,
   ArabFlag,
+  ChineseFlag,
   Contact,
   ContactDark,
   EnglishFlag,
@@ -229,17 +230,26 @@ export default function Navbar({ params }: NavbarProps) {
     {
       name: "English",
       value: "en",
+      shortName: "EN",
 
       flag: <EnglishFlag />,
     },
     {
-      name: "French",
+      name: "Français",
       value: "fr",
+      shortName: "FR",
       flag: <FrenchFlag />,
     },
     {
-      name: "Arabic",
+      name: "中文",
+      value: "cn",
+      shortName: "中文",
+      flag: <ChineseFlag />,
+    },
+    {
+      name: "العربية",
       value: "ar",
+      shortName: "العربية",
       flag: <ArabFlag />,
     },
   ];
@@ -338,6 +348,7 @@ export default function Navbar({ params }: NavbarProps) {
               }`}
               key={index}
               href={item.href}
+              onClick={() => setOpenSideBar(false)}
             >
               {item.icon}
               <span
@@ -364,15 +375,18 @@ export default function Navbar({ params }: NavbarProps) {
                 language.find((locale) => locale.value === selectedLanguage)
                   ?.flag
               } */}
-              {selectedLanguage.toUpperCase()}
+              {
+                language.find((locale) => locale.value === selectedLanguage)
+                  ?.shortName
+              }
             </span>
-            <p className="pt-1">
+            {/* <p className="">
               {themes.theme === "dark" ? (
                 <LanguageArrowDark />
               ) : (
                 <LanguageArrow />
               )}
-            </p>
+            </p> */}
           </div>
           {isLanguageDropdownOpen && (
             <motion.div

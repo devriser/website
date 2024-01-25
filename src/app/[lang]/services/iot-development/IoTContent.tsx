@@ -68,7 +68,7 @@ export default async function IoTContent({ params }: any) {
   return (
     <section className="bg-primary h-fit w-full pb-16">
       <div className="pt-14 grid gap-16">
-        <div className="px-6">
+        <div className="">
           <TitleHeader
             title={lang.iOtDevelopement.mainHeading}
             description={lang.iOtDevelopement.subHeading}
@@ -88,7 +88,7 @@ export default async function IoTContent({ params }: any) {
             ]}
           />
         </div>
-        <div className="px-6">
+        <div>
           {/* banner Image */}
           <Image
             src={iotBanner}

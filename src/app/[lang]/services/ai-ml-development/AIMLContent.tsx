@@ -90,7 +90,7 @@ const AIMLContent = async ({ params }: any) => {
   return (
     <section className="bg-primary h-fit w-full">
       <div className="pt-14  grid gap-16 pb-16">
-        <div className="px-6 flex flex-col gap-16">
+        <div className=" flex flex-col gap-16">
           <TitleHeader
             title={lang.aiMlDevelopement.mainHeading}
             description={lang.aiMlDevelopement.subHeading}

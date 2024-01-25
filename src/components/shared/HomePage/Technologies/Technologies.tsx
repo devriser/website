@@ -311,9 +311,9 @@ export default function Technologies({ params }: any) {
 
   return (
     <div className="px-6 flex flex-col gap-8">
-      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
+      <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.technologies.mainHeading}
-      </p>
+      </h2>
       <div className="flex flex-col items-center justify-center gap-12">
         {/* <div className='flex gap-10 flex-wrap max-sm:justify-center'>
           {technologiesData.map((data, index) => (
@@ -332,7 +332,7 @@ export default function Technologies({ params }: any) {
         <div className="flex overflow-hidden ">
           {selectedHeading && (
             <motion.div
-              className="flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden"
+              className="flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden z-10"
               initial={{ x: "100%" }}
               animate={{ x: "-100%" }}
               transition={{
