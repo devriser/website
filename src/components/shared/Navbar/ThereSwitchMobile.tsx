@@ -37,15 +37,20 @@ const ThemeSwitchMobile = ({ params }: any) => {
         className="cursor-pointer flex items-center"
         onClick={() => setToggle(!toggle)}
       >
-        {theme === "system" ? (
+        {/* {theme === "system" ? (
           <SystemMode />
         ) : theme === "dark" ? (
           <DarkMode />
         ) : (
           theme === "light" && <LightMode />
+        )} */}
+        {theme === "dark" ? (
+          <DarkMode onClick={() => handleChange("light")} />
+        ) : (
+          <LightMode onClick={() => handleChange("dark")} />
         )}
       </div>
-      {toggle && (
+      {/* {toggle && (
         <motion.div
           initial="closed"
           animate="open"
@@ -76,7 +81,7 @@ const ThemeSwitchMobile = ({ params }: any) => {
               ))}
           </div>
         </motion.div>
-      )}
+      )} */}
     </div>
   );
 };

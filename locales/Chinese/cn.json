@@ -1,0 +1,1489 @@
+{
+  "homepage": {
+    "heroTitle": "下一代软件开发之路",
+    "heroHeading": "您通往下一代软件解决方案的门户：人工智能、区块链、网络、移动等。创新始于您的愿景和我们的专业知识。",
+    "heroButtonOne": "我们的解决方案",
+    "heroButtonTwo": "联系销售人员"
+  },
+  "ourAchievement": {
+    "heading": "我们的成就",
+    "subHeadingOne": "满意的客户",
+    "subHeadingTwo": "多年经验",
+    "subHeadingThree": "专业专家",
+    "subHeadingFour": "全球办事处"
+  },
+  "ourCoreServices": {
+    "heading": "我们的核心服务",
+    "pointOne": "企业解决方案开发服务",
+    "pointTwo": "网站开发服务",
+    "pointThree": "移动开发服务",
+    "pointFour": "云计算",
+    "pointFive": "人工智能/机器学习开发",
+    "pointSix": "区块链开发服务",
+    "pointSeven": "游戏开发",
+    "pointEight": "物联网（IoT）开发",
+    "pointNine": "UI/UX设计"
+  },
+  "softwareDevelopmentProcess": {
+    "mainHeading": "我们简化软件开发流程",
+    "headingOne": "发现",
+    "headingTwo": "设计",
+    "headingThree": "开发",
+    "headingFour": "部署",
+    "subTextOne": "我们通过发现来开发品牌，使用深入研究不断测试假设。",
+    "subTextTwo": "我们通过设计来设计品牌，使用深入研究不断测试假设。",
+    "subTextThree": "使用现代技术，我们高效而熟练地构建，创建灵活和可扩展的以业务为驱动的解决方案。",
+    "subTextFour": "我们通过部署来推出品牌，使用深入研究不断测试假设。"
+  },
+  "shelfSolutions": {
+    "mainHeading": "我们的现成解决方案",
+    "headingOne": "企业资源管理",
+    "headingTwo": "客户关系管理",
+    "headingThree": "人力资源管理",
+    "headingFour": "库存管理系统",
+    "subTextOne": "通过我们的企业资源管理（ERM）解决方案，轻松优化财务和项目运营。发现增强的可扩展性，实时洞察力和优化效率，推动业务取得成功。",
+    "subTextTwo": "通过我们的客户关系管理（CRM）系统，提升业务，提供全面的洞察力，自动化流程，并具有移动可访问性的灵活性。提高参与度，培养持久的客户关系。",
+    "subTextThree": "通过我们的人力资源管理（HRM）解决方案，简化并增强您的人力资源流程。从自助选项到高效的工资管理和考勤跟踪，我们满足您的人力资源需求。",
+    "subTextFour": "通过我们的库存管理系统优化您的库存管理。最大化控制和效率，确保订单履行和库存跟踪无缝进行，为您的业务成功打下坚实基础。"
+  },
+  "technologies": {
+    "mainHeading": "我们使用的技术",
+    "headingOne": "移动",
+    "headingTwo": "前端",
+    "headingThree": "后端",
+    "headingFour": "数据库",
+    "headingFive": "CMS",
+    "headingSix": "基础设施和DevOps"
+  },
+  "ourWork": {
+    "mainHeading": "我们的工作",
+    "headingOne": "Cotravel",
+    "headingTwo": "DevRiser",
+    "headingThree": "DevRiser",
+    "subTextOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in",
+    "subTextThree": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor in"
+  },
+  "letDiscussYourProject": {
+    "mainHeading": "让我们讨论您的项目",
+    "heading": "通过免费项目咨询将您的愿景变成现实。分享您的想法，让我们帮助您将其转化为卓越的数字解决方案。",
+    "buttonText": "与我们的专家交谈"
+  },
+
+  "iOtDevelopement": {
+    "mainHeading": "物联网开发",
+    "subHeading": "DevRiser提供全面的物联网开发服务，专业从事定制物联网开发和物联网移动应用程序开发。我们量身定制的解决方案提高了运营效率，降低了成本，并在不同行业中提高了生产力，提供可靠且安全的物联网解决方案。",
+    "buttonTextOne": "我们的作品集",
+    "buttonTextTwo": "联系销售",
+    "section1": {
+      "title": "我们的物联网开发服务",
+      "description": "作为顶级物联网开发公司，多年来，我们通过在不同领域开发和部署创意物联网解决方案，显著推动了该领域的发展。",
+      "IOTServicesArr": [
+        {
+          "title": "物联网应用程序开发",
+          "description": "我们为特定业务需求和平台创建基于Web、原生、混合和PWA的物联网应用程序。这些物联网应用程序由AI/ML提供支持，可以在每个接触点为客户创造卓越的体验。",
+          "icon": "IOTApps"
+        },
+        {
+          "title": "可穿戴式物联网应用程序开发",
+          "description": "我们的物联网专家在设计适用于可穿戴设备的未来准备的物联网应用程序方面具有丰富的经验，例如健身追踪器、技术眼镜、智能手表和游戏耳机，这些应用程序由强大的后端和功能丰富的API集成。",
+          "icon": "ClockSVG"
+        },
+        {
+          "title": "物联网平台集成",
+          "description": "我们的资深团队协助您通过将物联网解决方案集成到现有基础设施、平台和连接设备中，提高公司投资回报率。",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "语音技术解决方案",
+          "description": "借助我们的语音启用的物联网软件解决方案，您可以彻底改变客户与公司在线互动的方式，提高用户参与度并产生重大的业务价值。",
+          "icon": "IOTMicSVG"
+        },
+        {
+          "title": "物联网网关创建",
+          "description": "为了使企业在市场上保持竞争优势，我们全力支持物联网网关的开发及其与各种设备和传感器的集成。这包括更智能的连接性和更高的带宽。",
+          "icon": "GatewaySVG"
+        },
+        {
+          "title": "物联网测试和维护",
+          "description": "我们致力于提供物联网专业团队进行测试、实施和支持，确保物联网执行无瑕，并确保用户体验愉快。以确保可靠的性能和持续的连接。",
+          "icon": "NetworkSVG"
+        }
+      ]
+    },
+
+    "section2": {
+      "title": "我们的物联网开发技术栈",
+      "description": "根据在DevRiser的项目用例和行业垂直方向，以下是使用的当代物联网开发技术和平台的列表："
+    },
+    "section3": {
+      "title": "新兴物联网（IoT）技术",
+      "IOTEmergeArr": [
+        {
+          "title": "网络",
+          "description": "对于像远程监控和控制这样的物联网应用，网络必须提供更快的带宽和更低的延迟。",
+          "icon": "NetworkSVG"
+        },
+        {
+          "title": "计算",
+          "description": "我们的边缘计算使数据处理更靠近源头，减少了必须传输到中心点的数据量。",
+          "icon": "IOTCloud"
+        },
+        {
+          "title": "AI/ML",
+          "description": "AI和ML被用于提高物联网设备系统的性能和效率，例如预测性维护和实时检测。",
+          "icon": "AutomationSVG"
+        },
+        {
+          "title": "云计算",
+          "description": "云计算便于存储和处理来自物联网设备的大量数据，使其成为大数据的关键工具。",
+          "icon": "CloudCompute"
+        },
+        {
+          "title": "虚拟现实/增强现实",
+          "description": "虚拟现实和增强现实被用于改进物联网应用，如远程监控和控制，以及生成新的用例。",
+          "icon": "VRSVG"
+        },
+        {
+          "title": "区块链",
+          "description": "区块链技术越来越被用于提高物联网系统的安全性和可信度，这些系统是连接设备的网络。",
+          "icon": "BlockchainSVG"
+        }
+      ]
+    }
+  },
+
+  "navBar": {
+    "mainHeadingOne": "服务",
+    "mainHeadingTwo": "解决方案",
+    "mainHeadingThree": "行业",
+    "mainHeadingFour": "关于我们",
+    "mainHeadingFive": "联系",
+    "subHeadingOne": "企业解决方案",
+    "subHeadingTwo": "网站开发",
+    "subHeadingThree": "应用开发",
+    "subHeadingFour": "UI/UX设计",
+    "subHeadingFive": "云计算",
+    "subHeadingSix": "游戏开发",
+    "subHeadingSeven": "区块链开发",
+    "subHeadingEight": "物联网开发",
+    "subHeadingNine": "人工智能/机器学习开发",
+    "subHeadingTen": "所有服务"
+  },
+
+  "footer": {
+    "mainHeading": "DevRiser: 提升您的项目",
+    "follow": "关注我们",
+    "companyDetail": {
+      "company": "公司",
+      "headingOne": "关于我们",
+      "headingTwo": "博客",
+      "headingThree": "常见问题",
+      "headingFour": "客户评价",
+      "headingFive": "工作机会",
+      "headingSix": "联系我们"
+    },
+    "servicesDetails": {
+      "services": "服务",
+      "headingOne": "应用开发",
+      "headingTwo": "网站开发",
+      "headingThree": "游戏开发",
+      "headingFour": "云计算",
+      "headingFive": "人工智能/机器学习开发",
+      "headingSix": "区块链开发",
+      "headingSeven": "UI/UX设计",
+      "headingEight": "物联网开发",
+      "headingNine": "企业解决方案"
+    },
+    "industries": {
+      "industries": "行业",
+      "headingOne": "市场",
+      "headingTwo": "金融",
+      "headingThree": "医疗保健",
+      "headingFour": "媒体与通信",
+      "headingFive": "房地产",
+      "headingSix": "活动",
+      "headingSeven": "餐厅",
+      "headingEight": "农业",
+      "headingNine": "媒体娱乐"
+    },
+    "conversation": {
+      "conversation": "开始对话",
+      "email": "sales@devriser.com",
+      "phone": "+91 123-456-0123",
+      "whatsApp": "+91 123-456-0124"
+    },
+    "copyright": {
+      "heading": "版权所有 © 2024。保留所有权利。"
+    }
+  },
+
+  "webDevelopment": {
+    "mainHeading": "网站开发服务",
+    "subHeadingOne": "DevRiser提供性能驱动、可扩展和响应灵活的定制网站开发服务。我们的专家团队利用最新技术打造跨平台的Web解决方案。我们还提供持续的维护和支持，确保您的网站保持最新状态。联系我们，满足您的所有网站开发需求。",
+    "heroButtonOne": "我们的作品集",
+    "heroButtonTwo": "联系销售",
+    "section1": {
+      "serviceHeaderTitle": "我们的Web应用程序开发服务",
+      "serviceHeaderDesc": "我们拥有开发专业软件的经验，并采用各种尖端的Web技术，为不同业务领域的需求量身定制网站和Web应用程序。以下是我们提供的Web应用程序开发服务列表。",
+      "webServicesArr": [
+        {
+          "title": "UI/UX开发",
+          "description": "通过引人注目的UI/UX设计，您可以改善用户体验，提高客户满意度和忠诚度。",
+          "icon": "UIUXDevelopment"
+        },
+        {
+          "title": "系统迁移",
+          "description": "我们的网站迁移服务可帮助您满足公司的需求。无论是网站还是复杂的系统，我们都为您提供全面支持。",
+          "icon": "SystemMigration"
+        },
+        {
+          "title": "测试与质量保证",
+          "description": "我们充分利用专业知识，确保您的项目达到最佳状态。我们的网站测试服务测量性能和效率。",
+          "icon": "TestingQA"
+        },
+        {
+          "title": "响应式设计",
+          "description": "有趣且适用于移动设备的设计可以提高用户体验和客户保留率。",
+          "icon": "ResponsiveDesign"
+        },
+        {
+          "title": "定制开发",
+          "description": "从业务分析到UI/UX设计，再到前端/后端开发以及支持和维护。",
+          "icon": "CustomDevelopment"
+        },
+        {
+          "title": "CMS",
+          "description": "我们专注于根据您独特的业务需求定制的CMS开发服务。与我们合作，获得最佳的CMS解决方案。",
+          "icon": "CMS"
+        }
+      ]
+    },
+
+    "section2": {
+      "title": "我们在Web开发中使用的技术",
+      "description": "在Web开发过程中，我们使用全面的交互式设计、插图、动态图形和动画，制作能够吸引客户目标受众注意的网站。",
+      "techStackArr": [
+        {
+          "parent": "前端",
+          "child": [
+            "反应JS",
+            "角",
+            "下一个JS",
+            "打字稿",
+            "HTML5",
+            "CSS3",
+            "Vue.js"
+          ]
+        },
+        {
+          "parent": "后端",
+          "child": [
+            "Node.js",
+            "Python",
+            "爪哇",
+            "红宝石",
+            ".网",
+            "PHP",
+            "拉维尔"
+          ]
+        },
+        {
+          "parent": "数据库",
+          "child": [
+            "PostgreSQL",
+            "MongoDB",
+            "SQL 服务器",
+            "甲骨文",
+            "弹性搜索",
+            "雷迪斯",
+            "AWS RDS",
+            "MySQL"
+          ]
+        },
+        {
+          "parent": "云",
+          "child": ["AWS", "谷歌云", "微软Azure", "OVH云", "阿里云"]
+        },
+        {
+          "parent": "开发运营",
+          "child": ["库伯内斯", "码头工人", "詹金斯"]
+        }
+      ]
+    },
+
+    "section3": {
+      "title": "定制开发解决方案的重要性",
+      "description": "定制软件开发至关重要，因为它可以通过提供符合您特定需求的成本效益、灵活性、安全性和维护服务，使您的流程更具创造性、高效和创新。",
+      "customDevArr": [
+        {
+          "title": "为您的品牌定制",
+          "description": "公司可以通过定制网站来宣传其个性，除了它们的产品和服务。公司可以与代理机构的设计团队合作，定制他们的网站。因此，用户体验是独特的，不受大多数拖放模板提供的限制。"
+        },
+        {
+          "title": "持久的投资",
+          "description": "即使使用模板成本较低，投资于定制网站将在长期内为您的业务带来回报。因此，随着业务的扩张，对于您的业务来说，扩展当前的网站或应用将变得简单，并且随着时间的推移，成本会降低。"
+        },
+        {
+          "title": "灵活性和可扩展性",
+          "description": "虽然现成的解决方案可能足以满足当前的业务需求，但它们可能不够灵活或可扩展。定制网站涵盖您需要的所有功能。您可以在探索和原型制作过程中进行分析。"
+        },
+        {
+          "title": "无缝集成",
+          "description": "能够与现有系统进行接口的公司软件解决方案是卓越的。使用定制软件开发，您可以提高对当前系统的使用。在开发人员开始处理您的项目之前进行。"
+        },
+        {
+          "title": "加强安全性",
+          "description": "由于前者是一个较小的目标，扩展的CMS或定制应用被认为比现成的产品更安全。如果黑客能够访问您的独特解决方案，您的数据将被窃取。但如果同一黑客设法访问其中一个解决方案，情况将会不同。"
+        },
+        {
+          "title": "改进的产品支持",
+          "description": "如果与定制软件开发公司合作，您可以期望得到最佳的产品支持。您将获得与项目紧密合作的支持团队的访问权限。此外，软件维护将更加卓越和安全，因为您不依赖于第三方供应商。"
+        }
+      ]
+    },
+    "section4": {
+      "title": "未来Web开发技术",
+      "futureWebTech": [
+        {
+          "title": "区块链技术",
+          "description": "我们协助您设计、开发和维护支持技术主要类别的区块链应用，包括联合区块链、私有区块链。"
+        },
+        {
+          "title": "渐进式Web应用（PWAs）",
+          "description": "通过开发先进的PWAs开发解决方案，使移动应用在所有平台上都能够访问，我们确保客户始终领先于竞争对手。"
+        },
+        {
+          "title": "云计算的利用",
+          "description": "我们提供全面的云计算开发支持，使您可以使用Microsoft Azure、Google Cloud Platform和AWS构建非常快速、灵活的Web应用。"
+        },
+        {
+          "title": "JavaScript框架",
+          "description": "我们利用JavaScript框架，如Angular和React.js，作为全栈来构建功能完善的Web应用程序，为全球客户提供具有尖端、响应式用户界面的解决方案。"
+        },
+        {
+          "title": "紧凑型前端",
+          "description": "在DevRiser，我们为网站和在线应用程序创建功能丰富的Micro Frontends，可以在多个团队之间扩展，以实现独特的业务功能。"
+        },
+        {
+          "title": "无服务器架构",
+          "description": "我们提供全面的支持，使用无服务器架构创建可扩展、个性化的应用程序，为客户提供自动可伸缩性、内建容错和更低的运营成本。"
+        }
+      ]
+    },
+    "section5": {
+      "title": "未来Web开发技术",
+      "futureTechServicesArr": [
+        {
+          "title": "特定领域的解决方案",
+          "description": "作为一家顶级的定制网站开发公司，我们可以提供完整的网站解决方案，以满足客户需求和相关行业的趋势。",
+          "icon": "SolutionDomain"
+        },
+        {
+          "title": "现代设计和功能",
+          "description": "我们拥有专注于建设既具有吸引力外观又具有高效功能的网站的专业网页设计师和程序员。",
+          "icon": "BasicShape"
+        },
+        {
+          "title": "行业使用的流程",
+          "description": "为了为每一位客户提供始终如一的卓越服务，并致力于提供真正带来业务成果和客户满意度的网站，我们遵循行业标准的开发流程。",
+          "icon": "SettingIcon"
+        },
+        {
+          "title": "技术先进",
+          "description": "我们的高素质、经验丰富的开发团队使用现代设计工具、技术和方法，创建尖端的网站解决方案。",
+          "icon": "HalfGearIcon"
+        }
+      ]
+    }
+  },
+
+  "esd": {
+    "heroTitle": "企业解决方案开发服务",
+    "heroHeading": "DevRiser，一家领先的软件开发服务提供商，擅长开发各种企业解决方案，包括CRM、HRM、会计、库存管理、营销、ERP等。我们明确定义的行业标准方法确保高质量、定制的解决方案，提升业务效率和性能。",
+    "heroButtonOne": "我们的作品",
+    "heroButtonTwo": "联系销售",
+    "section1": {
+      "serviceHeaderTitle": "我们的软件开发与测试服务",
+      "serviceHeaderDesc": "作为独立的软件开发与测试业务，DevRiser提供精密而全面的软件开发与测试服务，由一支致力于不断提高质量的专业、能干和经验丰富的团队支持。",
+      "webServicesArr": [
+        {
+          "title": "自动化测试服务",
+          "description": "我们专注于自动化软件测试服务，组建团队，始终保持对最新测试工具的了解，并将他们的见解提供给我们尊敬的客户。作为我们测试计划和测试用例的一部分。",
+          "icon": "AutomationTesting"
+        },
+        {
+          "title": "软件开发",
+          "description": "我们的企业软件开发服务提供定制解决方案，利用最新技术构建可扩展、安全和创新的软件。从设计到部署，我们赋予企业在动态市场中取得成功的力量。",
+          "icon": "FunctionalEvaluation"
+        },
+        {
+          "title": "性能评估",
+          "description": "我们富有经验的QA测试团队执行质量测试，并分析软件在负载和压力下的行为，确保无错、可靠且智能的应用程序。您可以克服慢加载时间、响应性差等问题。",
+          "icon": "PerformanceEvaluation"
+        },
+        {
+          "title": "可用性评估",
+          "description": "监控应用程序的多个同时运行功能的行为。作为我们的服务的一部分，我们仔细检查用户行为模式，及早发现任何可用性问题，并创建无缝的产品。",
+          "icon": "UsabilityEvaluation"
+        },
+        {
+          "title": "兼容性测试",
+          "description": "探索兼容性测试的好处，全面评估应用程序在多个浏览器、数据库、硬件、操作系统、服务器基础设施、分辨率显示和设备上的运行。",
+          "icon": "TestingForCompatibility"
+        },
+        {
+          "title": "功能评估",
+          "description": "功能测试确保应用程序的用户需求和功能符合规格；优质的功能测试服务确保您的程序实现所有目标。",
+          "icon": "FunctionalEvaluation2"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "广泛的软件测试服务",
+      "serviceHeaderDesc": "由于我们在软件质量保证和测试方面的多年经验，我们提供了经过彻底优化的解决方案，实现了更高的效益和增加的生产力。",
+      "webServicesArr": [
+        {
+          "title": "API测试",
+          "description": "我们进行手动API测试，支持SOAP、REST、JSON、XML等类似协议，以满足期望。",
+          "icon": "APITesting"
+        },
+        {
+          "title": "应用测试",
+          "description": "使用正确的自动化工具优化和测试移动应用程序，以提高整体生产力。",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Web安全测试",
+          "description": "无论是什么类型的网站，都可以从专业人员那里获得全面的网站安全评估。",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "负载测试",
+          "description": "了解您的程序在高需求和压力情况下的工作情况。",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "性能测试",
+          "description": "利用经济实惠的性能测试服务，提升应用程序的性能。",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "手动测试",
+          "description": "利用我们的手动测试专业知识，实现可量化、以质量为导向的结果。",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "faq": {
+      "faqTitle": "常见问题解答",
+      "faqList": [
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        },
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        },
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        },
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        },
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        },
+        {
+          "headerText": "您的开发人员是否会在我的时区安排会议？",
+          "description": "外包的主要原因之一是实现全天候工作，而且成本比内部雇佣人员更好。我们通常从上午10点到晚上7点IST（周一至周五）工作；然而，对于呼叫/会议，受雇的开发人员可以根据正常办公时间调整约+/- 3小时。"
+        }
+      ]
+    }
+  },
+
+  "cc": {
+    "heroTitle": "云计算",
+    "heroHeading": "DevRiser提供覆盖全球的企业级云IT解决方案，专业从事定制的云计算服务。我们的专业知识赋予组织提升生产力、降低成本，并通过我们全面的云解决方案实现可扩展性。",
+    "heroButtonOne": "我们的作品",
+    "heroButtonTwo": "联系销售",
+    "section1": {
+      "serviceHeaderTitle": "我们的云计算服务",
+      "serviceHeaderDesc": "作为一家独立的软件开发公司，DevRiser提供精密而全面的云计算服务，由一支致力于不断提高质量的专业、能干和经验丰富的团队支持。",
+      "webServicesArr": [
+        {
+          "title": "云解决方案架构",
+          "description": "通过我们的云解决方案架构服务，利用云计算解决方案的强大功能，摆脱对网络架构或本地服务器基础设施的依赖成为可能。",
+          "icon": "ArchitectureForCloudSolutions"
+        },
+        {
+          "title": "云迁移服务",
+          "description": "我们的云迁移服务使企业能够通过利用最有效的云迁移策略、分析和执行进行数字转型，确定最适合基于云的服务的最佳解决方案。",
+          "icon": "ServicesForCloudMigration"
+        },
+        {
+          "title": "云就绪应用程序开发",
+          "description": "我们提供全面的定制云应用程序开发服务，支持必要的工具和知识，成功将它们安装在公共或私有云服务中。",
+          "icon": "DevelopmentOfCloudReadyApps"
+        },
+        {
+          "title": "云安全和风险控制",
+          "description": "DevRiser可靠的云计算架构审核、数据保护、风险评估和管理服务，保证了云部署应用程序的最高级别安全性。",
+          "icon": "CloudSecurityAndRiskControl"
+        },
+        {
+          "title": "DevOps",
+          "description": "我们云计算领域的集体专业人员坚持采用DevOps方法和资源，以集成更有效、安全和标准化的云应用程序。",
+          "icon": "DevOps"
+        },
+        {
+          "title": "云支持和监控",
+          "description": "我们提供全面的基于云的应用程序和持续监控，执行基础架构优化和成本降低的改进计划。应用数据安全性和远程备份灾难恢复管理服务。",
+          "icon": "CloudSupportAndMonitoring"
+        },
+        {
+          "title": "无服务器计算",
+          "description": "让我们为您创建在安全的公共云平台上运行的关键任务的云原生应用程序，采用按需、灵活的自动化服务订阅模式。",
+          "icon": "ComputingWithoutServers"
+        },
+        {
+          "title": "独家云支持",
+          "description": "在将您的云计算解决方案的管理全部委托给我们的托管云服务提供商的同时，保持您紧张的日程，他们将确保您的云计算解决方案持续可用。",
+          "icon": "ExclusiveCloudSupport"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "我们用于云计算的技术",
+      "serviceHeaderDesc": "以下是使我们能够将软件理念创造性地转化为实际项目的云计算技术堆栈。",
+      "webServicesArr": []
+    },
+    "section3": {
+      "title": "您正在寻找其他服务吗？",
+      "description": "您有一个应用程序的建议吗？我们的应用程序开发服务可能会帮助您。您有一个应用程序的建议吗？我们的应用程序开发咨询有建议。",
+      "point1": "AI/ML开发",
+      "point2": "UI/UX设计",
+      "point3": "Web开发",
+      "point4": "游戏开发",
+      "btnText": "探索所有服务"
+    },
+    "section4": {
+      "title": "为什么选择DevRiser的云计算服务？",
+      "description": "我们在云计算领域拥有五年的综合经验。以下是我们是您首选移动应用程序开发公司的更多详细信息。",
+      "points": [
+        {
+          "title": "透明度",
+          "titleTwo": "工作模式",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "直接联系",
+          "titleTwo": "团队成员",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "提升",
+          "titleTwo": "用户体验",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "灵活的参与",
+          "titleTwo": "模型周期",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+  "uxui": {
+    "heroTitle": "UI/UX设计",
+    "heroHeading": "DevRiser的UI/UX设计服务以其直观而引人注目的数字设计脱颖而出。我们致力于打造既满足您的业务目标又优先考虑用户独特需求的解决方案。我们的团队采用一系列专业设计方法，以确保真正定制且引人入胜的用户体验。",
+    "heroButtonOne": "我们的作品",
+    "heroButtonTwo": "联系销售",
+    "section1": {
+      "serviceHeaderTitle": "我们的UI/UX设计服务",
+      "serviceHeaderDesc": "我们的专业UX/UX设计师团队运用他们在行业特定信息应用和现代设计工具方面的专业知识，创建既简单又复杂的设计。以下是Developer提供的UI/UX设计服务列表：",
+      "webServicesArr": [
+        {
+          "title": "定制网站设计",
+          "description": "了解各种业务模型和运营方式使我们能够创建具有公司主题的信息架构的创新页面布局，从而实现动态用户体验和简便导航。",
+          "icon": "CustomWebsiteDesign"
+        },
+        {
+          "title": "移动应用设计",
+          "description": "我们高度动态和富有创意的移动应用设计服务通过利用市场领先的技术和最新趋势，为各平台提供一致的数字体验。",
+          "icon": "DesigningMobileApps"
+        },
+        {
+          "title": "可穿戴应用设计",
+          "description": "我们富有才华的可穿戴应用设计团队了解多样化的用户目的和应用程序流程。我们专业于为各种平台和尺寸的可穿戴应用创建引人入胜的设计。",
+          "icon": "DesignOfWearableApps"
+        },
+        {
+          "title": "前端集成",
+          "description": "我们的前端开发专家团队可以将复杂的编码转化为优化且响应迅速的用户界面，适用于所有设备和Web浏览器。",
+          "icon": "IntegratingTheFrontEnd"
+        },
+        {
+          "title": "可穿戴应用",
+          "description": "为了通过信息架构概念化和勾勒在线和移动界面的蓝图，DevRiser协助客户使用我们最新的数字设计工具和资源创建线框设计。",
+          "icon": "WearableApps"
+        },
+        {
+          "title": "UI/UX审核",
+          "description": "为了评估设计和布局质量的最高水平，我们的质量分析员对屏幕分辨率、响应性、平台兼容性和其他相关测试进行彻底的可用性测试。",
+          "icon": "AuditOfUIUX"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "我们的设计先行 - 发现先行方法",
+      "serviceHeaderDesc": "采用我们的“设计先行 - 发现先行”方法，拥抱创新，通过深思熟虑的设计和战略性的发现，确保变革性的解决方案。",
+      "webServicesArr": [
+        {
+          "title": "用户体验设计",
+          "icon": "DesignForUserExperience"
+        },
+        {
+          "title": "卓越图形",
+          "icon": "SuperiorGraphics"
+        },
+        {
+          "title": "测试可用性UI无摩擦UX",
+          "icon": "TestingUsabilityUIFrictionlessUX"
+        },
+        {
+          "title": "高清晰度原型",
+          "icon": "HighDefinitionPrototyping"
+        },
+        {
+          "title": "概念可视化",
+          "icon": "VisualizationOfConcepts"
+        },
+        {
+          "title": "设备UI设计",
+          "icon": "DeviceUIDesign"
+        },
+        {
+          "title": "Web和移动设计",
+          "icon": "WebAndMobileDesign"
+        },
+        {
+          "title": "品牌设计",
+          "icon": "BrandingDesign"
+        }
+      ]
+    },
+    "section3": {
+      "title": "您正在寻找其他服务吗？",
+      "description": "您有一个应用程序的建议吗？我们的应用程序开发服务可能会帮助您。您有一个应用程序的建议吗？我们的应用程序开发咨询有建议。",
+      "point1": "AI/ML开发",
+      "point2": "UI/UX设计",
+      "point3": "Web开发",
+      "point4": "游戏开发",
+      "btnText": "探索所有服务"
+    },
+    "section4": {
+      "title": "为什么选择DevRiser的UI/UX服务？",
+      "description": "我们在UI/UX设计服务领域拥有十年的综合经验。以下是我们是您首选设计服务公司的更多详细信息。",
+      "points": [
+        {
+          "title": "透明度",
+          "titleTwo": "工作模式",
+          "icon": "TransparencyWorkModal"
+        },
+        {
+          "title": "专职",
+          "titleTwo": "项目经理",
+          "icon": "DirectContactWithTeamMember"
+        },
+        {
+          "title": "提升",
+          "titleTwo": "用户体验",
+          "icon": "UpliftedUserExperience"
+        },
+        {
+          "title": "敏捷",
+          "titleTwo": "模型周期",
+          "icon": "FlexibleEngagementModelCycle"
+        }
+      ]
+    },
+    "section5": {
+      "title": "UI设计方法论",
+      "description": "为了在坚实的线框基础上产生引人入胜的用户界面设计，我们的创意团队采用最新的设计趋势、技术和客户特定方法：",
+      "methodologies": [
+        {
+          "title": "与线框互动",
+          "subTitle": "为了原型线框，我们经验丰富的设计团队与客户紧密合作，以了解业务运营、目标受众和行业领域。"
+        },
+        {
+          "title": "完美的像素设计",
+          "subTitle": "基于线框，我们的专家使用适当的前端技术和资源实施高级别且引人入胜的用户界面（UI）设计，以实现业务目标并吸引目标用户。"
+        }
+      ]
+    },
+    "section6": {
+      "title": "UI/UX设计服务",
+      "services": [
+        {
+          "title": "市场和用户研究",
+          "points": [
+            "定性研究",
+            "定量研究",
+            "启发式研究",
+            "竞争对手分析",
+            "可用性测试"
+          ]
+        },
+        {
+          "title": "产品愿景和战略",
+          "points": [
+            "设计思维",
+            "增长战略",
+            "产品路线图",
+            "数据可视化",
+            "用户参与"
+          ]
+        },
+        {
+          "title": "UX/UI设计",
+          "points": [
+            "信息架构",
+            "用户界面",
+            "交互设计",
+            "快速原型",
+            "插图和图标设计"
+          ]
+        }
+      ]
+    },
+    "section7": {
+      "title": "UI/UX设计服务",
+      "description": "根据项目用例和行业垂直领域，在DevRiser使用以下当代区块链开发技术和平台的列表："
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    }
+  },
+  "gd": {
+    "heroTitle": "游戏开发",
+    "heroHeading": "DevRiser是一家知名的游戏开发公司，以打造跨桌面、iOS和Android平台的引人入胜的2D和3D游戏应用而闻名。凭借对Unity和Unreal Engine的专业知识，我们设计原创视频游戏和沉浸式AR/VR体验。",
+    "heroButtonOne": "我们的作品",
+    "heroButtonTwo": "联系销售",
+    "section1": {
+      "serviceHeaderTitle": "我们的游戏开发服务",
+      "serviceHeaderDesc": "我们拥有开发专业软件的经验，并采用各种先进的Web技术，为不同业务领域的需求量身定制Web和应用游戏。",
+      "webServicesArr": [
+        {
+          "title": "移动游戏开发",
+          "description": "我们富有创意的移动游戏开发人员可以创建具有引人入胜图形、集成API和最佳功能的Android和iOS游戏，与主要智能手机设备兼容。",
+          "icon": "MobileGameDevelopment"
+        },
+        {
+          "title": "幻想游戏开发",
+          "description": "我们已经为全球各地的企业创建和部署了幻想体育游戏。通过雇佣富有才华的游戏开发人员，制作具有独特设计和现代功能的富有想象力和盈利能力的幻想游戏。",
+          "icon": "FantasyGameDevelopment"
+        },
+        {
+          "title": "2D和3D游戏开发",
+          "description": "我们已经为全球各地的企业创建和部署了幻想体育游戏。通过雇佣富有才华的游戏开发人员，制作具有独特设计和现代功能的富有想象力和盈利能力的幻想游戏。",
+          "icon": "TwoDAnd3DGameDevelopment"
+        },
+        {
+          "title": "AR和VR游戏开发",
+          "description": "AR/VR游戏制作选项包括概念游戏、资产创建和角色动画，我们的专业人员帮助您释放最新游戏技术的力量。",
+          "icon": "ARAndVRGameDevelopment"
+        },
+        {
+          "title": "HTML5游戏",
+          "description": "我们为各种流派提供端到端的HTML5游戏开发服务，如卡牌、街机、冒险和益智游戏，支持音频API和2D/3D图形，并在多个Web浏览器中平稳运行。",
+          "icon": "HTML5Games"
+        },
+        {
+          "title": "NFT游戏开发",
+          "description": "我们帮助客户开发具有吸引人特色的高质量NFT基础游戏。 NFT游戏开发人员在开发可靠、安全和强大的NFT游戏平台方面具有可证明的能力，以支持企业增长。",
+          "icon": "NFTGameDevelopment"
+        }
+      ]
+    },
+    "section2": {
+      "serviceHeaderTitle": "广泛的软件测试服务",
+      "serviceHeaderDesc": "由于我们在软件质量保证和测试方面的多年经验，我们提供了一个经过充分优化的解决方案，可提高效率和生产力。",
+      "webServicesArr": [
+        {
+          "title": "API测试",
+          "description": "我们一直在进行手动API测试，以满足期望的SOAP、REST、JASON、XML和其他类似协议。",
+          "icon": "APITesting"
+        },
+        {
+          "title": "应用测试",
+          "description": "使用正确的自动化工具优化和测试移动应用程序，以提高整体生产力。",
+          "icon": "AppTesting"
+        },
+        {
+          "title": "Web安全测试",
+          "description": "无论网站类型如何，都可以从专业人员那里获得全面的网站安全评估。",
+          "icon": "WebSecurityTesting"
+        },
+        {
+          "title": "负载测试",
+          "description": "测试程序在高需求和压力情况下的工作状况。",
+          "icon": "LoadTesting"
+        },
+        {
+          "title": "性能测试",
+          "description": "利用经济实惠的性能测试服务，提高应用程序的性能。",
+          "icon": "PerformanceTesting"
+        },
+        {
+          "title": "手动测试",
+          "description": "利用我们的手动测试专业知识，实现可量化、以质量为导向的结果。",
+          "icon": "ManualTesting"
+        }
+      ]
+    },
+    "section7": {
+      "title": "我们在游戏开发中使用的技术",
+      "description": "在开发者使用的游戏开发技术和平台方面，列举了最新的设计工具和尖端游戏开发平台：Adobe Creative Suite"
+    },
+
+    "faq": {
+      "faqTitle": "Frequently Asked Questions",
+      "faqList": [
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        },
+        {
+          "headerText": "Will your developers be available to have a meeting in my time zone?",
+          "description": "One of the main reasons to outsource is to work round-the-clock and that too, at a better cost than hiring in-house staff. We generally work from 10 AM to 7 PM IST (Mon - Fri); however, for the call/meeting, hired developers can make adjustments for around +/- 3 hours from regular office hours."
+        }
+      ]
+    },
+    "faq2": {
+      "faqTitle": "我们的游戏开发方法论",
+      "faqDisc": "作为一家顶级的游戏开发公司，DevRiser使用行业标准的开发流程和工具来制作定制的移动游戏。我们发布支持大多数设备和平台的娱乐游戏，从单人游戏到具有2D或3D图形的多人游戏。",
+      "faqList": [
+        {
+          "headerText": "概念评估",
+          "description": "我们与客户密切合作，充分了解概念、思想和游戏类型。为了选择平台、设计、目标市场、技术、业务期望和预算，我们的营销团队进行需求分析，实现全面的客户参与。"
+        },
+        {
+          "headerText": "规划",
+          "description": "在规划阶段，我们的专业团队完善项目范围，定义里程碑、时间表和资源需求。战略规划确保游戏开发过程的坚实基础，使目标与客户期望保持一致。"
+        },
+        {
+          "headerText": "设计",
+          "description": "在这个阶段，我们的创意设计师将游戏带到生活中。从角色和环境到用户界面，每个元素都经过精心制作。我们优先考虑引人入胜和沉浸式设计，与目标受众 resonates，并与游戏的愿景一致。"
+        },
+        {
+          "headerText": "开发",
+          "description": "开发阶段看到我们的技术团队将概念和设计转化为功能游戏。通过敏捷开发方法，我们确保迭代进展，允许在整个开发过程中持续获得客户反馈和改进。"
+        },
+        {
+          "headerText": "测试",
+          "description": "严格的测试对于提供无瑕疵的游戏体验至关重要。我们专注的测试团队彻底评估游戏的每个方面，识别和解决任何错误或性能问题。该阶段确保在发布之前提供一个经过打磨的、高质量的产品。"
+        },
+        {
+          "headerText": "发布",
+          "description": "发布阶段标志着我们细致过程的高潮。我们协调一个无缝的发布，利用战略营销努力来最大化可见性。在发布后，我们致力于监控并解决任何发布后的问题，确保在游戏市场上取得成功并保持持续存在。"
+        }
+      ]
+    }
+  },
+  "appDevelopment": {
+    "mainHeading": "应用开发",
+    "subHeading": "DevRiser提供全面的移动应用开发服务，涵盖跨平台、Android和iOS应用开发。我们是推动业务增长和打造独特品牌形象的值得信赖的合作伙伴。我们的专家为行业需求和企业目标量身定制应用。",
+    "buttonTextOne": "我们的作品集",
+    "buttonTextTwo": "联系销售",
+    "sectionOne": {
+      "appHeading": "我们的应用开发服务",
+      "appSubHeading": "通过我们的端到端移动应用开发服务，将您的应用概念变成现实，强调丰富的用户体验和强大的应用性能。在这个移动为先的时代，我们是您在公司制定新行业标准的合作伙伴。",
+      "appServiceArr": [
+        {
+          "title": "应用开发咨询",
+          "description": "我们的应用开发咨询服务旨在帮助您完善您的愿景。我们提供关于定义基本功能、选择最佳技术堆栈以及制定全面计划以启动应用开发之旅的指导。",
+          "icon": "ApplicationDevelopmentConsultancy"
+        },
+        {
+          "title": "移动应用UI/UX设计",
+          "description": "通过增强的应用设计提升用户互动。我们专业于打造视觉吸引人、美观且在移动应用界面上无缝导航的设计，确保卓越用户体验与您的受众产生共鸣。",
+          "icon": "UIUXDesignMobileApps"
+        },
+        {
+          "title": "定制移动应用开发",
+          "description": "我们专业于将您独特的移动应用开发概念变成现实，注入创新特性，打造独特解决方案。无论是以业务驱动还是社区为中心的定制移动应用，我们都在这里让您的愿景脱颖而出。",
+          "icon": "CustomMobileApplicationDevelopment"
+        },
+        {
+          "title": "企业移动应用开发",
+          "description": "通过我们的企业移动应用开发解决方案提升业务流程，整合行业领先的创新和第三方连接器，提高运营效率和生产力。",
+          "icon": "EnterpriseMobileAppDevelopment"
+        },
+        {
+          "title": "移动游戏开发",
+          "description": "我们的游戏设计师和开发人员团队积累了十年的经验，致力于打造跨原生和跨平台平台上引人入胜的游戏，确保为您的受众提供沉浸式娱乐。",
+          "icon": "MobileGameDevelopment"
+        },
+        {
+          "title": "应用支持和维护",
+          "description": "通过我们的应用维护和支持服务释放潜力，确保您的应用在发布后通过版本升级持续保持卓越表现。我们致力于提供流畅、无崩溃的性能。",
+          "icon": "SupportMaintenanceApps"
+        }
+      ]
+    },
+    "sectionTwo": {
+      "mainHeading": "应用开发中使用的技术和工具",
+      "subHeading": "我们用于应用开发的技术和工具，使我们能够创造性地将我们的移动应用概念转化为实际项目。"
+    },
+
+    "sectionThree": {
+      "mainHeading": "不同行业的数字产品解决方案",
+      "cards": [
+        {
+          "mainPoint": "体育",
+          "subPoints": [
+            "体育培训和教练应用",
+            "体育直播解决方案",
+            "奇幻体育游戏开发",
+            "体育博彩平台",
+            "基于AR/VR的游戏开发",
+            "设施管理解决方案"
+          ]
+        },
+        {
+          "mainPoint": "金融科技",
+          "subPoints": [
+            "数字支付系统",
+            "定制数字银行解决方案",
+            "移动支付应用开发",
+            "保险应用开发",
+            "财富/金融管理解决方案"
+          ]
+        },
+        {
+          "mainPoint": "娱乐",
+          "subPoints": [
+            "故事板和协作解决方案",
+            "视频流媒体解决方案",
+            "现场活动售票平台",
+            "大数据的机器学习解决方案",
+            "视觉效果解决方案"
+          ]
+        },
+        {
+          "mainPoint": "电子商务",
+          "subPoints": [
+            "基于AR的电子商务解决方案",
+            "杂货电子商务应用",
+            "端到端市场平台",
+            "定制电子商务商店开发"
+          ]
+        },
+        {
+          "mainPoint": "物流",
+          "subPoints": [
+            "交付管理",
+            "航运物流管理",
+            "车队管理软件",
+            "库存管理软件",
+            "远程信息传输软件开发"
+          ]
+        },
+        {
+          "mainPoint": "房地产",
+          "subPoints": [
+            "房地产MLS解决方案",
+            "虚拟房产导览",
+            "房地产估值工具",
+            "房地产投资平台",
+            "物业管理解决方案"
+          ]
+        },
+        {
+          "mainPoint": "医疗保健",
+          "subPoints": [
+            "远程医疗解决方案",
+            "电子病历",
+            "实践管理系统",
+            "临床软件解决方案",
+            "医疗设备集成解决方案"
+          ]
+        },
+        {
+          "mainPoint": "商业",
+          "subPoints": [
+            "销售与营销",
+            "员工管理",
+            "人力资源门户",
+            "云解决方案",
+            "业务流程自动化解决方案"
+          ]
+        },
+        {
+          "mainPoint": "旅游",
+          "subPoints": [
+            "旅游规划解决方案",
+            "行程管理平台",
+            "机票和酒店预订解决方案",
+            "汽车预订解决方案",
+            "旅游忠诚度和奖励解决方案"
+          ]
+        },
+        {
+          "mainPoint": "教育",
+          "subPoints": [
+            "教育应用开发",
+            "E2C电子学习应用开发",
+            "学习管理系统",
+            "虚拟教室和视频会议",
+            "在线考试管理系统"
+          ]
+        },
+        {
+          "mainPoint": "健身",
+          "subPoints": [
+            "在线锻炼教练应用",
+            "健身房管理解决方案",
+            "健康应用",
+            "健身追踪器（与可穿戴设备集成）",
+            "在线健身补品商店开发"
+          ]
+        },
+        {
+          "mainPoint": "社交网络",
+          "subPoints": [
+            "社区应用开发",
+            "约会和婚姻应用开发",
+            "社交网络应用开发",
+            "消息应用开发",
+            "媒体分享应用开发"
+          ]
+        },
+        {
+          "mainPoint": "餐厅",
+          "subPoints": [
+            "食品配送应用开发",
+            "云厨房交付解决方案",
+            "杂货配送解决方案",
+            "直接交付解决方案",
+            "餐厅PoS软件开发"
+          ]
+        }
+      ]
+    },
+
+    "sectionFour": {
+      "title": "您是否正在寻找其他服务？",
+      "description": "分享您的想法，让我们帮助您将其转化为出色的数字解决方案。",
+      "point1": "AI/ML开发",
+      "point2": "UI/UX设计",
+      "point3": "Web开发",
+      "point4": "游戏开发",
+      "btnText": "浏览所有服务"
+    },
+    "sectionFive": {
+      "mainHeading": "为什么选择DevRiser的应用开发服务？",
+      "subHeading": "我们在开发原生和跨平台平台方面拥有十年的综合经验。以下是我们成为您首选移动应用开发公司的更多详细信息",
+      "cardHeadingOne": "透明的工作模式",
+      "cardHeadingTwo": "直接联系团队成员",
+      "cardHeadingThree": "提升用户体验",
+      "cardHeadingFour": "灵活的参与模型周期"
+    },
+
+    "techSection": {
+      "techStackArr": [
+        {
+          "parent": "安卓",
+          "child": [
+            "爪哇",
+            "科特林",
+            "安卓工作室",
+            "摇篮",
+            "匕首2",
+            "喷气背包",
+            "协程"
+          ]
+        },
+        {
+          "parent": "IOS",
+          "child": [
+            "迅速",
+            "Objective-C",
+            "斯威夫特用户界面",
+            "可可豆荚",
+            "接收迅速",
+            "斯威夫特皮棉",
+            "圆CI",
+            "X代码"
+          ]
+        },
+        {
+          "parent": "跨平台",
+          "child": [
+            "扑",
+            "反应本机",
+            "原生脚本",
+            "离子",
+            "JavaScript",
+            "打字稿",
+            "HTML5"
+          ]
+        },
+        {
+          "parent": "云",
+          "child": ["AWS", "谷歌云", "微软Azure", "OVH云", "阿里云"]
+        },
+        {
+          "parent": "数据库",
+          "child": [
+            "火力基地",
+            "雷迪斯",
+            "PostgreSQL",
+            "MongoDB",
+            "MySQL",
+            "甲骨文",
+            "SQLite",
+            "动态数据库",
+            "房间持久性库"
+          ]
+        }
+      ]
+    }
+  },
+
+  "blockChainDevelopment": {
+    "mainHeading": "区块链开发",
+    "subHeading": "DevRiser是您值得信赖的区块链开发合作伙伴，以先进的技术为基础提供基于区块链的去中心化应用开发服务。我们提供能够充分利用去中心化生态系统潜力的解决方案。",
+    "buttonTextOne": "我们的作品集",
+    "buttonTextTwo": "联系销售",
+    "sectionOne": {
+      "appHeading": "我们的区块链开发服务",
+      "appSubHeading": "作为全球客户的顶级定制区块链开发公司，多年来我们在这一领域取得了显著进展。对于以下各种服务，我们聘用了富有创意的区块链应用程序开发人员，可以为主要的公司领域提供服务：",
+      "appServiceArr": [
+        {
+          "title": "智能合约开发",
+          "description": "在DevRiser，我们专注于为客户提供所需的时间和建议，根据项目需求和客户业务需求提供建议。",
+          "icon": "DevelopmentOfSmartContracts"
+        },
+        {
+          "title": "区块链应用开发",
+          "description": "我们经验丰富的区块链开发专业团队整合了高效的机器学习解决方案，将您的公司与客户的互动方式改变。",
+          "icon": "DevelopmentOfBlockchainApps"
+        },
+        {
+          "title": "端到端应用解决方案",
+          "description": "我们的区块链专家提供端到端的开发解决方案，从构思、规划到编程和发布项目，帮助您最大化投资回报并在竞争对手之前取得优势。",
+          "icon": "EndToEndAppsSolutions"
+        },
+        {
+          "title": "加密钱包和交易所开发",
+          "description": "作为顶级的加密货币开发公司，我们协助企业开发功能丰富、响应迅速、安全的加密钱包应用程序，实现数字资产和加密货币的跨链交换。",
+          "icon": "CryptoWalletExchangeDevelopment"
+        }
+      ]
+    },
+    "section1": {
+      "mainHeading": "我们在区块链开发中使用的技术",
+      "subHeading": "区块链开发的技术堆栈使我们能够将软件创意创造性地转化为去中心化的网络和应用程序。"
+    }
+  },
+
+  "contactForm": {
+    "mainHeading": "随时分享你的想法？",
+    "subHeading": "您离开发一款敏捷的商业产品，成为下一个成功案例更近了一步。让我们深入探讨您项目的需求和商业模型",
+    "formContent": {
+      "headingOne": "1. 个人信息",
+      "headingTwo": "2. 您的下一个项目是关于什么的？",
+      "headingThree": "3. 我们在您项目中的参与程度是什么？*",
+      "headingFour": "4. 您的大致预算是多少（以美元计算）？*",
+      "headingFive": "5. 告诉我们关于您的项目"
+    },
+    "projects": {
+      "projetOne": "网站",
+      "projetTwo": "移动应用",
+      "projetThree": "游戏开发",
+      "projetFour": "区块链",
+      "projetFive": "UI和UX设计",
+      "projetSix": "人工智能和机器学习",
+      "projetSeven": "云计算",
+      "projetEight": "物联网",
+      "projetNine": "企业解决方案"
+    },
+    "involvement": {
+      "involvementOne": "设计和开发",
+      "involvementTwo": "仅设计（我们为您设计产品，您将自行开发）",
+      "involvementThree": "仅开发（我们开发Web和App，您提供设计）"
+    },
+
+    "budget": {
+      "budgetOne": "我还不知道",
+      "budgetTwo": "¥5000-¥10000",
+      "budgetThree": "¥10000-¥20000",
+      "budgetFour": "¥20000-¥30000",
+      "budgetFive": "¥30000-¥40000",
+      "budgetSix": ">¥40000"
+    },
+    "progressBar": {
+      "headingOne": "获得全面的免费技术咨询。",
+      "headingTwo": "我们将为您的项目提供一份全面的提案文件。",
+      "headingThree": "我们将为您的项目提供一份全面的提案文件。",
+      "subHeadingOne": "在讨论您的项目后，我们将就我们使用的技术栈以及哪种技术最适合您的项目向您提供全面的技术咨询。",
+      "subHeadingTwo": "在我们对项目有牢固掌握后，我们将提供一份全面的提案文件，其中包括所有功能、时间表、定价以及与您的项目相关的最细节。",
+      "subHeadingThree": "一旦您批准提案并同意启动项目，我们将组建一个全明星团队来实现您的愿景，并超越您的期望。"
+    },
+
+    "documents": {
+      "headingOne": "仅限文档、图像、视频、PDF或ZIP文件。最大尺寸100 MB",
+      "headingTwo": "您的所有项目详细信息和附件均受到",
+      "headingThree": "保密协议 (NDA)",
+      "headingFour": "双方之间"
+    },
+
+    "fieldContent": {
+      "fullname": "全名",
+      "email": "电子邮件",
+      "phone": "电话号码",
+      "country": "国家",
+      "uploadDocument": "上传文档",
+      "fileName": "文件名:",
+      "uploadingFile": "正在上传文件，请等待:",
+      "descriptionPlaceHolder": "描述您的项目",
+      "submitButton": "提交",
+      "popupText": "查询已成功提交",
+      "popupTextFile": "文件已成功上传"
+    }
+  },
+
+  "mainServices": {
+    "headingOne": "企业解决方案开发",
+    "descriptionOne": "DevRiser专注于打造前沿的软件解决方案，将您的业务推向新的高度。我们经验丰富的开发人员团队致力于提供定制的企业解决方案，与您独特的需求和挑战无缝对接。从可扩展的应用程序到高效的系统集成，我们致力于推动您的业务向前发展。",
+    "headingTwo": "Web开发",
+    "descriptionTwo": "DevRiser提供性能驱动、可扩展和响应式的定制Web应用程序开发服务。我们的专业团队利用最新技术构建跨平台Web应用程序。",
+    "switchDescriptionOne": "DevRiser擅长后端Web开发，提供强大、可扩展和高效的解决方案。我们专注于利用最新技术打造强大的后端系统，确保您的Web应用程序功能无缝，性能最佳。",
+    "headingThree": "App开发",
+    "descriptionThree": "DevRiser提供各种移动应用程序开发服务，包括跨平台、Android和iOS应用程序开发，帮助企业加速增长并打造独特的品牌身份。我们的团队专注于开发移动应用程序。",
+    "switchDescriptionTwo": "DevRiser将想法转化为引人入胜的移动体验。我们的专业设计师专注于跨平台、Android和iOS应用程序开发，打造外观引人注目、用户中心的设计，与您的品牌身份无缝衔接。通过DevRiser创新的移动应用设计解决方案提升您的业务存在。",
+    "headingFour": "UI UX设计",
+    "descriptionFour": "DevRiser的UI/UX设计服务包括直观和引人入胜的数字设计。为了满足您的业务目标和用户需求，我们的UX设计咨询公司提供专业的设计方法。要获得促进公司扩张的UI/UX设计服务，请与我们联系。",
+    "headingFive": "云计算服务",
+    "descriptionFive": "DevRiser通过公司在全球范围内提供的云计算服务和解决方案为所有企业提供企业级云IT解决方案。我们专业提供专业的云服务，对于组织来说，我们的云计算解决方案是专业的。",
+    "headingSix": "游戏开发",
+    "descriptionSix": "DevRiser是一家领先的游戏开发公司，专注于为桌面、iOS和Android创建2D和3D游戏应用。利用Unity和Unreal Engine，我们开发原创的视频游戏以及AR/VR应用。",
+    "headingSeven": "区块链开发",
+    "descriptionSeven": "利用DevRiser领先的区块链开发服务发挥去中心化技术的潜力。从智能合同部署到DApp创建，我们赋予企业接受安全和透明数字生态系统未来的能力。与我们合作，获取重新定义区块链领域可能性的创新解决方案。",
+    "headingEight": "物联网",
+    "descriptionEight": "我们提供完整的物联网软件开发服务，专注于定制物联网开发和物联网移动应用程序开发。我们的专业解决方案提升运营效率，降低成本，并在多个行业提高产出。您可以信赖我们提供可靠和安全的物联网解决方案。",
+    "headingNine": "AI/ML开发",
+    "descriptionNine": "通过DevRiser的AI/ML开发服务，增强您的业务。从预测性分析到智能自动化，我们利用人工智能和机器学习的力量提升您的业务运营。借助我们的专业知识，推动创新和效率，赢得数字时代的竞争优势。"
+  },
+
+  "aiMlDevelopement": {
+    "mainHeading": "AI/ML开发",
+    "subHeading": "DevRiser是AI应用开发服务的领先提供商，专注于提供增强业务智能的AI驱动应用和集成解决方案。我们的AI/ML专业人员精通TensorFlow、PyTorch等尖端技术，为您的生态系统带来智能。",
+    "buttonTextOne": "我们的作品集",
+    "buttonTextTwo": "联系销售",
+
+    "section1": {
+      "title": "我们的AI/ML开发服务",
+      "description": "我们是一家定制的AI/ML开发公司，利用各种业务智能和咨询服务，支持行业趋势、精明决策和用户行为洞察。",
+      "aimlServicesArr": [
+        {
+          "title": "AI/ML咨询服务",
+          "description": "为了充分利用人工智能的潜力，DevRiser专注于与您合作，根据您的项目需求提供必要的咨询和建议。",
+          "icon": "CyborgIcon"
+        },
+        {
+          "title": "机器学习解决方案",
+          "description": "我们的熟练的AI/ML专业团队采用有效的机器学习解决方案，自动化业务流程，提高生产力，减少人为错误，彻底改变您的公司与客户互动的方式。",
+          "icon": "BrainIcon"
+        },
+        {
+          "title": "自动语言识别",
+          "description": "根据您的数据集，我们使用NLP开发复杂的算法，分析和区分文本、音频和情感的各个组成部分，以创建出色的机器学习模型。",
+          "icon": "NLPIcon"
+        },
+        {
+          "title": "AI/ML增强的移动和Web应用程序",
+          "description": "我们的AI/ML应用开发团队帮助企业创建尖端、安全、企业级的AI驱动Web平台和移动应用程序，以提供定制的客户体验并收集用户行为洞察。",
+          "icon": "AISVG"
+        },
+        {
+          "title": "聊天机器人",
+          "description": "为了提供更高层次的互动体验，使自己从竞争对手中脱颖而出，我们的AI/ML专家为您的业务构建可靠而创新的聊天机器人解决方案。",
+          "icon": "ChatbotIcon"
+        },
+        {
+          "title": "图像处理",
+          "description": "DevRiser是一家专注于为全球企业提供图像处理业务智能解决方案的机器学习和人工智能软件开发公司。",
+          "icon": "ImgProcessingSVG"
+        }
+      ]
+    },
+    "section2": {
+      "title": "我们的AI/ML技术栈",
+      "description": "DevRiser采用的最新AI/ML技术和业界认可的AI/ML软件工具。"
+    },
+
+    "section3": {
+      "title": "为什么选择DevRiser进行AI/ML开发？",
+      "description": "为了通过启用AI算法和机器学习解决方案解决不同的工业用例，DevRiser利用业界最佳的AI/ML开发服务。",
+      "aimlPerks": [
+        {
+          "icon": "ExpertSVG",
+          "title": "专业的AI/ML专家团队"
+        },
+        {
+          "icon": "DomainSVG",
+          "title": "深厚的领域知识"
+        },
+        {
+          "icon": "CustomerServiceSVG",
+          "title": "额外的客户支持"
+        },
+        {
+          "icon": "AwardSVG",
+          "title": "卓越的AI/ML解决方案"
+        },
+        {
+          "icon": "WebsiteSVG",
+          "title": "丰富的经验"
+        },
+        {
+          "icon": "SoftDevSVG",
+          "title": "为AI/ML提供完整的软件开发"
+        },
+        {
+          "icon": "DirectionSVG",
+          "title": "跨平台的AI/ML"
+        },
+        {
+          "icon": "LowCostSVG",
+          "title": "实惠的价格"
+        }
+      ]
+    },
+    "section4": {
+      "title": "您是否正在寻找其他服务？",
+      "description": "分享您的想法，让我们帮助您将它们转化为出色的数字解决方案。",
+      "point1": "AI/ML开发",
+      "point2": "UI/UX设计",
+      "point3": "Web开发",
+      "point4": "游戏开发",
+      "btnText": "查看所有服务"
+    }
+  },
+
+  "aboutUs": {
+    "mainHeading": "关于我们",
+    "subHeading": "DevRiser是一个卓越的全球软件创新和服务中心，坚守坚定的人文价值观。我们激情支持创新、质量、合作、灵活性、诚信和透明性这六大核心支柱的重要性。我们对这些原则的不懈奉献不仅推动着增长，还培育了一个公正和和谐的环境，为我们尊贵的员工和尊敬的客户确保了相互繁荣和满足。",
+    "buttonText": "开始",
+    "coreValues": {
+      "heading": "创新",
+      "subHeading": "创意突破",
+      "headingOne": "质量",
+      "subHeadingOne": "卓越标准",
+      "headingTwo": "合作",
+      "subHeadingTwo": "团队和谐",
+      "headingThree": "灵活性",
+      "subHeadingThree": "迅速适应",
+      "headingFour": "诚信",
+      "subHeadingFour": "诚实品格",
+      "headingFive": "透明性",
+      "subHeadingFive": "清晰沟通"
+    },
+    "ourVision": {
+      "mainHeading": "我们的愿景",
+      "subHeading": "DevRiser志愿通过我们对创新、质量、合作、灵活性、诚信和透明性等原则的坚定承诺，塑造一个创新的未来。我们的使命是引领变革，引发积极变化，并作为有意义创新的先驱留下持久的遗产。"
+    },
+    "ourMission": {
+      "mainHeading": "我们的使命",
+      "subHeading": "在DevRiser，我们的使命是对积极变革的不懈追求。我们通过培育创新、坚守卓越质量、培养协作伙伴关系、拥抱灵活性、展示诚信并促进透明关系来实现这一目标。我们的目标是重塑行业，释放技术的全部潜力，并产生持久影响，始终忠于我们坚定的核心原则。"
+    },
+    "thirdSection": {
+      "headingOne": "以客户为中心的方法",
+      "subHeadingOne": "我们对以客户为中心的方法的承诺不仅仅限于为即时客户提供服务。作为一家领先的软件开发公司，我们优先考虑了解您公司独特的需求、倾听您的想法以及考虑最终用户的观点和痛点。您的成功是我们的最终目标。",
+      "headingTwo": "有效协作",
+      "subHeadingTwo": "有效的协作建立在清晰的沟通基础上。我们相信积极主动和开放的沟通，即使可能看似充裕，也会对我们客户的成功产生重大影响。当我们的开发团队与客户合作时，我们使用确保效率、透明度和准确性的平台和媒介。",
+      "headingThree": "及时交付的质量",
+      "subHeadingThree": "凭借在IT软件开发方面的丰富经验，我们积累了一套强大的内部框架和一流的基础设施。这确保了我们始终提供高质量解决方案。多年的经验使我们能够复制成功并避免陷阱。我们致力于保持最高的质量标准。"
+    }
+  }
+}

@@ -61,7 +61,7 @@ export default async function BlockChainDevelopment({ params }: any) {
   return (
     <div className=" pt-14 pb-16 max-md:pt-6">
       <div className="flex flex-col gap-16 ">
-        <div className="px-6">
+        <div className="">
           <TitleHeader
             title={lang.blockChainDevelopment.mainHeading}
             description={lang.blockChainDevelopment.subHeading}
@@ -81,7 +81,7 @@ export default async function BlockChainDevelopment({ params }: any) {
             ]}
           />
         </div>
-        <div className="px-6">
+        <div>
           <Image
             src={blockChainImg}
             alt="block chain development"

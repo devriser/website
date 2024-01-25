@@ -4,6 +4,7 @@ import {
   AboutUs,
   AboutUsDark,
   ArabFlag,
+  ChineseFlag,
   Contact,
   ContactDark,
   DownArrow,
@@ -189,12 +190,17 @@ export default function MobileNavbar({ params }: NavbarProps) {
       flag: <EnglishFlag />,
     },
     {
-      name: "French",
+      name: "Français",
       value: "fr",
       flag: <FrenchFlag />,
     },
     {
-      name: "Arabic",
+      name: "中文",
+      value: "cn",
+      flag: <ChineseFlag />,
+    },
+    {
+      name: "العربية",
       value: "ar",
       flag: <ArabFlag />,
     },
@@ -359,8 +365,9 @@ export default function MobileNavbar({ params }: NavbarProps) {
                       }
                       <span>
                         {selectedLanguage === "en" && "English"}
-                        {selectedLanguage === "fr" && "French"}
-                        {selectedLanguage === "ar" && "Arabic"}
+                        {selectedLanguage === "fr" && "Français"}
+                        {selectedLanguage === "cn" && "中文"}
+                        {selectedLanguage === "ar" && "العربية"}
                       </span>
                       <p
                         className={`pt-1 ${

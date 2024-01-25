@@ -551,9 +551,9 @@ export default function ContactUsForm({ params }: FormProps) {
                   }  z-10 w-[2px] bg-solid-blue translate-x-[-50%]`}
                 ></div>
               )}
-              <div className="flex flex-col whitespace-pre-wrap">
+              <div className="flex flex-col whitespace-pre-wrap gap-2">
                 <p className=" font-medium">{item.heading}</p>
-                <p className="">{item.subHeading}</p>
+                <p className="opacity-70">{item.subHeading}</p>
               </div>
             </div>
           ))}

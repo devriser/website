@@ -9,7 +9,7 @@ import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/Let
 
 export default function Home({ params }: any) {
   return (
-    <main className=" py-8 max-sm:pt-3 flex flex-col gap-16 bg-primary w-full">
+    <main className=" py-8 max-sm:pt-3 flex flex-col gap-[70px] bg-primary w-full pb-16">
       <LandingPage params={params} />
       <OurAchievments params={params} />
       <OurCoreServices params={params} />

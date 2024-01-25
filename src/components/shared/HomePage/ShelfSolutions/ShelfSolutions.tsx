@@ -41,9 +41,9 @@ export default async function ShelfSolutions({ params }: any) {
 
   return (
     <div className="bg-secondary p-6 max-sm:flex max-sm:flex-col max-sm:gap-5">
-      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
+      <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.shelfSolutions.mainHeading}
-      </p>
+      </h2>
       <div className="grid grid-cols-2  gap-6 p-6 max-md:grid-cols-1 max-md:p-0">
         {shelfSolutionsData.map((item, index) => (
           <div key={index} className=" flex flex-col gap-2 bg-primary p-6">

@@ -47,7 +47,7 @@ export default async function GDContent({ params }: any) {
   return (
     <section className="bg-primary h-fit pb-16">
       <div className=" pt-14 grid gap-16">
-        <div className="bg-primary px-6">
+        <div className="bg-primary">
           <TitleHeader
             title={lang.gd.heroTitle}
             description={lang.gd.heroHeading}
@@ -68,7 +68,7 @@ export default async function GDContent({ params }: any) {
           />
         </div>
 
-        <div className="px-6">
+        <div>
           <Image
             src={gd}
             alt="Picture of game development"

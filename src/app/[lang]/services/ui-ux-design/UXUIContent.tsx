@@ -92,7 +92,7 @@ export default async function UXUIContent({ params }: any) {
   return (
     <section className="bg-primary h-fit pb-8">
       <div className="pt-14 grid gap-8">
-        <div className="bg-primary px-6 ">
+        <div className="bg-primary">
           <TitleHeader
             title={lang.uxui.heroTitle}
             description={lang.uxui.heroHeading}
@@ -113,7 +113,7 @@ export default async function UXUIContent({ params }: any) {
           />
         </div>
 
-        <div className="px-6 rounded-3xl ">
+        <div>
           <Image
             src={uxui}
             alt="Picture of ui ux services"

@@ -9,37 +9,7 @@ import MobileNavbar from "@/components/shared/Navbar/MobileNavbar";
 import Script from "next/script";
 import { Toaster } from "react-hot-toast";
 
-export const metadata: Metadata = {
-  title: "DevRiser LLC",
-  description:
-    "Elevate your customer relationships with our cutting-edge solution, designed to supercharge your business and customer interactions.",
-  generator: "Devriser Team",
-  applicationName: "Devriser Website",
-
-  keywords: [
-    "Devriser",
-    "Website Development",
-    "Mobile App Development",
-    "Web App Development",
-    "Enterprise Solutions",
-    "Ai-ml Development",
-    "Software Development",
-    "SaaS Development",
-    "Ui-ux Development",
-    "Blockchain Development",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Cloud Computing",
-  ],
-  manifest: "manifest.webmanifest",
-  // viewport: {
-  //   width: "device-width",
-  //   initialScale: 1,
-  //   maximumScale: 1,
-  // },
-};
-
-const monaSans: any = localFont({
+const monaSans = localFont({
   src: [
     {
       path: "./../../assets/fonts/Mona-Sans-Regular.woff2",
@@ -72,6 +42,63 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: string };
 }) {
+  const metadata: Record<string, Metadata> = {
+    en: {
+      title: "DevRiser LLC",
+      description:
+        "Elevate your customer relationships with our cutting-edge solution, designed to supercharge your business and customer interactions.",
+      generator: "Devriser Team",
+      applicationName: "Devriser Website",
+
+      keywords: [
+        "Devriser",
+        "Website Development",
+        "Mobile App Development",
+        "Web App Development",
+        "Enterprise Solutions",
+        "Ai-ml Development",
+        "Software Development",
+        "SaaS Development",
+        "Ui-ux Development",
+        "Blockchain Development",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Cloud Computing",
+      ],
+      manifest: "manifest.webmanifest",
+      // viewport: {
+      //   width: "device-width",
+      //   initialScale: 1,
+      //   maximumScale: 1,
+      // },
+    },
+    fr: {
+      title: "DevRiser",
+      description:
+        "Élevez vos relations client avec notre solution de pointe, conçue pour dynamiser votre entreprise et vos interactions avec les clients.",
+      generator: "Équipe DevRiser",
+      applicationName: "Site Web DevRiser",
+
+      keywords: [
+        "DevRiser",
+        "Développement de sites Web",
+        "Développement d'applications mobiles",
+        "Développement d'applications Web",
+        "Solutions d'entreprise",
+        "Développement IA-ML",
+        "Développement de logiciels",
+        "Développement de SaaS",
+        "Développement UI-UX",
+        "Développement Blockchain",
+        "Intelligence artificielle",
+        "Apprentissage automatique",
+        "Informatique en nuage",
+      ],
+    },
+  };
+
+  const currentMetadata = metadata[params.lang] || metadata.en;
+
   return (
     <html
       lang={params.lang}
@@ -79,6 +106,19 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <head>
+        <title>{currentMetadata.title as React.ReactNode}</title>
+        <meta
+          name="description"
+          content={currentMetadata.description ?? undefined}
+        />
+        <meta
+          name="keywords"
+          content={
+            Array.isArray(currentMetadata.keywords)
+              ? currentMetadata.keywords.join(", ")
+              : currentMetadata.keywords ?? undefined
+          }
+        />
         <Script id="google-analytics">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -101,8 +141,8 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <Providers>
-        <body className={`${cn(monaSans.variable, "font-mono-sans")}`}>
+      <body className={`${cn(monaSans.variable, "font-mono-sans")}`}>
+        <Providers>
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WG6RGRJJ"
@@ -119,12 +159,13 @@ export default function RootLayout({
             <MobileNavbar params={params} />
 
             <div className="flex flex-col w-full flex-1">
-              {children}
+              <div className="px-12 max-md:px-8 max-sm:px-6">{children}</div>
+
               <Footer params={params} />
             </div>
           </div>
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }

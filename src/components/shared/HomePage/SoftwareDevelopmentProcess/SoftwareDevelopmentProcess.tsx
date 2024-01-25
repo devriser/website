@@ -35,9 +35,9 @@ export default async function SoftwareDevelopmentProcess({ params }: any) {
 
   return (
     <div className="px-6 flex flex-col gap-8">
-      <p className="text-secondary-reverse text-text-heading font-semibold text-center">
+      <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.softwareDevelopmentProcess.mainHeading}
-      </p>
+      </h2>
       <div className="grid grid-cols-4 max-md:grid-cols-2 gap-8 px-8">
         {SoftwareDevelopmentProcessData.map((item, index) => (
           <div

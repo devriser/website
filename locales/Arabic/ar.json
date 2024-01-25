@@ -487,11 +487,11 @@
 
     "budget": {
       "budgetOne": "لا أعلم حتى الآن",
-      "budgetTwo": "$5k-$10k",
-      "budgetThree": "$10k-$20k",
-      "budgetFour": "$20k-$30k",
-      "budgetFive": "$30k-$40k",
-      "budgetSix": ">$40K"
+      "budgetTwo": "5000ر.س-10000ر.س",
+      "budgetThree": "10000ر.س-20000ر.س",
+      "budgetFour": "20000ر.س-30000ر.س",
+      "budgetFive": "30000ر.س-40000ر.س",
+      "budgetSix": ">40000ر.س"
     },
     "progressBar": {
       "headingOne": "احصل على استشارة تقنية شاملة مجانية.",

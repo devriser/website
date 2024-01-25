@@ -28,7 +28,7 @@ import Button from "@/components/shared/Button";
 import SmallCard from "@/components/shared/Cards/SmallCard";
 import Accordion from "@/components/shared/Accordion/Accordion";
 import LetDiscussYourProject from "@/components/shared/LetDiscussYourProject/LetDiscussYourProject";
-import AppContentCarasoul from "./AppContentCarasoul";
+// import AppContentCarasoul from "./AppContentCarasoul";
 import { getLocales } from "../../../../../getLocales";
 
 export default async function AppDevelopment({ params }: any) {
@@ -149,7 +149,7 @@ export default async function AppDevelopment({ params }: any) {
 
   return (
     <div className=" pt-14 flex flex-col gap-16 pb-16 max-md:pt-6">
-      <div className="flex flex-col gap-6 px-6">
+      <div className="flex flex-col gap-6">
         <TitleHeader
           title={lang.appDevelopment.mainHeading}
           description={lang.appDevelopment.subHeading}
@@ -224,9 +224,9 @@ export default async function AppDevelopment({ params }: any) {
           )}
         </div>
       </div>
-      <div className="flex flex-col container  mx-auto relative overflow-hidden h-full">
+      {/* <div className="flex flex-col container  mx-auto relative overflow-hidden h-full">
         <AppContentCarasoul params={params} />
-      </div>
+      </div> */}
       <div className="flex bg-secondary p-6 pt-8 gap-6 max-md:flex-col">
         <div className="flex flex-col gap-6 flex-1">
           <div className="flex flex-col gap-2">

@@ -6,11 +6,11 @@ export default async function ContactUs({ params }: any) {
   const lang = await getLocales(params.lang);
 
   return (
-    <div className="bg-primary p-6 px-8 flex flex-col gap-6">
+    <div className="bg-primary py-6 flex flex-col gap-6">
       <div className="flex flex-col gap-1">
-        <p className="text-secondary-reverse text-text-heading font-medium">
+        <h2 className="text-secondary-reverse text-text-heading font-medium">
           {lang.contactForm.mainHeading}
-        </p>
+        </h2>
         <p>{lang.contactForm.subHeading}</p>
       </div>
 
