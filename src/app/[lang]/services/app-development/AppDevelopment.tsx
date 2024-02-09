@@ -238,7 +238,7 @@ export default async function AppDevelopment({ params }: any) {
             </p>
           </div>
           <Button
-            className="bg-yellow-gradient text-secondary"
+            className="bg-solid-yellow text-secondary"
             style="solid"
             as="NextLink"
             href={`/${params.lang}/services`}

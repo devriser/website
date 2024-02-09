@@ -202,7 +202,7 @@ const AIMLContent = async ({ params }: any) => {
               </div>
             </div>
             <Button
-              className="bg-skyblue-gradient text-[#171717]"
+              className="bg-light-skyblue text-[#171717]"
               as="NextLink"
               href={`/${params.lang}/services`}
             >

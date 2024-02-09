@@ -47,6 +47,8 @@ const Button = ({
     lg: cn("", props.children ? "py-2.5 px-6" : "p-2.5"),
   };
 
+  let disabled = "cursor-not-allowed opacity-60";
+
   if (props.as === "NextLink") {
     return (
       <Link
@@ -75,8 +77,8 @@ const Button = ({
           baseClasses,
           variantClasses[variant][style],
           sizeClasses[size],
-          props.disabled || (loading && "cursor-not-allowed opacity-60"),
-
+          loading && "cursor-not-allowed opacity-25",
+          props.disabled && disabled,
           "flex items-center justify-center gap-1.5",
           props.className
         )}

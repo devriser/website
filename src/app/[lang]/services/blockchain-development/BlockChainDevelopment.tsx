@@ -156,7 +156,7 @@ export default async function BlockChainDevelopment({ params }: any) {
               </p>
             </div>
             <Button
-              className="bg-violet-gradient text-secondary-reverse"
+              className="bg-solid-violet text-secondary-reverse"
               style="solid"
               as="NextLink"
               href={`/${params.lang}/services`}

@@ -103,7 +103,7 @@ export default function ContactUsForm({ params }: FormProps) {
     register,
     handleSubmit,
     control,
-    formState: { errors, isSubmitting },
+    formState: { errors, isSubmitting, isValid },
     reset,
   } = useForm<ContactFormTypes>();
 
@@ -531,6 +531,7 @@ export default function ContactUsForm({ params }: FormProps) {
                 variant="success"
                 style="solid"
                 type="submit"
+                disabled={isValid ? false : true}
                 loading={isSubmitting}
               >
                 {lang.contactForm.fieldContent.submitButton}

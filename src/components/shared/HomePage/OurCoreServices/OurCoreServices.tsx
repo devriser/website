@@ -109,12 +109,18 @@ export default function OurCoreServices({ params }: OurCoreServicesProps) {
           alt="Our Core Services"
           className="h-18 max-sm:hidden max-lg:w-full"
         />
-        <div className="flex-1 flex flex-col justify-between max-sm:gap-4 max-lg:gap-6 transition-colors duration-300">
-          {OurCoreServicesData.map((item) => (
+        <div className="flex-1 flex flex-col justify-between max-sm:gap-4 max-lg:gap-6 transition-colors duration-200">
+          {OurCoreServicesData.map((item: any, index: any) => (
             <Link
               href={item.path}
               key={item.name}
-              className="flex items-center justify-between  max-sm:gap-2 group cursor-pointer"
+              className={`flex items-center justify-between max-sm:gap-2 group cursor-pointer pb-8 ${
+                index === 0 ? "border-t pt-6 border-opacity-10" : ""
+              } ${
+                index !== OurCoreServicesData.length - 1
+                  ? "border-b border-sub-text "
+                  : ""
+              }`}
             >
               <div className="flex gap-3 ">
                 <p className="text-text-subtitle text-secondary-reverse font-medium group-hover:text-solid-blue transition-colors duration-300">
