@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
-import serviceBg from "@/assets/images/Rectangle 4193.png";
 import Button from "../Button";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
@@ -31,11 +29,11 @@ const ServiceSummary = ({
 
   return (
     <div
-      className={`${bgImage} flex max-md:flex-col bg-cover gap-6 xl:gap-0 items-center justify-around  py-12 rounded-3xl  ${
+      className={`${bgImage} flex max-md:flex-col bg-cover gap-6 xl:gap-0 items-center justify-between px-6  py-12 rounded-3xl  ${
         (index + 1) % 2 === 0 ? "flex-row-reverse" : "flex-row"
-      } bg-cover  `}
+      }   `}
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 flex-[2]">
         <div className={`flex items-center ${!progressArr && "hidden"}`}>
           {progressArr &&
             progressArr.map((item: any, index: any) => (
@@ -83,8 +81,12 @@ const ServiceSummary = ({
           )}
         </div>
       </div>
-      <div className="object-cover">
-        <Image src={image} alt="erp" />
+      <div
+        className={`h-full w-full flex-1 ${
+          (index + 1) % 2 === 0 ? "flex-[2]" : "flex-row"
+        }`}
+      >
+        {image}
       </div>
     </div>
   );

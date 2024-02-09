@@ -48,6 +48,17 @@ import {
   XdSVG,
 } from "@/assets/svg/TechIcons";
 import { getLocales } from "../../../../getLocales";
+import {
+  AIMLSvg,
+  AppDevelopmentSvg,
+  BlockchainDevelopmentSvg,
+  CCSvg,
+  ESPSvg,
+  GameDevelopmentSvg,
+  IOTSvg,
+  UIUXSvg,
+  WebDevelopmentSvg,
+} from "@/assets/svg/MainServiceSvg";
 
 const MainServiceContent = async ({ params }: any) => {
   const lang = await getLocales(params?.lang);
@@ -56,15 +67,15 @@ const MainServiceContent = async ({ params }: any) => {
     {
       headerText: lang.mainServices.headingOne,
       description: lang.mainServices.descriptionOne,
-      image: erp,
-      buttonColor: "bg-purple-gradient",
+      svg: <ESPSvg />,
+      buttonColor: "bg-solid-purple",
       RedirectURL: "/en/services/enterprise-solutions-development",
     },
 
     {
       headerText: lang.mainServices.headingTwo,
       description: lang.mainServices.descriptionTwo,
-      image: web,
+      svg: <WebDevelopmentSvg />,
       progressArr: ["Frontend", "Backend"],
       techArr: [
         <ReactSVG />,
@@ -73,7 +84,7 @@ const MainServiceContent = async ({ params }: any) => {
         <SvelteSVG />,
         <HTMLSVG />,
       ],
-      buttonColor: "bg-green-gradient",
+      buttonColor: "bg-solid-green",
       switchDescription: lang.mainServices.switchDescriptionOne,
       switchTechArr: [
         <NodeSVG />,
@@ -87,7 +98,7 @@ const MainServiceContent = async ({ params }: any) => {
     {
       headerText: lang.mainServices.headingThree,
       description: lang.mainServices.descriptionThree,
-      image: mobile,
+      svg: <AppDevelopmentSvg />,
       progressArr: ["Development", "Design"],
       techArr: [
         <ReactSVG />,
@@ -97,7 +108,7 @@ const MainServiceContent = async ({ params }: any) => {
         <KotlinSVG />,
         <JavaSVG />,
       ],
-      buttonColor: "bg-yellow-gradient",
+      buttonColor: "bg-solid-yellow",
       RedirectURL: "/en/services/app-development",
 
       switchDescription: lang.mainServices.switchDescriptionTwo,
@@ -106,36 +117,36 @@ const MainServiceContent = async ({ params }: any) => {
     {
       headerText: lang.mainServices.headingFour,
       description: lang.mainServices.descriptionFour,
-      image: uiux,
+      svg: <UIUXSvg />,
       techArr: [<FigmaSVG />, <XdSVG />, <RubySVG />],
-      buttonColor: "bg-parakeet-gradient",
+      buttonColor: "bg-solid-greenish-yellow",
       RedirectURL: "/en/services/ui-ux-design",
     },
     {
       headerText: lang.mainServices.headingFive,
       description: lang.mainServices.descriptionFive,
-      image: cloud,
+      svg: <CCSvg />,
       techArr: [
         <AwsSVG />,
         <CloudOneSVG />,
         <CloudTwoSVG />,
         <CloudThreeSVG />,
       ],
-      buttonColor: "bg-teal-gradient",
+      buttonColor: "bg-solid-skyblue",
       RedirectURL: "/en/services/cloud-computing",
     },
     {
       headerText: lang.mainServices.headingSix,
       description: lang.mainServices.descriptionSix,
-      image: game,
+      svg: <GameDevelopmentSvg />,
       techArr: [<UnitySVG />, <UnrealSVG />, <EyeGameDevSVG />],
-      buttonColor: "bg-orange-gradient",
+      buttonColor: "bg-sunset-salmon",
       RedirectURL: "/en/services/game-development",
     },
     {
       headerText: lang.mainServices.headingSeven,
       description: lang.mainServices.descriptionSeven,
-      image: blockchain,
+      svg: <BlockchainDevelopmentSvg />,
       techArr: [
         <BlockOneSVG />,
         <BlockTwoSVG />,
@@ -144,23 +155,23 @@ const MainServiceContent = async ({ params }: any) => {
         <BlockFiveSVG />,
         <BlockSixSVG />,
       ],
-      buttonColor: "bg-violet-gradient",
+      buttonColor: "bg-solid-purple",
       RedirectURL: "/en/services/blockchain-development",
     },
     {
       headerText: lang.mainServices.headingEight,
       description: lang.mainServices.descriptionEight,
-      image: internet,
+      svg: <IOTSvg />,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
-      buttonColor: "bg-emerald-gradient",
+      buttonColor: "bg-solid-green",
       RedirectURL: "/en/services/iot-development",
     },
     {
       headerText: lang.mainServices.headingNine,
       description: lang.mainServices.descriptionNine,
-      image: aiml,
+      svg: <AIMLSvg />,
       techArr: [<PythonSVG />, <TensorFlowSVG />, <PandasSVG />],
-      buttonColor: "bg-skyblue-gradient",
+      buttonColor: "bg-solid-blue",
       RedirectURL: "/en/services/ai-ml-development",
     },
   ];
@@ -180,7 +191,7 @@ const MainServiceContent = async ({ params }: any) => {
               <Heading text={item.headerText} />
               <ServiceSummary
                 description={item.description}
-                image={item.image}
+                image={item.svg}
                 index={index}
                 progressArr={item.progressArr}
                 techArr={item.techArr}

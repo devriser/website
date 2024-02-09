@@ -3,8 +3,7 @@ import React from "react";
 
 export function MailSvg() {
   const theme = useTheme();
-  const fillColor =
-    theme.theme === "dark" && theme.systemTheme === "dark" ? "#fff" : "#000";
+  const fillColor = theme.theme === "dark" && "dark" ? "#fff" : "#000";
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
