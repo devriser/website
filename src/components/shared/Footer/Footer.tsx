@@ -211,7 +211,7 @@ export default function Footer({ params }: FooterProps) {
 
   return (
     <>
-      <div className="bg-secondary px-6 py-10 flex justify-between max-sm:flex-col max-sm:gap-4">
+      <div className="bg-secondary px-12 py-10 flex justify-between max-sm:flex-col max-sm:gap-4">
         <div className="flex flex-col gap-16 max-sm:gap-4">
           <div className="flex flex-col gap-2 max-sm:items-center">
             {themes.theme === "dark" ? (
@@ -360,7 +360,7 @@ export default function Footer({ params }: FooterProps) {
           </div>
         </div>
         <div className="flex flex-col gap-4 ">
-          <p className="text-secondary-reverse text-text-subtitle font-medium">
+          <p className="text-secondary-reverse text-text-subtitle font-medium text-end">
             {lang.footer.conversation.conversation}
           </p>
           <div className="flex flex-col gap-2">
