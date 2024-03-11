@@ -114,8 +114,8 @@ export default function OurCoreServices({ params }: OurCoreServicesProps) {
             <Link
               href={item.path}
               key={item.name}
-              className={`flex items-center justify-between max-sm:gap-2 group cursor-pointer pb-8 ${
-                index === 0 ? "border-t pt-6 border-opacity-10" : ""
+              className={`flex items-center justify-between max-sm:gap-2 group cursor-pointer pb-6 ${
+                index === 0 ? "border-t pt-6 border-opacity-50" : ""
               } ${
                 index !== OurCoreServicesData.length - 1
                   ? "border-b border-sub-text "

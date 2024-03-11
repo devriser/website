@@ -310,7 +310,7 @@ export default function Technologies({ params }: any) {
   ];
 
   return (
-    <div className="px-6 flex flex-col gap-8">
+    <div className=" flex flex-col gap-8">
       <h2 className="text-secondary-reverse text-text-heading font-semibold text-center">
         {lang.technologies.mainHeading}
       </h2>
@@ -329,15 +329,15 @@ export default function Technologies({ params }: any) {
             </div>
           ))}
         </div> */}
-        <div className="flex overflow-hidden ">
+        <div className="flex overflow-hidden w-full">
           {selectedHeading && (
             <motion.div
-              className="flex gap-10 flex-wrap max-sm:justify-center  overflow-hidden z-10"
+              className="flex gap-10 w-full flex-wrap max-sm:justify-center  overflow-hidden z-10"
               initial={{ x: "100%" }}
               animate={{ x: "-100%" }}
               transition={{
                 ease: "linear",
-                duration: 12,
+                duration: 10,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
@@ -347,7 +347,7 @@ export default function Technologies({ params }: any) {
                 {getIconsByHeading(selectedHeading)?.map((data, index) => (
                   <motion.div
                     key={index}
-                    className="flex flex-col items-center gap-2 p-2 whitespace-nowrap"
+                    className="flex flex-col items-center gap-2 whitespace-nowrap"
                     initial={{ opacity: 0, x: "100%" }}
                     animate={{ opacity: 1, x: "0%" }}
                     exit={{ opacity: 0, x: "100%" }}
