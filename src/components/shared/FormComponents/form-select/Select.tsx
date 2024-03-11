@@ -24,6 +24,7 @@ type SelectProps = {
   showSelectedOptions?: boolean;
   isTableOn?: boolean;
   labelColumn?: boolean;
+  userDashBoard?: boolean;
 };
 
 export default function Select({

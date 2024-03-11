@@ -30,11 +30,12 @@ const Button = ({
     },
     success: {
       solid: "bg-solid-blue border border-transparent",
-      outlined: "bg-main-background text-success border blue-border",
+      outlined:
+        "bg-main-background text-secondary-reverse border border-light-border",
       transparent: "bg-transparent text-success border blue-border",
     },
     danger: {
-      solid: "bg-gradient-danger border border-transparent",
+      solid: "bg-solid-danger border border-transparent",
       outlined: "bg-main-background text-danger border border-danger",
       transparent: "bg-transparent text-danger border border-danger",
     },
@@ -68,6 +69,7 @@ const Button = ({
   if (props.as === "Button") {
     return (
       <button
+        onKeyDown={props.onKeyDown}
         onClick={props.onClick}
         type={props.type ?? "button"}
         disabled={props.disabled || loading}

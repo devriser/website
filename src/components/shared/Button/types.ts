@@ -9,6 +9,7 @@ export type Button = {
   children?: React.ReactNode;
   className?: string;
   onClick?: any;
+  onKeyDown?: any;
   buttonSize?: "full" | "auto";
   href?: any;
   loading?: boolean;

@@ -164,7 +164,7 @@ export default function ContactUsForm({ params }: FormProps) {
                   text={lang?.contactForm.fieldContent.popupTextFile}
                 />
               ));
-            } // Display success toast
+            }
             const { file_url } = result.data;
             setFilePath(file_url);
           } else {

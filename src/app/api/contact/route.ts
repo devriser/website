@@ -11,7 +11,6 @@ import { query } from "@/dbConf/lib/db";
 import { db_name } from "@/dbConf/dbConf";
 import { create_db } from "@/dbConf/lib/create_db";
 import sendMail from "@/services/email/EmailService";
-import { json } from "stream/consumers";
 
 export async function POST(request: NextRequest) {
   const salesEmail = "sales@devriser.com";

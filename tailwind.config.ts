@@ -16,6 +16,7 @@ const config: Config = {
         tertiary: "var(--tertiary-color)",
         "solid-gray": "var(--solid-gray)",
         "solid-blue": "var(--solid-blue)",
+        "solid-danger": "var(--solid-danger)",
         "solid-yellow": "var(--solid-yellow)",
         "sub-text": "var(--sub-text)",
         "solid-green": "var(--solid-green)",
@@ -28,6 +29,10 @@ const config: Config = {
         "service-text": "var(--service-text)",
         "light-skyblue": "var(--light-skyblue)",
         "sunset-salmon": "var(--sunset-salmon)",
+        "dashboard-bg": "var(--dashboard-bg)",
+        "dashboard-light-bg": "var(--dashboard-bg-two)",
+        "dashboard-input": "var(--dashboard-input)",
+        "dashboard-table": "var(--dashboard-table)",
       },
 
       backgroundImage: {
@@ -46,6 +51,8 @@ const config: Config = {
         "emerald-gradient": "var(--emerald-gradient)",
         "skyblue-gradient": "var(--skyblue-gradient)",
         "purple-gradient": "var(--purple-gradient)",
+        "dashboard-hero-gradient": "var(--dashboard-hero-gradient)",
+        "gradient-skeleton": "var(--skeleton-color)",
       },
       fontSize: {
         "text-hero": "var(--text-hero)",
@@ -59,6 +66,7 @@ const config: Config = {
         "dark-border": "var(--dark-border)",
         "light-border": "var(--light-border)",
         "blue-gradient": "var(--blue-gradient)",
+        "table-border": "var(--table-border)",
       },
       borderRadius: {
         "hero-rounded": "var(--hero-rounded)",
@@ -66,6 +74,22 @@ const config: Config = {
         large: "var(--large)",
         medium: "var(--medium)",
       },
+
+      animation: {
+        skeleton: "skeleton 2s ease-in-out infinite",
+      },
+
+      keyframes: {
+        skeleton: {
+          "0%": { backgroundPosition: "-200px 0" },
+          "100%": { backgroundPosition: "calc(200px + 100%) 0" },
+        },
+      },
+    },
+
+    variants: {
+      fill: ["hover", "focus"],
+      stroke: ["hover", "focus"],
     },
     fontFamily: {
       "mono-sans": ["var(--font-mona-sans)"],

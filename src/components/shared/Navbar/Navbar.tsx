@@ -43,6 +43,7 @@ interface LocaleData {
     mainHeadingThree: string;
     mainHeadingFour: string;
     mainHeadingFive: string;
+    mainHeadingSix: string;
     subHeadingOne: string;
     subHeadingTwo: string;
     subHeadingThree: string;
@@ -209,6 +210,11 @@ export default function Navbar({ params }: NavbarProps) {
   ];
 
   const navBarData2 = [
+    {
+      name: lang.navBar.mainHeadingSix,
+      href: `/${params.lang}/blogs`,
+      icon: themes.theme === "dark" ? <PortfolioDark /> : <Portfolio />,
+    },
     {
       name: lang.navBar.mainHeadingFour,
       href: `/${params.lang}/about-us`,

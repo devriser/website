@@ -2,7 +2,7 @@
 
 import { FieldError, UseFormRegister } from "react-hook-form";
 import { ChangeEvent, useState } from "react";
-import { ArrowIcon } from "../form-select/Icons";
+import { ArrowIcon, SearchIcon } from "../form-select/Icons";
 import { CloseEyeIcon, OpenEyeIcon } from "./EyeIcon";
 
 type SelectOption = {
@@ -34,6 +34,10 @@ type Props = {
   required?: boolean;
   selectOptions?: SelectOption[];
   labelColumn?: boolean;
+  onKeyDown?: (e: any) => void;
+  dashboard?: boolean;
+  userDashBoard?: boolean;
+  value?: string;
 };
 export default function FormInput({
   registerValue,
@@ -49,6 +53,10 @@ export default function FormInput({
   required,
   selectOptions,
   labelColumn,
+  onKeyDown,
+  dashboard,
+  userDashBoard,
+  value,
 }: Props) {
   const [active, setActive] = useState<boolean>(false);
   const [hasValue, setHasValue] = useState<boolean>(false);
@@ -74,13 +82,32 @@ export default function FormInput({
         }  gap-2 max-sm:flex-col max-sm:items-start`}
       >
         <div className="flex-1">
-          <label className="whitespace-nowrap font-weight-medium text-secondary">
-            {label ? label : null}
-          </label>
+          {dashboard ? (
+            ""
+          ) : (
+            <label
+              className={`whitespace-nowrap font-weight-medium text-secondary ${
+                dashboard ? "text-secondary-reverse" : ""
+              } ${userDashBoard ? "text-secondary-reverse" : ""}`}
+            >
+              {label ? label : null}
+            </label>
+          )}
         </div>
         <div className="w-full flex-[3] max-md:flex-[3] max-sm:w-full">
           <textarea
-            className="placeholder:text-linkColor flex w-full flex-1 rounded-small  bg-primary p-1 py-[6px] ps-[10px] text-secondary-reverse outline-none transition-colors duration-100 "
+            value={value}
+            className={`placeholder:text-linkColor flex w-full flex-1 rounded-small  bg-primary p-1 py-[6px] ps-[10px] text-secondary-reverse outline-none transition-colors duration-100 ${
+              dashboard
+                ? "!bg-dashboard-input rounded-large transition-none text-secondary-reverse"
+                : ""
+            } 
+            
+            ${
+              userDashBoard
+                ? "bg-transparent border-light-border border rounded-md"
+                : ""
+            }`}
             rows={row}
             placeholder={placeHolder}
             style={{ resize: "none" }}
@@ -160,10 +187,16 @@ export default function FormInput({
 
             <div className="relative   w-full">
               <input
+                value={value}
                 min={0}
                 className={` placeholder:text-linkColor flex w-full ${
+                  type === "search" ? "ps-[40px]" : ""
+                } ${
                   selectOptions ? "rounded-l-none" : ""
-                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none `}
+                }  bg-primary p-1 py-[10px] ps-[10px] text-secondary-reverse outline-none ${
+                  dashboard &&
+                  "bg-transparent border-light-border border rounded-md text-secondary-reverse"
+                } `}
                 placeholder={placeHolder}
                 accept={accept}
                 type={type === "password" && showPassword ? "text" : type}
@@ -171,9 +204,15 @@ export default function FormInput({
                 onChange={(e) => {
                   handleInputChange(e);
                 }}
+                onKeyDown={onKeyDown}
               />
               {required && (
                 <div className="absolute bottom-0 left-[12px] top-[25%]  h-[50%] w-[2px] rounded bg-red-500"></div>
+              )}
+              {type === "search" && (
+                <div className="absolute top-0 left-0 bottom-0 flex items-center px-2">
+                  <SearchIcon />
+                </div>
               )}
               {type === "password" && hasValue && (
                 <div
